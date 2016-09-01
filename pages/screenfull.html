@@ -1,0 +1,66 @@
+<div class="title-bar">
+	<div class="title-text">
+		<h3>Fullscreen</h3>
+	</div>
+</div>
+<div class="load-content">
+	<div class="alert alert-info fade in" tabindex="0">
+		<button title="close information note" class="close" data-dismiss="alert">
+			×
+		</button>
+		<i class="fa-fw fa fa-info-circle"></i>
+		Simple wrapper for cross-browser usage of the JavaScript <a class="link" href="https://developer.mozilla.org/en/DOM/Using_full-screen_mode" target="_blank">Fullscreen API</a>, which lets you bring the page or any element into fullscreen. Smoothens out the browser implementation differences, so you don't have too.
+	</div>
+
+	<div class="alert alert-warning fade in" tabindex="0">
+		<button title="close disclaimer note" class="close" data-dismiss="alert">
+			×
+		</button>
+		<i class="fa-fw fa fa-exclamation-circle"></i>
+		<strong>Disclaimer :</strong> IE10 and less are not supported. Safari doesn't support use of the keyboard in fullscreen.
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Full Screen the page</h2>
+			<button type="button" class="btn btn-primary" data-fullscreen="page">
+				Click to Fullscreen the page
+			</button>
+			<h3>Javascript : </h3>
+			<code class="code-block">
+				$('[data-fullscreen]').click(function () {
+				if (screenfull.enabled) {
+				screenfull.request();
+				}
+				});
+			</code>
+		</div>
+	</div>
+	<hr/>
+	<div class="row">
+		<div class="col-md-12">
+			<h3>Fullscreen an element</h3>
+			<div class="alert alert-info fade in">
+				<button title="close info" class="close" data-dismiss="alert">
+					×
+				</button>
+				<i class="fa-fw fa fa-info-circle"></i>
+				<span tabindex="0">Click on the image to make it fullscreen.</span>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<img src="assets/images/UIFPoster.jpg" alt="Poster" class="img-thumbnail" height="140" data-fullscreen="element" />
+				</div>
+			</div>
+			
+			<h4>Javascript : </h4>
+			<code class="code-block">
+				$('img').click(function () {
+				if (screenfull.enabled) {
+				screenfull.toggle(this);
+				}
+				});
+			</code>
+		</div>
+	</div>
+	<hr/>
+</div>

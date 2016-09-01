@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<title>UI Framework v1.0</title>
+		<meta name="description" content="UI Framework">
+		<meta name="author" content="SivalingamS">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link href="assets/css/font-awesome.css" rel="stylesheet">
+		<link href="assets/css/glyphicons.css" rel="stylesheet">
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<link href="assets/css/jqGrid/jqGrid-all.css" rel="stylesheet">
+		<link href="assets/css/custom-theme-default.css" rel="stylesheet">
+		<!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<script src="assets/js/ie-emulation-modes-warning.js"></script>
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body data-page="home" data-page-action="home">
+		<div role="banner" class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header pull-relative">
+					<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="javascript:void(0)" class="navbar-brand" data-link="dashboard.html" data-keypage="dashboardPage">UI Framework <small>1.0</small></a>
+					<div id="sidebar-collapse" class="sidebar-collapse" data-trigger="leftmenu-collapse">
+						<i class="collapse-icon fa fa fa-dedent" title="Show/Hide Left Navigation"></i>
+					</div>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<div class="btn-group font-btn-group">
+								<button title="Increse text size" data-font-size="plus" class="btn btn-font" type="button">
+									<span class="bigfont"><sup class="fa fa-plus"></sup>A</span>
+								</button>
+								<button title="Reset text size" data-font-size="reset" class="btn btn-font" type="button">
+									<span class="smallfont">A</span>
+								</button>
+								<button title="Minimize text size" data-font-size="minus" class="btn btn-font" type="button">
+									<span class="smallfont"><sup class="fa fa-minus"></sup>A</span>
+								</button>
+							</div>
+						</li>
+						<li>
+							<a data-toggle="dropdown" class="big-icon dropdown-toggle" href="#" title="Language"><i class="fa fa-globe"></i></a>
+							<ul class="dropdown-menu theme arrow right">
+								<li>
+									<a href="#" title="English">English</a>
+								</li>
+								<li>
+									<a href="#" title="Espanol">Espanol</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="search-area big-icon" data-toggle="dropdown" class="dropdown-toggle" href="#" title="Site Search"><i class="fa fa-search"></i></a>
+							<ul class="dropdown-menu theme arrow right" id="search_dropdown" data-propagate='stop'>
+								<li>
+									<form name="search_form" id="search_form" class="search-form">
+										<div class="input-group">
+											<input type="text" name="search_site" id="search_site" class="form-control" />
+											<span class="input-group-btn" title="Search">
+												<button class="btn search-btn" type="button">
+													<i class="fa fa-search" title="Search"></i>
+												</button> </span>
+										</div>
+									</form>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<button class="right-nav-btn big-icon" type="button" data-trigger="rightnav" data-toggle-class="fa-arrow-circle-right" title="Open right navbar">
+								<i class="fa fa-arrow-circle-left"></i>
+							</button>
+						</li>
+						<li>
+							<a data-toggle="dropdown" class="login-area dropdown-toggle" title="User name"  tabindex="0">
+								<div class="avatar">
+									<i class="fa fa-user"></i>
+								</div>
+								<section class="profile-text">
+									<h2><span class="profile"> <span class="hidden-xs" > John Doe </span> <i class="fa fa-angle-down"></i></span></h2>
+								</section> 
+							</a>
+							<ul class="dropdown-menu theme arrow right">
+								<li>
+									<a href="#" data-link="viewprofile.html" data-keypage="viewprofile.html" title="View Profile">View Profile</a>
+								</li>
+								<li>
+									<a href="#" title="Edit Profile">Edit Profile</a>
+								</li>
+								<li>
+									<a href="#" data-link="usersettings.html" data-keypage="usersettings.html" title="Settings">Settings</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<button class="logout-btn big-icon" type="button" title="Logout" id="logout_btn">
+								<i class="fa fa-power-off"></i>
+							</button>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<div id="page-container" class="page-container">
+			<div class="sidebar" role="navigation" aria-label="left Navigation">
+				<ul class="nav nav-sidebar">
+					<li>
+						<a href="#" data-link="dashboard.html" data-keypage="dashboardPage" ><span class="menu-label"><i class="fa fa-dashboard menu-icon"></i> Dashboard</span></a>
+					</li>
+					<li data-menu="submenu">
+						<a href="#"><span class="menu-label"><i class="fa fa-edit menu-icon"></i> Form Elements</span> <span class="menu-arrow"><i class="fa fa-angle-down"></i></span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#" data-link="form-layout.html" data-keypage="formLayoutPage" ><i class="fa fa-angle-right"></i> Form Layouts</a>
+							</li>
+							<li>
+								<a href="#" data-link="input-groups.html" data-keypage="inputGroupPage" ><i class="fa fa-angle-right"></i> Input/Input groups</a>
+							</li>
+							<li>
+								<a href="#" data-link="buttons.html" data-keypage="buttonsPage"><i class="fa fa-angle-right"></i> Buttons</a>
+							</li>
+							<li>
+								<a href="#" data-link="validation.html" data-keypage="formValidationPage"><i class="fa fa-angle-right"></i> Form Validation</a>
+							</li>
+							<li>
+								<a href="#" data-link="inputmask.html" data-keypage="inputMask"><i class="fa fa-angle-right"></i> Input Mask</a>
+							</li>
+						</ul>
+					</li>
+					<li data-menu="submenu">
+						<a href="#"><span class="menu-label"><i class="fa fa-th menu-icon"></i> UI Elements</span> <span class="menu-arrow"><i class="fa fa-angle-down"></i></span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#" data-link="widgets.html" data-keypage="widgetsPage"><i class="fa fa-angle-right"></i> Widgets</a>
+							</li>
+							<li>
+								<a href="#" data-link="modal-well.html" data-keypage="modalWellsPage"><i class="fa fa-angle-right"></i> Modals/Wells</a>
+							</li>
+							<li>
+								<a href="#" data-link="tabs.html" data-keypage="tabsAccordionsPage"><i class="fa fa-angle-right"></i> Tabs/Accordions</a>
+							</li>
+							<li>
+								<a href="#" data-link="label-badges.html" data-keypage="labelBadgesPage"><i class="fa fa-angle-right"></i> Labels/Badges</a>
+							</li>
+							<li>
+								<a href="#" data-link="progress-bars.html" data-keypage="progressBarsPage"><i class="fa fa-angle-right"></i> Progress Bars</a>
+							</li>
+
+							<li>
+								<a href="#" data-link="alerts-tooltips.html" data-keypage="alertsTooltipPage"><i class="fa fa-angle-right"></i> Alerts/Tooltips/Popovers</a>
+							</li>
+							<li>
+								<a href="#" data-link="dropdowns.html" data-keypage="dropdownPage"><i class="fa fa-angle-right"></i> Dropdowns</a>
+							</li>
+							<li>
+								<a href="#" data-link="breadcrumbs.html" data-keypage="breadcrumbPage"><i class="fa fa-angle-right"></i> Breadcrumbs/Pagination</a>
+							</li>
+							<li>
+								<a href="#" data-link="listgroups.html" data-keypage="listGroupPage"><i class="fa fa-angle-right"></i> List Groups</a>
+							</li>
+							<!--
+							<li>
+							<a href="#" data-link="treeview.html" data-keypage="treeViewPage" title="Tree View"><i class="fa fa-angle-right"></i> Tree View</a>
+							</li>
+
+							<li>
+							<a href="#" data-link="databox.html" data-keypage="dataBoxes" title="Databox"><i class="fa fa-angle-right"></i> Databox</a>
+							</li>-->
+						</ul>
+					</li>
+					<li>
+						<a href="#" data-link="simple-tables.html" data-keypage="simpleTablesPage" ><i class="fa fa-table menu-icon"></i> Tables</a>
+					</li>
+					<li data-menu="submenu">
+						<a href="#" ><span class="menu-label"><i class="fa fa-picture-o menu-icon"></i> Icons</span> <span class="menu-arrow"><i class="fa fa-angle-down"></i></span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#" data-link="icons1.html" data-keypage="icons1" ><i class="fa fa-angle-right"></i> Font Awesome Icons</a>
+							</li>
+							<li>
+								<a href="#" data-link="icons2.html" data-keypage="icons2" ><i class="fa fa-angle-right"></i> Glyphicons</a>
+							</li>
+						</ul>
+					</li>
+					<!--
+					<li data-menu="submenu">
+					<a href="#" title="Tables"><span class="menu-label"><i class="fa fa-table menu-icon"></i> Tables</span> <span class="menu-arrow"><i class="fa fa-angle-down"></i></span></a>
+					<ul class="submenu">
+					<li>
+					<a href="#" data-link="simple-tables.html" data-keypage="simpleTablesPage" title="Simple/Responsive Tables"><i class="fa fa-table menu-icon"></i> Simple/Responsive Tables</a>
+					</li>
+					<li>
+					<a href="#" data-link="datatable.html" data-keypage="dataTablePage" title="Data Table"><i class="fa fa-angle-right"></i> Data Table</a>
+					</li>
+					</ul>
+					</li>-->
+
+					<li data-menu="submenu">
+						<a href="#" ><span class="menu-label"><i class="fa fa-cogs menu-icon"></i> Components</span> <span class="menu-arrow"><i class="fa fa-angle-down"></i></span></a>
+						<ul class="submenu">
+							<li>
+								<a href="#" data-link="searchdropdown.html" data-keypage="searchDropDownPage"><i class="fa fa-angle-right"></i> Search Dropdown</a>
+							</li>
+							<li>
+								<a href="#" data-link="confirmbox.html" data-keypage="confirmBoxPage"><i class="fa fa-angle-right"></i> Confirm Box</a>
+							</li>
+							<li>
+								<a href="#" data-link="notification.html" data-keypage="notificationPage"><i class="fa fa-angle-right"></i> Notification Alert</a>
+							</li>
+							<li>
+								<a href="#" data-link="throbber.html" data-keypage="throbberPage"><i class="fa fa-angle-right"></i> Throbber</a>
+							</li>
+							<li>
+								<a href="#" data-link="max-length.html" data-keypage="maxLengthPage"><i class="fa fa-angle-right"></i> Maxlength</a>
+							</li>
+							<li>
+								<a href="#" data-link="datepicker.html" data-keypage="datePickersPage"><i class="fa fa-angle-right"></i> Date/Time Pickers</a>
+							</li>
+							<!--
+							<li>
+								<a href="#" data-link="password-strength.html" data-keypage="passStrengthPage" title="Password Strength"><i class="fa fa-angle-right"></i> Password Strength</a>
+							</li>-->
+							
+							<li>
+								<a href="#" data-link="wizards.html" data-keypage="wizardPage"><i class="fa fa-angle-right"></i> Wizard</a>
+							</li>
+							<li>
+								<a href="#" data-link="scroll-message.html" data-keypage="scrollMessagePage"><i class="fa fa-angle-right"></i> Scroll Message</a>
+							</li>
+							<li>
+								<a href="#" data-link="screenfull.html" data-keypage="screenFullPage"><i class="fa fa-angle-right"></i> Fullscreen</a>
+							</li>
+							<!--
+							<li>
+							<a href="#" data-link="calendar.html" data-keypage="calendarPage" title="Calendar"><i class="fa fa-angle-right"></i> Calendar</a>
+							</li>-->
+
+						</ul>
+					</li>
+					<li data-menu="submenu">
+						<a href="#"><span class="menu-label"><i class="fa fa-file-text-o menu-icon"></i> User Guide</span> <span class="menu-arrow"><i class="fa fa-angle-down"></i></span></a>
+						<ul class="submenu">
+							<li>
+								<a href="docs/style/index.html" target="_blank"><i class="fa fa-angle-right"></i> Style</a>
+							</li>
+							<li>
+								<a href="docs/js/index.html" target="_blank"><i class="fa fa-angle-right"></i> Javascript</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a data-link="faq.html" data-keypage="faqPage"  href="#"><i class="fa fa-question-circle menu-icon"></i> FAQ</a>
+					</li>					
+				</ul>
+			</div>
+			<div class="rightnav" role="navigation" aria-label="Right Navigation">
+				<ul class="nav nav-sidebar">
+					<li>
+						<a href="#"><span class="menu-label" title="Messages"><i class="fa fa-envelope menu-icon"></i> Messages</span></a>
+						<a href="javascript:void(0)" id="rightnav-close" class="hidden-sm hidden-md hidden-lg"><i class="fa fa-times-circle"></i></a>
+					</li>
+					<li>
+						<a href="#"><span class="menu-label" title="Chat"><i class="fa fa-comments-o menu-icon"></i> Chat</span></a>
+					</li>
+					<li>
+						<a href="#"><span class="menu-label" title="Help"><i class="fa fa-question-circle menu-icon"></i> Help</span></a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-content">
+				<div id="load_page" data-load-page="dashboard.html" data-keypage="dashboardPage" role="main">
+
+				</div>
+				<div class="footer" role="contentinfo">
+					Copyrights &copy; 2014 UI Framework. <span class="poweredby">Powered by <a class="link" href="https://www.cns-inc.com/index.cfm" target="_blank">CNSI</a></span>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="scrolltop" data-scrolltop="true" title="Scroll to top"><i class="fa fa-angle-up"></i></a>
+		<!--Email Modal Templates-->
+		<div id="myModal" style="display:none;">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="To" required="">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Subject" required="">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" placeholder="Content" rows="5" required=""></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Email Templates-->
+		<!--Success Modal Templates-->
+		<div id="modal-success" class="modal modal-message modal-success fade" style="display: none;" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<i class="fa fa-check-circle"></i>
+					</div>
+					<div class="modal-title">
+						Success
+					</div>
+
+					<div class="modal-body">
+						You have done great!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" data-dismiss="modal">
+							OK
+						</button>
+					</div>
+				</div>
+				<!-- / .modal-content -->
+			</div>
+			<!-- / .modal-dialog -->
+		</div>
+		<!--End Success Modal Templates-->
+		<!--Info Modal Templates-->
+		<div id="modal-info" class="modal modal-message modal-info fade" style="display: none;" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<i class="fa fa-envelope"></i>
+					</div>
+					<div class="modal-title">
+						Alert
+					</div>
+
+					<div class="modal-body">
+						You'vd got mail!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-info" data-dismiss="modal">
+							OK
+						</button>
+					</div>
+				</div>
+				<!-- / .modal-content -->
+			</div>
+			<!-- / .modal-dialog -->
+		</div>
+		<!--End Info Modal Templates-->
+		<!--Danger Modal Templates-->
+		<div id="modal-danger" class="modal modal-message modal-danger fade" style="display: none;" aria-hidden="true" role="alert">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<i class="fa fa-fire"></i>
+					</div>
+					<div class="modal-title">
+						Alert
+					</div>
+
+					<div class="modal-body">
+						You'vd done bad!
+					</div>
+					<div class="modal-footer" >
+						<button type="button" class="btn btn-danger" data-dismiss="modal">
+							OK
+						</button>
+					</div>
+				</div>
+				<!-- / .modal-content -->
+			</div>
+			<!-- / .modal-dialog -->
+		</div>
+		<!--End Danger Modal Templates-->
+		<!--Danger Modal Templates-->
+		<div id="modal-warning" class="modal modal-message modal-warning fade" style="display: none;" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<i class="fa fa-warning"></i>
+					</div>
+					<div class="modal-title">
+						Warning
+					</div>
+
+					<div class="modal-body">
+						Is something wrong?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-warning" data-dismiss="modal">
+							OK
+						</button>
+					</div>
+				</div>
+				<!-- / .modal-content -->
+			</div>
+			<!-- / .modal-dialog -->
+		</div>
+		<!--End Danger Modal Templates-->
+		<!--LArge Modal Templates-->
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							×
+						</button>
+						<h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+					</div>
+					<div class="modal-body">
+						Modal body
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">
+							Exit
+						</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!--End Large Modal Templates-->
+		<!--Small Modal Templates-->
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							×
+						</button>
+						<h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+					</div>
+					<div class="modal-body">
+						Modal body
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">
+							Exit
+						</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!--End Small Modal Templates-->
+
+		<!--//confirmbox-->
+		<div class="confirmbox pull-hide" id="confirmbox">
+			<div class="confirmbox-content">
+				<!-- <div class="confirmbox-header">
+				<h5>Confirmation</h5>
+				</div> -->
+				<div class="confirmbox-body">
+					<p class="confirmbox-message"></p>
+				</div>
+				<div class="confirmbox-footer text-right">
+					<button type="button" class="btn btn-sm cust-btn btn-success" id="confirm_yes">
+						<i class="fa fa-thumbs-up"></i> Yes
+					</button>
+					<button type="button" class="btn btn-sm cust-btn btn-cancel" id="confirm_no">
+						<i class="fa fa-thumbs-down"></i> No
+					</button>
+				</div>
+			</div>
+		</div>
+		<!--//confirmbox-->
+
+		<!--//notification-->
+		<div class="notification-alert top-right">
+			<div class="alert alert-info alert-dismissable pull-hide" data-ui="alert_notification">
+				<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+					<i class="fa fa-times"></i>
+				</button>
+			</div>
+		</div>
+		<!--//notification-->
+
+		
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+		<script type="text/javascript" src="assets/js/handlebars.js"></script>
+		<script type="text/javascript" src="assets/js/cnsiJS.js"></script>
+		<script type="text/javascript" src="assets/js/cnsiutils.js"></script>
+		<script type="text/javascript" src="assets/js/cnsi-plugins.js"></script>
+		<script type="text/javascript" src="assets/js/search-dropdown.js"></script>
+		<script type="text/javascript" src="assets/js/cnsicoreui.js"></script>
+		<script type="text/javascript" src="assets/js/cnsi-custom.js"></script>
+
+		<div class="slide-box slide-box-left pull-hide" data-slidebox="#left1">
+			<div class="slide-container">
+				<div class="slide-content">
+					<div class="panel-group accordion" id="accordions">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordions" href="#collapseOnes"> Collapsible Group Item #1 </a></h4>
+							</div>
+							<div id="collapseOnes" class="panel-collapse collapse">
+								<div class="panel-body border-red">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordions" href="#collapseTwos"> Collapsible Group Item #2 </a></h4>
+							</div>
+							<div id="collapseTwos" class="panel-collapse collapse">
+								<div class="panel-body border-red">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordions" href="#collapseThrees"> Collapsible Group Item #3 </a></h4>
+							</div>
+							<div id="collapseThrees" class="panel-collapse collapse">
+								<div class="panel-body border-gold">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide-nav">
+					<ul>
+						<li>
+							<a href="#"><i class="fa fa-envelope"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-envelope-o"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

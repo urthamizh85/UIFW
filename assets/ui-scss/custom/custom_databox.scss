@@ -1,0 +1,447 @@
+.databox-container {
+    text-align: center;
+}
+.databox {
+    display: inline-block;    
+    height: 65px;
+    margin-bottom: 30px;
+    min-width: 130px;
+    padding: 0;
+    vertical-align: top;
+    width: 100%;
+    .databox-icon {
+      display: inline-block;
+      margin: 0;
+      text-align: center;
+      width: 100%;
+        .fa, .glyphicon {
+          display: inline-block;
+          margin: 0;
+          position: relative;
+          text-align: center;
+          &:before {
+            display: block;
+            font-size: 40px;
+            text-align: center;
+          }
+        }
+    }
+    .databox-sparkline {
+        display: inline-block;
+        font-size: 24px;
+        margin: 0 auto;
+        padding-top: 0;
+        text-align: center;
+        vertical-align: bottom;
+        width: 100%;
+    }
+    .databox-piechart {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 300;
+        margin: 0 auto;
+        padding-top: 0;
+        text-align: center;
+        vertical-align: bottom;
+        width: 100%;
+    }
+    .databox-header {
+        display: block;        
+        font-size: 18px;
+        font-weight: 400;
+        margin: 8px 5px;
+        position: relative;
+        i {
+          margin-right: 5px;
+        }
+    }
+    .databox-number {
+        display: block;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 26px;
+        margin: 2px;
+        position: relative;
+        i {
+          margin-right: 5px;
+        }
+        &.number-xs {
+            font-size: 11px;
+        }
+        &.number-sm {
+            font-size: 14px;
+        }
+        &.number-lg {
+            font-size: 20px;
+        }
+        &.number-xlg {
+            font-size: 23px;
+        }
+        &.number-xxlg {
+            font-size: 30px;
+        }
+    }
+    .databox-title {
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 2px;
+        position: relative;
+        i {
+          font-size: 13px;
+          margin-right: 5px;
+        }
+    }
+    .databox-text {
+        display: block;
+        font-size: $font-size-11px;
+        margin: 4px 0 2px;
+        position: relative;
+        i {
+          font-size: 13px;
+          margin-right: 5px;
+        }
+    }
+    .databox-inlinetext {
+        font-size: 11px;
+        margin: 2px;
+        position: relative;
+        i {
+          font-size: 13px;
+          margin-right: 5px;
+        }
+    }
+    .databox-stat {
+        display: inline-block;
+        padding: 2px 5px;
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        &.stat-left {
+          left: 7px;
+          right: auto;
+        }
+        .stat-text {
+          display: inline-block;
+          font-size: 13px;
+          font-weight: 500;
+          padding-right: 5px;
+        }
+        .stat-icon {
+          display: inline-block;
+          font-size: 13px;
+          &.icon-lg {
+              font-size: 16px;
+          }
+          &.icon-xlg {
+              font-size: 18px;
+          }
+        }
+        &.radius-bordered {
+          background-clip: padding-box;
+          border-radius: 3px;
+        }
+        &[class*="bg-"] {
+          color: #fff;
+        }
+    }
+    .databox-state {
+        background-clip: padding-box;
+        background-color: #e5e5e5;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        height: 24px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+        top: 10px;
+        width: 24px;
+        i {
+          color: #fff;
+          font-size: 13px;
+          line-height: 20px;
+        }
+    }
+    .databox-row {
+        margin: 0;
+        position: relative;
+        width: 100%;
+        &[class*="bg-"] {
+          color: #fff;
+        }
+        &.bordered-bottom {
+          border-bottom: 1px solid #fff;
+        }
+        &.bordered-top {
+          border-top: 1px solid #fff;
+        }
+        &.bordered-left {
+          border-left: 1px solid #fff;
+        }
+        &.bordered-right {
+          border-right: 1px solid #fff;
+        }
+        &.bordered-thick {
+          border-width:2px;
+        }
+        &.row-1 {
+          height: 8.33%;
+        }
+        &.row-2 {
+          height: 16.66%;
+        }
+        &.row-3 {
+          height: 25%;
+        }
+        &.row-4 {
+          height: 33.33%;
+        }
+        &.row-5 {
+          height: 41.66%;
+        }
+        &.row-6 {
+          height: 50%;
+        }
+        &.row-7 {
+          height: 58.33%;
+        }
+        &.row-8 {
+          height: 66.66%;
+        }
+        &.row-9 {
+          height: 75%;
+        }
+        &.row-10 {
+          height: 83.33%;
+        }
+        &.row-11 {
+          height: 91.66%;
+        }
+        &.row-12 {
+          height: 100%;
+        }
+    }
+    .databox-cell {
+        display: inline-block;
+        height: 100%;
+        margin: 0;
+        padding: 0 10px;
+        position: relative;
+        vertical-align: middle;
+        &[class*="bg-"] {
+            color: #fff;
+        }
+        &.bordered-bottom {
+          border-bottom: 1px solid #fff;
+        }
+        &.bordered-top {
+          border-top: 1px solid #fff;
+        }
+        &.bordered-left {
+          border-left: 1px solid #fff;
+        }
+        &.bordered-right {
+          border-right: 1px solid #fff;
+        }
+        &.bordered-thick {
+          border-width:2px;
+        }
+        &.cell-1 {
+          width: 8.33%;
+        }
+        &.cell-2 {
+          width: 16.66%;
+        }
+        &.cell-3 {
+          width: 25%;
+        }
+        &.cell-4 {
+          width: 33.33%;
+        }
+        &.cell-5 {
+          width: 41.66%;
+        }
+        &.cell-6 {
+          width: 50%;
+        }
+        &.cell-7 {
+          width: 58.33%;
+        }
+        &.cell-8 {
+          width: 66.66%;
+        }
+        &.cell-9 {
+          width: 75%;
+        }
+        &.cell-10 {
+          width: 83.33%;
+        }
+        &.cell-11 {
+          width: 91.66%;
+        }
+        &.cell-12 {
+          width: 100%;
+        }
+    }
+    &.databox-inverted {
+      .databox-left {
+          width: calc(100% - 65px);
+      }
+      .databox-right {
+          width: 60px;
+      }      
+    }
+     &.databox-transparent {
+      .databox-left, .databox-right {
+          background-color: transparent !important;
+      }
+    }
+    .databox-left {
+        color: #2dc3e8;
+        display: inline-block;
+        height: 65px;
+        margin: 0;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        vertical-align: top;
+        width: 60px;
+        &[class*="bg-"] {
+            color: #fff;
+        }
+    }
+    .databox-right {
+        color: $theme-text;
+        display: inline-block;
+        height: 65px;
+        margin: 0;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+        vertical-align: top;
+        width: calc(100% - 65px);
+        &[class*="bg-"] {
+            color: #fff;
+        }
+        &.bordered {
+          border-left: 1px solid #fff;
+        }
+        &.bordered-thick {
+          border-left: 3px solid #fff;
+        }
+    }
+    &.databox-shadowed {
+      @include box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+    }
+    &.radius-bordered {
+      background-clip: padding-box;
+      border-radius: 3px;
+      .databox-left {
+          background-clip: padding-box;
+          border-radius: 3px 0 0 3px;
+      }
+      .databox-right {
+          background-clip: padding-box;
+          border-radius: 0 3px 3px 0;
+          .databox-row:first-child {
+            background-clip: padding-box;
+            border-radius: 0 3px 0 0;
+          }
+          .databox-row:last-child {
+            background-clip: padding-box;
+            border-radius: 0 0 3px;
+          }
+      }
+    }
+    &.databox-graded {
+      @include gradient-horizontal($start-color: #ddd, $end-color: #fff, $start-percent: 0%, $end-percent: 100%);
+    }
+    &.databox-halved {
+      .databox-left, .databox-right {
+        width: 50% !important;
+      }      
+    }
+    &.databox-lg {
+      height: 80px;
+      .databox-icon {
+        .fa:before, .glyphicon:before {
+          font-size: 48px;
+          padding: 6px 4px 7px;
+        }
+      }
+      .databox-sparkline {
+        margin: 13px auto;
+      }
+      .databox-number {
+        font-size: 20px;
+        margin: 4px 0 6px;
+      }
+      .databox-left {
+         height: 80px;
+         width: 80px;
+      }
+      .databox-right {
+         height: 80px;
+         padding: 10px 15px;
+         width: calc(100% - 80px);
+      }
+      &.databox-inverted {
+        .databox-left {
+          width: calc(100% - 80px);
+        }
+        .databox-left {
+          width: 80px;
+        }
+      }
+    }
+    &.databox-xlg {
+      height: 170px;
+      .databox-icon {
+        .fa:before, .glyphicon:before {
+          padding: 6px 4px 7px;
+        }
+      }
+      .databox-left {
+         height: 170px;
+         width: 170px;
+      }
+      .databox-right {
+         height: 170px;
+         width: calc(100% - 170px);
+      }
+      &.databox-inverted {
+        .databox-left {
+          width: calc(100% - 170px);
+        }
+        .databox-left {
+          width: 170px;
+        }
+      }
+    }
+    &.databox-xxlg {
+      height: 170px;
+      .databox-icon {
+        .fa:before, .glyphicon:before {
+          font-size: 200px;
+          padding: 6px 4px 7px;
+        }
+      }
+      .databox-left {
+         height: 250px;
+         width: 250px;
+      }
+      .databox-right {
+         height: 250px;
+         width: calc(100% - 250px);
+      }
+      &.databox-inverted {
+        .databox-left {
+          width: calc(100% - 250px);
+        }
+        .databox-left {
+          width: 250px;
+        }
+      }
+    }
+}

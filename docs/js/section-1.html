@@ -1,0 +1,2400 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>UI Framework</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link href="assets/css/glyphicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/custom-theme-default.css" />
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body><div id="kss-wrapper">
+
+<div id="kss-nav">
+  <header id="kss-header">
+    <hgroup><h1>CNSI UI Framework</h1></hgroup>
+    <div class="search-doc-box">
+	  <input type="text" placeholder="Search docs" name="search_doc" id="search_doc" data-ui="alphabetListSearch" data-search-target=".left-nav > ul" />
+	</div>
+  </header>
+  <aside>
+    <nav class="left-nav"><ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="section-1.html">String Utils</a>
+        <ul class="submenu pull-hide" data-section="section-1">
+            <li><a href="section-1.html#1.1">constructor(nativeJsString)</a>
+            </li>
+            <li><a href="section-1.html#1.2">between(left, right)</a>
+            </li>
+            <li><a href="section-1.html#1.3">camelize()</a>
+            </li>
+            <li><a href="section-1.html#1.4">capitalize()</a>
+            </li>
+            <li><a href="section-1.html#1.5">chompLeft(prefix)</a>
+            </li>
+            <li><a href="section-1.html#1.6">chompRight(suffix)</a>
+            </li>
+            <li><a href="section-1.html#1.7">collapseWhitespace()</a>
+            </li>
+            <li><a href="section-1.html#1.8">contains(ss)</a>
+            </li>
+            <li><a href="section-1.html#1.9">count(substring)</a>
+            </li>
+            <li><a href="section-1.html#1.10">dasherize()</a>
+            </li>
+            <li><a href="section-1.html#1.11">decodeHTMLEntities()</a>
+            </li>
+            <li><a href="section-1.html#1.12">endsWith(ss)</a>
+            </li>
+            <li><a href="section-1.html#1.13">escapeHTML()</a>
+            </li>
+            <li><a href="section-1.html#1.14">extendPrototype()</a>
+            </li>
+            <li><a href="section-1.html#1.15">ensureLeft(prefix)</a>
+            </li>
+            <li><a href="section-1.html#1.16">ensureRight(suffix)</a>
+            </li>
+            <li><a href="section-1.html#1.17">humanize()</a>
+            </li>
+            <li><a href="section-1.html#1.18">include(ss)</a>
+            </li>
+            <li><a href="section-1.html#1.19">isAlpha()</a>
+            </li>
+            <li><a href="section-1.html#1.20">isAlphaNumeric()</a>
+            </li>
+            <li><a href="section-1.html#1.21">isEmpty()</a>
+            </li>
+            <li><a href="section-1.html#1.22">isLower()</a>
+            </li>
+            <li><a href="section-1.html#1.23">isNumeric()</a>
+            </li>
+            <li><a href="section-1.html#1.24">isUpper()</a>
+            </li>
+            <li><a href="section-1.html#1.25">latinise()</a>
+            </li>
+            <li><a href="section-1.html#1.26">left(n)</a>
+            </li>
+            <li><a href="section-1.html#1.27">length</a>
+            </li>
+            <li><a href="section-1.html#1.28">lines()</a>
+            </li>
+            <li><a href="section-1.html#1.29">pad(len, [char])</a>
+            </li>
+            <li><a href="section-1.html#1.30">padLeft(len, [char])</a>
+            </li>
+            <li><a href="section-1.html#1.31">padRight(len, [char])</a>
+            </li>
+            <li><a href="section-1.html#1.32">parseCSV()</a>
+            </li>
+            <li><a href="section-1.html#1.33">repeat(n)</a>
+            </li>
+            <li><a href="section-1.html#1.34">replaceAll(ss, newstr)</a>
+            </li>
+            <li><a href="section-1.html#1.35">strip([string1],[string2],...)</a>
+            </li>
+            <li><a href="section-1.html#1.36">restorePrototype()</a>
+            </li>
+            <li><a href="section-1.html#1.37">right(n)</a>
+            </li>
+            <li><a href="section-1.html#1.38">s</a>
+            </li>
+            <li><a href="section-1.html#1.39">setValue(value)</a>
+            </li>
+            <li><a href="section-1.html#1.40">slugify()</a>
+            </li>
+            <li><a href="section-1.html#1.41">startsWith(prefix)</a>
+            </li>
+            <li><a href="section-1.html#1.42">stripPunctuation()</a>
+            </li>
+            <li><a href="section-1.html#1.43">stripTags([tag1],[tag2],...)</a>
+            </li>
+            <li><a href="section-1.html#1.44">template(values, [open], [close])</a>
+            </li>
+            <li><a href="section-1.html#1.45">times(n)</a>
+            </li>
+            <li><a href="section-1.html#1.46">toBoolean() / toBool()</a>
+            </li>
+            <li><a href="section-1.html#1.47">toCSV(options)</a>
+            </li>
+            <li><a href="section-1.html#1.48">toFloat([precision])</a>
+            </li>
+            <li><a href="section-1.html#1.49">toInt() / toInteger()</a>
+            </li>
+            <li><a href="section-1.html#1.50">toString()</a>
+            </li>
+            <li><a href="section-1.html#1.51">trim()</a>
+            </li>
+            <li><a href="section-1.html#1.52">trimLeft()</a>
+            </li>
+            <li><a href="section-1.html#1.53">trimRight()</a>
+            </li>
+            <li><a href="section-1.html#1.54">truncate(length, [chars])</a>
+            </li>
+            <li><a href="section-1.html#1.55">underscore()</a>
+            </li>
+            <li><a href="section-1.html#1.56">unescapeHTML()</a>
+            </li>
+            <li><a href="section-1.html#1.57">wrapHTML()</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-2.html">Number Utils</a>
+        <ul class="submenu pull-hide" data-section="section-2">
+            <li><a href="section-2.html#2.1">Format</a>
+            </li>
+            <li><a href="section-2.html#2.2">Numbers</a>
+            </li>
+            <li><a href="section-2.html#2.3">Currency</a>
+            </li>
+            <li><a href="section-2.html#2.4">Bytes</a>
+            </li>
+            <li><a href="section-2.html#2.5">Percentages</a>
+            </li>
+            <li><a href="section-2.html#2.6">Time</a>
+            </li>
+            <li><a href="section-2.html#2.7">Unformat</a>
+            </li>
+            <li><a href="section-2.html#2.8">Manipulate</a>
+            </li>
+            <li><a href="section-2.html#2.9">Value</a>
+            </li>
+            <li><a href="section-2.html#2.10">Set</a>
+            </li>
+            <li><a href="section-2.html#2.11">Difference</a>
+            </li>
+            <li><a href="section-2.html#2.12">Default Formatting</a>
+            </li>
+            <li><a href="section-2.html#2.13">Custom Zero Formatting</a>
+            </li>
+            <li><a href="section-2.html#2.14">Clone</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-3.html">Date Utils</a>
+        <ul class="submenu pull-hide" data-section="section-3">
+            <li><a href="section-3.html#3.1">Now</a>
+            </li>
+            <li><a href="section-3.html#3.2">String</a>
+            </li>
+            <li><a href="section-3.html#3.3">String + Format</a>
+            </li>
+            <li><a href="section-3.html#3.4">Year, month, and day tokens</a>
+            </li>
+            <li><a href="section-3.html#3.5">Week year, week, and weekday tokens</a>
+            </li>
+            <li><a href="section-3.html#3.6">Hour, minute, second, millisecond, and offset tokens</a>
+            </li>
+            <li><a href="section-3.html#3.7">String + Formats</a>
+            </li>
+            <li><a href="section-3.html#3.8">Special Formats</a>
+            </li>
+            <li><a href="section-3.html#3.9">Object</a>
+            </li>
+            <li><a href="section-3.html#3.10">Unix Offset (milliseconds)</a>
+            </li>
+            <li><a href="section-3.html#3.11">Date</a>
+            </li>
+            <li><a href="section-3.html#3.12">Array</a>
+            </li>
+            <li><a href="section-3.html#3.13">Moment Clone</a>
+            </li>
+            <li><a href="section-3.html#3.14">UTC</a>
+            </li>
+            <li><a href="section-3.html#3.15">parseZone</a>
+            </li>
+            <li><a href="section-3.html#3.16">Validation</a>
+            </li>
+            <li><a href="section-3.html#3.17">Defaults</a>
+            </li>
+            <li><a href="section-3.html#3.18">Get + Set</a>
+            </li>
+            <li><a href="section-3.html#3.19">Millisecond</a>
+            </li>
+            <li><a href="section-3.html#3.20">Second</a>
+            </li>
+            <li><a href="section-3.html#3.21">Minute</a>
+            </li>
+            <li><a href="section-3.html#3.22">Hour</a>
+            </li>
+            <li><a href="section-3.html#3.23">Date of Month</a>
+            </li>
+            <li><a href="section-3.html#3.24">Day of Week</a>
+            </li>
+            <li><a href="section-3.html#3.25">Day of Week (Locale Aware)</a>
+            </li>
+            <li><a href="section-3.html#3.26">ISO Day of Week</a>
+            </li>
+            <li><a href="section-3.html#3.27">Day of Year</a>
+            </li>
+            <li><a href="section-3.html#3.28">Week of Year</a>
+            </li>
+            <li><a href="section-3.html#3.29">Week of Year (ISO)</a>
+            </li>
+            <li><a href="section-3.html#3.30">Month</a>
+            </li>
+            <li><a href="section-3.html#3.31">Quarter</a>
+            </li>
+            <li><a href="section-3.html#3.32">Year</a>
+            </li>
+            <li><a href="section-3.html#3.33">Week Year</a>
+            </li>
+            <li><a href="section-3.html#3.34">Week Year (ISO)</a>
+            </li>
+            <li><a href="section-3.html#3.35">Weeks In Year</a>
+            </li>
+            <li><a href="section-3.html#3.36">Weeks In Year (ISO)</a>
+            </li>
+            <li><a href="section-3.html#3.37">Get</a>
+            </li>
+            <li><a href="section-3.html#3.38">Set</a>
+            </li>
+            <li><a href="section-3.html#3.39">Maximum</a>
+            </li>
+            <li><a href="section-3.html#3.40">Minimum</a>
+            </li>
+            <li><a href="section-3.html#3.41">Manipulate</a>
+            </li>
+            <li><a href="section-3.html#3.42">Add</a>
+            </li>
+            <li><a href="section-3.html#3.43">Subtract</a>
+            </li>
+            <li><a href="section-3.html#3.44">Start of Time</a>
+            </li>
+            <li><a href="section-3.html#3.45">End of Time</a>
+            </li>
+            <li><a href="section-3.html#3.46">Maximum</a>
+            </li>
+            <li><a href="section-3.html#3.47">Minimum</a>
+            </li>
+            <li><a href="section-3.html#3.48">Local</a>
+            </li>
+            <li><a href="section-3.html#3.49">UTC</a>
+            </li>
+            <li><a href="section-3.html#3.50">Timezone Offset</a>
+            </li>
+            <li><a href="section-3.html#3.51">Format</a>
+            </li>
+            <li><a href="section-3.html#3.52">Time from now</a>
+            </li>
+            <li><a href="section-3.html#3.53">Time from X</a>
+            </li>
+            <li><a href="section-3.html#3.54">Calendar Time</a>
+            </li>
+            <li><a href="section-3.html#3.55">Difference</a>
+            </li>
+            <li><a href="section-3.html#3.56">Unix Offset (milliseconds)</a>
+            </li>
+            <li><a href="section-3.html#3.57">Unix Timestamp (seconds)</a>
+            </li>
+            <li><a href="section-3.html#3.58">Days in Month</a>
+            </li>
+            <li><a href="section-3.html#3.59">As Javascript Date</a>
+            </li>
+            <li><a href="section-3.html#3.60">As Array</a>
+            </li>
+            <li><a href="section-3.html#3.61">As JSON</a>
+            </li>
+            <li><a href="section-3.html#3.62">As ISO 8601 String</a>
+            </li>
+            <li><a href="section-3.html#3.63">Is Before</a>
+            </li>
+            <li><a href="section-3.html#3.64">Is Same</a>
+            </li>
+            <li><a href="section-3.html#3.65">Is After</a>
+            </li>
+            <li><a href="section-3.html#3.66">Is Leap Year</a>
+            </li>
+            <li><a href="section-3.html#3.67">Is Daylight Saving Time</a>
+            </li>
+            <li><a href="section-3.html#3.68">Is DST Shifted</a>
+            </li>
+            <li><a href="section-3.html#3.69">Is a Moment</a>
+            </li>
+            <li><a href="section-3.html#3.70">Creating</a>
+            </li>
+            <li><a href="section-3.html#3.71">Humanize</a>
+            </li>
+            <li><a href="section-3.html#3.72">Milliseconds</a>
+            </li>
+            <li><a href="section-3.html#3.73">Seconds</a>
+            </li>
+            <li><a href="section-3.html#3.74">Minutes</a>
+            </li>
+            <li><a href="section-3.html#3.75">Hours</a>
+            </li>
+            <li><a href="section-3.html#3.76">Days</a>
+            </li>
+            <li><a href="section-3.html#3.77">Months</a>
+            </li>
+            <li><a href="section-3.html#3.78">Years</a>
+            </li>
+            <li><a href="section-3.html#3.79">Add Time</a>
+            </li>
+            <li><a href="section-3.html#3.80">Subtract Time</a>
+            </li>
+            <li><a href="section-3.html#3.81">Get Unit of Time</a>
+            </li>
+            <li><a href="section-3.html#3.82">Normalize Units</a>
+            </li>
+            <li><a href="section-3.html#3.83">Invalid</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-4.html">Currency Utils</a>
+        <ul class="submenu pull-hide" data-section="section-4">
+            <li><a href="section-4.html#4.1">formatMoney()</a>
+            </li>
+            <li><a href="section-4.html#4.2">formatColumn()</a>
+            </li>
+            <li><a href="section-4.html#4.3">formatNumber()</a>
+            </li>
+            <li><a href="section-4.html#4.4">Documentation</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-5.html">CNSI Core</a>
+        <ul class="submenu pull-hide" data-section="section-5">
+            <li><a href="section-5.html#5.1">Regex Patterns</a>
+            </li>
+            <li><a href="section-5.html#5.2">Validation</a>
+            </li>
+            <li><a href="section-5.html#5.4">Number</a>
+            </li>
+            <li><a href="section-5.html#5.5">Date</a>
+            </li>
+            <li><a href="section-5.html#5.6">Array</a>
+            </li>
+            <li><a href="section-5.html#5.7">Currency</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-6.html">CNSI Core UI</a>
+        <ul class="submenu pull-hide" data-section="section-6">
+            <li><a href="section-6.html#6.1">scrollMove(top, duration)</a>
+            </li>
+            <li><a href="section-6.html#6.2">scroll(scrollId, options)</a>
+            </li>
+            <li><a href="section-6.html#6.3">formreset(options)</a>
+            </li>
+            <li><a href="section-6.html#6.4">widgetCollapse(options)</a>
+            </li>
+            <li><a href="section-6.html#6.5">loadPage(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.6">throbber(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.7">notification(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.8">matchHeight(id1, id2)</a>
+            </li>
+            <li><a href="section-6.html#6.9">dateConvertion(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.10">dateConvertion(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.11">tryCatch(trycode, callback)</a>
+            </li>
+            <li><a href="section-6.html#6.12">apply(arguments, data)</a>
+            </li>
+            <li><a href="section-6.html#6.13">setPageHeight()</a>
+            </li>
+            <li><a href="section-6.html#6.14">mediaScreen()</a>
+            </li>
+            <li><a href="section-6.html#6.15">searchForm(formId, callback)</a>
+            </li>
+            <li><a href="section-6.html#6.16">stopPropagate()</a>
+            </li>
+            <li><a href="section-6.html#6.17">customClick()</a>
+            </li>
+            <li><a href="section-6.html#6.18">currentTime(options)</a>
+            </li>
+            <li><a href="section-6.html#6.19">formatTime12h(time)</a>
+            </li>
+            <li><a href="section-6.html#6.20">zeroFormat(val)</a>
+            </li>
+            <li><a href="section-6.html#6.21">customSerialize(obj, avoidkey, joiner)</a>
+            </li>
+            <li><a href="section-6.html#6.22">objectextend(options)</a>
+            </li>
+            <li><a href="section-6.html#6.23">timeOut(options)</a>
+            </li>
+            <li><a href="section-6.html#6.24">countDown(params)</a>
+            </li>
+            <li><a href="section-6.html#6.25">pageFontSize()</a>
+            </li>
+            <li><a href="section-6.html#6.26">setLeftMenuPosition()</a>
+            </li>
+            <li><a href="section-6.html#6.27">collapseSideMenu()</a>
+            </li>
+            <li><a href="section-6.html#6.28">setLeftMenuActive()</a>
+            </li>
+            <li><a href="section-6.html#6.29">loadPageFromNavigation()</a>
+            </li>
+            <li><a href="section-6.html#6.30">openRightNavigation()</a>
+            </li>
+            <li><a href="section-6.html#6.31">autoPageLoad()</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-7.html">Custom</a>
+        <ul class="submenu pull-hide" data-section="section-7">
+            <li><a href="section-7.html#7.1">Variables</a>
+            </li>
+            <li><a href="section-7.html#7.2">common()</a>
+            </li>
+        </ul>        
+      </li>
+    </ul></nav>
+  </aside>
+</div>
+<div role="main" id="kss-main">
+  <article id="kss-content">
+
+    
+      <h2 class="kss-main-title">String Utils</h2>
+      
+		
+        <div class="kss-box"><p><small>Referred from <a href="http://stringjs.com/#methods" target="_blank">http://stringjs.com/#methods</a></small></p>
+</div>
+
+
+      <section class="kss-depth-2">
+      <a name="1.1"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.1</span> - -->constructor(nativeJsString)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>This creates a new <code>string.js</code> object. The parameter can be anything. The <code>toString()</code> method will be called on any objects. Some native objects are used in some functions such as <code>toCSV()</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'hello'</span>).s <span class="comment">//"hello"</span>
+S([<span class="string">'a,b'</span>]).s <span class="comment">//"a,b"</span>
+S({hi: <span class="string">'jp'</span>}).s <span class="comment">//"[object Object]""</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;This creates a new &lt;code&gt;string.js&lt;/code&gt; object. The parameter can be anything. The &lt;code&gt;toString()&lt;/code&gt; method will be called on any objects. Some native objects are used in some functions such as &lt;code&gt;toCSV()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&quot;hello&quot;&lt;/span&gt;
+S([&lt;span class=&quot;string&quot;&gt;&#x27;a,b&#x27;&lt;/span&gt;]).s &lt;span class=&quot;comment&quot;&gt;//&quot;a,b&quot;&lt;/span&gt;
+S({hi: &lt;span class=&quot;string&quot;&gt;&#x27;jp&#x27;&lt;/span&gt;}).s &lt;span class=&quot;comment&quot;&gt;//&quot;[object Object]&quot;&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.2"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.2</span> - -->between(left, right)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Extracts a string between <code>left</code> and <code>right</code> strings.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'&lt;a&gt;foo&lt;/a&gt;'</span>).between(<span class="string">'&lt;a&gt;'</span>, <span class="string">'&lt;/a&gt;'</span>).s <span class="comment">// =&gt; 'foo'</span>
+S(<span class="string">'&lt;a&gt;foo&lt;/a&gt;&lt;/a&gt;'</span>).between(<span class="string">'&lt;a&gt;'</span>, <span class="string">'&lt;/a&gt;'</span>).s <span class="comment">// =&gt; 'foo'</span>
+S(<span class="string">'&lt;a&gt;&lt;a&gt;foo&lt;/a&gt;&lt;/a&gt;'</span>).between(<span class="string">'&lt;a&gt;'</span>, <span class="string">'&lt;/a&gt;'</span>).s <span class="comment">// =&gt; '&lt;a&gt;foo'</span>
+S(<span class="string">'&lt;a&gt;foo'</span>).between(<span class="string">'&lt;a&gt;'</span>, <span class="string">'&lt;/a&gt;'</span>).s <span class="comment">// =&gt; ''</span>
+S(<span class="string">'Some strings } are very {weird}, dont you think?'</span>).between(<span class="string">'{'</span>, <span class="string">'}'</span>).s <span class="comment">// =&gt; 'weird'</span>
+S(<span class="string">'This is a test string'</span>).between(<span class="string">'test'</span>).s <span class="comment">// =&gt; ' string'</span>
+S(<span class="string">'This is a test string'</span>).between(<span class="string">''</span>, <span class="string">'test'</span>).s <span class="comment">// =&gt; 'This is a '</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Extracts a string between &lt;code&gt;left&lt;/code&gt; and &lt;code&gt;right&lt;/code&gt; strings.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;a&amp;gt;foo&amp;lt;/a&amp;gt;&#x27;&lt;/span&gt;).between(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;a&amp;gt;&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;/a&amp;gt;&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;// =&amp;gt; &#x27;foo&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;a&amp;gt;foo&amp;lt;/a&amp;gt;&amp;lt;/a&amp;gt;&#x27;&lt;/span&gt;).between(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;a&amp;gt;&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;/a&amp;gt;&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;// =&amp;gt; &#x27;foo&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;a&amp;gt;&amp;lt;a&amp;gt;foo&amp;lt;/a&amp;gt;&amp;lt;/a&amp;gt;&#x27;&lt;/span&gt;).between(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;a&amp;gt;&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;/a&amp;gt;&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;// =&amp;gt; &#x27;&amp;lt;a&amp;gt;foo&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;a&amp;gt;foo&#x27;&lt;/span&gt;).between(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;a&amp;gt;&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;/a&amp;gt;&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;// =&amp;gt; &#x27;&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Some strings } are very {weird}, dont you think?&#x27;&lt;/span&gt;).between(&lt;span class=&quot;string&quot;&gt;&#x27;{&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;}&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;// =&amp;gt; &#x27;weird&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;This is a test string&#x27;&lt;/span&gt;).between(&lt;span class=&quot;string&quot;&gt;&#x27;test&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;// =&amp;gt; &#x27; string&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;This is a test string&#x27;&lt;/span&gt;).between(&lt;span class=&quot;string&quot;&gt;&#x27;&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;test&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;// =&amp;gt; &#x27;This is a &#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.3"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.3</span> - -->camelize()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Remove any underscores or dashes and convert a string into camel casing.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'data_rate'</span>).camelize().s; <span class="comment">//'dataRate'</span>
+S(<span class="string">'background-color'</span>).camelize().s; <span class="comment">//'backgroundColor'</span>
+S(<span class="string">'-moz-something'</span>).camelize().s; <span class="comment">//'MozSomething'</span>
+S(<span class="string">'_car_speed_'</span>).camelize().s; <span class="comment">//'CarSpeed'</span>
+S(<span class="string">'yes_we_can'</span>).camelize().s; <span class="comment">//'yesWeCan'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Remove any underscores or dashes and convert a string into camel casing.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;data_rate&#x27;&lt;/span&gt;).camelize().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;dataRate&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;background-color&#x27;&lt;/span&gt;).camelize().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;backgroundColor&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;-moz-something&#x27;&lt;/span&gt;).camelize().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;MozSomething&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;_car_speed_&#x27;&lt;/span&gt;).camelize().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;CarSpeed&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;yes_we_can&#x27;&lt;/span&gt;).camelize().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;yesWeCan&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.4"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.4</span> - -->capitalize()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Capitalizes the first character of a string.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'jon'</span>).capitalize().s; <span class="comment">//'Jon'</span>
+S(<span class="string">'JP'</span>).capitalize().s; <span class="comment">//'Jp'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Capitalizes the first character of a string.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;jon&#x27;&lt;/span&gt;).capitalize().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;Jon&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;JP&#x27;&lt;/span&gt;).capitalize().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;Jp&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.5"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.5</span> - -->chompLeft(prefix)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Removes <code>prefix</code> from start of string.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'foobar'</span>).chompLeft(<span class="string">'foo'</span>).s; <span class="comment">//'bar'</span>
+S(<span class="string">'foobar'</span>).chompLeft(<span class="string">'bar'</span>).s; <span class="comment">//'foobar'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Removes &lt;code&gt;prefix&lt;/code&gt; from start of string.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;foobar&#x27;&lt;/span&gt;).chompLeft(&lt;span class=&quot;string&quot;&gt;&#x27;foo&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;bar&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;foobar&#x27;&lt;/span&gt;).chompLeft(&lt;span class=&quot;string&quot;&gt;&#x27;bar&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;foobar&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.6"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.6</span> - -->chompRight(suffix)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Removes <code>suffix</code> from end of string.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'foobar'</span>).chompRight(<span class="string">'bar'</span>).s; <span class="comment">//'foo'</span>
+S(<span class="string">'foobar'</span>).chompRight(<span class="string">'foo'</span>).s; <span class="comment">//'foobar'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Removes &lt;code&gt;suffix&lt;/code&gt; from end of string.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;foobar&#x27;&lt;/span&gt;).chompRight(&lt;span class=&quot;string&quot;&gt;&#x27;bar&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;foo&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;foobar&#x27;&lt;/span&gt;).chompRight(&lt;span class=&quot;string&quot;&gt;&#x27;foo&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;foobar&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.7"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.7</span> - -->collapseWhitespace()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Converts all adjacent whitespace characters to a single space.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript"><span class="keyword">var</span> str = S(<span class="string">'  String   \t libraries are   \n\n\t fun\n!  '</span>).collapseWhitespace().s; <span class="comment"><br/>//'String libraries are fun !'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Converts all adjacent whitespace characters to a single space.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; str = S(&lt;span class=&quot;string&quot;&gt;&#x27;  String   \t libraries are   \n\n\t fun\n!  &#x27;&lt;/span&gt;).collapseWhitespace().s; &lt;span class=&quot;comment&quot;&gt;&lt;br/&gt;//&#x27;String libraries are fun !&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.8"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.8</span> - -->contains(ss)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns true if the string contains <code>ss</code></p>
+<p>Alias: <code>include()</code></p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'JavaScript is one of the best languages!'</span>).contains(<span class="string">'one'</span>); <span class="comment">//true</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns true if the string contains &lt;code&gt;ss&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Alias: &lt;code&gt;include()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;JavaScript is one of the best languages!&#x27;&lt;/span&gt;).contains(&lt;span class=&quot;string&quot;&gt;&#x27;one&#x27;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.9"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.9</span> - -->count(substring)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns the count of the number of occurrences of the substring.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'JP likes to program. JP does not play in the NBA.'</span>).count(<span class="string">"JP"</span>)<span class="comment">// 2</span>
+S(<span class="string">'Does not exist.'</span>).count(<span class="string">"Flying Spaghetti Monster"</span>) <span class="comment">//0</span>
+S(<span class="string">'Does not exist.'</span>).count(<span class="string">"Bigfoot"</span>) <span class="comment">//0</span>
+S(<span class="string">'JavaScript is fun, therefore Node.js is fun'</span>).count(<span class="string">"fun"</span>) <span class="comment">//2</span>
+S(<span class="string">'funfunfun'</span>).count(<span class="string">"fun"</span>) <span class="comment">//3</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns the count of the number of occurrences of the substring.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;JP likes to program. JP does not play in the NBA.&#x27;&lt;/span&gt;).count(&lt;span class=&quot;string&quot;&gt;&quot;JP&quot;&lt;/span&gt;)&lt;span class=&quot;comment&quot;&gt;// 2&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Does not exist.&#x27;&lt;/span&gt;).count(&lt;span class=&quot;string&quot;&gt;&quot;Flying Spaghetti Monster&quot;&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;//0&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Does not exist.&#x27;&lt;/span&gt;).count(&lt;span class=&quot;string&quot;&gt;&quot;Bigfoot&quot;&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;//0&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;JavaScript is fun, therefore Node.js is fun&#x27;&lt;/span&gt;).count(&lt;span class=&quot;string&quot;&gt;&quot;fun&quot;&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;//2&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;funfunfun&#x27;&lt;/span&gt;).count(&lt;span class=&quot;string&quot;&gt;&quot;fun&quot;&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;//3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.10"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.10</span> - -->dasherize()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns a converted camel cased string into a string delimited by dashes.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'dataRate'</span>).dasherize().s; <span class="comment">//'data-rate'</span>
+S(<span class="string">'CarSpeed'</span>).dasherize().s; <span class="comment">//'-car-speed'</span>
+S(<span class="string">'yesWeCan'</span>).dasherize().s; <span class="comment">//'yes-we-can'</span>
+S(<span class="string">'backgroundColor'</span>).dasherize().s; <span class="comment">//'background-color'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns a converted camel cased string into a string delimited by dashes.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;dataRate&#x27;&lt;/span&gt;).dasherize().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;data-rate&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;CarSpeed&#x27;&lt;/span&gt;).dasherize().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;-car-speed&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;yesWeCan&#x27;&lt;/span&gt;).dasherize().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;yes-we-can&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;backgroundColor&#x27;&lt;/span&gt;).dasherize().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;background-color&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.11"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.11</span> - -->decodeHTMLEntities()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Decodes HTML entities into their string representation.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'Ken Thompson &amp;amp; Dennis Ritchie'</span>).decodeHTMLEntities().s; <span class="comment">//'Ken Thompson &amp; Dennis Ritchie'</span>
+S(<span class="string">'3 &amp;lt; 4'</span>).decodeHTMLEntities().s; <span class="comment">//'3 &lt; 4'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Decodes HTML entities into their string representation.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;Ken Thompson &amp;amp;amp; Dennis Ritchie&#x27;&lt;/span&gt;).decodeHTMLEntities().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;Ken Thompson &amp;amp; Dennis Ritchie&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;3 &amp;amp;lt; 4&#x27;&lt;/span&gt;).decodeHTMLEntities().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;3 &amp;lt; 4&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.12"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.12</span> - -->endsWith(ss)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns true if the string ends with <code>ss</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">"hello jon"</span>).endsWith(<span class="string">'jon'</span>); <span class="comment">//true</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns true if the string ends with &lt;code&gt;ss&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&quot;hello jon&quot;&lt;/span&gt;).endsWith(&lt;span class=&quot;string&quot;&gt;&#x27;jon&#x27;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.13"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.13</span> - -->escapeHTML()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Escapes the html.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'&lt;div&gt;hi&lt;/div&gt;'</span>).escapeHTML().s; <span class="comment">//&amp;lt;div&amp;gt;hi&amp;lt;/div&amp;gt;</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Escapes the html.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;div&amp;gt;hi&amp;lt;/div&amp;gt;&#x27;&lt;/span&gt;).escapeHTML().s; &lt;span class=&quot;comment&quot;&gt;//&amp;amp;lt;div&amp;amp;gt;hi&amp;amp;lt;/div&amp;amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.14"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.14</span> - -->extendPrototype()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Modifies <code>String.prototype</code> to have all of the methods found in string.js.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S.extendPrototype();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Modifies &lt;code&gt;String.prototype&lt;/code&gt; to have all of the methods found in string.js.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S.extendPrototype();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.15"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.15</span> - -->ensureLeft(prefix)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Ensures string starts with <code>prefix</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'subdir'</span>).ensureLeft(<span class="string">'/'</span>).s; <span class="comment">//'/subdir'</span>
+S(<span class="string">'/subdir'</span>).ensureLeft(<span class="string">'/'</span>).s; <span class="comment">//'/subdir'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Ensures string starts with &lt;code&gt;prefix&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;subdir&#x27;&lt;/span&gt;).ensureLeft(&lt;span class=&quot;string&quot;&gt;&#x27;/&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;/subdir&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;/subdir&#x27;&lt;/span&gt;).ensureLeft(&lt;span class=&quot;string&quot;&gt;&#x27;/&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;/subdir&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.16"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.16</span> - -->ensureRight(suffix)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Ensures string ends with <code>suffix</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'dir'</span>).ensureRight(<span class="string">'/'</span>).s; <span class="comment">//'dir/'</span>
+S(<span class="string">'dir/'</span>).ensureRight(<span class="string">'/'</span>).s; <span class="comment">//'dir/'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Ensures string ends with &lt;code&gt;suffix&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;dir&#x27;&lt;/span&gt;).ensureRight(&lt;span class=&quot;string&quot;&gt;&#x27;/&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;dir/&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;dir/&#x27;&lt;/span&gt;).ensureRight(&lt;span class=&quot;string&quot;&gt;&#x27;/&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;dir/&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.17"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.17</span> - -->humanize()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Transforms the input into a human friendly form.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'the_humanize_string_method'</span>).humanize().s  <span class="comment">//'The humanize string method'</span>
+S(<span class="string">'ThehumanizeStringMethod'</span>).humanize().s <span class="comment">//'Thehumanize string method'</span>
+S(<span class="string">'the humanize string method'</span>).humanize().s  <span class="comment">//'The humanize string method'</span>
+S(<span class="string">'the humanize_id string method_id'</span>).humanize().s <span class="comment">//'The humanize id string method'</span>
+S(<span class="string">'the  humanize string method  '</span>).humanize().s <span class="comment">//'The humanize string method'</span>
+S(<span class="string">'   capitalize dash-CamelCase_underscore trim  '</span>).humanize().s <span class="comment">//'Capitalize dash camel case underscore trim'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Transforms the input into a human friendly form.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;the_humanize_string_method&#x27;&lt;/span&gt;).humanize().s  &lt;span class=&quot;comment&quot;&gt;//&#x27;The humanize string method&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;ThehumanizeStringMethod&#x27;&lt;/span&gt;).humanize().s &lt;span class=&quot;comment&quot;&gt;//&#x27;Thehumanize string method&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;the humanize string method&#x27;&lt;/span&gt;).humanize().s  &lt;span class=&quot;comment&quot;&gt;//&#x27;The humanize string method&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;the humanize_id string method_id&#x27;&lt;/span&gt;).humanize().s &lt;span class=&quot;comment&quot;&gt;//&#x27;The humanize id string method&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;the  humanize string method  &#x27;&lt;/span&gt;).humanize().s &lt;span class=&quot;comment&quot;&gt;//&#x27;The humanize string method&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;   capitalize dash-CamelCase_underscore trim  &#x27;&lt;/span&gt;).humanize().s &lt;span class=&quot;comment&quot;&gt;//&#x27;Capitalize dash camel case underscore trim&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.18"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.18</span> - -->include(ss)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns true if the string contains the <code>ss</code>.</p>
+<p>Alias: <code>contains()</code></p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'JavaScript is one of the best languages!'</span>).include(<span class="string">'one'</span>); <span class="comment">//true</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns true if the string contains the &lt;code&gt;ss&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Alias: &lt;code&gt;contains()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;JavaScript is one of the best languages!&#x27;&lt;/span&gt;).include(&lt;span class=&quot;string&quot;&gt;&#x27;one&#x27;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.19"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.19</span> - -->isAlpha()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return true if the string contains only letters.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">"afaf"</span>).isAlpha(); <span class="comment">//true</span>
+S(<span class="string">'fdafaf3'</span>).isAlpha(); <span class="comment">//false</span>
+S(<span class="string">'dfdf--dfd'</span>).isAlpha(); <span class="comment">//false</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return true if the string contains only letters.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&quot;afaf&quot;&lt;/span&gt;).isAlpha(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;fdafaf3&#x27;&lt;/span&gt;).isAlpha(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;dfdf--dfd&#x27;&lt;/span&gt;).isAlpha(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.20"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.20</span> - -->isAlphaNumeric()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return true if the string contains only letters and numbers</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">"afaf35353afaf"</span>).isAlphaNumeric(); <span class="comment">//true</span>
+S(<span class="string">"FFFF99fff"</span>).isAlphaNumeric(); <span class="comment">//true</span>
+S(<span class="string">"99"</span>).isAlphaNumeric(); <span class="comment">//true</span>
+S(<span class="string">"afff"</span>).isAlphaNumeric(); <span class="comment">//true</span>
+S(<span class="string">"Infinity"</span>).isAlphaNumeric(); <span class="comment">//true</span>
+S(<span class="string">"-Infinity"</span>).isAlphaNumeric(); <span class="comment">//false</span>
+S(<span class="string">"-33"</span>).isAlphaNumeric(); <span class="comment">//false</span>
+S(<span class="string">"aaff.."</span>).isAlphaNumeric(); <span class="comment">//false</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return true if the string contains only letters and numbers&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&quot;afaf35353afaf&quot;&lt;/span&gt;).isAlphaNumeric(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;FFFF99fff&quot;&lt;/span&gt;).isAlphaNumeric(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;99&quot;&lt;/span&gt;).isAlphaNumeric(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;afff&quot;&lt;/span&gt;).isAlphaNumeric(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;Infinity&quot;&lt;/span&gt;).isAlphaNumeric(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;-Infinity&quot;&lt;/span&gt;).isAlphaNumeric(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;-33&quot;&lt;/span&gt;).isAlphaNumeric(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;aaff..&quot;&lt;/span&gt;).isAlphaNumeric(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.21"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.21</span> - -->isEmpty()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return true if the string is solely composed of whitespace or is <code>null</code>/<code>undefined</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">' '</span>).isEmpty(); <span class="comment">//true</span>
+S(<span class="string">'\t\t\t    '</span>).isEmpty(); <span class="comment">//true</span>
+S(<span class="string">'\n\n '</span>).isEmpty(); <span class="comment">//true</span>
+S(<span class="string">'helo'</span>).isEmpty(); <span class="comment">//false</span>
+S(<span class="literal">null</span>).isEmpty(); <span class="comment">//true</span>
+S(<span class="literal">undefined</span>).isEmpty(); <span class="comment">//true</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return true if the string is solely composed of whitespace or is &lt;code&gt;null&lt;/code&gt;/&lt;code&gt;undefined&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27; &#x27;&lt;/span&gt;).isEmpty(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;\t\t\t    &#x27;&lt;/span&gt;).isEmpty(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;\n\n &#x27;&lt;/span&gt;).isEmpty(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;helo&#x27;&lt;/span&gt;).isEmpty(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;).isEmpty(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;).isEmpty(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.22"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.22</span> - -->isLower()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return true if the character or string is lowercase</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'a'</span>).isLower(); <span class="comment">//true</span>
+S(<span class="string">'z'</span>).isLower(); <span class="comment">//true</span>
+S(<span class="string">'B'</span>).isLower(); <span class="comment">//false</span>
+S(<span class="string">'hijp'</span>).isLower(); <span class="comment">//true</span>
+S(<span class="string">'hi jp'</span>).isLower(); <span class="comment">//false</span>
+S(<span class="string">'HelLO'</span>).isLower(); <span class="comment">//false</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return true if the character or string is lowercase&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;a&#x27;&lt;/span&gt;).isLower(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;z&#x27;&lt;/span&gt;).isLower(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;B&#x27;&lt;/span&gt;).isLower(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hijp&#x27;&lt;/span&gt;).isLower(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hi jp&#x27;&lt;/span&gt;).isLower(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;HelLO&#x27;&lt;/span&gt;).isLower(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.23"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.23</span> - -->isNumeric()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return true if the string only contains digits</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">"3"</span>).isNumeric(); <span class="comment">//true</span>
+S(<span class="string">"34.22"</span>).isNumeric(); <span class="comment">//false</span>
+S(<span class="string">"-22.33"</span>).isNumeric(); <span class="comment">//false</span>
+S(<span class="string">"NaN"</span>).isNumeric(); <span class="comment">//false</span>
+S(<span class="string">"Infinity"</span>).isNumeric(); <span class="comment">//false</span>
+S(<span class="string">"-Infinity"</span>).isNumeric(); <span class="comment">//false</span>
+S(<span class="string">"JP"</span>).isNumeric(); <span class="comment">//false</span>
+S(<span class="string">"-5"</span>).isNumeric(); <span class="comment">//false</span>
+S(<span class="string">"000992424242"</span>).isNumeric(); <span class="comment">//true</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return true if the string only contains digits&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&quot;3&quot;&lt;/span&gt;).isNumeric(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;34.22&quot;&lt;/span&gt;).isNumeric(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;-22.33&quot;&lt;/span&gt;).isNumeric(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;NaN&quot;&lt;/span&gt;).isNumeric(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;Infinity&quot;&lt;/span&gt;).isNumeric(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;-Infinity&quot;&lt;/span&gt;).isNumeric(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;JP&quot;&lt;/span&gt;).isNumeric(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;-5&quot;&lt;/span&gt;).isNumeric(); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;000992424242&quot;&lt;/span&gt;).isNumeric(); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.24"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.24</span> - -->isUpper()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return true if the string only contains digits</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'a'</span>).isUpper() <span class="comment">//false</span>
+S(<span class="string">'z'</span>).isUpper()  <span class="comment">//false</span>
+S(<span class="string">'B'</span>).isUpper() <span class="comment">//true</span>
+S(<span class="string">'HIJP'</span>).isUpper() <span class="comment">//true</span>
+S(<span class="string">'HI JP'</span>).isUpper() <span class="comment">//false</span>
+S(<span class="string">'HelLO'</span>).isUpper() <span class="comment">//true</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return true if the string only contains digits&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;a&#x27;&lt;/span&gt;).isUpper() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;z&#x27;&lt;/span&gt;).isUpper()  &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;B&#x27;&lt;/span&gt;).isUpper() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;HIJP&#x27;&lt;/span&gt;).isUpper() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;HI JP&#x27;&lt;/span&gt;).isUpper() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;HelLO&#x27;&lt;/span&gt;).isUpper() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.25"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.25</span> - -->latinise()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return the substring denoted by <code>n</code> positive left-most characters.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'My name is JP'</span>).left(<span class="number">2</span>).s; <span class="comment">//'My'</span>
+S(<span class="string">'Hi'</span>).left(<span class="number">0</span>).s; <span class="comment">//''</span>
+S(<span class="string">'My name is JP'</span>).left(-<span class="number">2</span>).s; <span class="comment">//'JP', same as right(2)</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return the substring denoted by &lt;code&gt;n&lt;/code&gt; positive left-most characters.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;My name is JP&#x27;&lt;/span&gt;).left(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;My&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Hi&#x27;&lt;/span&gt;).left(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;My name is JP&#x27;&lt;/span&gt;).left(-&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;JP&#x27;, same as right(2)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.26"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.26</span> - -->left(n)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return the substring denoted by <code>n</code> positive left-most characters.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'My name is JP'</span>).left(<span class="number">2</span>).s; <span class="comment">//'My'</span>
+S(<span class="string">'Hi'</span>).left(<span class="number">0</span>).s; <span class="comment">//''</span>
+S(<span class="string">'My name is JP'</span>).left(-<span class="number">2</span>).s; <span class="comment">//'JP', same as right(2)</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return the substring denoted by &lt;code&gt;n&lt;/code&gt; positive left-most characters.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;My name is JP&#x27;&lt;/span&gt;).left(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;My&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Hi&#x27;&lt;/span&gt;).left(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;My name is JP&#x27;&lt;/span&gt;).left(-&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;JP&#x27;, same as right(2)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.27"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.27</span> - -->length</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Property to return the length of the string object.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'hi'</span>).length; <span class="comment">//2</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Property to return the length of the string object.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;hi&#x27;&lt;/span&gt;).length; &lt;span class=&quot;comment&quot;&gt;//2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.28"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.28</span> - -->lines()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns an array with the lines. Cross-platform compatible.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript"><span class="keyword">var</span> stuff = <span class="string">"My name is JP\nJavaScript is my fav language\r\nWhat is your fav language?"</span>
+<span class="keyword">var</span> lines = S(stuff).lines() <br/>
+console.dir(lines)
+<span class="comment">/*
+[ 'My name is JP',
+'JavaScript is my fav language',
+'What is your fav language?' ]
+*/</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns an array with the lines. Cross-platform compatible.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; stuff = &lt;span class=&quot;string&quot;&gt;&quot;My name is JP\nJavaScript is my fav language\r\nWhat is your fav language?&quot;&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; lines = S(stuff).lines() &lt;br/&gt;
+console.dir(lines)
+&lt;span class=&quot;comment&quot;&gt;/*
+[ &#x27;My name is JP&#x27;,
+&#x27;JavaScript is my fav language&#x27;,
+&#x27;What is your fav language?&#x27; ]
+*/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.29"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.29</span> - -->pad(len, [char])</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Pads the string in the center with specified character. <code>char</code> may be a string or a number, defaults is a space. </p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'hello'</span>).pad(<span class="number">5</span>).s <span class="comment">//'hello'</span>
+S(<span class="string">'hello'</span>).pad(<span class="number">10</span>).s <span class="comment">//'   hello  '</span>
+S(<span class="string">'hey'</span>).pad(<span class="number">7</span>).s <span class="comment">//'  hey  '</span>
+S(<span class="string">'hey'</span>).pad(<span class="number">5</span>).s <span class="comment">//' hey '</span>
+S(<span class="string">'hey'</span>).pad(<span class="number">4</span>).s <span class="comment">//' hey'</span>
+S(<span class="string">'hey'</span>).pad(<span class="number">7</span>, <span class="string">'-'</span>).s<span class="comment">//'--hey--'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Pads the string in the center with specified character. &lt;code&gt;char&lt;/code&gt; may be a string or a number, defaults is a space. &lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).pad(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;hello&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).pad(&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;   hello  &#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hey&#x27;&lt;/span&gt;).pad(&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;  hey  &#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hey&#x27;&lt;/span&gt;).pad(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27; hey &#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hey&#x27;&lt;/span&gt;).pad(&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27; hey&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hey&#x27;&lt;/span&gt;).pad(&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;-&#x27;&lt;/span&gt;).s&lt;span class=&quot;comment&quot;&gt;//&#x27;--hey--&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.30"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.30</span> - -->padLeft(len, [char])</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Left pads the string.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'hello'</span>).padLeft(<span class="number">5</span>).s <span class="comment">//'hello'</span>
+S(<span class="string">'hello'</span>).padLeft(<span class="number">10</span>).s <span class="comment">//'     hello'</span>
+S(<span class="string">'hello'</span>).padLeft(<span class="number">7</span>).s <span class="comment">//'  hello'</span>
+S(<span class="string">'hello'</span>).padLeft(<span class="number">6</span>).s <span class="comment">//' hello'</span>
+S(<span class="string">'hello'</span>).padLeft(<span class="number">10</span>, <span class="string">'.'</span>).s <span class="comment">//'.....hello'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Left pads the string.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).padLeft(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;hello&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).padLeft(&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;     hello&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).padLeft(&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;  hello&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).padLeft(&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27; hello&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).padLeft(&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;.&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;.....hello&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.31"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.31</span> - -->padRight(len, [char])</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Right pads the string.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'hello'</span>).padRight(<span class="number">5</span>).s <span class="comment">//'hello'</span>
+S(<span class="string">'hello'</span>).padRight(<span class="number">10</span>).s <span class="comment">//'hello     '</span>
+S(<span class="string">'hello'</span>).padRight(<span class="number">7</span>).s <span class="comment">//'hello  '</span>
+S(<span class="string">'hello'</span>).padRight(<span class="number">6</span>).s <span class="comment">//'hello '</span>
+S(<span class="string">'hello'</span>).padRight(<span class="number">10</span>, <span class="string">'.'</span>).s <span class="comment">//'hello.....'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Right pads the string.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).padRight(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;hello&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).padRight(&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;hello     &#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).padRight(&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;hello  &#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).padRight(&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;hello &#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).padRight(&lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;.&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;hello.....&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.32"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.32</span> - -->parseCSV()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Parses a CSV line into an array.</p>
+<p><strong>Arguments:</strong></p>
+<ul>
+<li><code>delimiter</code>: The character that is separates or delimits fields. Default: <code>,</code></li>
+<li><code>qualifier</code>: The character that encloses fields. Default: <code>"</code></li>
+<li><code>escape</code>: The character that represents the escape character. Default: <code>\</code></li>
+<li><code>lineDelimiter</code>: The character that represents the end of a line. When a lineDelimiter is passed the result will be a multidimensional array. Default: <code>undefined</code></li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">"'a','b','c'"</span>).parseCSV(<span class="string">','</span>, <span class="string">"'"</span>) <span class="comment">//['a', 'b', 'c'])</span>
+S(<span class="string">'"a","b","c"'</span>).parseCSV() <span class="comment">// ['a', 'b', 'c'])</span>
+S(<span class="string">'a,b,c'</span>).parseCSV(<span class="string">','</span>, <span class="literal">null</span>)  <span class="comment">//['a', 'b', 'c'])</span>
+S(<span class="string">"'a,','b','c'"</span>).parseCSV(<span class="string">','</span>, <span class="string">"'"</span>) <span class="comment">//['a,', 'b', 'c'])</span>
+S(<span class="string">'"a","b",4,"c"'</span>).parseCSV(<span class="string">','</span>, <span class="literal">null</span>) <span class="comment">//['"a"', '"b"', '4', '"c"'])</span>
+S(<span class="string">'"a","b","4","c"'</span>).parseCSV() <span class="comment">//['a', 'b', '4', 'c'])</span>
+S(<span class="string">'"a","b",       "4","c"'</span>).parseCSV() <span class="comment">//['a', 'b', '4', 'c'])</span>
+S(<span class="string">'"a","b",       4,"c"'</span>).parseCSV(<span class="string">","</span>, <span class="literal">null</span>) <span class="comment">//[ '"a"', '"b"', '       4', '"c"' ])</span>
+S(<span class="string">'"a","b\\"","d","c"'</span>).parseCSV() <span class="comment">//['a', 'b"', 'd', 'c'])</span>
+S(<span class="string">'"a","b\\"","d","c"'</span>).parseCSV() <span class="comment">//['a', 'b"', 'd', 'c'])</span>
+S(<span class="string">'"a\na","b","c"\n"a", """b\nb", "a"'</span>).parseCSV(<span class="string">','</span>, <span class="string">'"'</span>, <span class="string">'"'</span>, <span class="string">'\n'</span>)) <span class="comment">// [ [ 'a\na', 'b', 'c' ], [ 'a', '"b\nb', 'a' ] ]</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Parses a CSV line into an array.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Arguments:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;delimiter&lt;/code&gt;: The character that is separates or delimits fields. Default: &lt;code&gt;,&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;qualifier&lt;/code&gt;: The character that encloses fields. Default: &lt;code&gt;&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;escape&lt;/code&gt;: The character that represents the escape character. Default: &lt;code&gt;\&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lineDelimiter&lt;/code&gt;: The character that represents the end of a line. When a lineDelimiter is passed the result will be a multidimensional array. Default: &lt;code&gt;undefined&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&quot;&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;&quot;&lt;/span&gt;).parseCSV(&lt;span class=&quot;string&quot;&gt;&#x27;,&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;&#x27;&quot;&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;//[&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;])&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&quot;a&quot;,&quot;b&quot;,&quot;c&quot;&#x27;&lt;/span&gt;).parseCSV() &lt;span class=&quot;comment&quot;&gt;// [&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;])&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;a,b,c&#x27;&lt;/span&gt;).parseCSV(&lt;span class=&quot;string&quot;&gt;&#x27;,&#x27;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;)  &lt;span class=&quot;comment&quot;&gt;//[&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;])&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;&#x27;a,&#x27;,&#x27;b&#x27;,&#x27;c&#x27;&quot;&lt;/span&gt;).parseCSV(&lt;span class=&quot;string&quot;&gt;&#x27;,&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;&#x27;&quot;&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;//[&#x27;a,&#x27;, &#x27;b&#x27;, &#x27;c&#x27;])&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&quot;a&quot;,&quot;b&quot;,4,&quot;c&quot;&#x27;&lt;/span&gt;).parseCSV(&lt;span class=&quot;string&quot;&gt;&#x27;,&#x27;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;//[&#x27;&quot;a&quot;&#x27;, &#x27;&quot;b&quot;&#x27;, &#x27;4&#x27;, &#x27;&quot;c&quot;&#x27;])&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&quot;a&quot;,&quot;b&quot;,&quot;4&quot;,&quot;c&quot;&#x27;&lt;/span&gt;).parseCSV() &lt;span class=&quot;comment&quot;&gt;//[&#x27;a&#x27;, &#x27;b&#x27;, &#x27;4&#x27;, &#x27;c&#x27;])&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&quot;a&quot;,&quot;b&quot;,       &quot;4&quot;,&quot;c&quot;&#x27;&lt;/span&gt;).parseCSV() &lt;span class=&quot;comment&quot;&gt;//[&#x27;a&#x27;, &#x27;b&#x27;, &#x27;4&#x27;, &#x27;c&#x27;])&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&quot;a&quot;,&quot;b&quot;,       4,&quot;c&quot;&#x27;&lt;/span&gt;).parseCSV(&lt;span class=&quot;string&quot;&gt;&quot;,&quot;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;//[ &#x27;&quot;a&quot;&#x27;, &#x27;&quot;b&quot;&#x27;, &#x27;       4&#x27;, &#x27;&quot;c&quot;&#x27; ])&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&quot;a&quot;,&quot;b\\&quot;&quot;,&quot;d&quot;,&quot;c&quot;&#x27;&lt;/span&gt;).parseCSV() &lt;span class=&quot;comment&quot;&gt;//[&#x27;a&#x27;, &#x27;b&quot;&#x27;, &#x27;d&#x27;, &#x27;c&#x27;])&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&quot;a&quot;,&quot;b\\&quot;&quot;,&quot;d&quot;,&quot;c&quot;&#x27;&lt;/span&gt;).parseCSV() &lt;span class=&quot;comment&quot;&gt;//[&#x27;a&#x27;, &#x27;b&quot;&#x27;, &#x27;d&#x27;, &#x27;c&#x27;])&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&quot;a\na&quot;,&quot;b&quot;,&quot;c&quot;\n&quot;a&quot;, &quot;&quot;&quot;b\nb&quot;, &quot;a&quot;&#x27;&lt;/span&gt;).parseCSV(&lt;span class=&quot;string&quot;&gt;&#x27;,&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;&quot;&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;&quot;&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;\n&#x27;&lt;/span&gt;)) &lt;span class=&quot;comment&quot;&gt;// [ [ &#x27;a\na&#x27;, &#x27;b&#x27;, &#x27;c&#x27; ], [ &#x27;a&#x27;, &#x27;&quot;b\nb&#x27;, &#x27;a&#x27; ] ]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.33"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.33</span> - -->repeat(n)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns a string repeated <code>n</code> times.</p>
+<p>Alias: <code>times()</code></p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">' '</span>).repeat(<span class="number">5</span>).s; <span class="comment">//'     '</span>
+S(<span class="string">'*'</span>).repeat(<span class="number">3</span>).s; <span class="comment">//'***'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns a string repeated &lt;code&gt;n&lt;/code&gt; times.&lt;/p&gt;
+&lt;p&gt;Alias: &lt;code&gt;times()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27; &#x27;&lt;/span&gt;).repeat(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;     &#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;*&#x27;&lt;/span&gt;).repeat(&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;***&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.34"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.34</span> - -->replaceAll(ss, newstr)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return the new string with all occurrences of <code>ss</code> replaced with <code>newstr</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">' does IT work? '</span>).replaceAll(<span class="string">' '</span>, <span class="string">'_'</span>).s; <span class="comment">//'_does_IT_work?_'</span>
+S(<span class="string">'Yes it does!'</span>).replaceAll(<span class="string">' '</span>, <span class="string">''</span>).s; <span class="comment">//'Yesitdoes!'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return the new string with all occurrences of &lt;code&gt;ss&lt;/code&gt; replaced with &lt;code&gt;newstr&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27; does IT work? &#x27;&lt;/span&gt;).replaceAll(&lt;span class=&quot;string&quot;&gt;&#x27; &#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;_&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;_does_IT_work?_&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Yes it does!&#x27;&lt;/span&gt;).replaceAll(&lt;span class=&quot;string&quot;&gt;&#x27; &#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;Yesitdoes!&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.35"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.35</span> - -->strip([string1],[string2],...)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns a new string with all occurrences of <code>[string1],[string2],...</code> removed.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">' 1 2 3--__--4 5 6-7__8__9--0'</span>).strip(<span class="string">' '</span>, <span class="string">'_'</span>, <span class="string">'-'</span>).s; <span class="comment">//'1234567890'</span>
+S(<span class="string">'can words also be stripped out?'</span>).strip(<span class="string">'words'</span>, <span class="string">'also'</span>, <span class="string">'be'</span>).s; <span class="comment">//'can    stripped out?'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns a new string with all occurrences of &lt;code&gt;[string1],[string2],...&lt;/code&gt; removed.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27; 1 2 3--__--4 5 6-7__8__9--0&#x27;&lt;/span&gt;).strip(&lt;span class=&quot;string&quot;&gt;&#x27; &#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;_&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;-&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;1234567890&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;can words also be stripped out?&#x27;&lt;/span&gt;).strip(&lt;span class=&quot;string&quot;&gt;&#x27;words&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;also&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;be&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;can    stripped out?&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.36"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.36</span> - -->restorePrototype()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Restore the original String prototype. Typically used in conjunction with <code>extendPrototype()</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S.restorePrototype();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Restore the original String prototype. Typically used in conjunction with &lt;code&gt;extendPrototype()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S.restorePrototype();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.37"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.37</span> - -->right(n)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return the substring denoted by <code>n</code> positive right-most characters.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'I AM CRAZY'</span>).right(<span class="number">2</span>).s; <span class="comment">//'ZY'</span>
+S(<span class="string">'Does it work?  '</span>).right(<span class="number">4</span>).s; <span class="comment">//'k?  '</span>
+S(<span class="string">'Hi'</span>).right(<span class="number">0</span>).s; <span class="comment">//''</span>
+S(<span class="string">'My name is JP'</span>).right(-<span class="number">2</span>).s; <span class="comment">//'My', same as left(2)</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return the substring denoted by &lt;code&gt;n&lt;/code&gt; positive right-most characters.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;I AM CRAZY&#x27;&lt;/span&gt;).right(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;ZY&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Does it work?  &#x27;&lt;/span&gt;).right(&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;k?  &#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Hi&#x27;&lt;/span&gt;).right(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;My name is JP&#x27;&lt;/span&gt;).right(-&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//&#x27;My&#x27;, same as left(2)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.38"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.38</span> - -->s</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Alias: <code>toString()</code></p>
+<p>The encapsulated native string representation of an <code>S</code> object.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'my name is JP.'</span>).capitalize().s; <span class="comment">//My name is JP.</span>
+<span class="keyword">var</span> a = <span class="string">"Hello "</span> + S(<span class="string">'joe!'</span>); <span class="comment">//a = "Hello joe!"</span>
+S(<span class="string">"Hello"</span>).toString() === S(<span class="string">"Hello"</span>).s; <span class="comment">//true</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Alias: &lt;code&gt;toString()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The encapsulated native string representation of an &lt;code&gt;S&lt;/code&gt; object.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;my name is JP.&#x27;&lt;/span&gt;).capitalize().s; &lt;span class=&quot;comment&quot;&gt;//My name is JP.&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; a = &lt;span class=&quot;string&quot;&gt;&quot;Hello &quot;&lt;/span&gt; + S(&lt;span class=&quot;string&quot;&gt;&#x27;joe!&#x27;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//a = &quot;Hello joe!&quot;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;Hello&quot;&lt;/span&gt;).toString() === S(&lt;span class=&quot;string&quot;&gt;&quot;Hello&quot;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.39"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.39</span> - -->setValue(value)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Sets the string to a <code>value</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript"><span class="keyword">var</span> myString = S(<span class="string">'War'</span>);
+myString.setValue(<span class="string">'Peace'</span>).s; <span class="comment">// 'Peace'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Sets the string to a &lt;code&gt;value&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; myString = S(&lt;span class=&quot;string&quot;&gt;&#x27;War&#x27;&lt;/span&gt;);
+myString.setValue(&lt;span class=&quot;string&quot;&gt;&#x27;Peace&#x27;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;// &#x27;Peace&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.40"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.40</span> - -->slugify()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Converts the text into a valid url slug. Removes accents from Latin characters.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'Global Thermonuclear Warfare'</span>).slugify().s <span class="comment">// 'global-thermonuclear-warfare'</span>
+S(<span class="string">'Crème brûlée'</span>).slugify().s <span class="comment">// 'creme-brulee'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Converts the text into a valid url slug. Removes accents from Latin characters.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;Global Thermonuclear Warfare&#x27;&lt;/span&gt;).slugify().s &lt;span class=&quot;comment&quot;&gt;// &#x27;global-thermonuclear-warfare&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Crème brûlée&#x27;&lt;/span&gt;).slugify().s &lt;span class=&quot;comment&quot;&gt;// &#x27;creme-brulee&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.41"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.41</span> - -->startsWith(prefix)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return true if the string starts with <code>prefix</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">"JP is a software engineer"</span>).startsWith(<span class="string">"JP"</span>); <span class="comment">//true</span>
+S(<span class="string">'wants to change the world'</span>).startsWith(<span class="string">"politicians"</span>); <span class="comment">//false</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return true if the string starts with &lt;code&gt;prefix&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&quot;JP is a software engineer&quot;&lt;/span&gt;).startsWith(&lt;span class=&quot;string&quot;&gt;&quot;JP&quot;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;wants to change the world&#x27;&lt;/span&gt;).startsWith(&lt;span class=&quot;string&quot;&gt;&quot;politicians&quot;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.42"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.42</span> - -->stripPunctuation()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Strip all of the punctuation.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'My, st[ring] *full* of %punct)'</span>).stripPunctuation().s; <span class="comment">//My string full of punct</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Strip all of the punctuation.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;My, st[ring] *full* of %punct)&#x27;&lt;/span&gt;).stripPunctuation().s; &lt;span class=&quot;comment&quot;&gt;//My string full of punct&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.43"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.43</span> - -->stripTags([tag1],[tag2],...)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Strip all of the HTML tags or tags specified by the parameters.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'&lt;p&gt;just &lt;b&gt;some&lt;/b&gt; text&lt;/p&gt;'</span>).stripTags().s <span class="comment">//'just some text'</span>
+S(<span class="string">'&lt;p&gt;just &lt;b&gt;some&lt;/b&gt; text&lt;/p&gt;'</span>).stripTags(<span class="string">'p'</span>).s <span class="comment">//'just &lt;b&gt;some&lt;/b&gt; text'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Strip all of the HTML tags or tags specified by the parameters.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;p&amp;gt;just &amp;lt;b&amp;gt;some&amp;lt;/b&amp;gt; text&amp;lt;/p&amp;gt;&#x27;&lt;/span&gt;).stripTags().s &lt;span class=&quot;comment&quot;&gt;//&#x27;just some text&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;lt;p&amp;gt;just &amp;lt;b&amp;gt;some&amp;lt;/b&amp;gt; text&amp;lt;/p&amp;gt;&#x27;&lt;/span&gt;).stripTags(&lt;span class=&quot;string&quot;&gt;&#x27;p&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;just &amp;lt;b&amp;gt;some&amp;lt;/b&amp;gt; text&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.44"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.44</span> - -->template(values, [open], [close])</h2>
+      
+		
+        <div class="kss-box"><p>str = <span class="string">&quot;Hello #{name}! How are you doing during the year of #{date-year}?&quot;</span>
+console.<span class="command">log</span>(S(str).template(values, &#39;<span class="comment">#{&#39;, &#39;}&#39;).s) //&#39;Hello JP! How are you doing during the year of 2013?&#39;</span></p>
+<p>S.TMPL_OPEN = &#39;{&#39;
+S.TMPL_CLOSE = &#39;}&#39;
+str = <span class="string">&quot;Hello {name}! How are you doing during the year of {date-year}?&quot;</span>
+console.<span class="command">log</span>(S(str).template(values).s) //&#39;Hello JP! How are you doing during <span class="keyword">the</span> <span class="property">year</span> <span class="keyword">of</span> <span class="number">2013</span>?&#39;</code></pre></p>
+</div>
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Takes a string and interpolates the values. Defaults to <code>{{</code> and <code>}}</code> for Mustache compatible templates. However, you can change this default by modifying <code>S.TMPL_OPEN</code> and <code>S.TMPL_CLOSE</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-js">var str = <span class="string">"Hello {{name}}! How are you doing during the year of {{date-year}}?"</span>
+var values = {<span class="property">name</span>: 'JP', '<span class="type">date</span>-<span class="property">year</span>': <span class="number">2013</span>}
+console.<span class="command">log</span>(S(str).template(values).s) //'Hello JP! How are you doing during <span class="keyword">the</span> <span class="property">year</span> <span class="keyword">of</span> <span class="number">2013</span>?'</td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Takes a string and interpolates the values. Defaults to &lt;code&gt;{{&lt;/code&gt; and &lt;code&gt;}}&lt;/code&gt; for Mustache compatible templates. However, you can change this default by modifying &lt;code&gt;S.TMPL_OPEN&lt;/code&gt; and &lt;code&gt;S.TMPL_CLOSE&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-js&quot;&gt;var str = &lt;span class=&quot;string&quot;&gt;&quot;Hello {{name}}! How are you doing during the year of {{date-year}}?&quot;&lt;/span&gt;
+var values = {&lt;span class=&quot;property&quot;&gt;name&lt;/span&gt;: &#x27;JP&#x27;, &#x27;&lt;span class=&quot;type&quot;&gt;date&lt;/span&gt;-&lt;span class=&quot;property&quot;&gt;year&lt;/span&gt;&#x27;: &lt;span class=&quot;number&quot;&gt;2013&lt;/span&gt;}
+console.&lt;span class=&quot;command&quot;&gt;log&lt;/span&gt;(S(str).template(values).s) //&#x27;Hello JP! How are you doing during &lt;span class=&quot;keyword&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;property&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;2013&lt;/span&gt;?&#x27;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.45"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.45</span> - -->times(n)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns a string repeated <code>n</code> times.</p>
+<p>Alias: <code>repeat()</code></p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">' '</span>).times(<span class="number">5</span>).s <span class="comment">//'     '</span>
+S(<span class="string">'*'</span>).times(<span class="number">3</span>).s <span class="comment">//'***'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns a string repeated &lt;code&gt;n&lt;/code&gt; times.&lt;/p&gt;
+&lt;p&gt;Alias: &lt;code&gt;repeat()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27; &#x27;&lt;/span&gt;).times(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;     &#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;*&#x27;&lt;/span&gt;).times(&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;***&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.46"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.46</span> - -->toBoolean() / toBool()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Converts a a logical truth string to boolean. That is: <code>true</code>, <code>1</code>, <code>'true'</code>, <code>'on'</code>, or <code>'yes'</code>.</p>
+<p>JavaScript Note: You can easily convert truthy values to <code>booleans</code> by prefixing them with <code>!!</code>. e.g.
+<code>!!'hi' === true</code> or <code>!!'' === false</code> or <code>!!{} === true</code>.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'true'</span>).toBoolean() <span class="comment">//true</span>
+S(<span class="string">'false'</span>).toBoolean() <span class="comment">//false</span>
+S(<span class="string">'hello'</span>).toBoolean() <span class="comment">//false</span>
+S(<span class="literal">true</span>).toBoolean() <span class="comment">//true</span>
+S(<span class="string">'on'</span>).toBoolean() <span class="comment">//true</span>
+S(<span class="string">'yes'</span>).toBoolean() <span class="comment">//true</span>
+S(<span class="string">'TRUE'</span>).toBoolean() <span class="comment">//true</span>
+S(<span class="string">'TrUe'</span>).toBoolean() <span class="comment">//true</span>
+S(<span class="string">'YES'</span>).toBoolean() <span class="comment">//true</span>
+S(<span class="string">'ON'</span>).toBoolean() <span class="comment">//true</span>
+S(<span class="string">''</span>).toBoolean() <span class="comment">//false</span>
+S(<span class="literal">undefined</span>).toBoolean() <span class="comment">//false</span>
+S(<span class="string">'undefined'</span>).toBoolean() <span class="comment">//false</span>
+S(<span class="literal">null</span>).toBoolean() <span class="comment">//false</span>
+S(<span class="literal">false</span>).toBoolean() <span class="comment">//false</span>
+S({}).toBoolean() <span class="comment">//false</span>
+S(<span class="number">1</span>).toBoolean() <span class="comment">//true</span>
+S(-<span class="number">1</span>).toBoolean() <span class="comment">//false</span>
+S(<span class="number">0</span>).toBoolean() <span class="comment">//false</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Converts a a logical truth string to boolean. That is: &lt;code&gt;true&lt;/code&gt;, &lt;code&gt;1&lt;/code&gt;, &lt;code&gt;&#x27;true&#x27;&lt;/code&gt;, &lt;code&gt;&#x27;on&#x27;&lt;/code&gt;, or &lt;code&gt;&#x27;yes&#x27;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;JavaScript Note: You can easily convert truthy values to &lt;code&gt;booleans&lt;/code&gt; by prefixing them with &lt;code&gt;!!&lt;/code&gt;. e.g.
+&lt;code&gt;!!&#x27;hi&#x27; === true&lt;/code&gt; or &lt;code&gt;!!&#x27;&#x27; === false&lt;/code&gt; or &lt;code&gt;!!{} === true&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;true&#x27;&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;false&#x27;&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;hello&#x27;&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;on&#x27;&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;yes&#x27;&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;TRUE&#x27;&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;TrUe&#x27;&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;YES&#x27;&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;ON&#x27;&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;&#x27;&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;undefined&#x27;&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S({}).toBoolean() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;
+S(-&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;
+S(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;).toBoolean() &lt;span class=&quot;comment&quot;&gt;//false&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.47"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.47</span> - -->toCSV(options)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Converts an array or object to a CSV line.</p>
+<p>You can either optionally pass in two string arguments or pass in a configuration object.</p>
+<p><strong>String Arguments:</strong></p>
+<ul>
+<li><code>delimiter</code>: The character that is separates or delimits fields. Default: <code>,</code></li>
+<li><code>qualifier</code>: The character that encloses fields. Default: <code>"</code></li>
+</ul>
+<p><strong>Object Configuration:</strong></p>
+<ul>
+<li><code>delimiter</code>: The character that is separates or delimits fields. Default: <code>,</code></li>
+<li><code>qualifier</code>: The character that encloses fields. Default: <code>"</code></li>
+<li><code>escape</code>: The character that escapes any incline <code>qualifier</code> characters. Default: <code>\</code>, in JS this is <code>\\</code></li>
+<li><code>encloseNumbers</code>: Enclose number objects with the <code>qualifier</code> chracter. Default: <code>true</code></li>
+<li><code>keys</code>: If the input isn't an array, but an object, then if this is set to true, the keys will be output to the CSV line, otherwise it's the object's values. Default: <code>false</code>.</li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-javascript">S([<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]).toCSV().s <span class="comment">//'"a","b","c"'</span>
+S([<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]).toCSV(<span class="string">':'</span>).s <span class="comment">//'"a":"b":"c"'</span>
+S([<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]).toCSV(<span class="string">':'</span>, <span class="literal">null</span>).s <span class="comment">//'a:b:c')</span>
+S([<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]).toCSV(<span class="string">'*'</span>, <span class="string">"'"</span>).s <span class="comment">//"'a'*'b'*'c'"</span>
+S([<span class="string">'a"'</span>, <span class="string">'b'</span>, <span class="number">4</span>, <span class="string">'c'</span>]).toCSV({delimiter: <span class="string">','</span>, qualifier: <span class="string">'"'</span>, escape: <span class="string">'\\'</span>,  encloseNumbers: <span class="literal">false</span>}).s <span class="comment">//'"a\\"","b",4,"c"'</span>
+S({firstName: <span class="string">'JP'</span>, lastName: <span class="string">'Richardson'</span>}).toCSV({keys: <span class="literal">true</span>}).s <span class="comment">//'"firstName","lastName"'</span>
+S({firstName: <span class="string">'JP'</span>, lastName: <span class="string">'Richardson'</span>}).toCSV().s <span class="comment">//'"JP","Richardson"'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Converts an array or object to a CSV line.&lt;/p&gt;
+&lt;p&gt;You can either optionally pass in two string arguments or pass in a configuration object.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;String Arguments:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;delimiter&lt;/code&gt;: The character that is separates or delimits fields. Default: &lt;code&gt;,&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;qualifier&lt;/code&gt;: The character that encloses fields. Default: &lt;code&gt;&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Object Configuration:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;delimiter&lt;/code&gt;: The character that is separates or delimits fields. Default: &lt;code&gt;,&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;qualifier&lt;/code&gt;: The character that encloses fields. Default: &lt;code&gt;&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;escape&lt;/code&gt;: The character that escapes any incline &lt;code&gt;qualifier&lt;/code&gt; characters. Default: &lt;code&gt;\&lt;/code&gt;, in JS this is &lt;code&gt;\\&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;encloseNumbers&lt;/code&gt;: Enclose number objects with the &lt;code&gt;qualifier&lt;/code&gt; chracter. Default: &lt;code&gt;true&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;keys&lt;/code&gt;: If the input isn&#x27;t an array, but an object, then if this is set to true, the keys will be output to the CSV line, otherwise it&#x27;s the object&#x27;s values. Default: &lt;code&gt;false&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S([&lt;span class=&quot;string&quot;&gt;&#x27;a&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;b&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;c&#x27;&lt;/span&gt;]).toCSV().s &lt;span class=&quot;comment&quot;&gt;//&#x27;&quot;a&quot;,&quot;b&quot;,&quot;c&quot;&#x27;&lt;/span&gt;
+S([&lt;span class=&quot;string&quot;&gt;&#x27;a&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;b&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;c&#x27;&lt;/span&gt;]).toCSV(&lt;span class=&quot;string&quot;&gt;&#x27;:&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;&quot;a&quot;:&quot;b&quot;:&quot;c&quot;&#x27;&lt;/span&gt;
+S([&lt;span class=&quot;string&quot;&gt;&#x27;a&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;b&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;c&#x27;&lt;/span&gt;]).toCSV(&lt;span class=&quot;string&quot;&gt;&#x27;:&#x27;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;a:b:c&#x27;)&lt;/span&gt;
+S([&lt;span class=&quot;string&quot;&gt;&#x27;a&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;b&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;c&#x27;&lt;/span&gt;]).toCSV(&lt;span class=&quot;string&quot;&gt;&#x27;*&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;&#x27;&quot;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&quot;&#x27;a&#x27;*&#x27;b&#x27;*&#x27;c&#x27;&quot;&lt;/span&gt;
+S([&lt;span class=&quot;string&quot;&gt;&#x27;a&quot;&#x27;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;b&#x27;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27;c&#x27;&lt;/span&gt;]).toCSV({delimiter: &lt;span class=&quot;string&quot;&gt;&#x27;,&#x27;&lt;/span&gt;, qualifier: &lt;span class=&quot;string&quot;&gt;&#x27;&quot;&#x27;&lt;/span&gt;, escape: &lt;span class=&quot;string&quot;&gt;&#x27;\\&#x27;&lt;/span&gt;,  encloseNumbers: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;}).s &lt;span class=&quot;comment&quot;&gt;//&#x27;&quot;a\\&quot;&quot;,&quot;b&quot;,4,&quot;c&quot;&#x27;&lt;/span&gt;
+S({firstName: &lt;span class=&quot;string&quot;&gt;&#x27;JP&#x27;&lt;/span&gt;, lastName: &lt;span class=&quot;string&quot;&gt;&#x27;Richardson&#x27;&lt;/span&gt;}).toCSV({keys: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;}).s &lt;span class=&quot;comment&quot;&gt;//&#x27;&quot;firstName&quot;,&quot;lastName&quot;&#x27;&lt;/span&gt;
+S({firstName: &lt;span class=&quot;string&quot;&gt;&#x27;JP&#x27;&lt;/span&gt;, lastName: &lt;span class=&quot;string&quot;&gt;&#x27;Richardson&#x27;&lt;/span&gt;}).toCSV().s &lt;span class=&quot;comment&quot;&gt;//&#x27;&quot;JP&quot;,&quot;Richardson&quot;&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.48"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.48</span> - -->toFloat([precision])</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return the float value, wraps parseFloat.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'5'</span>).toFloat() <span class="comment">// 5</span>
+S(<span class="string">'5.3'</span>).toFloat()  <span class="comment">//5.3</span>
+S(<span class="number">5.3</span>).toFloat()  <span class="comment">//5.3</span>
+S(<span class="string">'-10'</span>).toFloat()  <span class="comment">//-10</span>
+S(<span class="string">'55.3 adfafaf'</span>).toFloat() <span class="comment">// 55.3</span>
+S(<span class="string">'afff 44'</span>).toFloat()  <span class="comment">//NaN</span>
+S(<span class="number">3.45522222333232</span>).toFloat(<span class="number">2</span>) <span class="comment">// 3.46</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return the float value, wraps parseFloat.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;5&#x27;&lt;/span&gt;).toFloat() &lt;span class=&quot;comment&quot;&gt;// 5&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;5.3&#x27;&lt;/span&gt;).toFloat()  &lt;span class=&quot;comment&quot;&gt;//5.3&lt;/span&gt;
+S(&lt;span class=&quot;number&quot;&gt;5.3&lt;/span&gt;).toFloat()  &lt;span class=&quot;comment&quot;&gt;//5.3&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;-10&#x27;&lt;/span&gt;).toFloat()  &lt;span class=&quot;comment&quot;&gt;//-10&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;55.3 adfafaf&#x27;&lt;/span&gt;).toFloat() &lt;span class=&quot;comment&quot;&gt;// 55.3&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;afff 44&#x27;&lt;/span&gt;).toFloat()  &lt;span class=&quot;comment&quot;&gt;//NaN&lt;/span&gt;
+S(&lt;span class=&quot;number&quot;&gt;3.45522222333232&lt;/span&gt;).toFloat(&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;// 3.46&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.49"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.49</span> - -->toInt() / toInteger()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return the number value in integer form. Wrapper for <code>parseInt()</code>. Can also parse hex values.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'5'</span>).toInt(); <span class="comment">//5</span>
+S(<span class="string">'5.3'</span>).toInt(); <span class="comment">//5;</span>
+S(<span class="number">5.3</span>).toInt(); <span class="comment">//5;</span>
+S(<span class="string">'-10'</span>).toInt(); <span class="comment">//-10</span>
+S(<span class="string">'55 adfafaf'</span>).toInt(); <span class="comment">//55</span>
+S(<span class="string">'afff 44'</span>).toInt(); <span class="comment">//NaN</span>
+S(<span class="string">'0xff'</span>).toInt() <span class="comment">//255</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return the number value in integer form. Wrapper for &lt;code&gt;parseInt()&lt;/code&gt;. Can also parse hex values.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;5&#x27;&lt;/span&gt;).toInt(); &lt;span class=&quot;comment&quot;&gt;//5&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;5.3&#x27;&lt;/span&gt;).toInt(); &lt;span class=&quot;comment&quot;&gt;//5;&lt;/span&gt;
+S(&lt;span class=&quot;number&quot;&gt;5.3&lt;/span&gt;).toInt(); &lt;span class=&quot;comment&quot;&gt;//5;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;-10&#x27;&lt;/span&gt;).toInt(); &lt;span class=&quot;comment&quot;&gt;//-10&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;55 adfafaf&#x27;&lt;/span&gt;).toInt(); &lt;span class=&quot;comment&quot;&gt;//55&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;afff 44&#x27;&lt;/span&gt;).toInt(); &lt;span class=&quot;comment&quot;&gt;//NaN&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;0xff&#x27;&lt;/span&gt;).toInt() &lt;span class=&quot;comment&quot;&gt;//255&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.50"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.50</span> - -->toString()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Alias: <code>s</code></p>
+<p>Return the string representation of an <code>S</code> object. Not really necessary to use. However, JS engines will look at an object and display its <code>toString()</code> result.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'my name is JP.'</span>).capitalize().toString(); <span class="comment">//My name is JP.</span>
+<span class="keyword">var</span> a = <span class="string">"Hello "</span> + S(<span class="string">'joe!'</span>); <span class="comment">//a = "Hello joe!"</span>
+S(<span class="string">"Hello"</span>).toString() === S(<span class="string">"Hello"</span>).s; <span class="comment">//true</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Alias: &lt;code&gt;s&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Return the string representation of an &lt;code&gt;S&lt;/code&gt; object. Not really necessary to use. However, JS engines will look at an object and display its &lt;code&gt;toString()&lt;/code&gt; result.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;my name is JP.&#x27;&lt;/span&gt;).capitalize().toString(); &lt;span class=&quot;comment&quot;&gt;//My name is JP.&lt;/span&gt;
+&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; a = &lt;span class=&quot;string&quot;&gt;&quot;Hello &quot;&lt;/span&gt; + S(&lt;span class=&quot;string&quot;&gt;&#x27;joe!&#x27;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//a = &quot;Hello joe!&quot;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&quot;Hello&quot;&lt;/span&gt;).toString() === S(&lt;span class=&quot;string&quot;&gt;&quot;Hello&quot;&lt;/span&gt;).s; &lt;span class=&quot;comment&quot;&gt;//true&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.51"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.51</span> - -->trim()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return the string with leading and trailing whitespace removed. Reverts to native <code>trim()</code> if it exists.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'hello '</span>).trim().s; <span class="comment">//'hello'</span>
+S(<span class="string">' hello '</span>).trim().s; <span class="comment">//'hello'</span>
+S(<span class="string">'\nhello'</span>).trim().s; <span class="comment">//'hello'</span>
+S(<span class="string">'\nhello\r\n'</span>).trim().s; <span class="comment">//'hello'</span>
+S(<span class="string">'\thello\t'</span>).trim().s; <span class="comment">//'hello'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return the string with leading and trailing whitespace removed. Reverts to native &lt;code&gt;trim()&lt;/code&gt; if it exists.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;hello &#x27;&lt;/span&gt;).trim().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;hello&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27; hello &#x27;&lt;/span&gt;).trim().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;hello&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;\nhello&#x27;&lt;/span&gt;).trim().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;hello&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;\nhello\r\n&#x27;&lt;/span&gt;).trim().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;hello&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;\thello\t&#x27;&lt;/span&gt;).trim().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;hello&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.52"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.52</span> - -->trimLeft()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return the string with leading and whitespace removed</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'  How are you?'</span>).trimLeft().s; <span class="comment">//'How are you?';</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return the string with leading and whitespace removed&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;  How are you?&#x27;&lt;/span&gt;).trimLeft().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;How are you?&#x27;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.53"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.53</span> - -->trimRight()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return the string with trailing whitespace removed.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'How are you?   '</span>).trimRight().s; <span class="comment">//'How are you?';</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return the string with trailing whitespace removed.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;How are you?   &#x27;&lt;/span&gt;).trimRight().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;How are you?&#x27;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.54"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.54</span> - -->truncate(length, [chars])</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Truncates the string, accounting for word placement and character count.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'this is some long text'</span>).truncate(<span class="number">3</span>).s <span class="comment">//'...'</span>
+S(<span class="string">'this is some long text'</span>).truncate(<span class="number">7</span>).s <span class="comment">//'this is...'</span>
+S(<span class="string">'this is some long text'</span>).truncate(<span class="number">11</span>).s <span class="comment">//'this is...'</span>
+S(<span class="string">'this is some long text'</span>).truncate(<span class="number">12</span>).s <span class="comment">//'this is some...'</span>
+S(<span class="string">'this is some long text'</span>).truncate(<span class="number">11</span>).s <span class="comment">//'this is...'</span>
+S(<span class="string">'this is some long text'</span>).truncate(<span class="number">14</span>, <span class="string">' read more'</span>).s <span class="comment">//'this is some read more'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Truncates the string, accounting for word placement and character count.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;this is some long text&#x27;&lt;/span&gt;).truncate(&lt;span class=&quot;number&quot;&gt;3&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;...&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;this is some long text&#x27;&lt;/span&gt;).truncate(&lt;span class=&quot;number&quot;&gt;7&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;this is...&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;this is some long text&#x27;&lt;/span&gt;).truncate(&lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;this is...&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;this is some long text&#x27;&lt;/span&gt;).truncate(&lt;span class=&quot;number&quot;&gt;12&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;this is some...&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;this is some long text&#x27;&lt;/span&gt;).truncate(&lt;span class=&quot;number&quot;&gt;11&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;this is...&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;this is some long text&#x27;&lt;/span&gt;).truncate(&lt;span class=&quot;number&quot;&gt;14&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#x27; read more&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&#x27;this is some read more&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.55"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.55</span> - -->underscore()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns converted camel cased string into a string delimited by underscores.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'dataRate'</span>).underscore().s; <span class="comment">//'data_rate'</span>
+S(<span class="string">'CarSpeed'</span>).underscore().s; <span class="comment">//'_car_speed'</span>
+S(<span class="string">'yesWeCan'</span>).underscore().s; <span class="comment">//'yes_we_can'</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns converted camel cased string into a string delimited by underscores.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;dataRate&#x27;&lt;/span&gt;).underscore().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;data_rate&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;CarSpeed&#x27;&lt;/span&gt;).underscore().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;_car_speed&#x27;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;yesWeCan&#x27;&lt;/span&gt;).underscore().s; &lt;span class=&quot;comment&quot;&gt;//&#x27;yes_we_can&#x27;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.56"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.56</span> - -->unescapeHTML()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Unescapes the html.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'&amp;lt;div&amp;gt;hi&amp;lt;/div&amp;gt;'</span>).unescapeHTML().s; <span class="comment">//&lt;div&gt;hi&lt;/div&gt;</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Unescapes the html.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;&amp;amp;lt;div&amp;amp;gt;hi&amp;amp;lt;/div&amp;amp;gt;&#x27;&lt;/span&gt;).unescapeHTML().s; &lt;span class=&quot;comment&quot;&gt;//&amp;lt;div&amp;gt;hi&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="1.57"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">1.57</span> - -->wrapHTML()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>wrapHTML helps to avoid concatenation of element with string.
+the string will be wrapped with HTML Element and their attributes.</p>
+<p>Example:</p>
+<pre><code class="lang-javascript">S(<span class="string">'Venkat'</span>).wrapHTML().s <span class="comment">//&lt;span&gt;Venkat&lt;/span&gt;</span>
+S(<span class="string">'Venkat'</span>).wrapHTML(<span class="string">'div'</span>).s <span class="comment">//&lt;div&gt;Venkat&lt;/div&gt;</span>
+S(<span class="string">'Venkat'</span>).wrapHTML(<span class="string">'div'</span>, {
+<span class="string">"class"</span>: <span class="string">"left bullet"</span>
+}).s <span class="comment">//&lt;div class="left bullet"&gt;Venkat&lt;/div&gt;</span>
+S(<span class="string">'Venkat'</span>).wrapHTML(<span class="string">'div'</span>, {
+<span class="string">"id"</span>: <span class="string">"content"</span>,
+<span class="string">"class"</span>: <span class="string">"left bullet"</span>
+}).s <span class="comment">// &lt;div id="content" class="left bullet"&gt;Venkat&lt;/div&gt;</span></code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;wrapHTML helps to avoid concatenation of element with string.
+the string will be wrapped with HTML Element and their attributes.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;lang-javascript&quot;&gt;S(&lt;span class=&quot;string&quot;&gt;&#x27;Venkat&#x27;&lt;/span&gt;).wrapHTML().s &lt;span class=&quot;comment&quot;&gt;//&amp;lt;span&amp;gt;Venkat&amp;lt;/span&amp;gt;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Venkat&#x27;&lt;/span&gt;).wrapHTML(&lt;span class=&quot;string&quot;&gt;&#x27;div&#x27;&lt;/span&gt;).s &lt;span class=&quot;comment&quot;&gt;//&amp;lt;div&amp;gt;Venkat&amp;lt;/div&amp;gt;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Venkat&#x27;&lt;/span&gt;).wrapHTML(&lt;span class=&quot;string&quot;&gt;&#x27;div&#x27;&lt;/span&gt;, {
+&lt;span class=&quot;string&quot;&gt;&quot;class&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;left bullet&quot;&lt;/span&gt;
+}).s &lt;span class=&quot;comment&quot;&gt;//&amp;lt;div class=&quot;left bullet&quot;&amp;gt;Venkat&amp;lt;/div&amp;gt;&lt;/span&gt;
+S(&lt;span class=&quot;string&quot;&gt;&#x27;Venkat&#x27;&lt;/span&gt;).wrapHTML(&lt;span class=&quot;string&quot;&gt;&#x27;div&#x27;&lt;/span&gt;, {
+&lt;span class=&quot;string&quot;&gt;&quot;id&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;content&quot;&lt;/span&gt;,
+&lt;span class=&quot;string&quot;&gt;&quot;class&quot;&lt;/span&gt;: &lt;span class=&quot;string&quot;&gt;&quot;left bullet&quot;&lt;/span&gt;
+}).s &lt;span class=&quot;comment&quot;&gt;// &amp;lt;div id=&quot;content&quot; class=&quot;left bullet&quot;&amp;gt;Venkat&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+  </article>
+</div>
+
+<a href="#" class="scrolltop" data-scrolltop="true" title="Scroll to top"><i class="fa fa-angle-up"></i></a>
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/cnsiJS.js"></script>
+<script src="assets/js/cnsiutils.js"></script>
+<script src="assets/js/cnsi-plugins.js"></script>
+<script src="assets/js/listSearch.js"></script>
+<script src="assets/js/cnsicoreui.js"></script>
+<script src="assets/js/cnsi-custom.js"></script>
+
+<script>
+  $(document).ready(function(){
+    var sidebarAdjust = function() {
+      // Match footer/body height
+      var height = Math.max($('#kss-nav').height(), $('#kss-main').height());
+      var winHeight = $(window).height();
+      if(height < winHeight) {
+      	height = winHeight;
+      }
+
+      if ($(window).width() <= 768) {
+        $('#kss-main, #kss-nav').height('auto');
+      } else {
+        $('#kss-main, #kss-nav').height(height);
+      }
+    };
+
+    $(window).resize(sidebarAdjust);
+    $(window).scroll(sidebarAdjust);
+    sidebarAdjust();
+
+    // Ensure code blocks are highlighted properly...
+    $('pre>code').addClass('prettyprint');
+    prettyPrint();
+  });
+</script>
+
+
+</div></body>
+</html>

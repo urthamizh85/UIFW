@@ -1,0 +1,114 @@
+.navbar-inverse {
+  .navbar-brand {
+    color:$navbar-inverse-text;
+  }
+  .navbar-nav {
+   > li {
+      border-left:1px solid $navbar-nav-left-border;
+     > a {
+        color:$navbar-inverse-text;
+        &:hover {
+          background:$navbar-nav-active-bg;
+        }
+        &.logout-area {
+          background:$logout-area-bg;          
+          &:hover {
+            background:$logout-area-bg;
+          }
+        }        
+        &.login-area {
+          cursor:pointer;
+          .avatar {
+            width:$avatar-size;
+            height:$avatar-size;
+            float:left;
+            display:inline-block;
+            background:$avatar-bg;
+            border:1px solid $avatar-border;
+            margin-right:5px;
+            border-radius: $avatar-radius;
+            color:$avatar-text;
+            text-align:center;
+            line-height:$avatar-size+-2;
+          }
+          .profile-text {
+            display:inline-block;
+            width:auto;
+          }
+          h1,h2,h3,h4,h5,h6 {
+            margin:0;
+            font-size:13px;
+          }
+        }        
+      }
+      &.open,{
+        > a {
+          background:$navbar-nav-active-bg;
+          position:relative;
+          &:hover, &:focus {
+            background:$navbar-nav-active-bg;
+          }
+        }
+      }
+    }    
+  }
+  .right-nav-btn, .logout-btn {
+    background:$navbar-inverse-bg;
+    border:0;
+    color:$rightnav-btn-text;
+    padding:12px 15px;
+    top:0;
+    right:0;
+  }
+  .right-nav-btn {
+    &:hover,&:focus,&:active {
+      background:$navbar-nav-active-bg;
+    }
+  }
+  .logout-btn {
+    background:$rightnav-btn-bg;
+    &:hover {
+      background:$rightnav-btn-bg;
+    }
+  }
+  .navbar-toggle {
+    border-color:$navbar-toggle-border;
+    background:$navbar-toggle-bg;
+    color:$navbar-toggle-text;
+    &:hover, &:focus {
+      background:$navbar-toggle-hover-bg;
+    }
+  }
+}
+.navbar {
+  .sidebar-collapse {
+    height: 50px;
+    right: -57px;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 35px;
+    z-index: 2;
+    &:hover {
+       @include box-shadow(0 0 20px rgba(0, 0, 0, 0.2));
+    }
+    .collapse-icon {
+      color: #ffffff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 18px;
+      line-height: 28px;
+      padding: 11px 5px;
+      position: relative;
+      @include transition(color 0.318s ease 0s);
+    }
+    &.active {
+      .collapse-icon {
+        @include box-shadow(0 0 20px rgba(0, 0, 0, 0.2));
+        font-size: 14px;
+        padding: 11px;
+      }
+    }
+  }
+}

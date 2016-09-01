@@ -1,0 +1,253 @@
+@import 'markdown';
+
+#kss-nav {
+	width:21%;
+	background-color:#343131;
+  color:#fff;
+	nav>ul {
+		padding:0;
+		margin:1em 0 2em;
+		list-style-type:none;
+		a {
+		  display:block;
+		  color:#d0cccc;
+		  padding:5px 2em;
+		  &:hover, &.active {
+		    color:#fafafa;
+		    background:#4e4a4a;
+		  }
+		}
+	}
+
+	box-shadow: inset -15px 0px 15px -15px rgba(45, 45, 45, 0.25);
+}
+
+#kss-header {
+  background:#2980b9;
+  .gradient(@startColor: #3ba7ed, @endColor: #2980b9);
+  border-bottom:1px solid #3ba7ed;
+  & > .search-doc-box {
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:20px;
+    margin:0 1.5em;
+    &>input[type="text"] {
+      color:#343131;
+      padding:3px 15px;
+      font-size:0.9em;
+      width:100%;
+      border:0;
+      .border-radius (30px);
+      &:focus {
+        .box-shadow (0 0px 10px rgba(0,0,0,0.4));
+      }
+    }
+  }
+}
+#kss-header h1 {
+  font-size:1.5em;
+  margin:0;
+}
+#kss-header > hgroup {
+  text-align:center;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+#kss-main, #kss-nav {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#kss-main {
+	padding-left:2.5%;
+	width:76.5%;
+	//max-width:48em;
+	left:21%;
+}
+
+.kss-mod-list {
+  width:100%;
+}
+
+.kss-mod-name {
+  text-align:right;
+  width:20%;
+  font-size:0.75em;
+}
+
+.kss-mod-example > td{
+  padding-bottom:20px;
+         
+         display:block;
+  &>td { display:block; }
+}
+
+.kss-markup {
+  margin-bottom:40px;
+}
+
+.kss-depth-1 > h1 { font-size: 2.5em * 0.950; }
+.kss-depth-2 > h1 { font-size: 2.5em * 0.900; }
+.kss-depth-3 > h1 { font-size: 2.5em * 0.850; }
+.kss-depth-4 > h1 { font-size: 2.5em * 0.800; }
+.kss-depth-5 > h1 { font-size: 2.5em * 0.750; }
+.kss-depth-6 > h1 { font-size: 2.5em * 0.700; }
+
+//leftnav
+.left-nav {
+  > ul > li {
+    > a {
+      font-weight:bold;
+    }
+    & > .submenu, ul.submenu {
+      margin:0;
+      padding:0;
+      font-size:95%;
+      list-style:none;
+      a {
+        padding-left:3.5em !important;
+      }
+    }
+  }
+  
+}
+.show-grid [class^="col-"] {
+    background-color: rgba(86, 61, 124, 0.15);
+    border: 1px solid rgba(86, 61, 124, 0.2);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.demo-sidebar {
+  & > .sidebar {
+    position:relative;
+    top:0;
+  }
+}
+.kss-main-title {
+  padding-bottom:15px;
+  border-bottom:1px dashed #e1e4e5;
+  color:#2980b9;
+}
+.bs-example {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-shadow: none;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    padding:45px 15px 15px;
+    &:after {
+      color: #959595;
+      content: "Example";
+      font-size: 12px;
+      font-weight: 700;
+      left: 15px;
+      letter-spacing: 1px;
+      position: absolute;
+      text-transform: uppercase;
+      top: 15px;
+    }
+}
+
+
+// ------------------------------------------------------------------------------
+//   @group prettyprint.js styling
+// ------------------------------------------------------------------------------
+/* Pretty printing styles. Used with prettify.js. */
+
+/* SPAN elements with the classes below are added by prettyprint. */
+.pln { color: #000 }  /* plain text */
+
+@media screen {
+  .str { color: #080 }  /* string content */
+  .kwd { color: #008 }  /* a keyword */
+  .com { color: #800 }  /* a comment */
+  .typ { color: #606 }  /* a type name */
+  .lit { color: #066 }  /* a literal value */
+  /* punctuation, lisp open bracket, lisp close bracket */
+  .pun, .opn, .clo { color: #660 }
+  .tag { color: #008 }  /* a markup tag name */
+  .atn { color: #606 }  /* a markup attribute name */
+  .atv { color: #080 }  /* a markup attribute value */
+  .dec, .var { color: #606 }  /* a declaration; a variable name */
+  .fun { color: red }  /* a function name */
+}
+
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  .str { color: #060 }
+  .kwd { color: #006; font-weight: bold }
+  .com { color: #600; font-style: italic }
+  .typ { color: #404; font-weight: bold }
+  .lit { color: #044 }
+  .pun, .opn, .clo { color: #440 }
+  .tag { color: #006; font-weight: bold }
+  .atn { color: #404 }
+  .atv { color: #060 }
+}
+
+/* Put a border around prettyprinted code snippets. */
+/*pre.prettyprint { padding: 2px; border: 1px solid #888 }*/
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 { background: #eee }
+
+// ------------------------------------------------------------------------------
+//   @group Mobile/Tablet Styling
+// ------------------------------------------------------------------------------
+@media screen and (max-width: 768px) {
+  #kss-main {
+    position:static;
+    width:90%;
+    margin:0 auto;
+    padding-left:0;
+  }
+
+  #kss-nav {
+    position:static;
+    display:block;
+    width:auto;
+    margin:0;
+    background:0;
+    box-shadow:none;
+    border-bottom:1px solid #ddd;
+    nav>ul {
+      margin-top:0.5em;
+      margin-bottom:0.5em;
+
+      &>li {
+        display:inline-block;
+        padding-right:1.5em;
+      }
+    }
+  }
+
+  #kss-header>hgroup>h1 {
+    margin-top:0;
+    margin-bottom:0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #kss-github {
+    display:none;
+  }
+}
+// @end

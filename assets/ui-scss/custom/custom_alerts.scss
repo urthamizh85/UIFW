@@ -1,0 +1,34 @@
+/* Alerts CSS Start */
+.alert {
+    border-radius: 0;
+    border-width: 0 0 0 5px;
+    color: $alert-text;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 10px;
+    .close {
+      color: $alert-close;
+      line-height: 16px;
+      right: -5px;
+      top: 0;
+    }
+    &.radius-bordered {
+      background-clip: padding-box;
+      border-radius: 3px;
+    }
+    &.alert-shadowed {
+      @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+    }
+    &.alert-heading {
+      font-weight: 600;
+    }
+    @each $class,$bg,$border,$text in $alertBg {
+      &.alert-#{$class} {
+        background:$bg;
+        border-color:$border;
+        color:$text;
+      }
+    }
+}
+/* Alerts CSS End */
+

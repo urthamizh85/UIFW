@@ -1,0 +1,87 @@
+.throbber-box {
+  background:$throbber-box-bg;
+  padding:20px 0;
+  position:fixed;
+  width:$throbber-box-width;
+  top:25%;
+  left:50%;
+  margin-left:-($throbber-box-width/2);
+  z-index:$throbber-box-zindex;
+  @include box-shadow(0px 4px 8px nth($rgba,4));
+  @include custom-border-radius(3px);
+}
+.throbber-text {
+  text-align:center;
+  margin-bottom:10px;
+}
+.throbber-alert {
+  text-align:center;
+  margin-top:20px;
+  padding: 15px 20px 0;
+  border-top: 1px solid #EEEEEE;
+}
+.throbber-alert-text {
+  display:block;
+}
+.throbber {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: $throbber-width;
+  height: $throbber-height;
+  background: $throbber-bg;
+  @include custom-border-radius(17px);
+  @include cust-gradient-vertical(#ebecef, #bfc3c7, 0%, 100%);
+  @include box-shadow(inset 0 1px nth($rgba-white,8),
+                      0 2px 4px nth($rgba,18),
+                      0 0 0 1px nth($rgba,2),
+                      0 0 0 3px #F0F4F8,
+                      0 4px nth($rgba-white,1));
+}
+.throbber-bar {
+  display: block;
+  overflow: hidden;
+  height: $throbber-bar-height;
+  margin: $throbber-bar-margin 0;
+  background: $throbber-bar-bg;
+  border-radius: 10px;
+  @include gradient-striped($color: nth($rgba-white,12), $angle: 45deg);
+  background-size:20px 20px;
+  //@include animation(2s linear 0s normal none infinite progress-bar-stripes);
+  //@include cust-gradient-vertical(nth($rgba,3), nth($rgba,1), 0%, 60%);
+  @include box-shadow(inset 0 1px 2px nth($rgba,3), 0 1px nth($rgba-white,6));
+}
+.throbber-in {
+  display: block;
+  min-width: $throbber-bar-height;
+  width:100%;
+  height: $throbber-bar-height;
+  background: $throbber-in-bg;  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjAxNEMzN0NFMjQwMTFFM0I0MEE4QzYxMTM3QUZFRDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjAxNEMzN0RFMjQwMTFFM0I0MEE4QzYxMTM3QUZFRDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2MDE0QzM3QUUyNDAxMUUzQjQwQThDNjExMzdBRkVENiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2MDE0QzM3QkUyNDAxMUUzQjQwQThDNjExMzdBRkVENiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PigIEdAAAAEiSURBVHjanNQxB0JRFAfw24uIEhHR1NpUmqIhPUVLU2s01Sdorrlv0BS1RGtTRDRERERENEVEVF+g/+E8KvXOqcvf857j5z7n3Ou59VtxY8wciRn3dUJsZPv8MVhtvxRZyAHJIUcBjCIzJOlWZPFzr0QjjGYk0EFtBRpCJkhWAmntGD0JaIDRggQ6aE6B+pHxfdAuS+AvO/UhI6AVCTQ8HoSeFegQaJVePJhDod4kuLMRI6+GpSjS7pRWl8COonCjRQlskqxEixLq/HId6SFeAV0zetGclBp1i7smofY39L0pNE8jHtq/dvqpyzT5YwW6YvSqOSl5PquBX1G3OczyQIfdRFywy2dUGuw0MuXLVUJLdPVpTkqSdxoT0AUeqYcAAwBINUeC9TMsigAAAABJRU5ErkJggg==);
+  @include gradient-striped($color: nth($rgba-white,12), $angle: 45deg);
+  background-size:20px 20px;
+  @include animation(2s linear 0s normal none infinite progress-bar-stripes);  
+  @include custom-border-radius(10px);
+  @include box-shadow(inset 0 1px nth($rgba,3), inset 0 0 0 1px nth($rgba,3));
+}
+
+.throbber-wrapper {
+  cursor:wait;
+  .modal-backdrop {
+    background:rgba(0,0,0,0.5);
+  }
+}
+.throbber-img {
+  text-align:center;
+}
+.throbber-alert-text {
+  display:block;
+  padding-bottom:10px;
+}
+.throbber-header {
+  font-size:16px;
+  padding:10px 15px;
+  margin-top:-20px;
+  margin-bottom:15px;
+  border-bottom: 1px solid #EEEEEE;
+  font-weight:bold;
+}

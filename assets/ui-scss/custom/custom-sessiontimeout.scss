@@ -1,0 +1,44 @@
+.session-timeout {
+   position:fixed;
+   z-index:0;
+   top:0;
+   left:0;
+   right:0;
+  .alert {
+    background:#fff;
+    padding:10px 20px;
+    text-align:left;
+    border-width:5px 0 0 0;
+    border-top-style:solid;
+    font-size:$font-size-base;
+    position:relative;
+    @include custom-border-radius(0);
+    @include box-shadow(0px 3px 5px nth($rgba,6));
+    @each $class,$color in $statuscolor {
+      &.alert-#{$class} {
+        color:$color;
+        border-top-color:$color;
+      }
+    }
+    .fa {
+      font-size:22px;
+      margin-right:5px;
+    }
+  }
+  .alert-dismissable .close {
+    position:absolute;
+    right:10px;
+    top:25%;
+  }
+  .st-message {
+    line-height:32px;
+  }
+  &.fade{
+    @include transform(translate(0px, -50%));
+    @include transition(transform 0.5s ease-out 0s);
+  }
+  &.in {
+    @include transform(translate(0px, 0px));
+    z-index:1051;
+  }
+}

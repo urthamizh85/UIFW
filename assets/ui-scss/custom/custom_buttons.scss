@@ -1,0 +1,101 @@
+.btn {
+  background-clip: padding-box;
+  border-radius: 2px;
+  @include box-shadow(0 1px 0 rgba(0, 0, 0, 0.05));
+  font-size:inherit;
+  &.btn-circle {
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    padding:3px 6px;
+    line-height:48px;
+    i {
+      font-size:20px;
+    }
+    @each $class,$size,$pad,$font,$lineht in $circlebtnsize {
+      &.btn-#{$class} {
+        width:$size;
+        height:$size;
+        padding:$pad;
+        line-height:$lineht;
+        i {
+          font-size:$font;
+        }
+      }
+    }
+  }
+  &.btn-link {
+    @include box-shadow(none);
+    text-decoration:underline;
+    &:hover {
+      text-decoration:none;
+    }
+  }
+  @each $class,$bg,$border,$text in $buttons {
+    &.btn-#{$class} {
+      background-color:$bg;
+      border-color:$border;
+      color:$text;
+      &:hover {
+        background-color: darken($bg, 8%);
+        border-color: darken($border, 12%);
+      }
+      &.grad {
+         @include cust-gradient-vertical($start-color: lighten($bg, 10%), $end-color: darken($bg, 15%), $start-percent: 0%, $end-percent: 100%);
+         &:hover {
+           @include cust-gradient-vertical($start-color: darken($bg, 15%), $end-color: lighten($bg, 10%), $start-percent: 0%, $end-percent: 100%);
+         }
+      }
+    }
+  }
+  &.rounded {
+    border-radius: 50px;
+    padding:4px 15px;
+  }
+  &.radius {
+    border-radius: 5px;
+  }
+  &.btn-labeled {
+    padding-left: 0;
+    position: relative;
+    &.btn-block {
+      .btn-label {
+        margin-right: 0;
+      }
+    }
+    .btn-label {
+      background: rgba(0, 0, 0, 0.06);
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+      display: block;
+      float: left;
+      line-height: 15px;
+      margin: -7px 12px -9px -2px;
+      padding: 9px 10px 10px 11px;
+      position: relative;
+      > .fa, .glyphicon {
+        margin-right: 0;
+      }
+    }
+  }
+  &.icon-only {
+    height: 34px;
+    padding: 5px 3px;
+    width: 36px;
+    > .fa, .glyphicon {
+      font-size: 22px;
+      line-height: 22px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }  
+}
+.btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled:active, .btn.disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled]:active, .btn.active[disabled], fieldset[disabled] .btn, fieldset[disabled] .btn:hover, fieldset[disabled] .btn:focus, fieldset[disabled] .btn:active, fieldset[disabled] .btn.active {
+  cursor:not-allowed;
+  opacity:0.5;
+}
+.font-btn-group {
+  padding:8px 10px;
+}

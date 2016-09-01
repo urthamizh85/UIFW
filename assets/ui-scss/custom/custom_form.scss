@@ -1,0 +1,45 @@
+.form-control {
+  border-radius:0;
+  @include box-shadow(none);
+  &:focus {
+    @include box-shadow(0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 4px rgba(102, 175, 233, 0.6));
+  }
+  @each $class,$font,$height,$lineht,$pad in $inputsize {
+    &.input-#{$class} {
+      font-size: $font;
+      height: $height;
+      line-height: $lineht;
+      padding:$pad;
+    }
+  }
+}
+.input-group-addon {
+  border-radius: 0px;
+  @include cust-gradient-vertical($start-color: #fbfbfb, $end-color: #eee, $start-percent: 0%, $end-percent: 100%);
+  &[class*="bg-"] {
+    background-image: none;
+    color:#fff;
+  } 
+}
+.input-group-btn {
+  font-size:inherit;
+  > .btn {
+    border-radius:0;
+    line-height: 20px;
+  } 
+  > .btn.dropdown-toggle {
+    > [class*="fa-"] {
+      font-size: 14px;
+      margin-right: 0;
+    }
+  }
+}
+.input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group {
+  margin-right:-4px;
+}
+
+.form-horizontal {
+  .control-label {
+    display:block;
+  }
+}

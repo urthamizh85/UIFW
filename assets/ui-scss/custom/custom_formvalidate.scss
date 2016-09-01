@@ -1,0 +1,84 @@
+.error-msg{
+  display:block;
+  min-height:10px;
+  padding:5px 5px 5px 5px;
+  margin:2px 0;
+  position:relative;
+  font-size:0.85em;  
+  p{
+    margin:0; padding:0;
+    font-weight: 700;
+  }
+  &,a.error-msg-dismiss , .error-msg-dismiss{
+    color:$error-msg-bg;
+  }
+  a.error-msg-dismiss , .error-msg-dismiss{
+    cursor : pointer;
+    position:relative;
+    top:1px;
+    right:0;
+    left:auto;
+    padding:0px 5px;
+    margin:5px;
+    display:inline;
+    border :1px solid transparent;
+    color : $error-msg-default-bg;
+    @include custom-border-radius(4px);
+    line-height:14px;
+    &:hover{
+      //text-decoration:none;
+      //border-color :  darken($error-msg-default-bg,8%);
+      color : darken($error-msg-default-bg,10%);
+    }
+  }
+  &.error-bg{
+      border:1px solid $error-msg-bg;  
+      background : $error-msg-bg;
+      &,a.error-msg-dismiss{
+        color:white;
+        @include custom-border-radius(4px);
+        background :  $error-msg-bg;
+      }
+      a.error-msg-dismiss{
+        &:hover{
+          text-decoration:none;
+          border-color :  darken($error-msg-bg,8%);
+          background :  darken($error-msg-bg,5%);
+        }
+      }
+  }
+  &.error-tooltip{
+      position:absolute;
+      left:auto;
+      top:auto;
+  }
+}
+
+.errField {
+  &, & > .form-control, & > .input-group-addon {
+    border-color:darken($error-msg-bg,3%) !important;
+    .fa {
+      color:darken($error-msg-bg,3%) !important;
+    }
+  }
+}
+.bv-form .help-block {
+    margin-bottom: 0;
+    font-weight:700;
+}
+.bv-form .tooltip-inner {
+    text-align: left;
+}
+.nav-tabs li.bv-tab-success > a {
+    color: #3c763d;
+}
+.nav-tabs li.bv-tab-error > a {
+    color: $error-msg-bg;
+}
+.bv-form .bv-icon-no-label {
+  top: 0;
+}
+.bv-form .bv-icon-input-group {
+  top: 0;
+  z-index: 100;
+}

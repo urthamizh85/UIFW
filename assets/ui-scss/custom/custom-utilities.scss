@@ -1,0 +1,78 @@
+@for $i from 1 through length($spacing){
+    @include css(".pad"+nth($spacing,$i),padding,nth($spacing,$i) !important);
+    @include css(".pad-left"+nth($spacing,$i),padding-left,nth($spacing,$i) !important);
+    @include css(".pad-right"+nth($spacing,$i),padding-right,nth($spacing,$i) !important);
+    @include css(".pad-bottom"+nth($spacing,$i),padding-bottom,nth($spacing,$i) !important);
+    @include css(".pad-top"+nth($spacing,$i),padding-top,nth($spacing,$i) !important);
+    @include css(".pad-x"+nth($spacing,$i),padding-left,nth($spacing,$i) !important);
+    @include css(".pad-x"+nth($spacing,$i),padding-right,nth($spacing,$i) !important);
+    @include css(".pad-y"+nth($spacing,$i),padding-top,nth($spacing,$i) !important);
+    @include css(".pad-y"+nth($spacing,$i),padding-bottom,nth($spacing,$i) !important);
+}
+@for $i from 1 through length($spacing){
+    @include css(".margin"+nth($spacing,$i),margin,nth($spacing,$i) !important);
+    @include css(".margin-left"+nth($spacing,$i),margin-left,nth($spacing,$i) !important);
+    @include css(".margin-right"+nth($spacing,$i),margin-right,nth($spacing,$i) !important);
+    @include css(".margin-bottom"+nth($spacing,$i),margin-bottom,nth($spacing,$i) !important);
+    @include css(".margin-top"+nth($spacing,$i),margin-top,nth($spacing,$i) !important);
+    @include css(".margin-x"+nth($spacing,$i),margin-left,nth($spacing,$i) !important);
+    @include css(".margin-x"+nth($spacing,$i),margin-right,nth($spacing,$i) !important);
+    @include css(".margin-y"+nth($spacing,$i),margin-top,nth($spacing,$i) !important);
+    @include css(".margin-y"+nth($spacing,$i),margin-bottom,nth($spacing,$i) !important);
+}
+
+@include css(".height200px",height,200px);
+@include css(".height250px",height,250px);
+@include css(".height175px",height,175px);
+@include css(".margin-none",margin,0);
+@include css(".margin-top-none",margin-top,0);
+@include css(".margin-bottom-none",margin-bottom,0);
+@include css(".margin-left-none",margin-left,0);
+@include css(".margin-right-none",margin-right,0);
+@include css(".required",color,red);
+@include css(".required",margin-left,5px);
+
+@include css(".pull-center",margin,auto);
+@include css(".pull-center",text-align,center);
+@include css(".pull-top",vertical-align,top);
+@include css(".pull-middle",vertical-align,middle);
+@include css(".pull-bottom",vertical-align,bottom);
+@include css(".pull-hide",display,"none");
+@include css(".pull-show",display,"block");
+@include css(".pull-inline",display,"inline-block");
+@include css(".pull-text-left",text-align,"left");
+@include css(".pull-relative",position,"relative");
+
+@include css(".pad-none,.tab .tab-pane.pad-none",padding,0);
+@include css(".margin-none",margin,0);
+@include css(".pad-bottom-15px",padding-bottom,15px);
+@include css(".pad-topbot-10px",padding-top,15px);
+@include css(".pad-topbot-10px",padding-bottom,15px);
+@include css(".margin-40px",margin,60px 0px 0 40px);
+@include css(".margin-60px",margin,60px 0px 0 -40px);
+@include css(".margin-topbot-20px",margin-top,20px);
+@include css(".margin-topbot-20px",margin-bottom,20px);
+@include css(".margin-top-inverse-20px",margin-top,-20px);
+@include css(".pad-x5px-y10px",padding,5px 10px);
+@include css(".lineheight-25px",line-height,25px);
+@include css(".pad-left-none",padding-left,0);
+
+.fake-link {
+  color: $link-color;
+  text-decoration: underline;
+  cursor:pointer;
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+
+  &:focus {
+    @include tab-focus();
+  }
+}
+.fake-dropdown { @extend .dropdown-menu; 
+&.arrow-right:after{
+  top:-10px;
+}
+}

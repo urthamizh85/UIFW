@@ -1,0 +1,52 @@
+@mixin cust-gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(left, color-stop($start-color $start-percent), color-stop($end-color $end-percent));
+  background-image:  linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;  
+}
+@mixin cust-gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+}
+@mixin cust-gradient-horizontal-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) {
+  background-image: -webkit-linear-gradient(left, $start-color, $mid-color $color-stop, $end-color);
+  background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
+  background-repeat: no-repeat;
+}
+@mixin cust-gradient-vertical-three-colors($start-color: #00b3ee, $mid-color: #7a43b6, $color-stop: 50%, $end-color: #c3325f) {
+  background-image: -webkit-linear-gradient($start-color, $mid-color $color-stop, $end-color);
+  background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
+  background-repeat: no-repeat;  
+}
+@mixin custom-border-radius($radius...) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius:    $radius;
+  -ms-border-radius:     $radius;
+  -o-border-radius:      $radius;
+  border-radius:         $radius;
+}
+@mixin alpha($amount){
+  opacity:$amount/100;
+  filter:alpha(opacity=#{$amount});
+}
+@mixin transform($transform-function){
+  -webkit-transform: $transform-function;
+  -moz-transform:    $transform-function;
+  -ms-transform:     $transform-function;
+  -o-transform:      $transform-function;
+  transform:         $transform-function;
+}
+@mixin stripes($color1: rgba(0, 0, 0, 1) ,$color2: rgba(0, 0, 0, 0.5) ,$angle: -45deg) {  
+    $gap1 : 7px;
+    $gap2 : 5px;
+    background: -webkit-repeating-linear-gradient( $angle, $color1, $color1 $gap2, $color2 $gap1);  
+    background: -moz-repeating-linear-gradient( $angle, $color1, $color1 $gap2, $color2 $gap1);  
+    background: -o-repeating-linear-gradient( $angle, $color1, $color1 $gap2, $color2 $gap1);  
+    background: repeating-linear-gradient( $angle, $color1, $color1 $gap2, $color2 $gap1);  
+    background-size: 100%;
+}
+@mixin css($className , $props , $propval){
+  #{$className}{
+    #{$props} : unquote($propval);
+  }
+}

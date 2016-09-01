@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>UI Framework</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link href="assets/css/glyphicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/custom-theme-default.css" />
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body><div id="kss-wrapper">
+
+<div id="kss-nav">
+  <header id="kss-header">
+    <hgroup><h1>CNSI UI Framework</h1></hgroup>
+    <div class="search-doc-box">
+	  <input type="text" placeholder="Search docs" name="search_doc" id="search_doc" data-ui="alphabetListSearch" data-search-target=".left-nav > ul" />
+	</div>
+  </header>
+  <aside>
+    <nav class="left-nav"><ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="section-1.html">String Utils</a>
+        <ul class="submenu pull-hide" data-section="section-1">
+            <li><a href="section-1.html#1.1">constructor(nativeJsString)</a>
+            </li>
+            <li><a href="section-1.html#1.2">between(left, right)</a>
+            </li>
+            <li><a href="section-1.html#1.3">camelize()</a>
+            </li>
+            <li><a href="section-1.html#1.4">capitalize()</a>
+            </li>
+            <li><a href="section-1.html#1.5">chompLeft(prefix)</a>
+            </li>
+            <li><a href="section-1.html#1.6">chompRight(suffix)</a>
+            </li>
+            <li><a href="section-1.html#1.7">collapseWhitespace()</a>
+            </li>
+            <li><a href="section-1.html#1.8">contains(ss)</a>
+            </li>
+            <li><a href="section-1.html#1.9">count(substring)</a>
+            </li>
+            <li><a href="section-1.html#1.10">dasherize()</a>
+            </li>
+            <li><a href="section-1.html#1.11">decodeHTMLEntities()</a>
+            </li>
+            <li><a href="section-1.html#1.12">endsWith(ss)</a>
+            </li>
+            <li><a href="section-1.html#1.13">escapeHTML()</a>
+            </li>
+            <li><a href="section-1.html#1.14">extendPrototype()</a>
+            </li>
+            <li><a href="section-1.html#1.15">ensureLeft(prefix)</a>
+            </li>
+            <li><a href="section-1.html#1.16">ensureRight(suffix)</a>
+            </li>
+            <li><a href="section-1.html#1.17">humanize()</a>
+            </li>
+            <li><a href="section-1.html#1.18">include(ss)</a>
+            </li>
+            <li><a href="section-1.html#1.19">isAlpha()</a>
+            </li>
+            <li><a href="section-1.html#1.20">isAlphaNumeric()</a>
+            </li>
+            <li><a href="section-1.html#1.21">isEmpty()</a>
+            </li>
+            <li><a href="section-1.html#1.22">isLower()</a>
+            </li>
+            <li><a href="section-1.html#1.23">isNumeric()</a>
+            </li>
+            <li><a href="section-1.html#1.24">isUpper()</a>
+            </li>
+            <li><a href="section-1.html#1.25">latinise()</a>
+            </li>
+            <li><a href="section-1.html#1.26">left(n)</a>
+            </li>
+            <li><a href="section-1.html#1.27">length</a>
+            </li>
+            <li><a href="section-1.html#1.28">lines()</a>
+            </li>
+            <li><a href="section-1.html#1.29">pad(len, [char])</a>
+            </li>
+            <li><a href="section-1.html#1.30">padLeft(len, [char])</a>
+            </li>
+            <li><a href="section-1.html#1.31">padRight(len, [char])</a>
+            </li>
+            <li><a href="section-1.html#1.32">parseCSV()</a>
+            </li>
+            <li><a href="section-1.html#1.33">repeat(n)</a>
+            </li>
+            <li><a href="section-1.html#1.34">replaceAll(ss, newstr)</a>
+            </li>
+            <li><a href="section-1.html#1.35">strip([string1],[string2],...)</a>
+            </li>
+            <li><a href="section-1.html#1.36">restorePrototype()</a>
+            </li>
+            <li><a href="section-1.html#1.37">right(n)</a>
+            </li>
+            <li><a href="section-1.html#1.38">s</a>
+            </li>
+            <li><a href="section-1.html#1.39">setValue(value)</a>
+            </li>
+            <li><a href="section-1.html#1.40">slugify()</a>
+            </li>
+            <li><a href="section-1.html#1.41">startsWith(prefix)</a>
+            </li>
+            <li><a href="section-1.html#1.42">stripPunctuation()</a>
+            </li>
+            <li><a href="section-1.html#1.43">stripTags([tag1],[tag2],...)</a>
+            </li>
+            <li><a href="section-1.html#1.44">template(values, [open], [close])</a>
+            </li>
+            <li><a href="section-1.html#1.45">times(n)</a>
+            </li>
+            <li><a href="section-1.html#1.46">toBoolean() / toBool()</a>
+            </li>
+            <li><a href="section-1.html#1.47">toCSV(options)</a>
+            </li>
+            <li><a href="section-1.html#1.48">toFloat([precision])</a>
+            </li>
+            <li><a href="section-1.html#1.49">toInt() / toInteger()</a>
+            </li>
+            <li><a href="section-1.html#1.50">toString()</a>
+            </li>
+            <li><a href="section-1.html#1.51">trim()</a>
+            </li>
+            <li><a href="section-1.html#1.52">trimLeft()</a>
+            </li>
+            <li><a href="section-1.html#1.53">trimRight()</a>
+            </li>
+            <li><a href="section-1.html#1.54">truncate(length, [chars])</a>
+            </li>
+            <li><a href="section-1.html#1.55">underscore()</a>
+            </li>
+            <li><a href="section-1.html#1.56">unescapeHTML()</a>
+            </li>
+            <li><a href="section-1.html#1.57">wrapHTML()</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-2.html">Number Utils</a>
+        <ul class="submenu pull-hide" data-section="section-2">
+            <li><a href="section-2.html#2.1">Format</a>
+            </li>
+            <li><a href="section-2.html#2.2">Numbers</a>
+            </li>
+            <li><a href="section-2.html#2.3">Currency</a>
+            </li>
+            <li><a href="section-2.html#2.4">Bytes</a>
+            </li>
+            <li><a href="section-2.html#2.5">Percentages</a>
+            </li>
+            <li><a href="section-2.html#2.6">Time</a>
+            </li>
+            <li><a href="section-2.html#2.7">Unformat</a>
+            </li>
+            <li><a href="section-2.html#2.8">Manipulate</a>
+            </li>
+            <li><a href="section-2.html#2.9">Value</a>
+            </li>
+            <li><a href="section-2.html#2.10">Set</a>
+            </li>
+            <li><a href="section-2.html#2.11">Difference</a>
+            </li>
+            <li><a href="section-2.html#2.12">Default Formatting</a>
+            </li>
+            <li><a href="section-2.html#2.13">Custom Zero Formatting</a>
+            </li>
+            <li><a href="section-2.html#2.14">Clone</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-3.html">Date Utils</a>
+        <ul class="submenu pull-hide" data-section="section-3">
+            <li><a href="section-3.html#3.1">Now</a>
+            </li>
+            <li><a href="section-3.html#3.2">String</a>
+            </li>
+            <li><a href="section-3.html#3.3">String + Format</a>
+            </li>
+            <li><a href="section-3.html#3.4">Year, month, and day tokens</a>
+            </li>
+            <li><a href="section-3.html#3.5">Week year, week, and weekday tokens</a>
+            </li>
+            <li><a href="section-3.html#3.6">Hour, minute, second, millisecond, and offset tokens</a>
+            </li>
+            <li><a href="section-3.html#3.7">String + Formats</a>
+            </li>
+            <li><a href="section-3.html#3.8">Special Formats</a>
+            </li>
+            <li><a href="section-3.html#3.9">Object</a>
+            </li>
+            <li><a href="section-3.html#3.10">Unix Offset (milliseconds)</a>
+            </li>
+            <li><a href="section-3.html#3.11">Date</a>
+            </li>
+            <li><a href="section-3.html#3.12">Array</a>
+            </li>
+            <li><a href="section-3.html#3.13">Moment Clone</a>
+            </li>
+            <li><a href="section-3.html#3.14">UTC</a>
+            </li>
+            <li><a href="section-3.html#3.15">parseZone</a>
+            </li>
+            <li><a href="section-3.html#3.16">Validation</a>
+            </li>
+            <li><a href="section-3.html#3.17">Defaults</a>
+            </li>
+            <li><a href="section-3.html#3.18">Get + Set</a>
+            </li>
+            <li><a href="section-3.html#3.19">Millisecond</a>
+            </li>
+            <li><a href="section-3.html#3.20">Second</a>
+            </li>
+            <li><a href="section-3.html#3.21">Minute</a>
+            </li>
+            <li><a href="section-3.html#3.22">Hour</a>
+            </li>
+            <li><a href="section-3.html#3.23">Date of Month</a>
+            </li>
+            <li><a href="section-3.html#3.24">Day of Week</a>
+            </li>
+            <li><a href="section-3.html#3.25">Day of Week (Locale Aware)</a>
+            </li>
+            <li><a href="section-3.html#3.26">ISO Day of Week</a>
+            </li>
+            <li><a href="section-3.html#3.27">Day of Year</a>
+            </li>
+            <li><a href="section-3.html#3.28">Week of Year</a>
+            </li>
+            <li><a href="section-3.html#3.29">Week of Year (ISO)</a>
+            </li>
+            <li><a href="section-3.html#3.30">Month</a>
+            </li>
+            <li><a href="section-3.html#3.31">Quarter</a>
+            </li>
+            <li><a href="section-3.html#3.32">Year</a>
+            </li>
+            <li><a href="section-3.html#3.33">Week Year</a>
+            </li>
+            <li><a href="section-3.html#3.34">Week Year (ISO)</a>
+            </li>
+            <li><a href="section-3.html#3.35">Weeks In Year</a>
+            </li>
+            <li><a href="section-3.html#3.36">Weeks In Year (ISO)</a>
+            </li>
+            <li><a href="section-3.html#3.37">Get</a>
+            </li>
+            <li><a href="section-3.html#3.38">Set</a>
+            </li>
+            <li><a href="section-3.html#3.39">Maximum</a>
+            </li>
+            <li><a href="section-3.html#3.40">Minimum</a>
+            </li>
+            <li><a href="section-3.html#3.41">Manipulate</a>
+            </li>
+            <li><a href="section-3.html#3.42">Add</a>
+            </li>
+            <li><a href="section-3.html#3.43">Subtract</a>
+            </li>
+            <li><a href="section-3.html#3.44">Start of Time</a>
+            </li>
+            <li><a href="section-3.html#3.45">End of Time</a>
+            </li>
+            <li><a href="section-3.html#3.46">Maximum</a>
+            </li>
+            <li><a href="section-3.html#3.47">Minimum</a>
+            </li>
+            <li><a href="section-3.html#3.48">Local</a>
+            </li>
+            <li><a href="section-3.html#3.49">UTC</a>
+            </li>
+            <li><a href="section-3.html#3.50">Timezone Offset</a>
+            </li>
+            <li><a href="section-3.html#3.51">Format</a>
+            </li>
+            <li><a href="section-3.html#3.52">Time from now</a>
+            </li>
+            <li><a href="section-3.html#3.53">Time from X</a>
+            </li>
+            <li><a href="section-3.html#3.54">Calendar Time</a>
+            </li>
+            <li><a href="section-3.html#3.55">Difference</a>
+            </li>
+            <li><a href="section-3.html#3.56">Unix Offset (milliseconds)</a>
+            </li>
+            <li><a href="section-3.html#3.57">Unix Timestamp (seconds)</a>
+            </li>
+            <li><a href="section-3.html#3.58">Days in Month</a>
+            </li>
+            <li><a href="section-3.html#3.59">As Javascript Date</a>
+            </li>
+            <li><a href="section-3.html#3.60">As Array</a>
+            </li>
+            <li><a href="section-3.html#3.61">As JSON</a>
+            </li>
+            <li><a href="section-3.html#3.62">As ISO 8601 String</a>
+            </li>
+            <li><a href="section-3.html#3.63">Is Before</a>
+            </li>
+            <li><a href="section-3.html#3.64">Is Same</a>
+            </li>
+            <li><a href="section-3.html#3.65">Is After</a>
+            </li>
+            <li><a href="section-3.html#3.66">Is Leap Year</a>
+            </li>
+            <li><a href="section-3.html#3.67">Is Daylight Saving Time</a>
+            </li>
+            <li><a href="section-3.html#3.68">Is DST Shifted</a>
+            </li>
+            <li><a href="section-3.html#3.69">Is a Moment</a>
+            </li>
+            <li><a href="section-3.html#3.70">Creating</a>
+            </li>
+            <li><a href="section-3.html#3.71">Humanize</a>
+            </li>
+            <li><a href="section-3.html#3.72">Milliseconds</a>
+            </li>
+            <li><a href="section-3.html#3.73">Seconds</a>
+            </li>
+            <li><a href="section-3.html#3.74">Minutes</a>
+            </li>
+            <li><a href="section-3.html#3.75">Hours</a>
+            </li>
+            <li><a href="section-3.html#3.76">Days</a>
+            </li>
+            <li><a href="section-3.html#3.77">Months</a>
+            </li>
+            <li><a href="section-3.html#3.78">Years</a>
+            </li>
+            <li><a href="section-3.html#3.79">Add Time</a>
+            </li>
+            <li><a href="section-3.html#3.80">Subtract Time</a>
+            </li>
+            <li><a href="section-3.html#3.81">Get Unit of Time</a>
+            </li>
+            <li><a href="section-3.html#3.82">Normalize Units</a>
+            </li>
+            <li><a href="section-3.html#3.83">Invalid</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-4.html">Currency Utils</a>
+        <ul class="submenu pull-hide" data-section="section-4">
+            <li><a href="section-4.html#4.1">formatMoney()</a>
+            </li>
+            <li><a href="section-4.html#4.2">formatColumn()</a>
+            </li>
+            <li><a href="section-4.html#4.3">formatNumber()</a>
+            </li>
+            <li><a href="section-4.html#4.4">Documentation</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-5.html">CNSI Core</a>
+        <ul class="submenu pull-hide" data-section="section-5">
+            <li><a href="section-5.html#5.1">Regex Patterns</a>
+            </li>
+            <li><a href="section-5.html#5.2">Validation</a>
+            </li>
+            <li><a href="section-5.html#5.4">Number</a>
+            </li>
+            <li><a href="section-5.html#5.5">Date</a>
+            </li>
+            <li><a href="section-5.html#5.6">Array</a>
+            </li>
+            <li><a href="section-5.html#5.7">Currency</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-6.html">CNSI Core UI</a>
+        <ul class="submenu pull-hide" data-section="section-6">
+            <li><a href="section-6.html#6.1">scrollMove(top, duration)</a>
+            </li>
+            <li><a href="section-6.html#6.2">scroll(scrollId, options)</a>
+            </li>
+            <li><a href="section-6.html#6.3">formreset(options)</a>
+            </li>
+            <li><a href="section-6.html#6.4">widgetCollapse(options)</a>
+            </li>
+            <li><a href="section-6.html#6.5">loadPage(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.6">throbber(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.7">notification(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.8">matchHeight(id1, id2)</a>
+            </li>
+            <li><a href="section-6.html#6.9">dateConvertion(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.10">dateConvertion(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.11">tryCatch(trycode, callback)</a>
+            </li>
+            <li><a href="section-6.html#6.12">apply(arguments, data)</a>
+            </li>
+            <li><a href="section-6.html#6.13">setPageHeight()</a>
+            </li>
+            <li><a href="section-6.html#6.14">mediaScreen()</a>
+            </li>
+            <li><a href="section-6.html#6.15">searchForm(formId, callback)</a>
+            </li>
+            <li><a href="section-6.html#6.16">stopPropagate()</a>
+            </li>
+            <li><a href="section-6.html#6.17">customClick()</a>
+            </li>
+            <li><a href="section-6.html#6.18">currentTime(options)</a>
+            </li>
+            <li><a href="section-6.html#6.19">formatTime12h(time)</a>
+            </li>
+            <li><a href="section-6.html#6.20">zeroFormat(val)</a>
+            </li>
+            <li><a href="section-6.html#6.21">customSerialize(obj, avoidkey, joiner)</a>
+            </li>
+            <li><a href="section-6.html#6.22">objectextend(options)</a>
+            </li>
+            <li><a href="section-6.html#6.23">timeOut(options)</a>
+            </li>
+            <li><a href="section-6.html#6.24">countDown(params)</a>
+            </li>
+            <li><a href="section-6.html#6.25">pageFontSize()</a>
+            </li>
+            <li><a href="section-6.html#6.26">setLeftMenuPosition()</a>
+            </li>
+            <li><a href="section-6.html#6.27">collapseSideMenu()</a>
+            </li>
+            <li><a href="section-6.html#6.28">setLeftMenuActive()</a>
+            </li>
+            <li><a href="section-6.html#6.29">loadPageFromNavigation()</a>
+            </li>
+            <li><a href="section-6.html#6.30">openRightNavigation()</a>
+            </li>
+            <li><a href="section-6.html#6.31">autoPageLoad()</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-7.html">Custom</a>
+        <ul class="submenu pull-hide" data-section="section-7">
+            <li><a href="section-7.html#7.1">Variables</a>
+            </li>
+            <li><a href="section-7.html#7.2">common()</a>
+            </li>
+        </ul>        
+      </li>
+    </ul></nav>
+  </aside>
+</div>
+<div role="main" id="kss-main">
+  <article id="kss-content">
+
+    
+      <h2 class="kss-main-title">CNSI Core UI</h2>
+      
+		
+
+
+      <section class="kss-depth-2">
+      <a name="6.1"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.1</span> - -->scrollMove(top, duration)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Scrolls the page to a specified top position</p>
+<p><strong>top</strong> <small>(number)</small> : (Top position of the page)</p>
+<p><strong>duration</strong> <small>(number in milliseconds)</small> : (duration for animation)</p>
+<p>Example</p>
+<pre><code>myApp.scrollMove(0, 500);</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Scrolls the page to a specified top position&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;top&lt;/strong&gt; &lt;small&gt;(number)&lt;/small&gt; : (Top position of the page)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;duration&lt;/strong&gt; &lt;small&gt;(number in milliseconds)&lt;/small&gt; : (duration for animation)&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.scrollMove(0, 500);&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.2"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.2</span> - -->scroll(scrollId, options)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Custom styled browser scroll</p>
+<p><strong>scrollId</strong> <small>(string|jquery selector)</small> : Element's id to which scroll is applied</p>
+<p><strong>options</strong> <small>(object{})</small> : contentHeight (Maximum height for the content)</p>
+<p>Example</p>
+<pre><code>myApp.scroll("#pro_lang_scroll", {
+   contentHeight : "200px"
+});</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Custom styled browser scroll&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;scrollId&lt;/strong&gt; &lt;small&gt;(string|jquery selector)&lt;/small&gt; : Element&#x27;s id to which scroll is applied&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;options&lt;/strong&gt; &lt;small&gt;(object{})&lt;/small&gt; : contentHeight (Maximum height for the content)&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.scroll(&quot;#pro_lang_scroll&quot;, {
+   contentHeight : &quot;200px&quot;
+});&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.3"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.3</span> - -->formreset(options)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Method to reset a form</p>
+<p><strong>options</strong> <small>(object{})</small> : formId (id of the form)</p>
+<p>Example</p>
+<pre><code>myApp.formreset({
+   formId : "#settings_pin_form"
+});</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Method to reset a form&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;options&lt;/strong&gt; &lt;small&gt;(object{})&lt;/small&gt; : formId (id of the form)&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.formreset({
+   formId : &quot;#settings_pin_form&quot;
+});&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.4"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.4</span> - -->widgetCollapse(options)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Method for Collapsible widget</p>
+<p><strong>options</strong> <small>(object{})</small> : iconName (icons for the widget header), callback (include callback functions)</p>
+<p>Example</p>
+<pre><code>myApp.widgetCollapse({
+   iconName : {
+     up : "fa-chevron-up",
+     down : "fa-chevron-down"
+   },
+   callback : function() {
+     // some callback function
+   }
+});</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Method for Collapsible widget&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;options&lt;/strong&gt; &lt;small&gt;(object{})&lt;/small&gt; : iconName (icons for the widget header), callback (include callback functions)&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.widgetCollapse({
+   iconName : {
+     up : &quot;fa-chevron-up&quot;,
+     down : &quot;fa-chevron-down&quot;
+   },
+   callback : function() {
+     // some callback function
+   }
+});&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.5"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.5</span> - -->loadPage(obj)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Load a page through ajax call</p>
+<p><strong>obj</strong> <small>(object{})</small> : throbber (throbber will open), url (url of the page to be loaded)), data (can send some data), datatype (Type of data to be sent)</p>
+<p>Example</p>
+<pre><code>myApp.loadPage({
+   throbber : {
+     throbberText : "Searching..."
+   },
+   url : myApp.root + loc_url,
+   data : { data1 : "some data"},
+   datatype : "json",
+   success : function(param) {
+     //your code here
+   },
+   fail : function(param1,param2,param3) {
+     //your code here
+   },always: function(param1,param2,param3) {
+     //your code here
+   }
+});</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Load a page through ajax call&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;obj&lt;/strong&gt; &lt;small&gt;(object{})&lt;/small&gt; : throbber (throbber will open), url (url of the page to be loaded)), data (can send some data), datatype (Type of data to be sent)&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.loadPage({
+   throbber : {
+     throbberText : &quot;Searching...&quot;
+   },
+   url : myApp.root + loc_url,
+   data : { data1 : &quot;some data&quot;},
+   datatype : &quot;json&quot;,
+   success : function(param) {
+     //your code here
+   },
+   fail : function(param1,param2,param3) {
+     //your code here
+   },always: function(param1,param2,param3) {
+     //your code here
+   }
+});&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.6"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.6</span> - -->throbber(obj)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Throbber window</p>
+<p><strong>obj</strong> <small>(object{})</small></p>
+<p>Example</p>
+<pre><code>myApp.throbber({
+   throbberText : 'Please wait...',          // Text to show
+   waitTime : 3000                           // After this time continue message will be shown
+   hideTime : 3000                           // Throbber will autohide after this time
+   headerText : 'Throbber Title',            // Title for the Throbber
+   multiCallback : {                         // For multiple callback functions
+     counter : 3,                            // No. of callback functions
+     duration : [2000, 2000, 2000],          // duration for each callback function
+     callback : [throbberMsg1, throbberMsg2, throbberMsg3]  // callback functions as array
+   },
+});</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Throbber window&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;obj&lt;/strong&gt; &lt;small&gt;(object{})&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.throbber({
+   throbberText : &#x27;Please wait...&#x27;,          // Text to show
+   waitTime : 3000                           // After this time continue message will be shown
+   hideTime : 3000                           // Throbber will autohide after this time
+   headerText : &#x27;Throbber Title&#x27;,            // Title for the Throbber
+   multiCallback : {                         // For multiple callback functions
+     counter : 3,                            // No. of callback functions
+     duration : [2000, 2000, 2000],          // duration for each callback function
+     callback : [throbberMsg1, throbberMsg2, throbberMsg3]  // callback functions as array
+   },
+});&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.7"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.7</span> - -->notification(obj)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Notification Alerts</p>
+<p><strong>obj</strong> <small>(object{})</small></p>
+<p>Example</p>
+<pre><code>myApp.notification({
+   "id" : $("myId"),                            // Unique Notification Id
+   message : "Your notification message!"       // Message to be displayed
+   duration : 20000,                            // After this time Notification will autohide
+   status : "info"|"danger"|"success"|"warning" // different status color
+});</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Notification Alerts&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;obj&lt;/strong&gt; &lt;small&gt;(object{})&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.notification({
+   &quot;id&quot; : $(&quot;myId&quot;),                            // Unique Notification Id
+   message : &quot;Your notification message!&quot;       // Message to be displayed
+   duration : 20000,                            // After this time Notification will autohide
+   status : &quot;info&quot;|&quot;danger&quot;|&quot;success&quot;|&quot;warning&quot; // different status color
+});&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.8"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.8</span> - -->matchHeight(id1, id2)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Match the height between two elements and return the maximun height</p>
+<p><strong>id1</strong> : Element1 Id</p>
+<p><strong>id2</strong> : Element2 Id</p>
+<p>Example</p>
+<pre><code>myApp.matchHeight($("#nav_left"),$("#page"))</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Match the height between two elements and return the maximun height&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;id1&lt;/strong&gt; : Element1 Id&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;id2&lt;/strong&gt; : Element2 Id&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.matchHeight($(&quot;#nav_left&quot;),$(&quot;#page&quot;))&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.9"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.9</span> - -->dateConvertion(obj)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Converts date string to date object</p>
+<p><strong>obj</strong> <small>(object{})</small></p>
+<p>Example</p>
+<pre><code>myApp.dateConvertion({
+   data : [{
+     "start" : "10,8,2014,5,23,00",
+     "end" : "10,8,2014,23,23,00",
+   }, {
+     "start" : "10,01,2014,10,32,00",
+     "end" : "10,01,2014,10,36,00",
+   }],
+   "key" : "start" || "end"
+});</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Converts date string to date object&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;obj&lt;/strong&gt; &lt;small&gt;(object{})&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.dateConvertion({
+   data : [{
+     &quot;start&quot; : &quot;10,8,2014,5,23,00&quot;,
+     &quot;end&quot; : &quot;10,8,2014,23,23,00&quot;,
+   }, {
+     &quot;start&quot; : &quot;10,01,2014,10,32,00&quot;,
+     &quot;end&quot; : &quot;10,01,2014,10,36,00&quot;,
+   }],
+   &quot;key&quot; : &quot;start&quot; || &quot;end&quot;
+});&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.10"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.10</span> - -->dateConvertion(obj)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Converts an Object to Array</p>
+<p><strong>obj</strong> <small>(object{})</small></p>
+<p>Example</p>
+<pre><code>myApp.objectToArray({
+   "11" : "Acupuncturist",
+   "15" : "Alzheimer Center (Dementia Center)",
+   "16" : "Ambulance",
+   "17" : "Art Therapist",
+   "26" : "Adult Companion",
+   "48" : "Air Carrier"
+});</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Converts an Object to Array&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;obj&lt;/strong&gt; &lt;small&gt;(object{})&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.objectToArray({
+   &quot;11&quot; : &quot;Acupuncturist&quot;,
+   &quot;15&quot; : &quot;Alzheimer Center (Dementia Center)&quot;,
+   &quot;16&quot; : &quot;Ambulance&quot;,
+   &quot;17&quot; : &quot;Art Therapist&quot;,
+   &quot;26&quot; : &quot;Adult Companion&quot;,
+   &quot;48&quot; : &quot;Air Carrier&quot;
+});&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.11"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.11</span> - -->tryCatch(trycode, callback)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>A simple tryCatch method to catch error</p>
+<p><strong>trycode</strong> is a function</p>
+<p>Example</p>
+<pre><code>myApp.tryCatch(function(){
+     //try some of your code
+},function(){
+     //then apply here.
+});</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;A simple tryCatch method to catch error&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;trycode&lt;/strong&gt; is a function&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.tryCatch(function(){
+     //try some of your code
+},function(){
+     //then apply here.
+});&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.12"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.12</span> - -->apply(arguments, data)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Automatic method execution</p>
+<p><strong>Note</strong>: If arguments have any function , it will automatically applied with data if available.</p>
+<p>Example</p>
+<pre><code>myApp.apply(arguments);</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Automatic method execution&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: If arguments have any function , it will automatically applied with data if available.&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.apply(arguments);&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.13"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.13</span> - -->setPageHeight()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Sets height for the page</p>
+<p><strong>Note</strong>: This method depends on matchHeight().</p>
+<p>Example</p>
+<pre><code>myApp.setPageHeight();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Sets height for the page&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: This method depends on matchHeight().&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.setPageHeight();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.14"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.14</span> - -->mediaScreen()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Return the type of device based on the screen resolution</p>
+<p>Example</p>
+<pre><code>myApp.mediaScreen();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Return the type of device based on the screen resolution&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.mediaScreen();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.15"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.15</span> - -->searchForm(formId, callback)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Apply callback functions while searching</p>
+<p><strong>formId</strong> : Id of the form</p>
+<p><strong>callback</strong> : function to be applied</p>
+<p>Example</p>
+<pre><code>myApp.searchForm('#search_form', callback);</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Apply callback functions while searching&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;formId&lt;/strong&gt; : Id of the form&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;callback&lt;/strong&gt; : function to be applied&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.searchForm(&#x27;#search_form&#x27;, callback);&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.16"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.16</span> - -->stopPropagate()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Generic method for jQuery stopPropagate()</p>
+<p>This functionality will apply for elements having attribute <strong>data-propagate='stop'</strong></p>
+<p>Example</p>
+<pre><code>myApp.stopPropagate();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Generic method for jQuery stopPropagate()&lt;/p&gt;
+&lt;p&gt;This functionality will apply for elements having attribute &lt;strong&gt;data-propagate=&#x27;stop&#x27;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.stopPropagate();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.17"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.17</span> - -->customClick()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Elements having attribute <strong>data-click</strong> can have functions as value for this attribute. While click this elemet, specified function will execute</p>
+<p>Example</p>
+<pre><code>myApp.customClick();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Elements having attribute &lt;strong&gt;data-click&lt;/strong&gt; can have functions as value for this attribute. While click this elemet, specified function will execute&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.customClick();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.18"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.18</span> - -->currentTime(options)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns curren time (13:32:50)|(1:32 PM) based on the configuration</p>
+<p>Param (options) is object{}</p>
+<p>Example</p>
+<pre><code>myApp.currentTime({
+   join : ":",
+   am : " AM",
+   pm : " PM",
+   AMPM : true,
+   seconds : false
+});</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns curren time (13:32:50)|(1:32 PM) based on the configuration&lt;/p&gt;
+&lt;p&gt;Param (options) is object{}&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.currentTime({
+   join : &quot;:&quot;,
+   am : &quot; AM&quot;,
+   pm : &quot; PM&quot;,
+   AMPM : true,
+   seconds : false
+});&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.19"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.19</span> - -->formatTime12h(time)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns formatted time (hh:mm (AM|PM))</p>
+<p>Param (time) is string</p>
+<p>Example</p>
+<pre><code>myApp.formatTime12h("13:32:56");      //Result : "01:32 AM"</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns formatted time (hh:mm (AM|PM))&lt;/p&gt;
+&lt;p&gt;Param (time) is string&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.formatTime12h(&quot;13:32:56&quot;);      //Result : &quot;01:32 AM&quot;&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.20"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.20</span> - -->zeroFormat(val)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns (val) begin with 0 if (val) is below 10</p>
+<p>Param (val) is number</p>
+<p>Example</p>
+<pre><code>myApp.zeroFormat(7);      //Result : 07</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns (val) begin with 0 if (val) is below 10&lt;/p&gt;
+&lt;p&gt;Param (val) is number&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.zeroFormat(7);      //Result : 07&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.21"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.21</span> - -->customSerialize(obj, avoidkey, joiner)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns the form elements name and corresponding values as an object</p>
+<p>Param (obj) is object{}</p>
+<p>Example</p>
+<pre><code>myApp.customSerialize($('#form_validate').serializeArray())</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns the form elements name and corresponding values as an object&lt;/p&gt;
+&lt;p&gt;Param (obj) is object{}&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.customSerialize($(&#x27;#form_validate&#x27;).serializeArray())&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.22"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.22</span> - -->objectextend(options)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Returns overwritten object{}</p>
+<p>Param (options) is object{}</p>
+<p>Example</p>
+<pre><code>myApp.objectextend({
+   from : {
+     id : "some",
+     width : 100,
+     height : 200,
+     background : "#fff"
+   },
+   to : {
+     id : "other",
+     width : 200,
+     height : 300,
+     left : 0,
+     top : 10
+   }
+});</code></pre>
+<p><strong>Result Description</strong> : The <strong>to:{}</strong> data overwritten by <strong>from:{}</strong> data</p>
+<p><strong>Note</strong> :  if from.key == to.key matched then only it will ovewrite,else key and value will append.</p></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Returns overwritten object{}&lt;/p&gt;
+&lt;p&gt;Param (options) is object{}&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.objectextend({
+   from : {
+     id : &quot;some&quot;,
+     width : 100,
+     height : 200,
+     background : &quot;#fff&quot;
+   },
+   to : {
+     id : &quot;other&quot;,
+     width : 200,
+     height : 300,
+     left : 0,
+     top : 10
+   }
+});&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Result Description&lt;/strong&gt; : The &lt;strong&gt;to:{}&lt;/strong&gt; data overwritten by &lt;strong&gt;from:{}&lt;/strong&gt; data&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; :  if from.key == to.key matched then only it will ovewrite,else key and value will append.&lt;/p&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.23"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.23</span> - -->timeOut(options)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Execute a function after a specified time</p>
+<p>Param (options) is object{}</p>
+<p>Example</p>
+<pre><code>myApp.timeOut({
+   duration : 1000, // default duration is 1 , 1000 = 1 seconds
+   callback : function() {
+     //your code here
+   }
+});</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Execute a function after a specified time&lt;/p&gt;
+&lt;p&gt;Param (options) is object{}&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.timeOut({
+   duration : 1000, // default duration is 1 , 1000 = 1 seconds
+   callback : function() {
+     //your code here
+   }
+});&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.24"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.24</span> - -->countDown(params)</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Execute a specified no. of methods in the given interval</p>
+<p>Param (params) is object{}</p>
+<p>Example</p>
+<pre><code>var newContDown = new myApp.countDown({
+   counter : 2,                // How many time you want run counter
+   duration : [3000, 3000],    // Each counter duration
+   callback : [method1, method2]  // Functions as array
+});
+newContDown.init(newContDown.setting); // Count down initiation</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Execute a specified no. of methods in the given interval&lt;/p&gt;
+&lt;p&gt;Param (params) is object{}&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var newContDown = new myApp.countDown({
+   counter : 2,                // How many time you want run counter
+   duration : [3000, 3000],    // Each counter duration
+   callback : [method1, method2]  // Functions as array
+});
+newContDown.init(newContDown.setting); // Count down initiation&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.25"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.25</span> - -->pageFontSize()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Increase or Minimize the text size of the page</p>
+<p>Example</p>
+<pre><code>myApp.pageFontSize();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Increase or Minimize the text size of the page&lt;/p&gt;
+&lt;p&gt;Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;myApp.pageFontSize();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.26"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.26</span> - -->setLeftMenuPosition()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Leftmenu position is controlled by this method based on the Screen Resolution. For tablet, only icons will be visible. For mobile, leftnav will be hidden.</p>
+<p>Usage</p>
+<pre>myApp.setLeftMenuPosition();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Leftmenu position is controlled by this method based on the Screen Resolution. For tablet, only icons will be visible. For mobile, leftnav will be hidden.&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;myApp.setLeftMenuPosition();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.27"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.27</span> - -->collapseSideMenu()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Leftmenu show/hide functionality is done by this method.</p>
+<p>Usage</p>
+<pre>myApp.collapseSideMenu();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Leftmenu show/hide functionality is done by this method.&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;myApp.collapseSideMenu();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.28"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.28</span> - -->setLeftMenuActive()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>This method will change the corresponding leftmenu to active state.</p>
+<p>Usage</p>
+<pre>myApp.setLeftMenuActive();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;This method will change the corresponding leftmenu to active state.&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;myApp.setLeftMenuActive();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.29"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.29</span> - -->loadPageFromNavigation()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Ajax loading of content while clicking leftmenu is donw by this method.</p>
+<p>Usage</p>
+<pre>myApp.loadPageFromNavigation();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Ajax loading of content while clicking leftmenu is donw by this method.&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;myApp.loadPageFromNavigation();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.30"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.30</span> - -->openRightNavigation()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>This method will open the Rightnav panel</p>
+<p>Usage</p>
+<pre>myApp.openRightNavigation();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;This method will open the Rightnav panel&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;myApp.openRightNavigation();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="6.31"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">6.31</span> - -->autoPageLoad()</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Initial ajax loading of content is done by this method.</p>
+<p>Usage</p>
+<pre>myApp.autoPageLoad();</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Initial ajax loading of content is done by this method.&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;myApp.autoPageLoad();&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+  </article>
+</div>
+
+<a href="#" class="scrolltop" data-scrolltop="true" title="Scroll to top"><i class="fa fa-angle-up"></i></a>
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/cnsiJS.js"></script>
+<script src="assets/js/cnsiutils.js"></script>
+<script src="assets/js/cnsi-plugins.js"></script>
+<script src="assets/js/listSearch.js"></script>
+<script src="assets/js/cnsicoreui.js"></script>
+<script src="assets/js/cnsi-custom.js"></script>
+
+<script>
+  $(document).ready(function(){
+    var sidebarAdjust = function() {
+      // Match footer/body height
+      var height = Math.max($('#kss-nav').height(), $('#kss-main').height());
+      var winHeight = $(window).height();
+      if(height < winHeight) {
+      	height = winHeight;
+      }
+
+      if ($(window).width() <= 768) {
+        $('#kss-main, #kss-nav').height('auto');
+      } else {
+        $('#kss-main, #kss-nav').height(height);
+      }
+    };
+
+    $(window).resize(sidebarAdjust);
+    $(window).scroll(sidebarAdjust);
+    sidebarAdjust();
+
+    // Ensure code blocks are highlighted properly...
+    $('pre>code').addClass('prettyprint');
+    prettyPrint();
+  });
+</script>
+
+
+</div></body>
+</html>

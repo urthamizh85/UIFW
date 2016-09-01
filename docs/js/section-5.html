@@ -1,0 +1,3257 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>UI Framework</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link href="assets/css/glyphicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/custom-theme-default.css" />
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body><div id="kss-wrapper">
+
+<div id="kss-nav">
+  <header id="kss-header">
+    <hgroup><h1>CNSI UI Framework</h1></hgroup>
+    <div class="search-doc-box">
+	  <input type="text" placeholder="Search docs" name="search_doc" id="search_doc" data-ui="alphabetListSearch" data-search-target=".left-nav > ul" />
+	</div>
+  </header>
+  <aside>
+    <nav class="left-nav"><ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="section-1.html">String Utils</a>
+        <ul class="submenu pull-hide" data-section="section-1">
+            <li><a href="section-1.html#1.1">constructor(nativeJsString)</a>
+            </li>
+            <li><a href="section-1.html#1.2">between(left, right)</a>
+            </li>
+            <li><a href="section-1.html#1.3">camelize()</a>
+            </li>
+            <li><a href="section-1.html#1.4">capitalize()</a>
+            </li>
+            <li><a href="section-1.html#1.5">chompLeft(prefix)</a>
+            </li>
+            <li><a href="section-1.html#1.6">chompRight(suffix)</a>
+            </li>
+            <li><a href="section-1.html#1.7">collapseWhitespace()</a>
+            </li>
+            <li><a href="section-1.html#1.8">contains(ss)</a>
+            </li>
+            <li><a href="section-1.html#1.9">count(substring)</a>
+            </li>
+            <li><a href="section-1.html#1.10">dasherize()</a>
+            </li>
+            <li><a href="section-1.html#1.11">decodeHTMLEntities()</a>
+            </li>
+            <li><a href="section-1.html#1.12">endsWith(ss)</a>
+            </li>
+            <li><a href="section-1.html#1.13">escapeHTML()</a>
+            </li>
+            <li><a href="section-1.html#1.14">extendPrototype()</a>
+            </li>
+            <li><a href="section-1.html#1.15">ensureLeft(prefix)</a>
+            </li>
+            <li><a href="section-1.html#1.16">ensureRight(suffix)</a>
+            </li>
+            <li><a href="section-1.html#1.17">humanize()</a>
+            </li>
+            <li><a href="section-1.html#1.18">include(ss)</a>
+            </li>
+            <li><a href="section-1.html#1.19">isAlpha()</a>
+            </li>
+            <li><a href="section-1.html#1.20">isAlphaNumeric()</a>
+            </li>
+            <li><a href="section-1.html#1.21">isEmpty()</a>
+            </li>
+            <li><a href="section-1.html#1.22">isLower()</a>
+            </li>
+            <li><a href="section-1.html#1.23">isNumeric()</a>
+            </li>
+            <li><a href="section-1.html#1.24">isUpper()</a>
+            </li>
+            <li><a href="section-1.html#1.25">latinise()</a>
+            </li>
+            <li><a href="section-1.html#1.26">left(n)</a>
+            </li>
+            <li><a href="section-1.html#1.27">length</a>
+            </li>
+            <li><a href="section-1.html#1.28">lines()</a>
+            </li>
+            <li><a href="section-1.html#1.29">pad(len, [char])</a>
+            </li>
+            <li><a href="section-1.html#1.30">padLeft(len, [char])</a>
+            </li>
+            <li><a href="section-1.html#1.31">padRight(len, [char])</a>
+            </li>
+            <li><a href="section-1.html#1.32">parseCSV()</a>
+            </li>
+            <li><a href="section-1.html#1.33">repeat(n)</a>
+            </li>
+            <li><a href="section-1.html#1.34">replaceAll(ss, newstr)</a>
+            </li>
+            <li><a href="section-1.html#1.35">strip([string1],[string2],...)</a>
+            </li>
+            <li><a href="section-1.html#1.36">restorePrototype()</a>
+            </li>
+            <li><a href="section-1.html#1.37">right(n)</a>
+            </li>
+            <li><a href="section-1.html#1.38">s</a>
+            </li>
+            <li><a href="section-1.html#1.39">setValue(value)</a>
+            </li>
+            <li><a href="section-1.html#1.40">slugify()</a>
+            </li>
+            <li><a href="section-1.html#1.41">startsWith(prefix)</a>
+            </li>
+            <li><a href="section-1.html#1.42">stripPunctuation()</a>
+            </li>
+            <li><a href="section-1.html#1.43">stripTags([tag1],[tag2],...)</a>
+            </li>
+            <li><a href="section-1.html#1.44">template(values, [open], [close])</a>
+            </li>
+            <li><a href="section-1.html#1.45">times(n)</a>
+            </li>
+            <li><a href="section-1.html#1.46">toBoolean() / toBool()</a>
+            </li>
+            <li><a href="section-1.html#1.47">toCSV(options)</a>
+            </li>
+            <li><a href="section-1.html#1.48">toFloat([precision])</a>
+            </li>
+            <li><a href="section-1.html#1.49">toInt() / toInteger()</a>
+            </li>
+            <li><a href="section-1.html#1.50">toString()</a>
+            </li>
+            <li><a href="section-1.html#1.51">trim()</a>
+            </li>
+            <li><a href="section-1.html#1.52">trimLeft()</a>
+            </li>
+            <li><a href="section-1.html#1.53">trimRight()</a>
+            </li>
+            <li><a href="section-1.html#1.54">truncate(length, [chars])</a>
+            </li>
+            <li><a href="section-1.html#1.55">underscore()</a>
+            </li>
+            <li><a href="section-1.html#1.56">unescapeHTML()</a>
+            </li>
+            <li><a href="section-1.html#1.57">wrapHTML()</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-2.html">Number Utils</a>
+        <ul class="submenu pull-hide" data-section="section-2">
+            <li><a href="section-2.html#2.1">Format</a>
+            </li>
+            <li><a href="section-2.html#2.2">Numbers</a>
+            </li>
+            <li><a href="section-2.html#2.3">Currency</a>
+            </li>
+            <li><a href="section-2.html#2.4">Bytes</a>
+            </li>
+            <li><a href="section-2.html#2.5">Percentages</a>
+            </li>
+            <li><a href="section-2.html#2.6">Time</a>
+            </li>
+            <li><a href="section-2.html#2.7">Unformat</a>
+            </li>
+            <li><a href="section-2.html#2.8">Manipulate</a>
+            </li>
+            <li><a href="section-2.html#2.9">Value</a>
+            </li>
+            <li><a href="section-2.html#2.10">Set</a>
+            </li>
+            <li><a href="section-2.html#2.11">Difference</a>
+            </li>
+            <li><a href="section-2.html#2.12">Default Formatting</a>
+            </li>
+            <li><a href="section-2.html#2.13">Custom Zero Formatting</a>
+            </li>
+            <li><a href="section-2.html#2.14">Clone</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-3.html">Date Utils</a>
+        <ul class="submenu pull-hide" data-section="section-3">
+            <li><a href="section-3.html#3.1">Now</a>
+            </li>
+            <li><a href="section-3.html#3.2">String</a>
+            </li>
+            <li><a href="section-3.html#3.3">String + Format</a>
+            </li>
+            <li><a href="section-3.html#3.4">Year, month, and day tokens</a>
+            </li>
+            <li><a href="section-3.html#3.5">Week year, week, and weekday tokens</a>
+            </li>
+            <li><a href="section-3.html#3.6">Hour, minute, second, millisecond, and offset tokens</a>
+            </li>
+            <li><a href="section-3.html#3.7">String + Formats</a>
+            </li>
+            <li><a href="section-3.html#3.8">Special Formats</a>
+            </li>
+            <li><a href="section-3.html#3.9">Object</a>
+            </li>
+            <li><a href="section-3.html#3.10">Unix Offset (milliseconds)</a>
+            </li>
+            <li><a href="section-3.html#3.11">Date</a>
+            </li>
+            <li><a href="section-3.html#3.12">Array</a>
+            </li>
+            <li><a href="section-3.html#3.13">Moment Clone</a>
+            </li>
+            <li><a href="section-3.html#3.14">UTC</a>
+            </li>
+            <li><a href="section-3.html#3.15">parseZone</a>
+            </li>
+            <li><a href="section-3.html#3.16">Validation</a>
+            </li>
+            <li><a href="section-3.html#3.17">Defaults</a>
+            </li>
+            <li><a href="section-3.html#3.18">Get + Set</a>
+            </li>
+            <li><a href="section-3.html#3.19">Millisecond</a>
+            </li>
+            <li><a href="section-3.html#3.20">Second</a>
+            </li>
+            <li><a href="section-3.html#3.21">Minute</a>
+            </li>
+            <li><a href="section-3.html#3.22">Hour</a>
+            </li>
+            <li><a href="section-3.html#3.23">Date of Month</a>
+            </li>
+            <li><a href="section-3.html#3.24">Day of Week</a>
+            </li>
+            <li><a href="section-3.html#3.25">Day of Week (Locale Aware)</a>
+            </li>
+            <li><a href="section-3.html#3.26">ISO Day of Week</a>
+            </li>
+            <li><a href="section-3.html#3.27">Day of Year</a>
+            </li>
+            <li><a href="section-3.html#3.28">Week of Year</a>
+            </li>
+            <li><a href="section-3.html#3.29">Week of Year (ISO)</a>
+            </li>
+            <li><a href="section-3.html#3.30">Month</a>
+            </li>
+            <li><a href="section-3.html#3.31">Quarter</a>
+            </li>
+            <li><a href="section-3.html#3.32">Year</a>
+            </li>
+            <li><a href="section-3.html#3.33">Week Year</a>
+            </li>
+            <li><a href="section-3.html#3.34">Week Year (ISO)</a>
+            </li>
+            <li><a href="section-3.html#3.35">Weeks In Year</a>
+            </li>
+            <li><a href="section-3.html#3.36">Weeks In Year (ISO)</a>
+            </li>
+            <li><a href="section-3.html#3.37">Get</a>
+            </li>
+            <li><a href="section-3.html#3.38">Set</a>
+            </li>
+            <li><a href="section-3.html#3.39">Maximum</a>
+            </li>
+            <li><a href="section-3.html#3.40">Minimum</a>
+            </li>
+            <li><a href="section-3.html#3.41">Manipulate</a>
+            </li>
+            <li><a href="section-3.html#3.42">Add</a>
+            </li>
+            <li><a href="section-3.html#3.43">Subtract</a>
+            </li>
+            <li><a href="section-3.html#3.44">Start of Time</a>
+            </li>
+            <li><a href="section-3.html#3.45">End of Time</a>
+            </li>
+            <li><a href="section-3.html#3.46">Maximum</a>
+            </li>
+            <li><a href="section-3.html#3.47">Minimum</a>
+            </li>
+            <li><a href="section-3.html#3.48">Local</a>
+            </li>
+            <li><a href="section-3.html#3.49">UTC</a>
+            </li>
+            <li><a href="section-3.html#3.50">Timezone Offset</a>
+            </li>
+            <li><a href="section-3.html#3.51">Format</a>
+            </li>
+            <li><a href="section-3.html#3.52">Time from now</a>
+            </li>
+            <li><a href="section-3.html#3.53">Time from X</a>
+            </li>
+            <li><a href="section-3.html#3.54">Calendar Time</a>
+            </li>
+            <li><a href="section-3.html#3.55">Difference</a>
+            </li>
+            <li><a href="section-3.html#3.56">Unix Offset (milliseconds)</a>
+            </li>
+            <li><a href="section-3.html#3.57">Unix Timestamp (seconds)</a>
+            </li>
+            <li><a href="section-3.html#3.58">Days in Month</a>
+            </li>
+            <li><a href="section-3.html#3.59">As Javascript Date</a>
+            </li>
+            <li><a href="section-3.html#3.60">As Array</a>
+            </li>
+            <li><a href="section-3.html#3.61">As JSON</a>
+            </li>
+            <li><a href="section-3.html#3.62">As ISO 8601 String</a>
+            </li>
+            <li><a href="section-3.html#3.63">Is Before</a>
+            </li>
+            <li><a href="section-3.html#3.64">Is Same</a>
+            </li>
+            <li><a href="section-3.html#3.65">Is After</a>
+            </li>
+            <li><a href="section-3.html#3.66">Is Leap Year</a>
+            </li>
+            <li><a href="section-3.html#3.67">Is Daylight Saving Time</a>
+            </li>
+            <li><a href="section-3.html#3.68">Is DST Shifted</a>
+            </li>
+            <li><a href="section-3.html#3.69">Is a Moment</a>
+            </li>
+            <li><a href="section-3.html#3.70">Creating</a>
+            </li>
+            <li><a href="section-3.html#3.71">Humanize</a>
+            </li>
+            <li><a href="section-3.html#3.72">Milliseconds</a>
+            </li>
+            <li><a href="section-3.html#3.73">Seconds</a>
+            </li>
+            <li><a href="section-3.html#3.74">Minutes</a>
+            </li>
+            <li><a href="section-3.html#3.75">Hours</a>
+            </li>
+            <li><a href="section-3.html#3.76">Days</a>
+            </li>
+            <li><a href="section-3.html#3.77">Months</a>
+            </li>
+            <li><a href="section-3.html#3.78">Years</a>
+            </li>
+            <li><a href="section-3.html#3.79">Add Time</a>
+            </li>
+            <li><a href="section-3.html#3.80">Subtract Time</a>
+            </li>
+            <li><a href="section-3.html#3.81">Get Unit of Time</a>
+            </li>
+            <li><a href="section-3.html#3.82">Normalize Units</a>
+            </li>
+            <li><a href="section-3.html#3.83">Invalid</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-4.html">Currency Utils</a>
+        <ul class="submenu pull-hide" data-section="section-4">
+            <li><a href="section-4.html#4.1">formatMoney()</a>
+            </li>
+            <li><a href="section-4.html#4.2">formatColumn()</a>
+            </li>
+            <li><a href="section-4.html#4.3">formatNumber()</a>
+            </li>
+            <li><a href="section-4.html#4.4">Documentation</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-5.html">CNSI Core</a>
+        <ul class="submenu pull-hide" data-section="section-5">
+            <li><a href="section-5.html#5.1">Regex Patterns</a>
+            </li>
+            <li><a href="section-5.html#5.2">Validation</a>
+            </li>
+            <li><a href="section-5.html#5.4">Number</a>
+            </li>
+            <li><a href="section-5.html#5.5">Date</a>
+            </li>
+            <li><a href="section-5.html#5.6">Array</a>
+            </li>
+            <li><a href="section-5.html#5.7">Currency</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-6.html">CNSI Core UI</a>
+        <ul class="submenu pull-hide" data-section="section-6">
+            <li><a href="section-6.html#6.1">scrollMove(top, duration)</a>
+            </li>
+            <li><a href="section-6.html#6.2">scroll(scrollId, options)</a>
+            </li>
+            <li><a href="section-6.html#6.3">formreset(options)</a>
+            </li>
+            <li><a href="section-6.html#6.4">widgetCollapse(options)</a>
+            </li>
+            <li><a href="section-6.html#6.5">loadPage(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.6">throbber(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.7">notification(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.8">matchHeight(id1, id2)</a>
+            </li>
+            <li><a href="section-6.html#6.9">dateConvertion(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.10">dateConvertion(obj)</a>
+            </li>
+            <li><a href="section-6.html#6.11">tryCatch(trycode, callback)</a>
+            </li>
+            <li><a href="section-6.html#6.12">apply(arguments, data)</a>
+            </li>
+            <li><a href="section-6.html#6.13">setPageHeight()</a>
+            </li>
+            <li><a href="section-6.html#6.14">mediaScreen()</a>
+            </li>
+            <li><a href="section-6.html#6.15">searchForm(formId, callback)</a>
+            </li>
+            <li><a href="section-6.html#6.16">stopPropagate()</a>
+            </li>
+            <li><a href="section-6.html#6.17">customClick()</a>
+            </li>
+            <li><a href="section-6.html#6.18">currentTime(options)</a>
+            </li>
+            <li><a href="section-6.html#6.19">formatTime12h(time)</a>
+            </li>
+            <li><a href="section-6.html#6.20">zeroFormat(val)</a>
+            </li>
+            <li><a href="section-6.html#6.21">customSerialize(obj, avoidkey, joiner)</a>
+            </li>
+            <li><a href="section-6.html#6.22">objectextend(options)</a>
+            </li>
+            <li><a href="section-6.html#6.23">timeOut(options)</a>
+            </li>
+            <li><a href="section-6.html#6.24">countDown(params)</a>
+            </li>
+            <li><a href="section-6.html#6.25">pageFontSize()</a>
+            </li>
+            <li><a href="section-6.html#6.26">setLeftMenuPosition()</a>
+            </li>
+            <li><a href="section-6.html#6.27">collapseSideMenu()</a>
+            </li>
+            <li><a href="section-6.html#6.28">setLeftMenuActive()</a>
+            </li>
+            <li><a href="section-6.html#6.29">loadPageFromNavigation()</a>
+            </li>
+            <li><a href="section-6.html#6.30">openRightNavigation()</a>
+            </li>
+            <li><a href="section-6.html#6.31">autoPageLoad()</a>
+            </li>
+        </ul>        
+      </li>
+      <li><a href="section-7.html">Custom</a>
+        <ul class="submenu pull-hide" data-section="section-7">
+            <li><a href="section-7.html#7.1">Variables</a>
+            </li>
+            <li><a href="section-7.html#7.2">common()</a>
+            </li>
+        </ul>        
+      </li>
+    </ul></nav>
+  </aside>
+</div>
+<div role="main" id="kss-main">
+  <article id="kss-content">
+
+    
+      <h2 class="kss-main-title">CNSI Core</h2>
+      
+		
+
+
+      <section class="kss-depth-2">
+      <a name="5.1"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">5.1</span> - -->Regex Patterns</h2>
+      
+		
+
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.1"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.1</span> - -->rgx_email</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for Email</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_email
+// Result :
+// /^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,4})$/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for Email&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_email
+// Result :
+// /^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*(\.[a-zA-Z]{2,4})$/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.2"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.2</span> - -->rgx_symbols</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for Symbols</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_symbols
+// Result :
+// /[!$%^&*()_+|~\-={}\[\]:";'<>?,.\/`]/g
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for Symbols&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_symbols
+// Result :
+// /[!$%^&amp;*()_+|~\-={}\[\]:&quot;;&#x27;&lt;&gt;?,.\/&#x60;]/g
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.3"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.3</span> - -->rgx_symbolsAll</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Extended Regex pattern for Symbols which includes @,#</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_symbolsAll
+// Result :
+// /[!$%^&*()_+|~@\\#\-={}\[\]:";'<>?,.\/`]/g
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Extended Regex pattern for Symbols which includes @,#&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_symbolsAll
+// Result :
+// /[!$%^&amp;*()_+|~@\\#\-={}\[\]:&quot;;&#x27;&lt;&gt;?,.\/&#x60;]/g
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.4"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.4</span> - -->rgx_symbolsAlls</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Extended Regex pattern for Symbols which includes space</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_symbolsAlls
+// Result :
+// /[!$%^&*()_+|~@\\#\-={}\[\]:";'<>?,.\/`\s]/g
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Extended Regex pattern for Symbols which includes space&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_symbolsAlls
+// Result :
+// /[!$%^&amp;*()_+|~@\\#\-={}\[\]:&quot;;&#x27;&lt;&gt;?,.\/&#x60;\s]/g
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.5"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.5</span> - -->rgx_alphabet</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for Alphabets</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_alphabet
+// Result :
+// /^[a-zA-Z]{0,}$/g
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for Alphabets&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_alphabet
+// Result :
+// /^[a-zA-Z]{0,}$/g
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.6"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.6</span> - -->rgx_alphabetSpace</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for Alphabets with space</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_alphabetSpace
+// Result :
+// /^[ a-z A-Z ]{0,}$/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for Alphabets with space&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_alphabetSpace
+// Result :
+// /^[ a-z A-Z ]{0,}$/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.7"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.7</span> - -->rgx_alphabetsNumeric</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for alphaNumeric values</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_alphabetsNumeric
+// Result :
+// /^([a-zA-Z]|[0-9]){0,}$/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for alphaNumeric values&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_alphabetsNumeric
+// Result :
+// /^([a-zA-Z]|[0-9]){0,}$/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.8"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.8</span> - -->rgx_alphabetsNumericSpace</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for alphaNumeric with space</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_alphabetsNumericSpace
+// Result :
+// /^[ a-z A-Z 0-9 ]{0,}$/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for alphaNumeric with space&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_alphabetsNumericSpace
+// Result :
+// /^[ a-z A-Z 0-9 ]{0,}$/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.9"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.9</span> - -->rgx_numeric</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for Numbers</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_numeric
+// Result :
+// /^[0-9]{0,}$/g
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for Numbers&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_numeric
+// Result :
+// /^[0-9]{0,}$/g
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.10"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.10</span> - -->rgx_numericSpace</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for Numbers with space</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_numericSpace
+// Result :
+// /^[0-9 ]{0,}$/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for Numbers with space&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_numericSpace
+// Result :
+// /^[0-9 ]{0,}$/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.11"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.11</span> - -->rgx_decimal</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for Decimal numbers</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_decimal
+// Result :
+// /^\d+(\.\d+)?$/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for Decimal numbers&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_decimal
+// Result :
+// /^\d+(\.\d+)?$/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.12"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.12</span> - -->rgx_decimalPoint</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for Decimal point</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_decimalPoint
+// Result :
+// /\.\d+?$/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for Decimal point&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_decimalPoint
+// Result :
+// /\.\d+?$/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.13"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.13</span> - -->rgx_firstCase</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for first letter ALPHABET in a value</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_firstCase
+// Result :
+// /^[a-zA-Z]/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for first letter ALPHABET in a value&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_firstCase
+// Result :
+// /^[a-zA-Z]/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.14"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.14</span> - -->rgx_startCase</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for any one letter ALPHABET</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_startCase
+// Result :
+// /(\s[a-z])|(^[a-z])/g
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for any one letter ALPHABET&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_startCase
+// Result :
+// /(\s[a-z])|(^[a-z])/g
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.15"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.15</span> - -->rgx_escape_char</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for escape character</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_escape_char
+// Result :
+// /\.\^\$\*\+\?\(\)\[\{\\\|\-\]/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for escape character&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_escape_char
+// Result :
+// /\.\^\$\*\+\?\(\)\[\{\\\|\-\]/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.16"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.16</span> - -->rgx_emptystrings</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for empty strings</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_emptystrings
+// Result :
+// /(^$)|(^ {0,}$)/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for empty strings&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_emptystrings
+// Result :
+// /(^$)|(^ {0,}$)/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.17"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.17</span> - -->rgx_date</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for date formats</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_date
+// Result :
+// mm/dd/yyyy : /^(0[1-9]|1[0-2]|[1-9])\/(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])\/((19|[2][0-9])[0-9]{2})/
+// dd/mm/yyyy : /^(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])\/(0[1-9]|1[0-2]|[1-9])\/((19|[2][0-9])[0-9]{2})/
+// yyyy/mm/dd : /^((19|[2][0-9])[0-9]{2})\/(0[1-9]|1[0-2]|[1-9])\/(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])/
+// yyyy/dd/mm : /^((19|[2][0-9])[0-9]{2})\/(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])\/(0[1-9]|1[0-2]|[1-9])/
+// dd/yyyy/mm : /^(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])\/((19|[2][0-9])[0-9]{2})\/(0[1-9]|1[0-2]|[1-9])/
+// mm/yyyy/dd : /^(0[1-9]|1[0-2]|[1-9])\/((19|[2][0-9])[0-9]{2})\/(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for date formats&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_date
+// Result :
+// mm/dd/yyyy : /^(0[1-9]|1[0-2]|[1-9])\/(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])\/((19|[2][0-9])[0-9]{2})/
+// dd/mm/yyyy : /^(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])\/(0[1-9]|1[0-2]|[1-9])\/((19|[2][0-9])[0-9]{2})/
+// yyyy/mm/dd : /^((19|[2][0-9])[0-9]{2})\/(0[1-9]|1[0-2]|[1-9])\/(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])/
+// yyyy/dd/mm : /^((19|[2][0-9])[0-9]{2})\/(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])\/(0[1-9]|1[0-2]|[1-9])/
+// dd/yyyy/mm : /^(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])\/((19|[2][0-9])[0-9]{2})\/(0[1-9]|1[0-2]|[1-9])/
+// mm/yyyy/dd : /^(0[1-9]|1[0-2]|[1-9])\/((19|[2][0-9])[0-9]{2})\/(0[1-9]|[1-2][0-9]|3[0-1]|[1-9])/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.18"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.18</span> - -->rgx_dateNotAcceptSymbol</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for date without symbols</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_dateNotAcceptSymbol
+// Result :
+// /[a-zA-Z!$%^&*()_+|~\\={}\[\]:";'<>?,.@#`]/g
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for date without symbols&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_dateNotAcceptSymbol
+// Result :
+// /[a-zA-Z!$%^&amp;*()_+|~\\={}\[\]:&quot;;&#x27;&lt;&gt;?,.@#&#x60;]/g
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.19"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.19</span> - -->rgx_currency</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for currency symbols:</p>
+<p>dollar : <strong>$</strong></p>
+<p>pound  : <strong>£</strong></p>
+<p>euro   : <strong>€</strong></p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_dateNotAcceptSymbol
+// Result :
+// /(\d)(?=(\d{3})+(?!\d))/g
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for currency symbols:&lt;/p&gt;
+&lt;p&gt;dollar : &lt;strong&gt;$&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;pound  : &lt;strong&gt;£&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;euro   : &lt;strong&gt;€&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_dateNotAcceptSymbol
+// Result :
+// /(\d)(?=(\d{3})+(?!\d))/g
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.1.20"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.1.20</span> - -->rgx_ssn</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Regex pattern for SSN format</p>
+<p>Usage</p>
+<pre><code>cnsiJS.core.regex.rgx_ssn
+// Result :
+// format : /^\d{3}-\d{2}-\d{4}$/
+// formatNotHypen : /^\d{9}$/
+// validFormat : /(?!\b(\d)\1+-(\d)\1+-(\d)\1+\b)(?!0|9\d{2})\d{3}-(?!00)\d{2}-(?!0{4})\d{4}/
+// validFormatNotHypen : /(?!\b(\d)\1+\b)(?!0|9\d{2})\d{3}(?!00)\d{2}(?!0{4})\d{4}/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Regex pattern for SSN format&lt;/p&gt;
+&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.regex.rgx_ssn
+// Result :
+// format : /^\d{3}-\d{2}-\d{4}$/
+// formatNotHypen : /^\d{9}$/
+// validFormat : /(?!\b(\d)\1+-(\d)\1+-(\d)\1+\b)(?!0|9\d{2})\d{3}-(?!00)\d{2}-(?!0{4})\d{4}/
+// validFormatNotHypen : /(?!\b(\d)\1+\b)(?!0|9\d{2})\d{3}(?!00)\d{2}(?!0{4})\d{4}/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="5.2"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">5.2</span> - -->Validation</h2>
+      
+		
+
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.2.1"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.2.1</span> - -->isNumber</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.validation.isNumber("ab13")
+// Result : false
+cnsiJS.core.validation.isNumber("123")
+// Result : true
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.validation.isNumber(&quot;ab13&quot;)
+// Result : false
+cnsiJS.core.validation.isNumber(&quot;123&quot;)
+// Result : true
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.2.2"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.2.2</span> - -->isSymbols</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.validation.isSymbols("!")
+// Result : true
+cnsiJS.core.validation.isSymbols("a1")
+// Result : false
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.validation.isSymbols(&quot;!&quot;)
+// Result : true
+cnsiJS.core.validation.isSymbols(&quot;a1&quot;)
+// Result : false
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.2.3"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.2.3</span> - -->isAlphabets</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.validation.isAlphabets("a1")
+// Result : false
+cnsiJS.core.validation.isAlphabets("aaa")
+// Result : true
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.validation.isAlphabets(&quot;a1&quot;)
+// Result : false
+cnsiJS.core.validation.isAlphabets(&quot;aaa&quot;)
+// Result : true
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.2.4"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.2.4</span> - -->isAlphabetsNumeric</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.validation.isAlphabetsNumeric("!")
+// Result : false
+cnsiJS.core.validation.isAlphabetsNumeric("aaa1")
+// Result : true
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.validation.isAlphabetsNumeric(&quot;!&quot;)
+// Result : false
+cnsiJS.core.validation.isAlphabetsNumeric(&quot;aaa1&quot;)
+// Result : true
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.2.5"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.2.5</span> - -->isDecimal</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.validation.isDecimal("0.1")
+// Result : true
+cnsiJS.core.validation.isDecimal("50")
+// Result : false
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.validation.isDecimal(&quot;0.1&quot;)
+// Result : true
+cnsiJS.core.validation.isDecimal(&quot;50&quot;)
+// Result : false
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.2.6"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.2.6</span> - -->isDecimalR</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.validation.isDecimalR("50")
+// Result : false
+cnsiJS.core.validation.isDecimalR(".1")
+// Result : true
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.validation.isDecimalR(&quot;50&quot;)
+// Result : false
+cnsiJS.core.validation.isDecimalR(&quot;.1&quot;)
+// Result : true
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.2.7"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.2.7</span> - -->isEmail</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.validation.isEmail("exmple@gmail.com")
+// Result : true
+cnsiJS.core.validation.isEmail("exmplegmail.com")
+// Result : false
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.validation.isEmail(&quot;exmple@gmail.com&quot;)
+// Result : true
+cnsiJS.core.validation.isEmail(&quot;exmplegmail.com&quot;)
+// Result : false
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.2.8"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.2.8</span> - -->isSSN</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.validation.isSSN("333-33-3333")
+// Result : false
+cnsiJS.core.validation.isSSN("000-45-7891")
+// Result : false
+cnsiJS.core.validation.isSSN("100-45-7891")
+// Result : true
+cnsiJS.core.validation.isSSN("121-00-7891")
+// Result : false
+cnsiJS.core.validation.isSSN("121-01-7891")
+// Result : true
+cnsiJS.core.validation.isSSN("121-01-0000")
+// Result : false
+cnsiJS.core.validation.isSSN("121-01-0001")
+// Result : true
+cnsiJS.core.validation.isSSN("421-45-7891")
+// Result : true
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.validation.isSSN(&quot;333-33-3333&quot;)
+// Result : false
+cnsiJS.core.validation.isSSN(&quot;000-45-7891&quot;)
+// Result : false
+cnsiJS.core.validation.isSSN(&quot;100-45-7891&quot;)
+// Result : true
+cnsiJS.core.validation.isSSN(&quot;121-00-7891&quot;)
+// Result : false
+cnsiJS.core.validation.isSSN(&quot;121-01-7891&quot;)
+// Result : true
+cnsiJS.core.validation.isSSN(&quot;121-01-0000&quot;)
+// Result : false
+cnsiJS.core.validation.isSSN(&quot;121-01-0001&quot;)
+// Result : true
+cnsiJS.core.validation.isSSN(&quot;421-45-7891&quot;)
+// Result : true
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.2.9"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.2.9</span> - -->isDate</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.validation.isDate("11/31/2012")
+// Result : false
+cnsiJS.core.validation.isDate("11/30/2012")
+// Result : true
+cnsiJS.core.validation.isDate("30/11/2012")
+// Result : false
+cnsiJS.core.validation.isDate("30/11/2012","dd/mm/yyyy")
+// Result : true
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.validation.isDate(&quot;11/31/2012&quot;)
+// Result : false
+cnsiJS.core.validation.isDate(&quot;11/30/2012&quot;)
+// Result : true
+cnsiJS.core.validation.isDate(&quot;30/11/2012&quot;)
+// Result : false
+cnsiJS.core.validation.isDate(&quot;30/11/2012&quot;,&quot;dd/mm/yyyy&quot;)
+// Result : true
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.2.10"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.2.10</span> - -->dateRange</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.validation.dateRange("11/30/2014","12/01/2014")
+// Result : true
+cnsiJS.core.validation.dateRange("11/30/2014","12/30/2014")
+// Result : true
+cnsiJS.core.validation.dateRange("11/30/2014","11/30/2014",false)
+// Result : false
+cnsiJS.core.validation.dateRange("11/30/2014","11/30/2014",true)
+// Result : true
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.validation.dateRange(&quot;11/30/2014&quot;,&quot;12/01/2014&quot;)
+// Result : true
+cnsiJS.core.validation.dateRange(&quot;11/30/2014&quot;,&quot;12/30/2014&quot;)
+// Result : true
+cnsiJS.core.validation.dateRange(&quot;11/30/2014&quot;,&quot;11/30/2014&quot;,false)
+// Result : false
+cnsiJS.core.validation.dateRange(&quot;11/30/2014&quot;,&quot;11/30/2014&quot;,true)
+// Result : true
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.1"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.1</span> - -->replaceAll</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.replaceAll("1234 5867 8415", "5", "a")
+// Result : 1234 a867 841a
+// Note : string 5 is replaced by string a <br/>
+cnsiJS.core.string.replaceAll("asdfklfhjsfhadadasdS", "s", " ")
+// Result : a dfklfhj fhadada d
+// Note : Where ever 'S' or 's' strings are all replaced with space character(' ')
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.replaceAll(&quot;1234 5867 8415&quot;, &quot;5&quot;, &quot;a&quot;)
+// Result : 1234 a867 841a
+// Note : string 5 is replaced by string a &lt;br/&gt;
+cnsiJS.core.string.replaceAll(&quot;asdfklfhjsfhadadasdS&quot;, &quot;s&quot;, &quot; &quot;)
+// Result : a dfklfhj fhadada d
+// Note : Where ever &#x27;S&#x27; or &#x27;s&#x27; strings are all replaced with space character(&#x27; &#x27;)
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.2"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.2</span> - -->lowerCase</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.lowerCase("JOHN DOE")
+// Result : john doe
+// Note : string will ne converted to lowercase
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.lowerCase(&quot;JOHN DOE&quot;)
+// Result : john doe
+// Note : string will ne converted to lowercase
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.3"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.3</span> - -->upperCase</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.upperCase("peter rafelson")
+// Result : PETER RAFELSON
+// Note : string will ne converted to uppercase
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.upperCase(&quot;peter rafelson&quot;)
+// Result : PETER RAFELSON
+// Note : string will ne converted to uppercase
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.4"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.4</span> - -->firstCase</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.firstCase("peter rafelson")
+// Result : Peter rafelson
+// Note : First letter in string will be converted to uppercase
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.firstCase(&quot;peter rafelson&quot;)
+// Result : Peter rafelson
+// Note : First letter in string will be converted to uppercase
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.5"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.5</span> - -->startCase</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.startCase("peter rafelson")
+// Result : Peter Rafelson
+// Note : First letter in all words will be converted to uppercase
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.startCase(&quot;peter rafelson&quot;)
+// Result : Peter Rafelson
+// Note : First letter in all words will be converted to uppercase
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.6"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.6</span> - -->wrap</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.wrap("peter rafelson", "|")
+// Result : "peter rafelson"
+cnsiJS.core.string.wrap("peter rafelson", String(|), "peter")
+// Result : peter rafelson
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.wrap(&quot;peter rafelson&quot;, &quot;|&quot;)
+// Result : &quot;peter rafelson&quot;
+cnsiJS.core.string.wrap(&quot;peter rafelson&quot;, String(|), &quot;peter&quot;)
+// Result : peter rafelson
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.7"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.7</span> - -->unwrap</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.unwrap(peter rafelson, "|")
+// Result : peter rafelson
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.unwrap(peter rafelson, &quot;|&quot;)
+// Result : peter rafelson
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.8"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.8</span> - -->after</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.after("abcdef", "g")
+// Result : abcdefg
+cnsiJS.core.string.after("abdef", "c","b")
+// Result : abcdef
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.after(&quot;abcdef&quot;, &quot;g&quot;)
+// Result : abcdefg
+cnsiJS.core.string.after(&quot;abdef&quot;, &quot;c&quot;,&quot;b&quot;)
+// Result : abcdef
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.9"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.9</span> - -->before</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.before("bcdef", "a")
+// Result : abcdef
+cnsiJS.core.string.before("abdef", "c", "d")
+// Result : abcdef
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.before(&quot;bcdef&quot;, &quot;a&quot;)
+// Result : abcdef
+cnsiJS.core.string.before(&quot;abdef&quot;, &quot;c&quot;, &quot;d&quot;)
+// Result : abcdef
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.10"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.10</span> - -->find</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.find("ability", "i")
+// Result : ["i", "i"]
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.find(&quot;ability&quot;, &quot;i&quot;)
+// Result : [&quot;i&quot;, &quot;i&quot;]
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.11"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.11</span> - -->extract</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.extract("lorem ipsum", 3, 7)
+// Result : em ipsu
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.extract(&quot;lorem ipsum&quot;, 3, 7)
+// Result : em ipsu
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.12"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.12</span> - -->comments</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.comments("This is your html comments", "html")
+// Result : <!--This is your html comments-->
+cnsiJS.core.string.comments("This is your single line comments", "line")
+// Result : //This is your single line comments
+cnsiJS.core.string.comments("This is your multiline comments", "multiline")
+// Result : /*This is your multiline comments*/
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.comments(&quot;This is your html comments&quot;, &quot;html&quot;)
+// Result : &lt;!--This is your html comments--&gt;
+cnsiJS.core.string.comments(&quot;This is your single line comments&quot;, &quot;line&quot;)
+// Result : //This is your single line comments
+cnsiJS.core.string.comments(&quot;This is your multiline comments&quot;, &quot;multiline&quot;)
+// Result : /*This is your multiline comments*/
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.13"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.13</span> - -->entity</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.entity("")
+// Result : <This is your comments>
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.entity(&quot;&quot;)
+// Result : &lt;This is your comments&gt;
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.3.14"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.3.14</span> - -->trim</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.trim(" Peter   Rafeeeelson  ")
+// Result : Peter Rafeeeelson
+cnsiJS.core.string.trim(" Peter   Rafeeeelson  ", "e")
+// Result : Peter Rafelson
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.trim(&quot; Peter   Rafeeeelson  &quot;)
+// Result : Peter Rafeeeelson
+cnsiJS.core.string.trim(&quot; Peter   Rafeeeelson  &quot;, &quot;e&quot;)
+// Result : Peter Rafelson
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="5.4"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">5.4</span> - -->Number</h2>
+      
+		
+
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.4.1"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.4.1</span> - -->minMax</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.string.minMax([1,12,35,40,234],"min")
+// Result : 1
+// Notes : Returns minimum value from the array
+cnsiJS.core.number.minMax([1121,2.5,87,400,234],"max")
+// Result : 1121
+// Notes : Returns maximum value from the array
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.string.minMax([1,12,35,40,234],&quot;min&quot;)
+// Result : 1
+// Notes : Returns minimum value from the array
+cnsiJS.core.number.minMax([1121,2.5,87,400,234],&quot;max&quot;)
+// Result : 1121
+// Notes : Returns maximum value from the array
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.4.2"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.4.2</span> - -->add</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.number.add([1121,2.5,87,400,234])
+// Result : 1844.5
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.number.add([1121,2.5,87,400,234])
+// Result : 1844.5
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.4.3"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.4.3</span> - -->subtract</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.number.subtract([1121,2.5,87,400,234])
+// Result : 1039.5
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.number.subtract([1121,2.5,87,400,234])
+// Result : 1039.5
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.4.4"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.4.4</span> - -->multiplication</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.number.multiplication([2,4,6])
+// Result : 48
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.number.multiplication([2,4,6])
+// Result : 48
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.4.5"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.4.5</span> - -->division</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.number.division([2,4,6])
+// Result : 3
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.number.division([2,4,6])
+// Result : 3
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.4.6"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.4.6</span> - -->fixedDecimal</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.number.fixedDecimal(2222.5555,2)
+// Result : 2222.55
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.number.fixedDecimal(2222.5555,2)
+// Result : 2222.55
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="5.5"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">5.5</span> - -->Date</h2>
+      
+		
+
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.1"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.1</span> - -->datetype</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.datetype("11/05/2014")
+// Result : mm/dd/yyyy
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.datetype(&quot;11/05/2014&quot;)
+// Result : mm/dd/yyyy
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.2"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.2</span> - -->dateDigitFormate</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.dateDigitFormate("1")
+// Result : 01
+// Notes : If you sent value less than 10, then zero will add begining of your value.
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.dateDigitFormate(&quot;1&quot;)
+// Result : 01
+// Notes : If you sent value less than 10, then zero will add begining of your value.
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.3"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.3</span> - -->currentTime</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.currentTime({AMPM : false,seconds : true,format : 24})
+// Result : 14:13:42
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.currentTime({AMPM : false,seconds : true,format : 24})
+// Result : 14:13:42
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.4"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.4</span> - -->getWeekCount</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.getWeekCount(new Date().getFullYear() , new Date().getMonth())
+// Result :
+// week : 4.2
+// isoWeek : 4
+// totalDays : 30
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.getWeekCount(new Date().getFullYear() , new Date().getMonth())
+// Result :
+// week : 4.2
+// isoWeek : 4
+// totalDays : 30
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.5"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.5</span> - -->getWeekAllCount</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.getWeekAllCount(new Date().getFullYear())
+// Result :
+// betweendays : 0
+// totalDays : 365
+// isoWeekAll : 41
+// weekAll : 50.9 <br/>
+// getWeekAllCount - dec
+// week:4.3
+// isoWeek:3
+// totalDays:31<br/>
+// getWeekAllCount - jan
+// week:4
+// isoWeek:3
+// totalDays:28<br/>
+// getWeekAllCount - feb
+// week:4.3
+// isoWeek:4
+// totalDays:31<br/>
+// getWeekAllCount - mar
+// week:4.2
+// isoWeek:3
+// totalDays:30<br/>
+// getWeekAllCount - apr
+// week:4.3
+// isoWeek:4
+// totalDays:31<br/>
+// getWeekAllCount - may
+// week:4.2
+// isoWeek:4
+// totalDays:30<br/>
+// getWeekAllCount - jun
+// week:4.3
+// isoWeek:3
+// totalDays:31<br/>
+// getWeekAllCount - jul
+// week:4.3
+// isoWeek:4
+// totalDays:31<br/>
+// getWeekAllCount - aug
+// week:4.2
+// isoWeek:3
+// totalDays:30<br/>
+// getWeekAllCount - sep
+// week:4.3
+// isoWeek:3
+// totalDays:31<br/>
+// getWeekAllCount - oct
+// week:4.2
+// isoWeek:4
+// totalDays:30<br/>
+// getWeekAllCount - nov
+// week:4.3
+// isoWeek:3
+// totalDays:31
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.getWeekAllCount(new Date().getFullYear())
+// Result :
+// betweendays : 0
+// totalDays : 365
+// isoWeekAll : 41
+// weekAll : 50.9 &lt;br/&gt;
+// getWeekAllCount - dec
+// week:4.3
+// isoWeek:3
+// totalDays:31&lt;br/&gt;
+// getWeekAllCount - jan
+// week:4
+// isoWeek:3
+// totalDays:28&lt;br/&gt;
+// getWeekAllCount - feb
+// week:4.3
+// isoWeek:4
+// totalDays:31&lt;br/&gt;
+// getWeekAllCount - mar
+// week:4.2
+// isoWeek:3
+// totalDays:30&lt;br/&gt;
+// getWeekAllCount - apr
+// week:4.3
+// isoWeek:4
+// totalDays:31&lt;br/&gt;
+// getWeekAllCount - may
+// week:4.2
+// isoWeek:4
+// totalDays:30&lt;br/&gt;
+// getWeekAllCount - jun
+// week:4.3
+// isoWeek:3
+// totalDays:31&lt;br/&gt;
+// getWeekAllCount - jul
+// week:4.3
+// isoWeek:4
+// totalDays:31&lt;br/&gt;
+// getWeekAllCount - aug
+// week:4.2
+// isoWeek:3
+// totalDays:30&lt;br/&gt;
+// getWeekAllCount - sep
+// week:4.3
+// isoWeek:3
+// totalDays:31&lt;br/&gt;
+// getWeekAllCount - oct
+// week:4.2
+// isoWeek:4
+// totalDays:30&lt;br/&gt;
+// getWeekAllCount - nov
+// week:4.3
+// isoWeek:3
+// totalDays:31
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.6"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.6</span> - -->setDateInfo</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>var getDateInfo = {};
+cnsiJS.core.date.setDateInfo({},new Date("2014,11,18"));
+// Result :
+// year : 2014
+// month : 11
+// date : 18
+// hours : 0
+// minutes : 0
+// seconds : 0
+// milliseconds : 0
+// day : 2
+// dayName : Tuesday
+// monthName : October
+// mdy : 12/18/2014
+// ymd : 2014/12/18
+// dmy : 18/12/2014
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var getDateInfo = {};
+cnsiJS.core.date.setDateInfo({},new Date(&quot;2014,11,18&quot;));
+// Result :
+// year : 2014
+// month : 11
+// date : 18
+// hours : 0
+// minutes : 0
+// seconds : 0
+// milliseconds : 0
+// day : 2
+// dayName : Tuesday
+// monthName : October
+// mdy : 12/18/2014
+// ymd : 2014/12/18
+// dmy : 18/12/2014
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.7"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.7</span> - -->betweenDays</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.betweenDays(new Date("2014,11,18"),new Date());
+// Result :
+// days : 7
+// hours : 14
+// minutes : 13
+// seconds : 42
+// countdown : 7 days 14 hrs 13 min 42 sec
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.betweenDays(new Date(&quot;2014,11,18&quot;),new Date());
+// Result :
+// days : 7
+// hours : 14
+// minutes : 13
+// seconds : 42
+// countdown : 7 days 14 hrs 13 min 42 sec
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.8"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.8</span> - -->now</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.now("2014,12,18")
+// Result :
+// year : 2014
+// month : 12
+// date : 18
+// hours : 0
+// minutes : 0
+// seconds : 0
+// milliseconds : 0
+// day : 4
+// dayName : Thursday
+// monthName : November
+// mdy : 13/18/2014
+// ymd : 2014/13/18
+// dmy : 18/13/2014
+// fulldate : Thu Dec 18 2014 00:00:00 GMT+0530 (India Standard Time)
+// Notes : If you not send custom date value, it will send system current date information.
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.now(&quot;2014,12,18&quot;)
+// Result :
+// year : 2014
+// month : 12
+// date : 18
+// hours : 0
+// minutes : 0
+// seconds : 0
+// milliseconds : 0
+// day : 4
+// dayName : Thursday
+// monthName : November
+// mdy : 13/18/2014
+// ymd : 2014/13/18
+// dmy : 18/13/2014
+// fulldate : Thu Dec 18 2014 00:00:00 GMT+0530 (India Standard Time)
+// Notes : If you not send custom date value, it will send system current date information.
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.9"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.9</span> - -->previous</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.previous("2014,12,18")
+// Result :
+// year : 2014
+// month : 12
+// date : 17
+// hours : 0
+// minutes : 0
+// seconds : 0
+// milliseconds : 0
+// day : 3
+// dayName : Wednesday
+// monthName : November
+// mdy : 13/17/2014
+// ymd : 2014/13/17
+// dmy : 17/13/2014
+// fulldate : Wed Dec 17 2014 00:00:00 GMT+0530 (India Standard Time)
+// Notes : If you not send custom date value, it will send yesterday date information.
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.previous(&quot;2014,12,18&quot;)
+// Result :
+// year : 2014
+// month : 12
+// date : 17
+// hours : 0
+// minutes : 0
+// seconds : 0
+// milliseconds : 0
+// day : 3
+// dayName : Wednesday
+// monthName : November
+// mdy : 13/17/2014
+// ymd : 2014/13/17
+// dmy : 17/13/2014
+// fulldate : Wed Dec 17 2014 00:00:00 GMT+0530 (India Standard Time)
+// Notes : If you not send custom date value, it will send yesterday date information.
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.10"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.10</span> - -->next</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.next("2014,12,18")
+// Result :
+// year : 2014
+// month : 12
+// date : 19
+// hours : 0
+// minutes : 0
+// seconds : 0
+// milliseconds : 0
+// day : 5
+// dayName : Friday
+// monthName : November
+// mdy : 13/19/2014
+// ymd : 2014/13/19
+// dmy : 19/13/2014
+// fulldate : Fri Dec 19 2014 00:00:00 GMT+0530 (India Standard Time)
+// Notes : If you not send custom date value, it will send tomorrow date information.
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.next(&quot;2014,12,18&quot;)
+// Result :
+// year : 2014
+// month : 12
+// date : 19
+// hours : 0
+// minutes : 0
+// seconds : 0
+// milliseconds : 0
+// day : 5
+// dayName : Friday
+// monthName : November
+// mdy : 13/19/2014
+// ymd : 2014/13/19
+// dmy : 19/13/2014
+// fulldate : Fri Dec 19 2014 00:00:00 GMT+0530 (India Standard Time)
+// Notes : If you not send custom date value, it will send tomorrow date information.
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.11"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.11</span> - -->launch</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.launch(2015,1,18)
+// Result :
+// year : 2015
+// month : 2
+// date : 18
+// hours : 0
+// minutes : 0
+// seconds : 0
+// milliseconds : 0
+// day : 3
+// dayName : Wednesday
+// monthName : January
+// mdy : 03/18/2015
+// ymd : 2015/03/18
+// dmy : 18/03/2015 <br/>
+// <strong>launch - betweendays</strong>
+// days:84
+// hours:9
+// minutes:46
+// seconds:18
+// countdown:84 days 9 hrs 46 min 18 sec
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.launch(2015,1,18)
+// Result :
+// year : 2015
+// month : 2
+// date : 18
+// hours : 0
+// minutes : 0
+// seconds : 0
+// milliseconds : 0
+// day : 3
+// dayName : Wednesday
+// monthName : January
+// mdy : 03/18/2015
+// ymd : 2015/03/18
+// dmy : 18/03/2015 &lt;br/&gt;
+// &lt;strong&gt;launch - betweendays&lt;/strong&gt;
+// days:84
+// hours:9
+// minutes:46
+// seconds:18
+// countdown:84 days 9 hrs 46 min 18 sec
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.12"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.12</span> - -->leap</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.leap("2015")
+// Result : false
+// Notes : It will return true or false.
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.leap(&quot;2015&quot;)
+// Result : false
+// Notes : It will return true or false.
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.13"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.13</span> - -->numberOfDays</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.numberOfDays(2014,11)
+// Result : 30
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.numberOfDays(2014,11)
+// Result : 30
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.14"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.14</span> - -->dateToOneYear</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.dateToOneYear(18,11,2014)
+// Result : 11/18/2015
+// Notes : The param value is dd,mm & yyyy
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.dateToOneYear(18,11,2014)
+// Result : 11/18/2015
+// Notes : The param value is dd,mm &amp; yyyy
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.15"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.15</span> - -->format</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.format("18/11/2014","mm/dd/yyyy")
+// Result : 11/18/2014
+cnsiJS.core.date.format("18/11/2014","dd/mm/yyyy")
+// Result : 18/11/2014
+cnsiJS.core.date.format("18/11/2014","yyyy/mm/dd")
+// Result : 2014/11/18
+cnsiJS.core.date.format("18/11/2014","yyyy/dd/mm")
+// Result : 2014/18/11
+cnsiJS.core.date.format("18/11/2014","dd/yyyy/mm")
+// Result : 18/2014/11
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.format(&quot;18/11/2014&quot;,&quot;mm/dd/yyyy&quot;)
+// Result : 11/18/2014
+cnsiJS.core.date.format(&quot;18/11/2014&quot;,&quot;dd/mm/yyyy&quot;)
+// Result : 18/11/2014
+cnsiJS.core.date.format(&quot;18/11/2014&quot;,&quot;yyyy/mm/dd&quot;)
+// Result : 2014/11/18
+cnsiJS.core.date.format(&quot;18/11/2014&quot;,&quot;yyyy/dd/mm&quot;)
+// Result : 2014/18/11
+cnsiJS.core.date.format(&quot;18/11/2014&quot;,&quot;dd/yyyy/mm&quot;)
+// Result : 18/2014/11
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.16"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.16</span> - -->dayName</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.dayName[0]
+// Result : Sunday
+cnsiJS.core.date.dayName[1]
+// Result : Monday
+cnsiJS.core.date.dayName[2]
+// Result : Tuesday
+cnsiJS.core.date.dayName[3]
+// Result : Wednesday
+cnsiJS.core.date.dayName[4]
+// Result : Thursday
+cnsiJS.core.date.dayName[5]
+// Result : Friday
+cnsiJS.core.date.dayName[6]
+// Result : Saturday
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.dayName[0]
+// Result : Sunday
+cnsiJS.core.date.dayName[1]
+// Result : Monday
+cnsiJS.core.date.dayName[2]
+// Result : Tuesday
+cnsiJS.core.date.dayName[3]
+// Result : Wednesday
+cnsiJS.core.date.dayName[4]
+// Result : Thursday
+cnsiJS.core.date.dayName[5]
+// Result : Friday
+cnsiJS.core.date.dayName[6]
+// Result : Saturday
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.5.17"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.5.17</span> - -->monthName</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.date.monthName[0]
+// Result : December
+cnsiJS.core.date.monthName[1]
+// Result : January
+cnsiJS.core.date.monthName[2]
+// Result : February
+cnsiJS.core.date.monthName[3]
+// Result : March
+cnsiJS.core.date.monthName[4]
+// Result : April
+cnsiJS.core.date.monthName[5]
+// Result : May
+cnsiJS.core.date.monthName[6]
+// Result : June
+cnsiJS.core.date.monthName[7]
+// Result : July
+cnsiJS.core.date.monthName[8]
+// Result : August
+cnsiJS.core.date.monthName[9]
+// Result : September
+cnsiJS.core.date.monthName[10]
+// Result : October
+cnsiJS.core.date.monthName[11]
+// Result : November
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.date.monthName[0]
+// Result : December
+cnsiJS.core.date.monthName[1]
+// Result : January
+cnsiJS.core.date.monthName[2]
+// Result : February
+cnsiJS.core.date.monthName[3]
+// Result : March
+cnsiJS.core.date.monthName[4]
+// Result : April
+cnsiJS.core.date.monthName[5]
+// Result : May
+cnsiJS.core.date.monthName[6]
+// Result : June
+cnsiJS.core.date.monthName[7]
+// Result : July
+cnsiJS.core.date.monthName[8]
+// Result : August
+cnsiJS.core.date.monthName[9]
+// Result : September
+cnsiJS.core.date.monthName[10]
+// Result : October
+cnsiJS.core.date.monthName[11]
+// Result : November
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="5.6"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">5.6</span> - -->Array</h2>
+      
+		
+
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.6.1"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.6.1</span> - -->sorting</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.array.sorting([2, 3, 534, "64", "75"], "asc")
+// Result : [2, 3, "64", "75", 534]
+cnsiJS.core.array.sorting([2, 3, 534, "64", "75"], "dsc")
+// Result : [534, "75", "64", 3, 2]
+cnsiJS.core.array.sorting([2, 3, 534, "john doe", "64", "Peter Rafelson", "75"], "numberAlpha")
+// Result : [2, 3, "64", "75", 534, "Peter Rafelson", "john doe"]
+cnsiJS.core.array.sorting([2, 3, 534, "john doe", "64", "Peter Rafelson", "75"], "alphaNumber")
+// Result : ["Peter Rafelson", "john doe", 2, 3, "64", "75", 534]
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.array.sorting([2, 3, 534, &quot;64&quot;, &quot;75&quot;], &quot;asc&quot;)
+// Result : [2, 3, &quot;64&quot;, &quot;75&quot;, 534]
+cnsiJS.core.array.sorting([2, 3, 534, &quot;64&quot;, &quot;75&quot;], &quot;dsc&quot;)
+// Result : [534, &quot;75&quot;, &quot;64&quot;, 3, 2]
+cnsiJS.core.array.sorting([2, 3, 534, &quot;john doe&quot;, &quot;64&quot;, &quot;Peter Rafelson&quot;, &quot;75&quot;], &quot;numberAlpha&quot;)
+// Result : [2, 3, &quot;64&quot;, &quot;75&quot;, 534, &quot;Peter Rafelson&quot;, &quot;john doe&quot;]
+cnsiJS.core.array.sorting([2, 3, 534, &quot;john doe&quot;, &quot;64&quot;, &quot;Peter Rafelson&quot;, &quot;75&quot;], &quot;alphaNumber&quot;)
+// Result : [&quot;Peter Rafelson&quot;, &quot;john doe&quot;, 2, 3, &quot;64&quot;, &quot;75&quot;, 534]
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.6.2"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.6.2</span> - -->rangeNumGenerator</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.array.rangeNumGenerator(5, 15)
+// Result : [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.array.rangeNumGenerator(5, 15)
+// Result : [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.6.3"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.6.3</span> - -->attach</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.array.attach([1, 2, 3, 7, 8, 9], [4, 5, 6])
+// Result : [1, 2, 3, 7, 8, 9, 4, 5, 6]
+cnsiJS.core.array.attach([1, 2, 3, 7, 8, 9], [4, 5, 6], 3)
+// Result : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.array.attach([1, 2, 3, 7, 8, 9], [4, 5, 6])
+// Result : [1, 2, 3, 7, 8, 9, 4, 5, 6]
+cnsiJS.core.array.attach([1, 2, 3, 7, 8, 9], [4, 5, 6], 3)
+// Result : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.6.4"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.6.4</span> - -->detach</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.array.detach([1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 5, 6])
+// Result : [1, 3, 4, 5, 8, 9]
+cnsiJS.core.array.detachR([1, 2, 3, 4, 5, 6, 7, 8, 9], [2, 5, 6])
+// Result : [3, 6, 7]
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.array.detach([1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 5, 6])
+// Result : [1, 3, 4, 5, 8, 9]
+cnsiJS.core.array.detachR([1, 2, 3, 4, 5, 6, 7, 8, 9], [2, 5, 6])
+// Result : [3, 6, 7]
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.6.5"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.6.5</span> - -->unique</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.array.unique([1, 1, 2, "john doe", "john doe"])
+// Result : [1, 2, "john doe"]
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.array.unique([1, 1, 2, &quot;john doe&quot;, &quot;john doe&quot;])
+// Result : [1, 2, &quot;john doe&quot;]
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.6.6"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.6.6</span> - -->toString</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.array.toString([1, 1, 2, "john doe", "john doe"])
+// Result : "1,1,2,john doe,john doe"
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.array.toString([1, 1, 2, &quot;john doe&quot;, &quot;john doe&quot;])
+// Result : &quot;1,1,2,john doe,john doe&quot;
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="5.7"></a>
+      <h2 class="kss-sub-title"><!--<span class="kss-ref">5.7</span> - -->Currency</h2>
+      
+		
+
+
+      </section>
+      <section class="kss-depth-3">
+      <a name="5.7.1"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">5.7.1</span> - -->format</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p>Usage</p>
+<pre><code>cnsiJS.core.currency.format(53565.653,"dollar",2)
+// Result : $5,356,565.65
+cnsiJS.core.currency.format(5356565.653,"euro",2)
+// Result : €5.565,356.565,565.65
+cnsiJS.core.currency.format(5356565.653,"pound",2)
+// Result : £5.565,356.565,565.65
+</code></pre></td>
+          </tr>
+        </table>
+
+        
+        <!-- <div class="kss-markup">
+        	<pre class="prettyprint lang-html">&lt;p&gt;Usage&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cnsiJS.core.currency.format(53565.653,&quot;dollar&quot;,2)
+// Result : $5,356,565.65
+cnsiJS.core.currency.format(5356565.653,&quot;euro&quot;,2)
+// Result : €5.565,356.565,565.65
+cnsiJS.core.currency.format(5356565.653,&quot;pound&quot;,2)
+// Result : £5.565,356.565,565.65
+&lt;/code&gt;&lt;/pre&gt;</pre>
+        </div> -->
+        
+
+      </section>
+  </article>
+</div>
+
+<a href="#" class="scrolltop" data-scrolltop="true" title="Scroll to top"><i class="fa fa-angle-up"></i></a>
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/cnsiJS.js"></script>
+<script src="assets/js/cnsiutils.js"></script>
+<script src="assets/js/cnsi-plugins.js"></script>
+<script src="assets/js/listSearch.js"></script>
+<script src="assets/js/cnsicoreui.js"></script>
+<script src="assets/js/cnsi-custom.js"></script>
+
+<script>
+  $(document).ready(function(){
+    var sidebarAdjust = function() {
+      // Match footer/body height
+      var height = Math.max($('#kss-nav').height(), $('#kss-main').height());
+      var winHeight = $(window).height();
+      if(height < winHeight) {
+      	height = winHeight;
+      }
+
+      if ($(window).width() <= 768) {
+        $('#kss-main, #kss-nav').height('auto');
+      } else {
+        $('#kss-main, #kss-nav').height(height);
+      }
+    };
+
+    $(window).resize(sidebarAdjust);
+    $(window).scroll(sidebarAdjust);
+    sidebarAdjust();
+
+    // Ensure code blocks are highlighted properly...
+    $('pre>code').addClass('prettyprint');
+    prettyPrint();
+  });
+</script>
+
+
+</div></body>
+</html>

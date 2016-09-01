@@ -1,0 +1,238 @@
+.orders-container {
+  background-color: $orders-container-bg;
+  @include box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+  margin-bottom: 30px;
+  padding: 0;
+  position: relative;
+  .orders-header {
+    background:$orders-list-header-bg;
+    @include box-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+    border-bottom: 3px solid $orders-list-header-border;
+    padding: 9px 10px;
+    position: relative;
+    h6 {
+      font-size:16px;
+      margin: 0;
+    }
+  }
+  .orders-list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    .order-item {
+      border-bottom: 1px solid $orders-list-item-border;
+      padding: 7px 10px;
+      position: relative;
+      vertical-align: top;
+      &:before {
+        background-color: $orders-list-item-bg;
+        bottom: 0;
+        content: "";
+        display: none;
+        left: -4px;
+        max-width: 4px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 4px;
+      }
+      &:hover {
+        background-color: $orders-list-item-hover-bg;
+        &:before {
+          display: block;
+        }
+      }
+      &.top {
+        &:hover {
+          &:before {
+            background-color: $orders-list-item-top-bg;
+          }
+        }
+        .item-more {
+            color:$orders-list-item-top-text;
+        }            
+      }
+      .item-left {
+            padding-right: 0;
+            .item-booker {
+                color: $orders-item-booker-text;
+                margin: 6px 0;
+                word-wrap:break-word;
+            }
+            .item-time {
+                color: $orders-item-time-text;
+                font-size: 90%;
+                margin-bottom: 2px;
+            }
+        }
+        .item-right {
+            padding-right: 0;
+            text-align: center;
+            .item-price {
+                color: $orders-item-price-text;
+                //font-size: 13px;
+                margin: 17px auto;
+            }
+            
+        }
+      .item-more {
+          background-color: $orders-item-more-bg;
+          border: 3px solid $orders-item-more-border;
+          border-radius: 50%;
+          @include box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+          color: $orders-item-more-text;
+          //font-size: 14px;
+          height: 25px;
+          position: absolute;
+          right: -10px;
+          text-align: center;
+          top: calc(50% - 13px);
+          vertical-align: middle;
+          width: 25px;
+          i {
+            display: inline-block;
+            font-family: "FontAwesome";
+            font-size: 17px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            &:before {
+              content:"";
+            }
+        }
+      }
+    }
+  }
+  .orders-footer {
+    background-color: $orders-footer-bg;
+    height: 34px;
+    padding: 7px;
+    position: relative;
+    text-align: center;
+    a {
+      color: $orders-footer-text;
+      font-size: 90%;
+      font-weight: 500;
+      margin: 0 auto;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .help {
+      border-left: 1px solid $orders-footer-help-border;
+      height: 37px;
+      padding: 8px;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 37px;
+      a {
+        i {
+          color: $orders-footer-help-icon;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.tickets-container {
+  padding: 15px;
+  position: relative;
+  .tickets-list {
+    list-style: none outside none;
+    margin-bottom: 0;
+    padding: 0;
+    .ticket-item {
+      background-clip: padding-box;
+      background-color: $ticket-item-bg;
+      border-radius: 3px;
+      @include box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+      margin-bottom: 8px;
+      padding: 0 15px;
+      position: relative;
+      vertical-align: top;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .ticket-user {
+        height: 50px;
+        line-height:30px;
+        overflow: hidden;
+        padding: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        .user-avatar {
+          background-clip: padding-box;
+          border-radius: 3px;
+          height: 30px;
+          width: 30px;
+        }
+        .user-name {
+          //font-size: 13px;
+          margin-left: 5px;
+        }
+        .user-at {
+          color: $ticket-user-at-text;
+          //font-size: 13px;
+          margin-left: 2px;
+        }
+        .user-company {
+          color: $ticket-user-company-text;
+          margin-left: 2px;
+        }
+      }
+      .ticket-time {
+        height: 50px;
+        line-height: 30px;
+        padding: 10px;
+        i {
+          color: $ticket-time-icon;
+        }
+        .time {
+          color: $ticket-time-text;
+          font-size: 90%;
+          text-transform: uppercase;
+        }
+      }
+      .ticket-type {
+        height: 50px;
+        line-height: 30px;
+        padding: 10px;
+        .type {
+          color: $ticket-type-text;
+          font-size: 90%;
+          text-transform: uppercase;
+        }
+      }
+      .ticket-state {
+        background-clip: padding-box;
+        background-color: $ticket-state-bg;
+        border: 2px solid $ticket-state-border;
+        border-radius: 50%;
+        @include box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+        height: 24px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: 13px;
+        width: 24px;
+        i {
+          color: $ticket-state-icon;
+          //font-size: 13px;
+          line-height: 20px;
+        }
+      }
+      .divider {
+        background-color: $ticket-divider-bg;
+        display: inline-block;
+        height: 50px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 1px;
+      }
+    }
+  }
+}

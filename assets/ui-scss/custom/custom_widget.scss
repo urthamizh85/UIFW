@@ -1,0 +1,411 @@
+.widget {
+  @include box-shadow(none);
+  margin-bottom:20px;
+  padding: 0;
+  &.collapsed {
+    .widget-body {
+      display: none;
+    }
+    &.radius-bordered {
+      .widget-header {
+        background-clip: padding-box;
+        border-radius: 3px;
+      }
+    }
+  }
+  &.no-header {
+    .widget-header {
+      display: none;
+    }
+    &.radius-bordered {
+      .widget-body {
+        background-clip: padding-box;
+        border-radius: 3px;
+      }
+    }
+  }
+  &.maximized {
+    height: 100%;
+    left: 0;
+    margin: 0;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+    .widget-body {
+      padding: 12px 0;
+    }
+  }
+  &.transparent {
+    .widget-header, .widget-body {
+      background-color: rgba(0, 0, 0, 0);
+      box-shadow: none;
+    }
+    .widget-header {
+      border-bottom: 1px solid $widget-trans-border;
+    }
+  }
+  &.bordered-top {
+    border-top: 3px solid $widget-border;
+  }
+  &.bordered-bottom {
+    border-bottom: 3px solid $widget-border;
+  }
+  &.bordered-right {
+    border-right: 3px solid $widget-border;
+  }
+  &.bordered-left {
+    border-left: 3px solid $widget-border;
+  }
+  &.radius-bordered {
+    .widget-header {
+      background-clip: padding-box;
+      border-radius: 3px 3px 0 0;
+    }
+    .widget-body {
+      background-clip: padding-box;
+      border-radius: 0 0 3px 3px;
+    }
+  }
+  &.flat {
+    .widget-body, .widget-header {
+      box-shadow: none;
+    }
+  }
+  &.lightshadow {
+    .widget-body, .widget-header {
+      @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    }
+  }
+  &:hover {
+    .compact {
+      @include box-shadow(0 0 20px rgba(0, 0, 0, 0.2));
+      i {
+        color:$widget-compact-icon;
+      }
+    }
+  }
+}
+.widget-header {
+  background: $widget-header-bg;
+  @include box-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+  color: $widget-header-text;
+  min-height: 35px;
+  padding:0px 12px;
+  position: relative;
+  width:100%;
+  text-align:right;
+  .widget-header-label {
+    padding:7px 0 6px;
+    text-align:left;
+    .widget-icon {
+      font-size: 111%;
+      position: relative;
+      text-align: center;
+      line-height:22px;
+      height:auto;
+    }
+    > .widget-caption {
+      font-size: 1.125em;
+      font-weight: 400 !important;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+  }  
+  &.lined {
+    border: 0 none;
+    @include box-shadow(none !important);
+    padding-left: 2%;
+    &:before {
+      border-bottom: 1px solid $widget-lined-border;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 2%;
+      position: absolute;
+      top: 35px;
+      width: 96%;
+      z-index: 1;
+    }
+    .widget-buttons {
+      padding-right: 2%;
+    }
+    & + .widget-body {
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+  }
+  &.separated {
+    margin-bottom: 5px;
+  }
+  &[class*="bg-"] {
+    border: 0 none;
+    .widget-caption, i {
+      color: #fff;
+    }
+  }
+  &.bordered-left {
+    border-left: 3px solid $widget-header-border;
+  }
+  &.bordered-right {
+    border-right: 3px solid $widget-header-border;
+  }
+  &.bordered-top {
+    border-top: 3px solid $widget-header-border;
+  }
+  &.bordered-bottom {
+    border-bottom: 3px solid $widget-header-border;
+  }
+  &.header-large {
+    min-height: 49px;
+    padding-left: 18px;
+    h5 {
+      font-size: 16px;
+      line-height: 48px;
+    }
+    > .widget-buttons {
+      height: 48px;
+      line-height: 48px;
+      a {
+        min-width: 26px;
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &.header-small {
+    min-height: 29px;
+    padding-left: 10px;
+    h5 {
+      font-size: 12px;
+      line-height: 28px;
+    }
+    > .widget-buttons {
+      height: 29px;
+      line-height: 29px;
+      a {
+        height: 16px;
+        min-width: 16px;
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  > .widget-caption {
+    float: left;
+    font-size: 1.125em;
+    font-weight: 400 !important;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  > .widget-icon {
+    display: block;
+    float: left;
+    font-size: 111%;
+    height: 32px;
+    line-height: 36px;
+    margin-left: -10px;
+    position: relative;
+    text-align: center;
+    width: 30px;
+  }
+}
+.widget-buttons {
+  display: inline-block;
+  height: 36px;
+  line-height: 34px;
+  padding: 0 0 0 5px;
+  position: relative;
+  text-align: left;
+  &.buttons-bordered {
+    border-left: 1px solid $widget-buttons-border;
+  }
+  &.compact {
+    background-color: $widget-buttons-compact-bg;
+    height: 27px;
+    line-height: 27px;
+    margin-top: 4px;
+    @include transition(color 0.318s ease 0s);
+    &:hover {
+      background-color: $widget-buttons-compact-hover-bg;
+      @include box-shadow(0 0 20px rgba(0, 0, 0, 0.2));
+      i {
+        color: $widget-buttons-compact-icon;
+      }
+    }
+    &:before {
+      background-color: $widget-buttons-compact-hover-bg;
+      bottom: 0;
+      content: "";
+      display: block;
+      max-width: 4px;
+      overflow: hidden;
+      position: absolute;
+      right: -4px;
+      top: 0;
+      width: 4px;
+    }
+    a {
+      line-height: 14px;
+      min-width: 14px;
+    }
+    i {
+      color: #ccc;
+      font-size: 14px;
+    }
+  }
+  &.no-padding {
+    padding: 0;
+  }
+  &.padding-5 {
+    padding: 0 5px;
+  }
+  &.no-border{
+    &:before {
+      display: none;
+    }
+  }
+  label {
+    display: inline-block;
+    line-height: 6px;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  > a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 1px;
+    min-width: 20px;
+    padding: 0;
+    text-align: center;
+    &:hover {
+      text-decoration: none;
+    }
+    i {
+      vertical-align: middle;
+    }
+  }
+  > [data-toggle] {
+    > .fa {
+      margin-right: 0;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+    &:focus {
+      text-decoration: none;
+    }
+  }
+  > [data-toggle="dispose"] {
+    color: $widget-buttons-icon;
+    font-size: 14px;
+  }
+  > [data-toggle="maximize"] {
+    color: $widget-buttons-icon;
+    font-size: 14px;
+  }
+  > [data-toggle="collapse"] {
+    color: $widget-buttons-icon;
+    font-size: 14px;
+  }
+  > [data-toggle="refresh"] {
+    color: #777;
+    font-size: 14px;
+  }
+  > [data-toggle="config"] {
+    color: $widget-buttons-icon;
+    font-size: 14px;
+  }
+  .progress {
+    display: inline-block;
+    margin: -3px 0 0;
+    min-width: 100px;
+    vertical-align: middle;
+  }
+  .btn-group {
+    margin-top: -2px;
+    .dropdown-menu {
+      left: auto;
+      right: 0;
+    }
+  }
+  .badge {
+    margin-top: -2px;
+  }
+  .label {
+    padding: 5px 6px;
+  }
+  .pagination, .pager {
+    float: right;
+    margin: 5px 2px 1px;
+  }
+  .btn {
+    margin-top: -2px;
+  }
+}
+
+.widget-body {
+  background-color: $widget-body-bg;
+  @include box-shadow(0px 0 4px rgba(0, 0, 0, 0.2));
+  padding: 12px;
+  display:inline-block;
+  width:100%;
+  &.bordered-left {
+    border-left: 3px solid $widget-body-border;
+  }
+  &.bordered-right {
+    border-right: 3px solid $widget-body-border;
+  }
+  &.bordered-top {
+    border-top: 3px solid $widget-body-border;
+  }
+  &.bordered-bottom {
+    border-bottom: 3px solid $widget-body-border;
+  }
+  &[class*="bg-"] {
+    color: #fff;
+  }
+  &.no-padding {
+    padding: 0;
+    .accordion {
+      border: 0 none;
+    }
+    .dataTables_filter {
+      label {
+        margin: 10px;  
+      }
+    }
+    .dataTables_length {
+      right: 10px;
+      top: 10px;
+    }
+    .DTTT.btn-group {
+      right: 80px;
+      top: 10px;
+    }
+  }
+  .accordion {
+    .panel-group {
+      border-top-width: 1px !important;
+    }    
+  }
+  > table {
+    margin-bottom: 0;
+  }
+  hr {
+    .wide {
+      margin-left: -12px;
+      margin-right: -12px;
+    }     
+  }
+}
+
+

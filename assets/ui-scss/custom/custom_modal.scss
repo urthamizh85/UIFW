@@ -1,0 +1,93 @@
+.modal-preview .modal {
+  bottom: auto;
+  display: block;
+  left: auto;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+  right: auto;
+  top: auto;
+  width: auto;
+  z-index: 1;
+  .modal-dialog {
+    width: 90%;
+  }
+}
+.modal-content {
+  background-clip: padding-box;
+  background-color: $modal-content-bg;
+  border: medium none rgba(0, 0, 0, 0);
+  border-radius: 0;
+  @include box-shadow(0 0 40px rgba(0, 0, 0, 0.5));
+  color: $modal-content-text;
+  .close {
+    font-size: 26px;
+  }
+}
+.modal-footer {
+  background-color:$modal-footer-bg;
+  border-top: 0 none;
+  padding-bottom: 14px;
+  padding-top: 12px;
+}
+.modal-header {
+  background-color: $modal-header-bg;
+  padding: 10px 15px 10px 20px;
+  .close {
+    font-size: 26px;
+  }
+}
+.modal-backdrop {
+  background-color:$modal-backdrop-bg;
+  &.in {
+    opacity: 0.75;
+  }
+}
+.modal-message {
+  .modal-dialog {
+    width: 300px;
+  }
+  .modal-body, .modal-footer, .modal-header, .modal-title {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center !important;
+  }
+  .modal-header {
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 15px 0 8px;
+    .fa, .glyphicon {
+       font-size: 30px;
+    }
+  }
+  .modal-title {
+    color: $modal-message-title-text;
+    font-size: 17px;
+    margin-bottom: 3px;
+  }
+  .modal-body {
+    color: $modal-message-body-text;
+  }
+  .modal-footer {
+    margin: 25px 0 20px;
+    padding-bottom: 10px;
+  }
+  @each $class,$border,$text in $modalborder {
+    &.modal-#{$class} {
+      .modal-header {
+        border-bottom: 3px solid $border;
+        color: $text;
+      }
+    }
+  }
+}
+
+@each $class,$border,$text in $modalborder {
+  .modal-#{$class} {
+    .modal-header {
+      border-bottom: 3px solid $border;
+    }
+  }
+}

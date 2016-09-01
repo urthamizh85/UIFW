@@ -1,0 +1,61 @@
+.notification{
+  position:fixed;
+  z-index:1039;
+  margin-bottom: 10px;
+  z-index : $throbber-box-zindex+2;
+  &.top-left {
+    left: $notificaiton-leftright-pos;
+    top: $notificaiton-top-pos;
+  }
+  &.top-right {
+    right: $notificaiton-leftright-pos;
+    top: $notificaiton-top-pos;
+  }
+  &.bottom-left {
+    left: $notificaiton-leftright-pos;
+    bottom: $notificaiton-bottom-pos;
+  }
+  &.bottom-right {
+    right: $notificaiton-leftright-pos;
+    bottom: $notificaiton-bottom-pos;
+  }
+  .alert {
+    min-width : 300px;
+    max-width : 300px;
+    margin-bottom:10px;
+    @include box-shadow(0px 0px 10px nth($rgba,3));
+  }
+}
+.notification-alert {
+   position:fixed;
+   z-index:1051;
+   top:0;
+   left:0;
+   right:0;
+  .alert {
+    background:#fff;
+    padding:10px 20px;
+    text-align:center;
+    border-width:5px 0 0 0;
+    border-top-style:solid;
+    font-size:1em;
+    position:relative;
+    @include custom-border-radius(0);
+    @include box-shadow(0px 3px 5px nth($rgba,6));
+    @each $class,$color in $statuscolor {
+      &.alert-#{$class} {
+        color:$color;
+        border-top-color:$color;
+      }
+    }
+    .fa {
+      font-size:22px;
+      margin-right:5px;
+    }
+  }
+  .alert-dismissable .close {
+    position:absolute;
+    right:10px;
+    top:25%;
+  }
+}

@@ -1,0 +1,66 @@
+@each $class,$bg,$topborder,$text,$listborder,$hoverbg,$hovertext in $dropdowntheme {
+  .dropdown-menu.#{$class} {
+    background:$bg;
+    border-width:$dropdown-top-border-width 0 0 0;
+    border-top:$dropdown-top-border-width solid $topborder;  
+    padding:0;
+    > li {
+      > a {
+        padding:6px 15px;
+        color:$text;
+        border-top:1px solid $listborder;
+        &:hover, &:focus {
+          background:$hoverbg;
+          color:$hovertext;
+        }
+      }
+      &:first-child {
+        a {
+          border-top-width:0;
+        }      
+      }
+      &:last-child {
+        &, & > a {
+          border-radius:4px;
+        }
+      }
+    }
+    &.arrow {
+      &:after {
+        content:"";
+        border-left:$dropdown-caret-size solid transparent;
+        border-right:$dropdown-caret-size solid transparent;
+        border-bottom:$dropdown-caret-size solid $topborder;
+        position:absolute;
+        top:-$dropdown-caret-size;
+      }
+      &.left {
+        &:after {
+          left:$dropdown-caret-size;
+        }      
+      }
+      &.right {
+        &:after {
+          right:$dropdown-caret-size;
+        }      
+      }
+    }
+  }
+}
+.dropdown-menu {
+  font-size:1em;
+}
+.dropdown-container {
+  margin: 0 auto;
+  text-align: center;
+  .dropdown-preview {
+    display: inline-block;
+    text-align: left;
+    > .dropdown-menu {
+      display: block;
+      margin-bottom: 5px;
+      position: static;
+    }
+  }
+}
+

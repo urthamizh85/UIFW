@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>UI Framework</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link href="assets/css/glyphicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/custom-theme-default.css" />
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body><div id="kss-wrapper">
+
+<div id="kss-nav">
+  <header id="kss-header">
+    <hgroup><h1>CNSI UI Framework</h1></hgroup>
+    <div class="search-doc-box">
+	  <input type="text" placeholder="Search docs" name="search_doc" id="search_doc" data-ui="alphabetListSearch" data-search-target=".left-nav > ul" />
+	</div>
+  </header>
+  <aside>
+    <nav class="left-nav"><ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="section-1.html">Grid System</a>        
+        <ul class="submenu">
+            <li><a href="section-1.html#1.1">Stacked-to-horizontal</a>
+            <li><a href="section-1.html#1.2">Fluid container</a>
+            <li><a href="section-1.html#1.3">Mobile and desktop</a>
+            <li><a href="section-1.html#1.4">Mobile, tablet, desktops</a>
+            <li><a href="section-1.html#1.5">Column wrapping</a>
+            <li><a href="section-1.html#1.6">Responsive column resets</a>
+            <li><a href="section-1.html#1.7">Offsetting columns</a>
+            <li><a href="section-1.html#1.8">Nesting columns</a>
+            <li><a href="section-1.html#1.9">Column ordering</a>
+            <li><a href="section-1.html#1.10">Grid options</a>
+        </ul>        
+      </li>
+      <li><a href="section-2.html">Typogarphy</a>        
+        <ul class="submenu">
+            <li><a href="section-2.html#2.1">Headings</a>
+            <li><a href="section-2.html#2.2">Small Headings</a>
+            <li><a href="section-2.html#2.3">Lead Body copy</a>
+            <li><a href="section-2.html#2.4">Inline text elements</a>
+            <li><a href="section-2.html#2.5">Alignment classes</a>
+            <li><a href="section-2.html#2.6">Transformation classes</a>
+            <li><a href="section-2.html#2.7">Abbreviations</a>
+            <li><a href="section-2.html#2.8">Addresses</a>
+            <li><a href="section-2.html#2.9">Blockquotes</a>
+            <li><a href="section-2.html#2.10">Lists</a>
+        </ul>        
+      </li>
+      <li><a href="section-3.html">Top Navigation</a>        
+        <ul class="submenu">
+            <li><a href="section-3.html#3.1">RightNav</a>
+            <li><a href="section-3.html#3.2">Description</a>
+        </ul>        
+      </li>
+      <li><a href="section-4.html">Left Navigation</a>        
+        <ul class="submenu">
+            <li><a href="section-4.html#4.1">Description</a>
+        </ul>        
+      </li>
+      <li><a href="section-5.html">Labels/Badges</a>        
+        <ul class="submenu">
+            <li><a href="section-5.html#5.1">Default Labels</a>
+            <li><a href="section-5.html#5.2">Default Badges</a>
+            <li><a href="section-5.html#5.3">Default Square Badges</a>
+            <li><a href="section-5.html#5.4">Gradient Labels</a>
+            <li><a href="section-5.html#5.5">Gradient Badges</a>
+            <li><a href="section-5.html#5.6">Gradient Square Badges</a>
+        </ul>        
+      </li>
+      <li><a href="section-6.html">Progress Bars</a>        
+        <ul class="submenu">
+            <li><a href="section-6.html#6.1">Simple Progress Bars</a>
+            <li><a href="section-6.html#6.2">Vertical Progress Bars</a>
+            <li><a href="section-6.html#6.3">Advances Progress Bars</a>
+            <li><a href="section-6.html#6.31">Sizes</a>
+            <li><a href="section-6.html#6.32">Bordered</a>
+            <li><a href="section-6.html#6.33">Right Aligned</a>
+            <li><a href="section-6.html#6.34">Without Radius Border</a>
+            <li><a href="section-6.html#6.35">Shadowed</a>
+            <li><a href="section-6.html#6.36">Bordered &amp; Stacked</a>
+        </ul>        
+      </li>
+      <li><a href="section-7.html">Breadcrumbs/Pagination</a>        
+        <ul class="submenu">
+            <li><a href="section-7.html#7.1">Breadcrumbs</a>
+            <li><a href="section-7.html#7.2">Pagination</a>
+            <li><a href="section-7.html#7.3">Default</a>
+            <li><a href="section-7.html#7.4">Sizes</a>
+            <li><a href="section-7.html#7.5">Pager</a>
+            <li><a href="section-7.html#7.6">Aligned Pager</a>
+        </ul>        
+      </li>
+      <li><a href="section-8.html">List Groups</a>        
+        <ul class="submenu">
+            <li><a href="section-8.html#8.1">Default List Group</a>
+            <li><a href="section-8.html#8.2">Linked items</a>
+            <li><a href="section-8.html#8.3">List Group with Badges</a>
+            <li><a href="section-8.html#8.4">Custom content</a>
+            <li><a href="section-8.html#8.5">Sample List</a>
+            <li><a href="section-8.html#8.6">List in Table structure</a>
+        </ul>        
+      </li>
+      <li><a href="section-9.html">Widgets</a>        
+        <ul class="submenu">
+            <li><a href="section-9.html#9.1">Default Widget</a>
+            <li><a href="section-9.html#9.2">Widget with Bottom Border</a>
+            <li><a href="section-9.html#9.3">Widget with Top Border</a>
+            <li><a href="section-9.html#9.4">Widget with  Colored Header</a>
+            <li><a href="section-9.html#9.5">Widget with Colored Header and Body</a>
+        </ul>        
+      </li>
+      <li><a href="section-10.html">Input/Input Groups</a>        
+        <ul class="submenu">
+            <li><a href="section-10.html#10.1">Default Inputs</a>
+            <li><a href="section-10.html#10.2">Disabled Inputs</a>
+            <li><a href="section-10.html#10.3">Input Groups</a>
+            <li><a href="section-10.html#10.4">Button Addons</a>
+            <li><a href="section-10.html#10.5">Buttons with dropdowns</a>
+        </ul>        
+      </li>
+      <li><a href="section-11.html">Wells</a>        
+        <ul class="submenu">
+            <li><a href="section-11.html#11.1">Default Well</a>
+            <li><a href="section-11.html#11.2">Large Well</a>
+            <li><a href="section-11.html#11.3">Small Well</a>
+            <li><a href="section-11.html#11.4">Bordered Wells</a>
+            <li><a href="section-11.html#11.5">Colored Well</a>
+            <li><a href="section-11.html#11.6">Well With Header</a>
+            <li><a href="section-11.html#11.7">Well With Header and Footer</a>
+        </ul>        
+      </li>
+      <li><a href="section-12.html">Tabs</a>        
+        <ul class="submenu">
+            <li><a href="section-12.html#12.1">Default Tab</a>
+            <li><a href="section-12.html#12.2">Tab Bottom</a>
+            <li><a href="section-12.html#12.3">Tab Left</a>
+            <li><a href="section-12.html#12.4">Tab Right</a>
+            <li><a href="section-12.html#12.5">Tab Justified</a>
+        </ul>        
+      </li>
+      <li><a href="section-13.html">Accordion</a>        
+        <ul class="submenu">
+        </ul>        
+      </li>
+      <li><a href="section-14.html">Alerts</a>        
+        <ul class="submenu">
+            <li><a href="section-14.html#14.1">Default Alerts</a>
+            <li><a href="section-14.html#14.2">Rounded &amp; Shadowed Alerts</a>
+        </ul>        
+      </li>
+      <li><a href="section-15.html">Tooltips</a>        
+        <ul class="submenu">
+            <li><a href="section-15.html#15.1">Default tooltips</a>
+            <li><a href="section-15.html#15.2">Colored tooltips</a>
+        </ul>        
+      </li>
+      <li><a href="section-16.html">Dropdowns</a>        
+        <ul class="submenu">
+            <li><a href="section-16.html#16.1">Default DropDown</a>
+            <li><a href="section-16.html#16.2">Colored DropDown</a>
+            <li><a href="section-16.html#16.3">Colored DropDown Buttons</a>
+        </ul>        
+      </li>
+      <li><a href="section-17.html">Modals</a>        
+        <ul class="submenu">
+            <li><a href="section-17.html#17.1">Static example</a>
+            <li><a href="section-17.html#17.2">Buttons to open Modal</a>
+            <li><a href="section-17.html#17.2">Large Modal Code</a>
+            <li><a href="section-17.html#17.2">Small Modal Code</a>
+        </ul>        
+      </li>
+      <li><a href="section-18.html">Databox</a>        
+        <ul class="submenu">
+        </ul>        
+      </li>
+      <li><a href="section-19.html">Pie-Chart</a>        
+        <ul class="submenu">
+            <li><a href="section-19.html#19.1">Default Piechart</a>
+            <li><a href="section-19.html#19.2">Borderd Piechart</a>
+            <li><a href="section-19.html#19.3">Javascript</a>
+            <li><a href="section-19.html#19.4">Options</a>
+        </ul>        
+      </li>
+      <li><a href="section-20.html">Maxlength</a>        
+        <ul class="submenu">
+            <li><a href="section-20.html#20.1">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-21.html">Password Strength</a>        
+        <ul class="submenu">
+            <li><a href="section-21.html#21.1">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-22.html">Popovers</a>        
+        <ul class="submenu">
+            <li><a href="section-22.html#22.1">Dark Popover top</a>
+            <li><a href="section-22.html#22.2">Popover right</a>
+            <li><a href="section-22.html#22.3">Popover bottom</a>
+            <li><a href="section-22.html#22.4">Popover left</a>
+            <li><a href="section-22.html#22.5">Popover Top</a>
+            <li><a href="section-22.html#22.6">Inverted Popover</a>
+            <li><a href="section-22.html#22.7">Popover On Buttons</a>
+            <li><a href="section-22.html#22.8">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-23.html">Datepicker</a>        
+        <ul class="submenu">
+            <li><a href="section-23.html#23.1">HTML Markup</a>
+            <li><a href="section-23.html#23.2">Javascript</a>
+            <li><a href="section-23.html#23.3">Options</a>
+            <li><a href="section-23.html#23.4">Methods</a>
+        </ul>        
+      </li>
+      <li><a href="section-24.html">Timepicker</a>        
+        <ul class="submenu">
+            <li><a href="section-24.html#24.1">HTML Markup</a>
+            <li><a href="section-24.html#24.2">Javascript</a>
+            <li><a href="section-24.html#24.3">Options</a>
+            <li><a href="section-24.html#24.4">Methods</a>
+            <li><a href="section-24.html#24.5">Events</a>
+        </ul>        
+      </li>
+      <li><a href="section-25.html">Scroll Message</a>        
+        <ul class="submenu">
+            <li><a href="section-25.html#25.1">HTML Markup</a>
+            <li><a href="section-25.html#25.1">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-26.html">Templates</a>        
+        <ul class="submenu">
+            <li><a href="section-26.html#26.1">With Horizontalbar Menu</a>
+            <li><a href="section-26.html#26.2">With Sidebar Menu</a>
+        </ul>        
+      </li>
+      <li><a href="section-27.html">Simple/Responsive Tables</a>        
+        <ul class="submenu">
+            <li><a href="section-27.html#27.1">Simple Table With Hover</a>
+            <li><a href="section-27.html#27.2">Condensed Table</a>
+            <li><a href="section-27.html#27.3">Bordered Table</a>
+            <li><a href="section-27.html#27.4">Stripped Table</a>
+            <li><a href="section-27.html#27.5">Contextual Rows</a>
+            <li><a href="section-27.html#27.6">Contextual Columns</a>
+            <li><a href="section-27.html#27.7">Responsive Table</a>
+            <li><a href="section-27.html#27.8">Scrollable Table</a>
+            <li><a href="section-27.html#27.9">Responsive Flip Scroll Tables</a>
+        </ul>        
+      </li>
+      <li><a href="section-28.html">Form Elements</a>        
+        <ul class="submenu">
+            <li><a href="section-28.html#28.1">Basic Form</a>
+            <li><a href="section-28.html#28.2">Horizontal Form</a>
+            <li><a href="section-28.html#28.3">Inline Form</a>
+            <li><a href="section-28.html#28.4">Inline Form with Label</a>
+            <li><a href="section-28.html#28.5">Form Elements</a>
+        </ul>        
+      </li>
+      <li><a href="section-29.html">Buttons</a>        
+        <ul class="submenu">
+            <li><a href="section-29.html#29.1">Basic Buttons</a>
+            <li><a href="section-29.html#29.2">Gradient Buttons</a>
+            <li><a href="section-29.html#29.3">Rounded Corner Buttons</a>
+            <li><a href="section-29.html#29.4">Circle Buttons</a>
+            <li><a href="section-29.html#29.5">Button Size</a>
+            <li><a href="section-29.html#29.6">Buttons With Icon</a>
+            <li><a href="section-29.html#29.7">Labeled Buttons</a>
+            <li><a href="section-29.html#29.8">Icon Buttons</a>
+            <li><a href="section-29.html#29.9">DropDown Buttons</a>
+            <li><a href="section-29.html#29.10">Justified Buttons</a>
+            <li><a href="section-29.html#29.11">Block Buttons</a>
+            <li><a href="section-29.html#29.12">Button Groups</a>
+            <li><a href="section-29.html#29.13">Disabled Buttons</a>
+        </ul>        
+      </li>
+      <li><a href="section-30.html">Confirm Box</a>        
+        <ul class="submenu">
+            <li><a href="section-30.html#30.1">Javascript</a>
+            <li><a href="section-30.html#30.2">Options</a>
+        </ul>        
+      </li>
+      <li><a href="section-31.html">Wizard</a>        
+        <ul class="submenu">
+            <li><a href="section-31.html#31.1">HTML Markup</a>
+            <li><a href="section-31.html#31.2">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-32.html">Notification Alert</a>        
+        <ul class="submenu">
+            <li><a href="section-32.html#32.1">Javascript</a>
+            <li><a href="section-32.html#32.2">Options</a>
+        </ul>        
+      </li>
+      <li><a href="section-33.html">Throbber</a>        
+        <ul class="submenu">
+            <li><a href="section-33.html#33.1">Javascript</a>
+            <li><a href="section-33.html#33.2">Options</a>
+        </ul>        
+      </li>
+    </ul></nav>
+  </aside>
+</div>
+<div role="main" id="kss-main">
+  <article id="kss-content">
+
+    
+      <h2 class="kss-main-title">Wizard</h2>
+      
+		
+
+
+      <section class="kss-depth-2">
+      <a name="31.1"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">31.1</span> - -->HTML Markup</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="wizard-panel" id="wizard1" data-wizard-content-id="wizard-content">
+<form id="wizard_form" name="wizard_form" method="post" action="">
+<div class="panel panel-icon-header" id="wizard-content">
+<div class="panel-heading">
+<h3 class="panel-title wizard-title">Step1</h3>
+</div>
+<div class="wizard-step-container">
+<div class="wizard wizard-circle" data-wizard-step-count="3">
+<ul class="wizard-list wizard-list-line">
+<li class="active">
+<a href="#">
+<div class="wizard-pills">
+<span class="wizard-pills-inner">1</span>
+</div></a>
+</li>
+<li>
+<a href="#">
+<div class="wizard-pills">
+<span class="wizard-pills-inner">2</span>
+</div></a>
+</li>
+<li>
+<a href="#">
+<div class="wizard-pills">
+<span class="wizard-pills-inner">3</span>
+</div></a>
+</li>
+<li>
+<a href="#">
+<div class="wizard-pills">
+<span class="wizard-pills-inner">4</span>
+</div></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="panel-body">
+<div class="wizard-content-container">
+<fieldset title="Step 1" id="wizard-step-1" class="wizard-step-box" data-wizard-step="1">
+<div class="row">
+<div class="col-md-6 col-md-push-3 margin-y10px">
+<div class="form-group">
+<label for="fieldname">First Name</label>
+<input type="text" minlength="4" name="fname" data-validate="required" data-validate-message="Field is required" class="form-control" id="fname" data-error="true">
+</div>
+<div class="form-group">
+<label for="fieldemail">Last name</label>
+<input type="text" name="lname" data-validate="required" data-validate-message="Field is required" class="form-control" id="lname" data-error="true">
+</div>
+<div class="form-group">
+<label for="fieldurl">Email</label>
+<input type="email" name="email" data-validate="required" data-validate-message="Field is required" class="form-control" id="email" data-error="true">
+</div>
+</div>
+</div>
+</fieldset>
+<fieldset title="Step 2" id="wizard-step-2" class="wizard-step-box pull-hide" data-wizard-step="2">
+<div class="row">
+<div class="col-md-6 col-md-push-3 margin-y10px">
+<div class="form-group">
+<label for="fieldname">DOB</label>
+<input type="text" minlength="4" data-validate="required" data-validate-message="Field is required" name="DOB" class="form-control" id="DOB" data-error="true">
+</div>
+<div class="form-group">
+<label for="fieldemail">Gender</label>
+<input type="email" name="gender" data-validate="required" data-validate-message="Field is required" class="form-control" id="gender" data-error="true">
+</div>
+<div class="form-group">
+<label for="fieldurl">URL</label>
+<input type="url" name="url" data-validate="required" data-validate-message="Field is required" class="form-control" id="fieldurl" data-error="true">
+</div>
+</div>
+</div>
+</fieldset>
+<fieldset title="Step 3" id="wizard-step-3" class="wizard-step-box pull-hide" data-wizard-step="3">
+<div class="row">
+<div class="col-md-6 col-md-push-3 margin-y10px">
+<div class="form-group">
+<label for="fieldname">Address</label>
+<input type="text" minlength="4" data-validate="required" data-validate-message="Field is required" name="address" class="form-control" id="address" data-error="true" />
+</div>
+<div class="form-group">
+<label for="fieldemail">City</label>
+<input type="text" name="city" data-validate="required" data-validate-message="Field is required" class="form-control" id="city" data-error="true" />
+</div>
+<div class="form-group">
+<label for="fieldurl">State</label>
+<input type="text" name="state" data-validate="required" data-validate-message="Field is required" class="form-control" id="state" data-error="true" />
+</div>
+</div>
+</div>
+</fieldset>
+<fieldset title="Step 4" id="wizard-step-4" class="wizard-step-box pull-hide" data-wizard-step="4">
+<div class="row">
+<div class="col-md-6 col-md-push-3 margin-y10px">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nemo, atque consequuntur officiis asperiores consectetur porro labore commodi esse error quisquam nihil illum sunt facere inventore possimus autem ab voluptates quibusdam non voluptatum suscipit architecto. Illo, facilis, corporis, veritatis dolores minus quasi iure cupiditate quis autem ducimus nisi obcaecati tenetur sed ea excepturi pariatur consequatur enim labore officia mollitia. Rerum, voluptatem numquam molestiae recusandae iusto ipsum inventore unde accusantium labore delectus? Doloremque, fugit, sunt libero laboriosam cupiditate sed sequi nostrum saepe. Mollitia, alias, expedita accusantium porro error autem dolore veniam commodi nesciunt provident vitae neque. Nostrum, sed, molestias itaque provident inventore natus animi quasi laborum laboriosam facere ratione aperiam iusto. Non ducimus facere sunt doloribus? Asperiores, natus distinctio quis iure!
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+<div class="wizard-nav panel-footer pull-center">
+<button data-wizard-nav="prev" class="btn cust-btn btn-success" type="button">
+<i class="fa fa-chevron-left"></i> Previous
+</button>
+<button  data-wizard-nav="next" class="btn cust-btn btn-success" type="button">
+Next <i class="fa fa-chevron-right"></i>
+</button>
+<button  data-wizard-nav="finish" class="btn cust-btn btn-success pull-hide" type="button">
+<i class="fa fa-check-circle"></i> Finish
+</button>
+</div>
+</div>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">&lt;div class=&quot;wizard-panel&quot; id=&quot;wizard1&quot; data-wizard-content-id=&quot;wizard-content&quot;&gt;
+&lt;form id=&quot;wizard_form&quot; name=&quot;wizard_form&quot; method=&quot;post&quot; action=&quot;&quot;&gt;
+&lt;div class=&quot;panel panel-icon-header&quot; id=&quot;wizard-content&quot;&gt;
+&lt;div class=&quot;panel-heading&quot;&gt;
+&lt;h3 class=&quot;panel-title wizard-title&quot;&gt;Step1&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wizard-step-container&quot;&gt;
+&lt;div class=&quot;wizard wizard-circle&quot; data-wizard-step-count=&quot;3&quot;&gt;
+&lt;ul class=&quot;wizard-list wizard-list-line&quot;&gt;
+&lt;li class=&quot;active&quot;&gt;
+&lt;a href=&quot;#&quot;&gt;
+&lt;div class=&quot;wizard-pills&quot;&gt;
+&lt;span class=&quot;wizard-pills-inner&quot;&gt;1&lt;/span&gt;
+&lt;/div&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot;&gt;
+&lt;div class=&quot;wizard-pills&quot;&gt;
+&lt;span class=&quot;wizard-pills-inner&quot;&gt;2&lt;/span&gt;
+&lt;/div&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot;&gt;
+&lt;div class=&quot;wizard-pills&quot;&gt;
+&lt;span class=&quot;wizard-pills-inner&quot;&gt;3&lt;/span&gt;
+&lt;/div&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot;&gt;
+&lt;div class=&quot;wizard-pills&quot;&gt;
+&lt;span class=&quot;wizard-pills-inner&quot;&gt;4&lt;/span&gt;
+&lt;/div&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;panel-body&quot;&gt;
+&lt;div class=&quot;wizard-content-container&quot;&gt;
+&lt;fieldset title=&quot;Step 1&quot; id=&quot;wizard-step-1&quot; class=&quot;wizard-step-box&quot; data-wizard-step=&quot;1&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-md-6 col-md-push-3 margin-y10px&quot;&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;fieldname&quot;&gt;First Name&lt;/label&gt;
+&lt;input type=&quot;text&quot; minlength=&quot;4&quot; name=&quot;fname&quot; data-validate=&quot;required&quot; data-validate-message=&quot;Field is required&quot; class=&quot;form-control&quot; id=&quot;fname&quot; data-error=&quot;true&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;fieldemail&quot;&gt;Last name&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;lname&quot; data-validate=&quot;required&quot; data-validate-message=&quot;Field is required&quot; class=&quot;form-control&quot; id=&quot;lname&quot; data-error=&quot;true&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;fieldurl&quot;&gt;Email&lt;/label&gt;
+&lt;input type=&quot;email&quot; name=&quot;email&quot; data-validate=&quot;required&quot; data-validate-message=&quot;Field is required&quot; class=&quot;form-control&quot; id=&quot;email&quot; data-error=&quot;true&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;fieldset title=&quot;Step 2&quot; id=&quot;wizard-step-2&quot; class=&quot;wizard-step-box pull-hide&quot; data-wizard-step=&quot;2&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-md-6 col-md-push-3 margin-y10px&quot;&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;fieldname&quot;&gt;DOB&lt;/label&gt;
+&lt;input type=&quot;text&quot; minlength=&quot;4&quot; data-validate=&quot;required&quot; data-validate-message=&quot;Field is required&quot; name=&quot;DOB&quot; class=&quot;form-control&quot; id=&quot;DOB&quot; data-error=&quot;true&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;fieldemail&quot;&gt;Gender&lt;/label&gt;
+&lt;input type=&quot;email&quot; name=&quot;gender&quot; data-validate=&quot;required&quot; data-validate-message=&quot;Field is required&quot; class=&quot;form-control&quot; id=&quot;gender&quot; data-error=&quot;true&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;fieldurl&quot;&gt;URL&lt;/label&gt;
+&lt;input type=&quot;url&quot; name=&quot;url&quot; data-validate=&quot;required&quot; data-validate-message=&quot;Field is required&quot; class=&quot;form-control&quot; id=&quot;fieldurl&quot; data-error=&quot;true&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;fieldset title=&quot;Step 3&quot; id=&quot;wizard-step-3&quot; class=&quot;wizard-step-box pull-hide&quot; data-wizard-step=&quot;3&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-md-6 col-md-push-3 margin-y10px&quot;&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;fieldname&quot;&gt;Address&lt;/label&gt;
+&lt;input type=&quot;text&quot; minlength=&quot;4&quot; data-validate=&quot;required&quot; data-validate-message=&quot;Field is required&quot; name=&quot;address&quot; class=&quot;form-control&quot; id=&quot;address&quot; data-error=&quot;true&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;fieldemail&quot;&gt;City&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;city&quot; data-validate=&quot;required&quot; data-validate-message=&quot;Field is required&quot; class=&quot;form-control&quot; id=&quot;city&quot; data-error=&quot;true&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label for=&quot;fieldurl&quot;&gt;State&lt;/label&gt;
+&lt;input type=&quot;text&quot; name=&quot;state&quot; data-validate=&quot;required&quot; data-validate-message=&quot;Field is required&quot; class=&quot;form-control&quot; id=&quot;state&quot; data-error=&quot;true&quot; /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;fieldset title=&quot;Step 4&quot; id=&quot;wizard-step-4&quot; class=&quot;wizard-step-box pull-hide&quot; data-wizard-step=&quot;4&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-md-6 col-md-push-3 margin-y10px&quot;&gt;
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, nemo, atque consequuntur officiis asperiores consectetur porro labore commodi esse error quisquam nihil illum sunt facere inventore possimus autem ab voluptates quibusdam non voluptatum suscipit architecto. Illo, facilis, corporis, veritatis dolores minus quasi iure cupiditate quis autem ducimus nisi obcaecati tenetur sed ea excepturi pariatur consequatur enim labore officia mollitia. Rerum, voluptatem numquam molestiae recusandae iusto ipsum inventore unde accusantium labore delectus? Doloremque, fugit, sunt libero laboriosam cupiditate sed sequi nostrum saepe. Mollitia, alias, expedita accusantium porro error autem dolore veniam commodi nesciunt provident vitae neque. Nostrum, sed, molestias itaque provident inventore natus animi quasi laborum laboriosam facere ratione aperiam iusto. Non ducimus facere sunt doloribus? Asperiores, natus distinctio quis iure!
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;wizard-nav panel-footer pull-center&quot;&gt;
+&lt;button data-wizard-nav=&quot;prev&quot; class=&quot;btn cust-btn btn-success&quot; type=&quot;button&quot;&gt;
+&lt;i class=&quot;fa fa-chevron-left&quot;&gt;&lt;/i&gt; Previous
+&lt;/button&gt;
+&lt;button  data-wizard-nav=&quot;next&quot; class=&quot;btn cust-btn btn-success&quot; type=&quot;button&quot;&gt;
+Next &lt;i class=&quot;fa fa-chevron-right&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;button  data-wizard-nav=&quot;finish&quot; class=&quot;btn cust-btn btn-success pull-hide&quot; type=&quot;button&quot;&gt;
+&lt;i class=&quot;fa fa-check-circle&quot;&gt;&lt;/i&gt; Finish
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="31.2"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">31.2</span> - -->Javascript</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><pre>
+&lt;script src="assets/js/wizard.js"&gt;&lt;/script&gt;
+$('#wizard1').wizard();
+</pre></td>
+          </tr>
+        </table>
+      </section>
+  </article>
+</div>
+
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/cnsiJS.js"></script>
+<script src="assets/js/cnsiutils.js"></script>
+<script src="assets/js/cnsi-plugins.js"></script>
+<script src="assets/js/listSearch.js"></script>
+<script src="assets/js/cnsicoreui.js"></script>
+<script src="assets/js/cnsi-custom.js"></script>
+
+<script>
+  $(document).ready(function(){
+    var sidebarAdjust = function() {
+      // Match footer/body height
+      var height = Math.max($('#kss-nav').height(), $('#kss-main').height());
+
+      if ($(window).width() <= 768) {
+        $('#kss-main, #kss-nav').height('auto');
+      } else {
+        $('#kss-main, #kss-nav').height(height);
+      }
+    };
+
+    $(window).resize(sidebarAdjust);
+    $(window).scroll(sidebarAdjust);
+    sidebarAdjust();
+
+    // Ensure code blocks are highlighted properly...
+    $('pre>code').addClass('prettyprint');
+    prettyPrint();
+  });
+</script>
+
+
+</div></body>
+</html>

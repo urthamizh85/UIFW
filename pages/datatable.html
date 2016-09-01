@@ -1,0 +1,42 @@
+<script id="tmp_healthcoverage_list_pagination" type="text/x-handlebars-template">
+	<div class="row">
+	<div class="col-lg-6">
+	<div class="pager-info">
+	Showing <span id="view-start">{{pageCalc this.currentPage this.rowNum 'start'}}</span> - <span id="view-end">{{pageCalc this.currentPage this.rowNum 'end'}}</span> out of <span id="view-total">{{this.totalRows}}</span>
+	</div>
+	</div>
+	<div class="col-lg-6">
+	<div class="pad-y5px pad-x10px"><ul class="pagination margin-none pull-right">
+	<li >
+	<a title="Go to previous page" href="javascript:void(0)" data-currentpage="{{this.currentPage}}" id="prev" class="{{#customIf this.start '1'}}disable{{/customIf}}"><i class="fa fa-angle-double-left"></i></a>
+	</li>
+	{{#each this.pagination}}
+	<li {{#customIf this ../currentPage}}class="active"{{/customIf}}>
+	<a title="Go to page {{this}}" href="#" data-grid-page="{{@index}}" data-page="{{this}}">{{this}}</a>
+	</li>
+	{{/each}}
+	<li>
+	<a title="Go to next page" href="javascript:void(0)" data-currentpage="{{this.currentPage}}" id="next" class="{{#customIf this.totalPage '1'}}disable{{/customIf}}"><i class="fa fa-angle-double-right"></i></a>
+	</li>
+	</ul></div>
+	</div>
+	</div>
+</script>
+<div class="title-bar">
+	<div class="title-text">
+		<h3>Data Table</h3>
+	</div>
+</div>
+<div class="load-content">
+	<div class="row">
+		<div class="col-md-12 col-xs-12">
+			<div class="well with-header">
+				<div class="header bordered-blue">
+					Data Table
+				</div>
+				<table id="health_coverage_list"></table>
+				<div class="grid-pager" id="health_coverage_list_pager" data-template="tmp_healthcoverage_list_pagination"></div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>UI Framework</title>
+
+		<meta name="description" content="">
+		<meta name="generator" content="kss-node" />
+		<meta name="viewport" content="width=device-width">
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href="assets/css/font-awesome.css" rel="stylesheet">
+		<link href="assets/css/glyphicons.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="assets/css/custom-theme-default.css" />
+		<link rel="stylesheet" href="public/kss.css">
+		<link rel="stylesheet" href="public/style.css">
+	</head>
+	<body>
+		<div id="kss-wrapper">
+
+			<div id="kss-nav">
+				<header id="kss-header">
+					<hgroup>
+						<h1>CNSI UI Framework</h1>
+					</hgroup>
+					<div class="search-doc-box">
+						<input type="text" placeholder="Search docs" name="search_doc" id="search_doc" data-ui="alphabetListSearch" data-search-target=".left-nav > ul" />
+					</div>
+				</header>
+				<aside>
+					<nav class="left-nav"></nav>
+				</aside>
+			</div>
+			<div role="main" id="kss-main">
+				<article id="kss-content">
+					<h2 class="kss-main-title">Input Mask</h2>
+					<table class="kss-mod-list">
+						<tr class="kss-mod-desc-group">
+							<td class="kss-mod-desc"></td>
+						</tr>
+						<tr class="kss-mod-example">
+							<td>
+							<div class="row">
+								<div class="col-lg-6 col-sm-6 col-xs-12">
+									<div class="widget">
+										<div class="widget-header bordered-bottom bordered-blue">
+											<span class="widget-caption">Example</span>
+										</div>
+										<div class="widget-body">
+											<div>
+												<form role="form">
+													<div class="form-group">
+														<label>ISBN</label>
+														<input type="text" data-mask="999-99-999-9999-9" class="form-control" id="ISBN" placeholder="Enter ISBN">
+													</div>
+													<div class="form-group">
+														<label>Phone</label>
+														<input type="text" data-mask="(999) 999-9999" class="form-control" id="phone" placeholder="Enter Phone">
+													</div>
+													<div class="form-group">
+														<label>Date</label>
+														<input type="text" data-mask="99/99/9999" class="form-control" id="date" placeholder="Enter Date">
+													</div>
+													<div class="form-group">
+														<label>SSN</label>
+														<input type="text" data-mask="999-99-9999" class="form-control" id="SSN" placeholder="Enter SSN">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div></td>
+						</tr>
+					</table>
+
+					<div class="kss-markup">
+						<pre class="prettyprint lang-html">&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-lg-6 col-sm-6 col-xs-12&quot;&gt;
+&lt;div class=&quot;widget&quot;&gt;
+&lt;div class=&quot;widget-header bordered-bottom bordered-blue&quot;&gt;
+&lt;span class=&quot;widget-caption&quot;&gt;Example&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;widget-body&quot;&gt;
+&lt;div&gt;
+&lt;form role=&quot;form&quot;&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label&gt;ISBN&lt;/label&gt;
+&lt;input type=&quot;text&quot; data-mask=&quot;999-99-999-9999-9&quot; class=&quot;form-control&quot; id=&quot;ISBN&quot; placeholder=&quot;Enter ISBN&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label&gt;Phone&lt;/label&gt;
+&lt;input type=&quot;text&quot; data-mask=&quot;(999) 999-9999&quot; class=&quot;form-control&quot; id=&quot;phone&quot; placeholder=&quot;Enter Phone&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label&gt;Date&lt;/label&gt;
+&lt;input type=&quot;text&quot; data-mask=&quot;99/99/9999&quot; class=&quot;form-control&quot; id=&quot;date&quot; placeholder=&quot;Enter Date&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+&lt;label&gt;SSN&lt;/label&gt;
+&lt;input type=&quot;text&quot; data-mask=&quot;999-99-9999&quot; class=&quot;form-control&quot; id=&quot;SSN&quot; placeholder=&quot;Enter SSN&quot;&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+					</div>
+
+					<section class="kss-depth-2">
+						<a name="35.1"></a>
+						<h2 class="kss-sub-title"><!--<span class="kss-ref">35.1</span> - -->Usage</h2>
+
+						<table class="kss-mod-list">
+							<tr class="kss-mod-desc-group">
+								<td class="kss-mod-desc"></td>
+							</tr>
+							<tr class="kss-mod-example">
+								<td><h3>Via data attributes</h3>
+								<p>
+									Add data attributes to register an element with inputmask functionality as shown in the example above.
+								</p><h3>Via JavaScript</h3>
+								<p>
+									Call the input mask via javascript:
+								</p>								<pre><code class="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'.inputmask'</span><span class="p">).</span><span class="nx">inputmask</span><span class="p">({</span>
+   <span class="nx">mask</span><span class="o">:</span> <span class="s1">'999-99-999-9999-9'</span>
+<span class="p">})</span>
+</code></pre></td>
+							</tr>
+						</table>
+					</section>
+					<section class="kss-depth-2">
+						<a name="35.2"></a>
+						<h2 class="kss-sub-title"><!--<span class="kss-ref">35.2</span> - -->Options</h2>
+
+						<table class="kss-mod-list">
+							<tr class="kss-mod-desc-group">
+								<td class="kss-mod-desc"></td>
+							</tr>
+							<tr class="kss-mod-example">
+								<td>
+								<p>
+									Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>
+										data-</code>
+									, as in <code>
+										data-mask="999-99-999-9999-9"</code>
+									.
+								</p>
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th style="width: 100px;">Name</th>
+												<th style="width: 50px;">type</th>
+												<th style="width: 100px;">default</th>
+												<th>description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>mask</td>
+												<td>string</td>
+												<td>''</td>
+												<td>A string of formatting and literal characters, defining the input mask (see below).</td>
+											</tr>
+											<tr>
+												<td>placeholder</td>
+												<td>string</td>
+												<td>'_'</td>
+												<td>The character that is displayed where something needs to be typed.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div></td>
+							</tr>
+						</table>
+					</section>
+					<section class="kss-depth-2">
+						<a name="35.3"></a>
+						<h2 class="kss-sub-title"><!--<span class="kss-ref">35.3</span> - -->Format</h2>
+
+						<table class="kss-mod-list">
+							<tr class="kss-mod-desc-group">
+								<td class="kss-mod-desc"></td>
+							</tr>
+							<tr class="kss-mod-example">
+								<td>
+								<p>
+									Each typed character needs to match exactly one character in the <code>
+										mask</code>
+									option.
+								</p>
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+											<tr>
+												<th>Character</th><th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>9</td><td>Number</td>
+											</tr>
+											<tr>
+												<td>a</td><td>Letter</td>
+											</tr>
+											<tr>
+												<td>w</td><td>Alphanumeric</td>
+											</tr>
+											<tr>
+												<td>*</td><td>Any character</td>
+											</tr>
+											<tr>
+												<td>?</td><td>Optional - any characters following will become optional</td>
+											</tr>
+										</tbody>
+									</table>
+								</div></td>
+							</tr>
+						</table>
+					</section>
+					<section class="kss-depth-2">
+						<a name="35.4"></a>
+						<h2 class="kss-sub-title"><!--<span class="kss-ref">35.4</span> - -->Methods</h2>
+
+						<table class="kss-mod-list">
+							<tr class="kss-mod-desc-group">
+								<td class="kss-mod-desc"></td>
+							</tr>
+							<tr class="kss-mod-example">
+								<td><h4>.inputmask(options)</h4>
+								<p>
+									Initializes an input element with an input mask.
+								</p></td>
+							</tr>
+						</table>
+
+						<div class="kss-markup">
+							<pre class="prettyprint lang-html">&lt;h4&gt;.inputmask(options)&lt;/h4&gt;
+&lt;p&gt;Initializes an input element with an input mask.&lt;/p&gt;</pre>
+						</div>
+
+					</section>
+				</article>
+			</div>
+
+			<a href="#" class="scrolltop" data-scrolltop="true" title="Scroll to top"><i class="fa fa-angle-up"></i></a>
+			<!-- SCRIPTS -->
+			<script src="public/kss.js"></script>
+			<script src="public/prettify.js"></script>
+			<script src="assets/js/jquery.js"></script>
+			<script src="assets/js/bootstrap.js"></script>
+			<script src="assets/js/cnsiJS.js"></script>
+			<script src="assets/js/cnsiutils.js"></script>
+			<script src="assets/js/cnsi-plugins.js"></script>
+			<script src="assets/js/listSearch.js"></script>
+			<script src="assets/js/cnsicoreui.js"></script>
+			<script src="assets/js/cnsi-custom.js"></script>
+
+			<script>
+				$(document).ready(function() {
+					var sidebarAdjust = function() {
+						// Match footer/body height
+						var height = Math.max($('#kss-nav').height(), $('#kss-main').height());
+						var winHeight = $(window).height();
+						if (height < winHeight) {
+							height = winHeight;
+						}
+
+						if ($(window).width() <= 768) {
+							$('#kss-main, #kss-nav').height('auto');
+						} else {
+							$('#kss-main, #kss-nav').height(height);
+						}
+					};
+
+					$(window).resize(sidebarAdjust);
+					$(window).scroll(sidebarAdjust);
+					sidebarAdjust();
+
+					// Ensure code blocks are highlighted properly...
+					$('pre>code').addClass('prettyprint');
+					prettyPrint();
+				});
+			</script>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+.rightnav {
+  position:fixed;
+  right:-$rightnav-width;
+  top:$navbar-height + $navbar-top-border-width;
+  bottom:0;
+  background:$rightnav-bg;
+  width:$rightnav-width;
+  font-size:110%;
+  z-index:11;
+  border-top:3px solid $rightnav-top-line;
+  @include box-shadow(-2px 0px 2px rgba(0,0,0,0.18));
+  .nav {
+    > li {
+     > a {
+        color:$rightnav-text;
+        border-bottom:1px solid $rightnav-bottom-border;
+        border-top:1px solid rgba(255,255,255,0.6);
+        border-right:3px solid $rightnav-bg;
+        padding:7px 15px 8px;
+        word-wrap:break-word;
+        white-space:normal;
+        &:hover {
+          background:$rightnav-hover-bg;
+          border-left-color:$rightnav-active-bg;
+        }
+        .menu-label, .menu-arrow {
+          display:inline-block;
+        }
+        .menu-label {
+          width:99%;
+        }
+        .menu-arrow {
+          width:1%;
+          float:right;
+        }
+        .menu-icon {
+          width:25px;
+        }
+        &:nth-child(2){
+          position:absolute;
+          top:2px;
+          right:0px;
+          border:0px;
+         
+        }
+      }
+      &.open {
+        > a {
+          background:$rightnav-hover-bg;
+          border-bottom-color:$rightnav-bottom-border;
+          border-top-color:rgba(255,255,255,0.6);
+          border-right-color:$rightnav-hover-bg;
+        }
+      }
+      &.active {
+       > a {
+          background:$rightnav-active-bg;
+          @include gradient-striped($color: rgba(0,0,0,.0059), $angle: -45deg); 
+          background-size:20px 20px;
+          color:$rightnav-active-text;
+          border-right:3px solid $rightnav-active-border;
+          text-shadow:1px 1px 0 rgba(255,255,255,0.6);
+        }
+      }
+      .submenu {
+        display:none;
+        padding:0;
+        margin:0;
+        background:$rightnav-hover-bg;
+        border-bottom:1px solid $rightnav-bottom-border;
+        border-top:1px solid rgba(255,255,255,0.6);
+        > li {
+          list-style-type:none;
+          padding:0;
+          margin:0;
+          > a {
+            font-size:90%;
+            display:block;
+            padding:8px 0 8px 30px;
+            text-decoration:none;
+            color:$rightnav-text;
+            &:hover {
+              background:$rightnav-bg;
+            }
+          }
+        }
+      }
+    }
+  }
+}

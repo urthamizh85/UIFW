@@ -1,0 +1,1450 @@
+<div class="title-bar">
+	<div class="title-text">
+		<h3>Form Validation</h3>
+	</div>
+</div>
+<div class="load-content">
+	<div class="row">
+		<div class="col-lg-12 col-sm-12 col-xs-12">
+			<div class="widget">
+				<div class="widget-header bordered-bottom bordered-theme">
+					<span class="widget-caption">Inline Form with Label</span>
+				</div>
+				<div class="widget-body">					
+					<form id="form_validate" name="form_validate" method="post" action="" role="form">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Email address<span class="required">*</span> <a href="#" data-original-title="Please enter email/username" data-placement="top" data-toggle="tooltip" title="Please enter email address" tabindex="-1"> <i class="fa fa-question-circle"></i></a></label>
+									<input type="text" id="email_id" name="email_id" class="form-control" data-validate="required|email" data-validate-message="This field is required" autocomplete="off" />
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Password<span class="required">*</span> <a href="#" data-original-title="Please enter password" data-placement="top" data-toggle="tooltip" title="Please enter password" tabindex="-1"> <i class="fa fa-question-circle"></i></a></label>
+									<input type="password" id="password" name="password" class="form-control" data-validate="required" data-validate-message="This field is required" />
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Confirm Password<span class="required">*</span> <a href="#" data-original-title="Please confirm password" data-placement="top" data-toggle="tooltip" title="Please confirm password" tabindex="-1"> <i class="fa fa-question-circle"></i></a></label>
+									<input type="password" id="c_password" name="c_password" class="form-control" data-validate="required" data-validate-message="This field is required" />
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Date (MM/DD/YYYY)<span class="required">*</span></label>
+									<div id="datepicker_group" class="input-group">
+										<input type="text" maxlength="10" class="form-control" data-validate="required|date[]" data-validate-message="This field is required|Invalid Date" name="date" id="date" title="Date (MM/DD/YYYY)" data-error-showid=".input-group" />
+										<span class="input-group-addon cursor-hand" title="Datepicker"><i class="fa fa-calendar"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Numbers only<span class="required">*</span></label>
+									<input type="text" maxlength="5" class="form-control" data-validate="required|numbersOnly" data-validate-message="This field is required|Only numbers are allowed" name="number" id="number" title="Numbers only field" />
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Alphabets only<span class="required">*</span></label>
+									<input type="text" name="alphabets" id="alphabets" class="form-control" data-validate="required|alphabetsOnly" data-validate-message="This field is required|Only alphabets are allowed" title="Alphabets onlyt field">
+								</div>
+							</div>
+						</div>
+
+						<button class="btn btn-primary pull-right" type="submit" id="form_submit_btn">
+							Submit
+						</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 col-sm-12 col-xs-12">
+			<div class="widget">
+				<div class="widget-header bordered-bottom bordered-theme">
+					<span class="widget-caption">Formvalidation.js</span>
+				</div>
+				<div class="widget-body">
+					<h5>Initiate Validation</h5>
+					<pre class="well well-small">
+						&lt;script src="assets/js/cnsi-lib/cnsiJS.js"&gt;&lt;/script&gt;
+						&lt;script src="assets/js/cnsi-plugin/form-validate.js"&gt;&lt;/script&gt;
+						$("formid").formValidation({
+							messages : {
+								"required" : "This field is required.",
+								"email" : "Please enter a valid email id.",
+								"minchar" : "Minimum character length is required.",
+								"maxchar" : "Maximum character length is required.",
+								"min" : "Minimum value is required.",
+								"max" : "Maximum value is required.",
+								"daterange" : "Please enter the valid date range.",
+								"date" : "Please enter a valid date (MM/DD/YYYY).",
+								"startdate" : "Please enter a valid date (MM/DD/YYYY).",
+								"enddate" : "Please enter a valid date (MM/DD/YYYY).",
+								"starttime" : "Please enter Start Time greater than Current Time.",
+								"endtime" : "Please enter End Time greater than Start Time.",
+								"future" : "Please enter the future date.",
+								"startDateToOneYear" : "Please enter the end date less than one year from start date.",
+								"past" : "Please enter the past date.",
+								"alphabetsOnly" : "Please enter alphabets only.",
+								"numbersOnly" : "Please enter numbers only.",
+								"numbersSpecialOnly" : "Please enter numbers & special characters only.",
+								"alphabetsNumbersOnly" : "Please enter alphabet & numbers only.",
+								"alphabetsNumbersSpaceOnly" : "Please enter alphabet & numbers , space only.",
+								"decimalLen" : "Please enter length decimal only.",
+								"ssn" : "Please enter valid ssn.",
+								"equals" : "Please enter same value to related field value.",
+								"notequals" : "Please enter different value to related field value.",
+								"phonenumber" : "Please enter valid phone number.",
+								"charlen" : "This field length only.",
+								"nospace" : "Space not allowed."
+							},
+							messageType : "attach",
+							messageDirection : "bottom",
+							messageMaxWidth : "400px",
+							messageHideDelay : 3000,
+							messageAutoHide : false
+						});
+					</pre>
+					<p class="alert alert-danger">Note: The above message setting is default only, you can change the messages.</p>
+					<hr/>
+					<h5>Submit Validation</h5>
+					<div class="well well-small">
+						$("#someformid").formValidation("validate");
+					</div>
+					<p class="alert alert-danger">Note: The above line will return true of false</p>
+					<hr/>
+					<h5>Field Validation</h5>
+					<div class="well well-small">
+						$("#somefieldid").formValidation("validateField");
+					</div>
+					<p class="alert alert-danger">Note: The above line will return true of false</p>
+					<hr/>
+					<h5>Remove error</h5>
+					<div class="well well-small">
+						$("#somefieldid").formValidation("removeError");
+					</div>
+					<p class="alert alert-danger">Note: The above line will remove mentioned field error only.</p>
+					<hr/>
+					<h5>Show custom error message</h5>
+					<div class="well well-small">
+						$("#somefieldid").formValidate("showCustomError", {<br/>
+							msg : "Your custom message",<br/>
+							where : $("#someErrorShowId")  //! Here you can refer where you want the error will display.<br/>
+						});
+					</div>
+					<p class="alert alert-danger">Note: The above line will remove mentioned field error only.</p>
+					<hr/>
+				</div>
+				<div class="widget-header bordered-bottom bordered-theme">
+					<span class="widget-caption">Examples</span>
+					</div>
+					<div class="widget-body">					
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_0" name="fv_required_0">
+						<div class="form-group">
+							<label class="control-label label-value">Required<span class="required">*</span></label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" class="form-control" id="r_field" name="r_field" value="" data-validate="required" autocomplete="off" data-error="true"><div data-error-msg-id="r_field" class="error-msg"><p class="error-msg-content">This field is required.<span class="error-msg-dismiss">×</span></p> </div>
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Required field validation happen only form submit.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input type="text" data-validate="required" value="" name="r_field" id="r_field" class="form-control"&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_1" name="fv_required_1">
+						<div class="form-group">
+							<label class="control-label label-value">Email(example@example.com)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" class="form-control" id="r_email_field" name="r_email_field" value="" data-validate="email" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter wrong email id and  the validate will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input type="text" data-validate="email" value="" name="r_email_field" id="r_email_field" class="form-control"&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_2" name="fv_required_2">
+						<div class="form-group">
+							<label class="control-label label-value">Exact Character (char[5|7])</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" class="form-control" id="r_char_field" name="r_char_field" value="" data-validate="required|char[5,7]" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value and length should not be 5 or 7 and then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input type="text" data-validate="char[5,7]" value="" name="r_char_field" id="r_char_field" class="form-control""&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_3" name="fv_required_3">
+						<div class="form-group">
+							<label class="control-label label-value">Minumum Character (minchar[5])</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" class="form-control" id="r_minchar_field" name="r_minchar_field" value="" data-validate="minchar[5]" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter atleast one character and the validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input type="text" data-validate="minchar[5]" value="" name="r_minchar_field" id="r_minchar_field" class="form-control"&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_4" name="fv_required_4">
+						<div class="form-group">
+							<label class="control-label label-value">Maximum Character (maxchar[5])</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" class="form-control" id="r_maxchar_field" name="r_maxchar_field" value="" data-validate="maxchar[5]" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter atleast one character and the validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input type="text" data-validate="maxchar[5]" value="" name="r_maxchar_field" id="r_maxchar_field" class="form-control"&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_5" name="fv_required_5">
+						<div class="form-group">
+							<label class="control-label label-value">Minumum Value (min[5])</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="min[5]" value="" name="r_min_field" id="r_min_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value less than 5 and validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_min_field" name="r_min_field" value="" data-validate="min[5]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_6" name="fv_required_6">
+						<div class="form-group">
+							<label class="control-label label-value">Maximum Value (max[5])</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="max[5]" value="" name="r_max_field" id="r_max_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value more than 5 and the validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_max_field" name="r_max_field" value="" data-validate="max[5]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_7" name="fv_required_7">
+						<div class="form-group">
+							<label class="control-label label-value">Value (no space)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="nospace" value="" name="r_nospace_field" id="r_nospace_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value with space and  the validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_nospace_field" name="r_nospace_field" value="" data-validate="nospace" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_8" name="fv_required_8">
+						<div class="form-group">
+							<label class="control-label label-value">Only (alphabets)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="alphabetsOnly" value="" name="r_alpha_field" id="r_alpha_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value except alphabets and  the validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_alpha_field" name="r_alpha_field" value="" data-validate="alphabetsOnly" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_9" name="fv_required_9">
+						<div class="form-group">
+							<label class="control-label label-value">Only (numbers)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="numbersOnly" value="" name="r_number_field" id="r_number_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value except numbers and  the validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_number_field" name="r_number_field" value="" data-validate="numbersOnly" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_10" name="fv_required_10">
+						<div class="form-group">
+							<label class="control-label label-value">Only (numbers &amp; special character)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="numbersSpecialOnly" value="" name="r_number_special_field" id="r_number_special_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value except numbers &amp; special character and  the validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_number_special_field" name="r_number_special_field" value="" data-validate="numbersSpecialOnly" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_11" name="fv_required_11">
+						<div class="form-group">
+							<label class="control-label label-value">Only (numbers &amp; alphabets)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="alphabetsNumbersOnly" value="" name="r_alpha_number_field" id="r_alpha_number_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value except numbers &amp; alphabets and  the validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_alpha_number_field" name="r_alpha_number_field" value="" data-validate="alphabetsNumbersOnly" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_12" name="fv_required_12">
+						<div class="form-group">
+							<label class="control-label label-value">Only (numbers &amp; alphabets, space)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="alphabetsNumbersSpaceOnly" value="" name="r_alpha_number_space_field" id="r_alpha_number_space_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value except numbers &amp; alphabets,space and  the validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_alpha_number_space_field" name="r_alpha_number_space_field" value="" data-validate="alphabetsNumbersSpaceOnly" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_13" name="fv_required_13">
+						<div class="form-group">
+							<label class="control-label label-value">Decimal Length (2.22)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="decimalLen[2]" value="" name="r_decimallen_field" id="r_decimallen_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter decimal value length more than 2 and  the validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_decimallen_field" name="r_decimallen_field" value="" data-validate="decimalLen[2]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_14" name="fv_required_14">
+						<div class="form-group">
+							<label class="control-label label-value">Social Security Number (SSN)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="ssn" value="" name="r_ssn_field" id="r_ssn_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">A Social Security number CANNOT : All digits should not be zero.,Begin with any value from ’900-999′,The first three digits cannot be zero,Fourt and Five cannot be zero.,Last four digits cannot be zero.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_ssn_field" name="r_ssn_field" value="" data-validate="ssn" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_15" name="fv_required_15">
+						<div class="form-group">
+							<label class="control-label label-value">Phone Number [(xxx) xxx-xxxx]</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="phonenumber[(999) 999-9999]" value="" name="r_phonenumber_field" id="r_phonenumber_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter wrong phone format and click out side the validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_phonenumber_field" name="r_phonenumber_field" value="" data-validate="phonenumber[(999) 999-9999]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_16" name="fv_required_16">
+						<div class="form-group">
+							<label class="control-label label-value">Value (equals)</label>
+							<div class="row">
+								
+								<div class="col-lg-4">
+									<label>From</label>
+									<input type="text" data-validate="equals[#r_equal_field_2]" value="" name="r_equal_field_1" id="r_equal_field_1" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-4">
+									<label>To</label>
+									<input type="text" data-validate="equals[#r_equal_field_1]" value="" name="r_equal_field_2" id="r_equal_field_2" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-4 margin-top25px">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter from value and to value and both values should not be same.Then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_equal_field_1" name="r_equal_field_1" value="" data-validate="equals[#r_equal_field_2]" /&gt;<br>
+								
+									&lt;input class="form-control" type="text" id="r_equal_field_2" name="r_equal_field_2" value="" data-validate="equals[#r_equal_field_1]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_17" name="fv_required_17">
+						<div class="form-group">
+							<label class="control-label label-value">Value (not equals)</label>
+							<div class="row">
+								
+								<div class="col-lg-4">
+									<label>From</label>
+									<input type="text" data-validate="notequals[#r_notequal_field_2]" value="" name="r_notequal_field_1" id="r_notequal_field_1" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-4">
+									<label>To</label>
+									<input type="text" data-validate="notequals[#r_notequal_field_1]" value="" name="r_notequal_field_2" id="r_notequal_field_2" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-4  margin-top25px">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter from and to values same, then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_notequal_field_1" name="r_notequal_field_1" value="" data-validate="notequals[#r_notequal_field_2]" /&gt;<br>
+								
+									&lt;input class="form-control" type="text" id="r_notequal_field_2" name="r_notequal_field_2" value="" data-validate="notequals[#r_notequal_field_1]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_18" name="fv_required_18">
+						<div class="form-group">
+							<label class="control-label label-value">Date (MM/DD/YYYY)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="date[]" value="" name="r_dp_field" id="r_dp_field" class="form-control" autocomplete="off" data-error="true"><div data-error-msg-id="r_dp_field" class="error-msg"><p class="error-msg-content">Please enter a valid date (MM/DD/YYYY).<span class="error-msg-dismiss">×</span></p> </div>
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter wrong format and  then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_dp_field" name="r_dp_field" value="" data-validate="date[]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_19" name="fv_required_19">
+						<div class="form-group">
+							<label class="control-label label-value">End Date (11/22/2014)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="date[]|date[end[11/22/2014]]" value="" name="r_dp_end_field" id="r_dp_end_field" class="form-control" autocomplete="off" data-error="true"><div data-error-msg-id="r_dp_end_field" class="error-msg"><p class="error-msg-content">Please enter a valid date (MM/DD/YYYY).<span class="error-msg-dismiss">×</span></p> </div>
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter greater than above mentioned date and  then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_dp_end_field" name="r_dp_end_field" value="" data-validate="date[]|date[end[11/22/2014]]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_20" name="fv_required_20">
+						<div class="form-group">
+							<label class="control-label label-value">Start Date (11/25/2014)</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="date[]|date[start[11/25/2014]]" value="" name="r_dp_start_field" id="r_dp_start_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter less than above mentioned date and  then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_dp_start_field" name="r_dp_start_field" value="" data-validate="date[]|date[start[11/25/2014]]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_21" name="fv_required_21">
+						<div class="form-group">
+							<label class="control-label label-value">Future Date</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="date[]|date[future]" value="" name="r_dp_future_field" id="r_dp_future_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter past date and  then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_dp_future_field" name="r_dp_future_field" value="" data-validate="date[]|date[future]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_22" name="fv_required_22">
+						<div class="form-group">
+							<label class="control-label label-value">Exact Future Date</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="date[]|date[futureexact]" value="" name="r_dp_efuture_field" id="r_dp_efuture_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter tomorrow date and  then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_dp_efuture_field" name="r_dp_efuture_field" value="" data-validate="date[]|date[futureexact]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_23" name="fv_required_23">
+						<div class="form-group">
+							<label class="control-label label-value">Past Date</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="date[]|date[past]" value="" name="r_dp_past_field" id="r_dp_past_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter future date and  then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_dp_past_field" name="r_dp_past_field" value="" data-validate="date[]|date[past]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_24" name="fv_required_24">
+						<div class="form-group">
+							<label class="control-label label-value">Exact Past Date</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<input type="text" data-validate="date[]|date[pastexact]" value="" name="r_dp_epast_field" id="r_dp_epast_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter yesterday date and  then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_dp_epast_field" name="r_dp_epast_field" value="" data-validate="date[]|date[pastexact]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_25" name="fv_required_25">
+						<div class="form-group">
+							<label class="control-label label-value">Date Range</label>
+							<div class="row">
+								
+								<div class="col-lg-4">
+									<label>From</label>
+									<input type="text" data-validate="date[]|daterange[range1]" value="" name="r_dr_from_field" id="r_dr_from_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-4">
+									<label>To</label>
+									<input type="text" data-validate="date[]|daterange[range1]" value="" name="r_dr_to_field" id="r_dr_to_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-4">
+									<button id="btn_validate" class="btn btn-success margin-top25px" type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter invalid date range and  then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_dr_from_field" name="r_dr_from_field" value="" data-validate="date[]|daterange[range1]" /&gt;<br>
+								
+									&lt;input class="form-control" type="text" id="r_dr_to_field" name="r_dr_to_field" value="" data-validate="date[]|daterange[range1]" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_26" name="fv_required_26">
+						<div class="form-group">
+							<label class="control-label label-value">End Date (Start date to 1 year )</label>
+							<div class="row">
+								
+								<div class="col-lg-4">
+									<label>From</label>
+									<input type="text" data-validate="date[]" value="" name="r_dr_endfrom_field" id="r_dr_endfrom_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-4">
+									<label>To</label>
+									<input type="text" data-validate-relation="#r_dr_endfrom_field" data-validate="date[]|date[end[startDateTo1Year]]" value="" name="r_dr_endto_field" id="r_dr_endto_field" class="form-control" autocomplete="off">
+								</div>											
+								
+								<div class="col-lg-4 margin-top25px">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter invalid date range and  then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;input class="form-control" type="text" id="r_dr_endfrom_field" name="r_dr_endfrom_field" value="" data-validate="date[]" /&gt;<br>
+								
+									&lt;input class="form-control" type="text" id="r_dr_endto_field" name="r_dr_endto_field" value="" data-validate="date[]|date[end[startDateTo1Year]]" data-validate-relation="#r_dr_endfrom_field" /&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_27" name="fv_required_27">
+						<div class="form-group">
+							<label class="control-label label-value">radioBox</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<div><label><input type="radio" data-error-showid="div" data-validate="required" value="yes" name="r_dr_radio_field" id="r_dr_radio_yes_field" class=""><span class="pad-x5px">Yes</span></label><label><input type="radio" data-error-showid="div" data-validate="required" value="yes" name="r_dr_radio_field" id="r_dr_radio_no_field" class=""><span class="pad-x5px"> No</span></label></div>
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Click the validate button then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;div&gt;&lt;label&gt;&lt;input class="" type="radio" id="r_dr_radio_yes_field" name="r_dr_radio_field" value="yes" data-validate="required" data-error-showid="div" /&gt;&lt;span class="pad-x5px"&gt;Yes&lt;/span&gt;&lt;/label&gt;&lt;label&gt;&lt;input class="" type="radio" id="r_dr_radio_no_field" name="r_dr_radio_field" value="yes" data-validate="required" data-error-showid="div" /&gt;&lt;span class="pad-x5px"&gt; No&lt;/span&gt;&lt;/label&gt;&lt;/div&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				
+					<form action="" method="post" data-form-for="fv_required" data-ui="formvalidate" id="fv_required_28" name="fv_required_28">
+						<div class="form-group">
+							<label class="control-label label-value">checkBox</label>
+							<div class="row">
+								
+								<div class="col-lg-6">
+									
+									<div><label><input type="checkbox" data-error-showid="div" data-validate-group="checkbox1" data-validate="required" value="Option 1" name="r_dr_checkbox_opt1_field" id="r_dr_checkbox_opt1_field" class=""><span class="pad-x5px">Option 1</span></label><label><input type="checkbox" data-error-showid="div" data-validate-group="checkbox1" data-validate="required" value="Option 2" name="r_dr_checkbox_opt2_field" id="r_dr_checkbox_opt2_field" class=""><span class="pad-x5px">Option 2</span></label><label><input type="checkbox" data-error-showid="div" data-validate-group="checkbox1" data-validate="required" value="Option 3" name="r_dr_checkbox_opt3_field" id="r_dr_checkbox_opt3_field" class=""><span class="pad-x5px">Option 3</span></label></div>
+								</div>											
+								
+								<div class="col-lg-6">
+									<button id="btn_validate" class="btn btn-success " type="submit">
+										Validate
+									</button>
+								</div>
+							</div>
+							<p class="margin-top15px">
+								<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Click the validate button then validation will trigger.</span></code>
+							</p>
+							<p class="well well-small margin-top15px">
+								
+									&lt;div&gt;&lt;label&gt;&lt;input class="" type="checkbox" id="r_dr_checkbox_opt1_field" name="r_dr_checkbox_opt1_field" value="Option 1" data-validate="required" data-validate-group="checkbox1" data-error-showid="div" /&gt;&lt;span class="pad-x5px"&gt;Option 1&lt;/span&gt;&lt;/label&gt;&lt;label&gt;&lt;input class="" type="checkbox" id="r_dr_checkbox_opt2_field" name="r_dr_checkbox_opt2_field" value="Option 2" data-validate="required" data-validate-group="checkbox1" data-error-showid="div" /&gt;&lt;span class="pad-x5px"&gt;Option 2&lt;/span&gt;&lt;/label&gt;&lt;label&gt;&lt;input class="" type="checkbox" id="r_dr_checkbox_opt3_field" name="r_dr_checkbox_opt3_field" value="Option 3" data-validate="required" data-validate-group="checkbox1" data-error-showid="div" /&gt;&lt;span class="pad-x5px"&gt;Option 3&lt;/span&gt;&lt;/label&gt;&lt;/div&gt;<br>
+								
+							</p>
+							<hr>
+						</div>
+					</form>
+				</div>
+				
+				<div class="widget-body">
+					<h4>Examples for Validate All</h4>
+					<hr/>
+					
+					<form action="" method="post" data-form-for="fv_validateall" data-ui="formvalidateall">
+						<div class="row">
+							<div class="col-xs-9">
+								
+										<div class="form-group">
+											<label class="control-label label-value">Required<span class="required">*</span></label>
+											<div class="row">
+												
+												<div class="col-lg-6">
+													
+													<input type="text" class="form-control" id="all_r_field" name="all_r_field" value="" data-validate="required" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Required field validation happen only form submit.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Email(example@example.com)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">
+													
+													<input type="text" class="form-control" id="all_r_email_field" name="all_r_email_field" value="" data-validate="email" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter wrong email id and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Exact Character (char[5|7])</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" class="form-control" id="all_r_char_field" name="all_r_char_field" value="" data-validate="char[5,7]" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value and length should not 5 or 7 and then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Minumum Character (minchar[5])</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" class="form-control" id="all_r_minchar_field" name="all_r_minchar_field" value="" data-validate="minchar[5]" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter atleast one character and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Maximum Character (maxchar[5])</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" class="form-control" id="all_r_maxchar_field" name="all_r_maxchar_field" value="" data-validate="maxchar[5]" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter atleast one character and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Minumum Value (min[5])</label>
+											<div class="row">
+												
+												<div class="col-lg-6">												
+													<input type="text" data-validate="min[5]" value="" name="all_r_min_field" id="all_r_min_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value less than 5 and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Maximum Value (max[5])</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="max[5]" value="" name="all_r_max_field" id="all_r_max_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value more than 5 and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Value (no space)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="nospace" value="" name="all_r_nospace_field" id="all_r_nospace_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value with space and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Only (alphabets)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">
+													
+													<input type="text" data-validate="alphabetsOnly" value="" name="all_r_alpha_field" id="all_r_alpha_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value except alphabets and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Only (numbers)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="numbersOnly" value="" name="all_r_number_field" id="all_r_number_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value except numbers and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Only (numbers &amp; special character)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="numbersSpecialOnly" value="" name="r_number_special_field" id="r_number_special_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value except numbers &amp; special character and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Only (numbers &amp; alphabets)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="alphabetsNumbersOnly" value="" name="all_r_alpha_number_field" id="all_r_alpha_number_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value except numbers &amp; alphabets and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Only (numbers &amp; alphabets, space)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="alphabetsNumbersSpaceOnly" value="" name="all_r_alpha_number_space_field" id="all_r_alpha_number_space_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter value except numbers &amp; alphabets,space and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Decimal Length (2.22)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="decimalLen[2]" value="" name="all_r_decimallen_field" id="all_r_decimallen_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter decimal value length more than 2 and  the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Social Security Number (SSN)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="ssn" value="" name="all_r_ssn_field" id="all_r_ssn_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">A Social Security number CANNOT : All digits should not be zero.,Begin with any value from ’900-999′,The first three digits cannot be zero,Fourt and Five cannot be zero.,Last four digits cannot be zero.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Phone Number [(xxx) xxx-xxxx]</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="phonenumber[(999) 999-9999]" value="" name="all_r_phonenumber_field" id="all_r_phonenumber_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter wrong phone format and click out side the validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Value (equals)</label>
+											<div class="row">
+												
+												<div class="col-lg-4">
+													<label>From</label>
+													<input type="text" data-validate="equals[#r_equal_field_2]" value="" name="all_r_equal_field_1" id="all_r_equal_field_1" class="form-control" autocomplete="off">
+												</div>											
+												
+												<div class="col-lg-4">
+													<label>To</label>
+													<input type="text" data-validate="equals[#all_r_equal_field_1]" value="" name="all_r_equal_field_2" id="all_r_equal_field_2" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter from value and to value and if both values are not same then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Value (not equals)</label>
+											<div class="row">
+												
+												<div class="col-lg-4">
+													<label>From</label>
+													<input type="text" data-validate="notequals[#all_r_notequal_field_2]" value="" name="all_r_notequal_field_1" id="all_r_notequal_field_1" class="form-control" autocomplete="off">
+												</div>											
+												
+												<div class="col-lg-4">
+													<label>To</label>
+													<input type="text" data-validate="notequals[#all_r_notequal_field_1]" value="" name="all_r_notequal_field_2" id="all_r_notequal_field_2" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter from and to values same then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Date (MM/DD/YYYY)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="date[]" value="" name="all_r_dp_field" id="all_r_dp_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter wrong format and  then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">End Date (11/22/2014)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="date[]|date[end[11/22/2014]]" value="" name="all_r_dp_end_field" id="all_r_dp_end_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter greater than above mentioned date and  then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Start Date (11/25/2014)</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="date[]|date[start[11/25/2014]]" value="" name="all_r_dp_start_field" id="all_r_dp_start_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter less than above mentioned date and  then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Future Date</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="date[]|date[future]" value="" name="all_r_dp_future_field" id="all_r_dp_future_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter past date and  then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Exact Future Date</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="date[]|date[futureexact]" value="" name="all_r_dp_efuture_field" id="all_r_dp_efuture_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter tomorrow date and  then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Past Date</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="date[]|date[past]" value="" name="all_r_dp_past_field" id="all_r_dp_past_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter future date and  then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Exact Past Date</label>
+											<div class="row">
+												
+												<div class="col-lg-6">													
+													<input type="text" data-validate="date[]|date[pastexact]" value="" name="all_r_dp_epast_field" id="all_r_dp_epast_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter yesterday date and  then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">Date Range</label>
+											<div class="row">
+												
+												<div class="col-lg-4">
+													<label>From</label>
+													<input type="text" data-validate="date[]|daterange[all_range1]" value="" name="all_r_dr_from_field" id="all_r_dr_from_field" class="form-control" autocomplete="off">
+												</div>											
+												
+												<div class="col-lg-4">
+													<label>To</label>
+													<input type="text" data-validate="date[]|daterange[all_range1]" value="" name="all_r_dr_to_field" id="all_r_dr_to_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter invalid date range and  then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">End Date (Start date to 1 year )</label>
+											<div class="row">
+												
+												<div class="col-lg-4">
+													<label>From</label>
+													<input type="text" data-validate="date[]" value="" name="all_r_dr_endfrom_field" id="all_r_dr_endfrom_field" class="form-control" autocomplete="off">
+												</div>											
+												
+												<div class="col-lg-4">
+													<label>To</label>
+													<input type="text" data-validate-relation="#all_r_dr_endfrom_field" data-validate="date[]|date[end[startDateTo1Year]]" value="" name="all_r_dr_endto_field" id="all_r_dr_endto_field" class="form-control" autocomplete="off">
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Enter invalid date range and  then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">radioBox</label>
+											<div class="row">
+												
+												<div class="col-lg-6">
+													
+													<div><label><input type="radio" data-error-showid="div" data-validate="required" value="yes" name="all_r_dr_radio_field" id="all_r_dr_radio_yes_field" class=""><span class="pad-x5px">Yes</span></label><label><input type="radio" data-error-showid="div" data-validate="required" value="yes" name="all_r_dr_radio_field" id="all_r_dr_radio_no_field" class=""><span class="pad-x5px"> No</span></label></div>
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Click the validate button then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+										<div class="form-group">
+											<label class="control-label label-value">checkBox</label>
+											<div class="row">
+												
+												<div class="col-lg-6">
+													
+													<div><label><input type="checkbox" data-error-showid="div" data-validate-group="checkbox1" data-validate="required" value="Option 1" name="all_r_dr_checkbox_opt1_field" id="all_r_dr_checkbox_opt1_field" class=""><span class="pad-x5px">Option 1</span></label><label><input type="checkbox" data-error-showid="div" data-validate-group="checkbox1" data-validate="required" value="Option 2" name="all_r_dr_checkbox_opt2_field" id="all_r_dr_checkbox_opt2_field" class=""><span class="pad-x5px">Option 2</span></label><label><input type="checkbox" data-error-showid="div" data-validate-group="checkbox1" data-validate="required" value="Option 3" name="all_r_dr_checkbox_opt3_field" id="all_r_dr_checkbox_opt3_field" class=""><span class="pad-x5px">Option 3</span></label></div>
+												</div>											
+												
+											</div>
+											<p class="margin-top15px">
+												<code style="white-space: normal;" class="label-hypen-word"><i class="fa fa-info-circle" title="Icon info"></i><span class="margin-x5px">Click the validate button then validation will trigger.</span></code>
+											</p>
+										</div>
+								
+							</div>
+							<div class="col-xs-3  margin-top25px">
+								<button id="btn_validateall" class="btn btn-success " type="submit">
+									Validate All
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>	
+	
+			</div>
+		</div>
+	</div>
+</div>
+

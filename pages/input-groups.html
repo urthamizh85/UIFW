@@ -1,0 +1,184 @@
+<div class="title-bar">
+	<div class="title-text">
+		<h3>Input/Input Groups</h3>
+	</div>	
+</div>
+<div class="load-content">
+	<div class="row">
+		<div class="col-lg-6 col-sm-6 col-xs-12">
+			<div class="widget">
+				<div class="widget-header bordered-top bordered-blue">
+					<span class="widget-caption">Default Inputs</span>
+				</div>
+				<div class="widget-body">
+					<div class="collapse in">
+						<form>
+							<div class="form-group">
+								<label for="xsinput">Extra Small Input</label>
+								<input type="text" placeholder="Extra Small Input" id="xsinput" class="form-control input-xs">
+							</div>
+							<div class="form-group">
+								<label for="sminput">Small Input</label>
+								<input type="text" placeholder="Small Input" id="sminput" class="form-control input-sm">
+							</div>
+							<div class="form-group">
+								<label for="definput">Default Input</label>
+								<input type="text" placeholder="Default Input" id="definput" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="lginput">Large Input</label>
+								<input type="text" placeholder="Large Input" id="lginput" class="form-control input-lg">
+							</div>
+							<div class="form-group">
+								<label for="xlginput">Extra Large Input</label>
+								<input type="text" placeholder="Extra Large Input" id="xlginput" class="form-control input-xl">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="widget">
+				<div class="widget-header bordered-top bordered-darkorange">
+					<span class="widget-caption">Disabled Inputs</span>
+				</div>
+				<div class="widget-body">
+					<div class="collapse in">
+						<form role="form" aria-label="disabled input">
+							<div class="form-group">
+								<label for="definput1">Default Input 1</label>
+								<input type="text" disabled="disabled" placeholder="Default Input" id="definput1" class="form-control">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-6 col-sm-6 col-xs-12">
+			<div class="widget">
+				<div class="widget-header bordered-top bordered-success">
+					<span class="widget-caption">Input Groups</span>
+				</div>
+				<div class="widget-body">
+					<div class="collapse in">
+						<form role="form" aria-label="input groups">
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">@</span>
+									<input type="text" placeholder="Username" class="form-control" aria-label="user name">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<input type="text" class="form-control" aria-label="number">
+									<span class="input-group-addon">.0</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon">$</span>
+									<input type="text" class="form-control" aria-label="dollars">
+									<span class="input-group-addon">.0</span>
+								</div>
+							</div>
+
+							<label for="username1">With Icon</label>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user darkorange"></i></span>
+									<input type="text" title="user name" id="username1" placeholder="Username" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon bg-blue bordered-blue"><i class="fa fa-envelope-o"></i></span>
+									<input type="text" placeholder="Email Address" class="form-control" aria-label="emailaddress">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="widget">
+				<div class="widget-header bordered-top bordered-info">
+					<span class="widget-caption">Button Addons</span>
+				</div>
+				<div class="widget-body">
+					<div class="collapse in">
+						<form role="form" aria-label="button addons">
+							<div class="row">
+								<div class="col-lg-6 col-sm-6 col-xs-6">
+									<div class="input-group">
+										<span class="input-group-btn">
+											<button type="button" class="btn btn-primary">
+												Go
+											</button> </span>
+										<input type="text" class="form-control" aria-label="button1">
+									</div>
+								</div>
+								<div class="col-lg-6 col-sm-6 col-xs-6">
+									<div class="input-group">
+										<input type="text" class="form-control" aria-label="button2">
+										<span class="input-group-btn">
+											<button type="button" class="btn btn-primary shiny" >
+												Go
+											</button> </span>
+									</div>
+								</div>
+							</div>
+							<div class="horizontal-space"></div>
+							
+							<label id="dropdownbutton">Buttons with dropdowns</label>
+							<div class="row">
+								<div class="col-lg-6 col-sm-6 col-xs-6">
+									<div class="input-group">
+										<input type="text" class="form-control" aria-labelledby="dropdownbutton">
+										<div class="input-group-btn">
+											<button data-toggle="dropdown" title="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+												Action <span class="caret"></span>
+											</button>
+											<ul class="dropdown-menu arrow left">
+												<li>
+													<a href="#">Action</a>
+												</li>
+												<li>
+													<a href="#">Another action</a>
+												</li>
+												<li>
+													<a href="#">Something else here</a>
+												</li>
+											</ul>
+										</div>
+
+									</div>
+								</div>
+								<div class="col-lg-6 col-sm-6 col-xs-6">
+									<div class="input-group">
+										<div class="input-group-btn">
+											<a class="btn btn-primary">Actions</a>
+											<a data-toggle="dropdown" tabindex="0" title="dropdown button" class="btn btn-primary dropdown-toggle"><i class="fa fa-angle-down"></i></a>
+											<ul class="dropdown-menu arrow left">
+												<li>
+													<a href="#">Action</a>
+												</li>
+												<li>
+													<a href="#">Another action</a>
+												</li>
+												<li>
+													<a href="#">Something else here</a>
+												</li>
+											</ul>
+										</div>
+										<input type="text" class="form-control" aria-label="dropdownbutton1">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

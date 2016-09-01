@@ -1,0 +1,65 @@
+.login-container {
+  margin: 6% auto 0;
+  max-width: 400px;
+  position: relative;
+  .loginbox {
+    @include box-shadow(0 0 14px rgba(0, 0, 0, 0.1));    
+    padding: 10px 0 20px;
+    position: relative;   
+    .loginbox-title {
+      color: $login-title-color;
+      font-size: 20px;
+      font-weight: normal;
+      height: 35px;
+      padding-top: 10px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+    .loginbox-textbox {
+      padding: 10px 40px;
+    }
+    .loginbox-forgot {
+      padding-left: 40px;
+      padding-right: 40px;
+      a {
+        text-decoration:underline;
+        &:hover {
+          text-decoration:none;
+        }
+      }
+    }
+    .loginbox-submit {
+      padding: 10px 40px;
+    }
+  }
+  .logobox {
+    background-color: nth($login-header-bg,1);
+    @include cust-gradient-vertical($start-color: nth($login-header-bg,1), $end-color: nth($login-header-bg,2), $start-percent: 0%, $end-percent: 100%);
+    @include box-shadow(0 0 14px rgba(0, 0, 0, 0.1), 0 -1px 0 rgba(255,255,255,0.9) inset);
+    text-align: left;
+    width: 400px;
+    text-align:center;
+    padding:15px 0;
+    position:relative;
+    z-index:1;
+    border-bottom:3px solid #fff;
+    h3 {
+      margin:0;
+    }
+  }
+  .login-footer {
+    text-align:left;
+    line-height:24px;
+    padding:15px 0 0;
+  }
+  label {
+    font-weight:normal;
+  }
+  .input-group-addon.mandatory {
+    border-left:2px solid red;
+  }
+}
+body.login-bg {
+  background:$login-body-bg;
+}

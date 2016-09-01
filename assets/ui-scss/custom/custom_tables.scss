@@ -1,0 +1,142 @@
+.table {
+  background-color:$table-bg;
+  margin-bottom: 0;
+  tfoot {
+    > tr {
+      > th {
+        font-weight: 300;
+      }
+    }
+  }
+  thead {
+    > tr {
+      > th {
+        border-bottom: 0 none;
+        font-size: 0.985em;
+        font-weight: 600;
+      }      
+    }
+    &[class*="colored-"] {
+      > tr {
+        > th {
+          color: $table-colored-head-text;
+          font-weight: 400;
+        }
+      }
+    }
+    @each $class,$bg in $progressbarbg {
+      &.colored-#{$class} {
+        > tr {
+          > th {
+            background-color:$bg
+          }
+        }
+      }
+    }
+    @each $class,$border in $themebg {
+      &.bordered-#{$class} {
+        > tr {
+          > th {
+            border-bottom:3px solid $border;
+          }
+        }
+      }
+    }
+  }
+  tr {
+    @each $class,$bg in $progressbarbg {
+      &.#{$class} {
+        @include box-shadow(2px 0 0 $bg inset);
+      }
+    }
+  }
+  > thead, > tbody,  > tfoot {
+    > tr {
+      > .active {
+        &, & > td, > th {
+          background-color: $table-active-bg;
+          color: $table-active-text;
+        }
+      }
+      @each $class, $text in $progressbarbg {
+        > .#{$class} {
+          &, > td, > th {
+            color:$text;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-bordered {
+  thead {
+    > tr {
+      background-color: $table-bordered-bg;
+      @include cust-gradient-vertical($start-color: nth($table-bordered-grad-bg,1), $end-color: nth($table-bordered-grad-bg,2), $start-percent: 0%, $end-percent: 100%);
+    }
+  }
+}
+
+.table-striped {
+  > tbody {
+    > tr {
+      &.active:nth-child(2n+1) > td, & > .active:nth-child(2n+1) > th {
+        background-color: $table-striped-active-bg;
+        color: $table-striped-active-text;
+      }
+    }
+  }
+}
+
+.table-hover {
+  > tbody {
+    > tr {
+      .active {
+        &:hover {
+          &, > td, > th {
+            background-color: $table-hover-active-hover-bg !important;
+          }
+        }
+      }
+    }
+  }
+}
+.table-scrollable {
+   border: 1px solid #dddddd;
+   overflow-x: auto;
+   overflow-y: hidden;
+   width: 100%;
+   > .table {
+    background-color: $table-bg;
+    margin: 0 !important;
+    width: 100% !important;
+    > thead, tbody, tfoot {
+      > tr {
+        > th, > td {
+          white-space:nowrap;
+        }
+      }
+    }
+  }
+  .table-bordered {
+    border: 0 none;
+    > thead, > tbody, > tfoot {
+      > tr {
+        > th:first-child, td:first-child {
+          border-left: 0 none;
+        }
+        > th:last-child, td:last-child {
+          border-right: 0 none;
+          > td {
+            border-bottom: 0 none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.flip-scroll table {
+  width: 100%;
+}

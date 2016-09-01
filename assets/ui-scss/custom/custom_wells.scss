@@ -1,0 +1,101 @@
+.well {
+  background-clip: padding-box;
+  background-color: $well-bg;
+  border: 0 none;
+  border-radius: 2px;
+  @include box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+  color:$well-text;
+  margin-bottom: 30px;
+  min-height: 0;
+  position: relative;
+  &.attached {
+    border-radius: 0;
+    bottom: -1px;
+    @include box-shadow(0 0 0 1px #ddd);
+    margin: 0;
+    position: relative;
+    top: -1px;
+    &.top {
+      background-clip: padding-box;
+      border-bottom: 0 none;
+      border-radius: 3px 3px 0 0;
+      bottom: -1px;
+      margin-bottom: 0;
+      margin-top: 1em;
+      top: 0;
+    }
+    &.bottom {
+      background-clip: padding-box;
+      border-radius: 0 0 3px 3px;
+      border-top: 0 none;
+      bottom: 0;
+      margin-bottom: 1em;
+      margin-top: 0;
+      top: -1px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.bordered-top {
+    border-top: 5px solid $well-border;
+  }
+  &.bordered-bottom {
+    border-bottom: 5px solid $well-border;
+  }
+  &.bordered-left {
+    border-left: 5px solid $well-border;
+  }
+  &.bordered-right {
+    border-right: 5px solid $well-border;
+  }
+  &[class*="bg-"] {
+    color: $well-bg-text;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-top:0;
+  }
+  h1, h2, h3 {
+    line-height:36px;
+  }
+  &.with-header {
+    padding-top: 60px;
+  }
+  &.with-header {
+    padding-bottom: 60px;
+  }
+  .header {
+    border-bottom: 1px solid $well-header-border;
+    border-radius: 2px 2px 0 0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 0;
+    font-size:1.15em;
+    &[class*="bg-"] {
+      border-bottom: 0 none;
+      color: $well-header-bg-text;
+    }
+    &[class*="bordered-"] {
+      border-bottom: 3px solid $well-header-bordered-border;
+    }
+  }
+  .well-footer {
+    border-radius: 0 0 2px 2px;
+    border-top: 1px solid $well-footer-border;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    &[class*="bordered-"] {
+      border-top: 3px solid $well-footer-bordered-border;
+    }
+  }
+  hr.wide {
+    margin-left: -19px;
+    margin-right: -19px;
+  }
+}

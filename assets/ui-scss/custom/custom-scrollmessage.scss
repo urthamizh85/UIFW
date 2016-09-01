@@ -1,0 +1,21 @@
+.scroll-message{
+  width:100%;
+  display:table;
+  position:relative;
+  .scroll-message-content{
+    margin-right:100px;
+  }
+  .scroll-message-nav{
+    position:absolute;
+    right:0;
+    top:0;
+  }
+  .scroll-message-item{
+    height:50px;
+    overflow-y:hidden;
+    display:none;
+    &.active{
+      display:block;
+    }
+  }
+}

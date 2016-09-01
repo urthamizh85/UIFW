@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(../fonts/LKf8nhXsWg5ybwEGXk8UBQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Volkhov';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Volkhov Italic'), local('Volkhov-Italic'), url(../fonts/Y_Jmwi-iHxNj27PG4ILsdT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+$font-size-h1:2.5em;
+$font-size-h2:2.125em;
+$font-size-h3:1.725em;
+$font-size-h4:1.325em;
+$font-size-h5:1em;
+$font-size-h6:0.85em;
+$font-size-11px:0.8em;
+$font-family-base:'Open Sans',"Helvetica Neue", Helvetica, Arial, sans-serif;
+$sidebar-width:230px;
+$rightnav-width:$sidebar-width;
+$avatar-radius:50%;
+$avatar-size:25px;
+$dropdown-top-border-width:3px;
+$dropdown-caret-size:8px;
+$search-btn-radius:30px;
+$screen-small-mobile:320px;
+$scrolltop-text-size:$font-size-h2;
+$border-radius-circle : 50% 50%;
+
+$slide-box-ul-left-shadow : 2px 0 1px rgba(#000,.1);
+$slide-box-ul-right-shadow : -2px 0 1px rgba(#000,.1);
+$slide-box-nav-width : 50px;
+$slide-box-width : 300px;
+$slide-box-left : $slide-box-width+-$slide-box-nav-width;
+
+// ********* Throbber ******** \\
+$throbber-box-width:400px;
+$throbber-box-zindex:1050;
+$throbber-width:220px;
+$throbber-height:34px;
+$throbber-bar-height:12px;
+$throbber-bar-margin:($throbber-height - $throbber-bar-height)/2;
+
+// ********* Notificaiton ******** \\
+$notificaiton-top-pos:70px;
+$notificaiton-leftright-pos:10px;
+$notificaiton-bottom-pos:$notificaiton-leftright-pos;
+
+$spacing:5px,10px,15px,20px,25px,30px,0px;
+
+$themebg:('themeprimary',#2dc3e8),('themesecondary',#f16b62),('themethirdcolor',#ffce55),('themefourthcolor',#a0d468),('themefifthcolor',#e75b8d),('white',#ffffff),('snow',#fbfbfb),('whitesmoke',#f5f5f5),('seashell',#f3f3f3),('ivory',#eee),('platinum',#e5e5e5),('lightgray',#d0d0d0),('gray',#ccc),('darkgray',#999),('silver',#777),('sonic-silver',#737373),('storm-cloud',#666),('lightcarbon',#555),('carbon',#444),('slate-gray',#333),('darkcarbon',#262626),('blue',#5db2ff),('info',#57b5e3),('sky',#11a9cc),('primary',#4374e0),('success',#53a93f),('warning',#f4b400),('danger',#d73d32), ('palegreen',#a0d468), ('darkorange',#ed4e2a), ('yellow',#ffce55), ('theme',#6da1c9), ('magenta',#bc5679), ('lightred',#e46f61),('azure',#2dc3e8), ('orange',#fb6e52), ('darkorange',#ed4e2a);
+
+$inputsize:('xs',11px,24px,1.5,2px 10px),('sm',12px,30px,1.5,5px 10px),('lg',18px,46px,1.33,10px 16px),('xl',20px,52px,1.5,12px 18px);
+
+$buttons:('default',#fff,#ccc,#333333),('inverse',#4a4d50,#252728,#fff),('primary',#428bca,#357ebd,#fff),('secondary',#8d8d8d,#757575,#fff),('success',#5cb85c,#4cae4c,#fff),('info',#5bc0de,#46b8da,#fff),('warning',#f0ad4e,#eea236,#fff),('danger',#d9534f,#d43f3a,#fff),('blue',#5db2ff,#5db2ff,#fff),('sky',#11a9cc,#11a9cc,#fff),('azure',#2dc3e8,#2dc3e8,#fff),('palegreen',#a0d468,#a0d468,#fff),('yellow',#ffce55,#ffce55,#fff),('darkorange',#ed4e2a,#ed4e2a,#fff),('magenta',#bc5679,#bc5679,#fff),('purple',#7e3794,#7e3794,#fff),('maroon',#981b48,#981b48,#fff),('font',#689ac1,#5d8fb5,#fff), ('darkgreen',#5d9234,#37612f,#fff);
+
+$circlebtnsize:('lg',70px,10px,28px,54px),('sm',40px,10px 15px,16px,22px),('xs',30px,6px 0,12px,15px);
+$progressbarbg:('danger',#d73d32),('success',#53a93f),('warning',#f4b400),('silver',#777777),('inverse',#444444),('blue',#5db2ff),('info',#57b5e3),('azure',#2dc3e8),('sky',#11a9cc),('blueberry',#6f85bf),('palegreen',#a0d468),('orange',#fb6e52),('darkorange',#ed4e2a),('primary',#4374e0);
+
+$tabBorder:('white',#fff),('snow',#fbfbfb),('whitesmoke',#f5f5f5),('seashell',#f3f3f3),('seashell',#f3f3f3),('ivory',#eeeeee),('platinum',#e5e5e5), ('lightgray',#d0d0d0),('gray',#cccccc),('darkgray',#999999),('silver',#777777),('sonic-silver',#737373),('storm-cloud',#666666),('lightcarbon',#555),('carbon',#444), ('primary',#428bca),('slate-gray',#333),('darkcarbon',#262626),('blue',#5db2ff),('info',#5bc0de),('sky',#11a9cc),('sky',#11a9cc), ('palegreen',#a0d468), ('success',#5cb85c), ('lightyellow',#f6d52e);
+
+$alertBg:('danger',#f2dede,#ebccd1,#a94442),('warning',#fcf8e3,#faebcc,#8a6d3b),('success',#dff0d8,#d6e9c6,#3c763d),('info',#d9edf7,#bce8f1,#31708f);
+
+$tooltipbg:('white',#fff,#fff,#262626), ('whitesmoke',#f5f5f5,#f5f5f5,#262626), ('snow',#fbfbfb,#fbfbfb,#262626), ('seashell',#f3f3f3,#f3f3f3,#262626),
+('ivory',#eee,#eee,#262626), ('platinum',#e5e5e5,#e5e5e5,#262626), ('lightgray',#d0d0d0,#d0d0d0,#262626), ('gray',#ccc,#ccc,#262626), ('darkgray',#999,#999,#262626), ('silver',#777,#777,#262626), ('sonic-silver',#737373,#737373,#fff), ('storm-cloud',#666,#666,#fff), ('lightcarbon',#555,#555,#fff), ('carbon',#444,#444,#fff), ('slate-gray',#333,#333,#fff), ('darkcarbon',#262626,#262626,#fff), ('blue',#5db2ff,#5db2ff,#fff), ('info',#57b5e3,#57b5e3,#fff), ('sky',#11a9cc,#11a9cc,#fff), ('primary',#4374e0,#4374e0,#fff), ('azure',#2dc3e8,#2dc3e8,#fff), ('palegreen',#a0d468,#a0d468,#fff), ('success',#53a93f,#53a93f,#fff), ('green',#8cc474,#8cc474,#fff), ('lightyellow',#f6d52e,#f6d52e,#fff), ('yellow',#ffce55,#ffce55,#fff), ('warning',#f4b400,#f4b400,#fff), ('orange',#fb6e52,#fb6e52,#fff), ('lightred',#e46f61,#e46f61,#fff), ('darkorange',#ed4e2a,#ed4e2a,#fff), ('red',#df5138,#df5138,#fff), ('danger',#d73d32,#d73d32,#fff);
+
+$modalborder:('danger',#e46f61,#d73d32), ('info',#57b5e3,#57b5e3), ('warning',#ffce55,#f4b400), ('success',#a0d468,#53a93f), ('primary',#4374e0,#000), ('darkorange',#ed4e2a,#000);
+
+$popover-cust-bg:('inverted',#262626,#f5f5f5), ('dark',#e5e5e5,#333);
+$statuscolor:("info",#157890),("success",#00b011),("warning",#FFB400),("danger",#b51010),("theme",#D46634),("startext",#ebb011),("primary",#428bca);
+
+$dropdowntheme : ("theme",#6da1c9,#f16b62,#fff,#6293b9,#689bc2,#fff), ("inverse",#222,#080808,#fff,#999,#000,#fff), ("grey",#8d8d8d,#757575,#fff,#a5a4a4,#808080,#fff);

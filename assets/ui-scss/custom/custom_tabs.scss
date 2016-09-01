@@ -1,0 +1,264 @@
+.tab-content {
+  background-color: $tab-content-bg;
+  @include box-shadow(1px 0 10px 1px rgba(0, 0, 0, 0.3));
+  padding: 16px 12px;
+  position: relative;
+  &.no-padding {
+    padding: 0;
+  }
+  &.no-border {
+    border: 0 none;
+    padding: 12px;
+  }
+  &.radius-bordered {
+    background-clip: padding-box;
+    border-radius: 3px;
+  }
+  &.tabs-flat {
+    border-top: 1px solid $tabs-flat-top-border;
+    box-shadow: none;
+  }
+}
+.nav-tabs {
+  background-color: $nav-tabs-bg;
+  border: 0 none;
+  @include box-shadow(0 0 4px rgba(0, 0, 0, 0.3));
+  margin-bottom: 0;
+  margin-left: 0;
+  top: 2px;
+  & > li {
+    margin-bottom: -2px;
+    > a {
+      &, &:focus {
+        border-radius: 0 !important;
+        color: $nav-tabs-text;
+        line-height: 12px;
+        margin-right: -1px;
+        position: relative;
+        z-index: 11;
+      }
+      &:hover {
+        background-color: $nav-tabs-hover-bg;
+        border-color: $nav-tabs-hover-border;
+        color: $nav-tabs-hover-text;
+      }
+      &:active, &:focus {
+        outline: medium none !important;
+      }
+      > .badge {
+        height: 16px;
+        line-height: 15px;
+        min-width: 16px;
+        opacity: 0.75;
+        padding: 0 4px;
+      }
+      > .fa, .glyphicon {
+        opacity: 0.75;
+      }
+    }
+    &:first-child {
+      > a {
+        border-left: 1px solid #fbfbfb;
+        margin-left: 0;
+      }
+    }
+    &.active {
+      > a {
+        &, &:hover, &:focus {
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-top-colors: none;
+          background-color: $nav-tabs-active-bg;
+          border-color: $nav-tabs-active-border;
+          border-left-color: $nav-tabs-active-border;
+          border-image: none;
+          border-left: 0 none;
+          border-right: 0 none;
+          border-style: solid none none;
+          border-width: 2px 0 0;
+          @include box-shadow(0 -2px 3px 0 rgba(0, 0, 0, 0.15));
+          color: $nav-tabs-active-text;
+          line-height: 16px;
+          margin-top: -2px;
+          z-index: 12;
+        }
+        > .badge, > [class*="fa-"] {
+          opacity: 1;
+        }
+      }
+      @each $class,$color in $tabBorder {
+        &.tab-#{$class} {
+          > a {
+            border-color:$color !important;
+            > .fa, .glyphicon {
+              color:$color;
+            }
+          }
+        }
+      }
+    }
+    [class*=" fa-"], [class^=" fa-"] {
+      display: inline-block;
+      text-align: center;
+      width: 1.25em;
+    }
+    &.open {
+      .dropdown-toggle {
+        background-color: $nav-tabs-dropdown-bg;
+        border-color: $nav-tabs-dropdown-border;
+      }
+    }
+  }
+  &.nav-justified {
+    > li {
+      > a {
+        border: medium none;
+        margin-top: -2px;
+        &:hover {
+          background-color:$nav-justified-hover-bg;
+        }
+      }
+    }
+    > .active {
+      > a {
+        &, &:hover, &:focus {
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-top-colors: none;
+          background-color: $nav-justified-active-bg;
+          border-color: $nav-justified-active-border;
+          border-image: none;
+          border-right: 0 none;
+          border-style: solid none none;
+          border-width: 2px 0 0;
+        }
+      }
+    }
+  }
+  .dropdown-menu {
+    margin-top: -3px;
+  }
+  &.tabs-flat {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+  }
+}
+
+.tabs-below {
+  > .nav-tabs {
+    border-bottom-width: 0;
+    margin-bottom: 0;
+    margin-top: -1px;
+    top: auto;
+    li {
+      &.active {
+        a {
+          &, &:hover, &:focus {
+            border-bottom: 2px solid $tabs-active-border;
+            border-top-color: transparent;
+            border-top-width: 1px;
+            @include box-shadow(0 2px 3px 0 rgba(0, 0, 0, 0.15));
+            margin-top: 0;
+          }
+        }
+      }      
+    }
+    &.nav-justified {
+      > li {
+        > a {
+          margin-bottom: -2px;        
+        }
+      }
+      > .active {
+        > a {
+          &, &:hover, &:focus {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: -moz-use-text-color -moz-use-text-color $tabs-active-border;
+            border-image: none;
+            border-style: none none solid;
+            border-width: 0 0 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tabs-left {
+  > .nav-tabs {
+    float: left;
+    margin-bottom: 0;
+    top: auto;
+    > li {
+      float: none;
+      > a {
+        &, &:focus, &:hover {
+          margin: 0 -1px 0 0;
+        }
+      }
+      &.active {
+        > a {
+          &, &:focus, &:hover {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: -moz-use-text-color transparent -moz-use-text-color $tabs-active-border;
+            border-image: none;
+            border-style: none none none solid;
+            border-width: 0 0 0 2px;
+            @include box-shadow(-2px 0 3px 0 rgba(0, 0, 0, 0.3));
+            margin: 0 -1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tabs-right {
+  > .nav-tabs {
+    float: right;
+    margin-bottom: 0;
+    top: auto;
+    > li {
+      float: none;
+      > a {
+        &, &:focus, &:hover {
+          border-top: 0 none;
+          margin: 0 -1px;
+        }
+      }
+      &.active {
+        > a {
+          &, &:focus, &:hover {
+            border-left-color: transparent;
+            border-right: 2px solid $tabs-active-border;
+            border-top-width: 0;
+            @include box-shadow(2px 0 3px 0 rgba(0, 0, 0, 0.3));
+            margin: 0 -2px 0 -1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tabs-left, .tabs-right {
+  > .nav-tabs {
+    > li {
+      > a {
+        min-width: 60px;
+      }
+    }
+  }
+  .tab-content {
+    overflow: auto;
+  }
+}
+

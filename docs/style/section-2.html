@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>UI Framework</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link href="assets/css/glyphicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/custom-theme-default.css" />
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body><div id="kss-wrapper">
+
+<div id="kss-nav">
+  <header id="kss-header">
+    <hgroup><h1>CNSI UI Framework</h1></hgroup>
+    <div class="search-doc-box">
+	  <input type="text" placeholder="Search docs" name="search_doc" id="search_doc" data-ui="alphabetListSearch" data-search-target=".left-nav > ul" />
+	</div>
+  </header>
+  <aside>
+    <nav class="left-nav"><ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="section-1.html">Grid System</a>        
+        <ul class="submenu">
+            <li><a href="section-1.html#1.1">Stacked-to-horizontal</a>
+            <li><a href="section-1.html#1.2">Fluid container</a>
+            <li><a href="section-1.html#1.3">Mobile and desktop</a>
+            <li><a href="section-1.html#1.4">Mobile, tablet, desktops</a>
+            <li><a href="section-1.html#1.5">Column wrapping</a>
+            <li><a href="section-1.html#1.6">Responsive column resets</a>
+            <li><a href="section-1.html#1.7">Offsetting columns</a>
+            <li><a href="section-1.html#1.8">Nesting columns</a>
+            <li><a href="section-1.html#1.9">Column ordering</a>
+            <li><a href="section-1.html#1.10">Grid options</a>
+        </ul>        
+      </li>
+      <li><a href="section-2.html">Typogarphy</a>        
+        <ul class="submenu">
+            <li><a href="section-2.html#2.1">Headings</a>
+            <li><a href="section-2.html#2.2">Small Headings</a>
+            <li><a href="section-2.html#2.3">Lead Body copy</a>
+            <li><a href="section-2.html#2.4">Inline text elements</a>
+            <li><a href="section-2.html#2.5">Alignment classes</a>
+            <li><a href="section-2.html#2.6">Transformation classes</a>
+            <li><a href="section-2.html#2.7">Abbreviations</a>
+            <li><a href="section-2.html#2.8">Addresses</a>
+            <li><a href="section-2.html#2.9">Blockquotes</a>
+            <li><a href="section-2.html#2.10">Lists</a>
+        </ul>        
+      </li>
+      <li><a href="section-3.html">Top Navigation</a>        
+        <ul class="submenu">
+            <li><a href="section-3.html#3.1">RightNav</a>
+            <li><a href="section-3.html#3.2">Description</a>
+        </ul>        
+      </li>
+      <li><a href="section-4.html">Left Navigation</a>        
+        <ul class="submenu">
+            <li><a href="section-4.html#4.1">Description</a>
+        </ul>        
+      </li>
+      <li><a href="section-5.html">Labels/Badges</a>        
+        <ul class="submenu">
+            <li><a href="section-5.html#5.1">Default Labels</a>
+            <li><a href="section-5.html#5.2">Default Badges</a>
+            <li><a href="section-5.html#5.3">Default Square Badges</a>
+            <li><a href="section-5.html#5.4">Gradient Labels</a>
+            <li><a href="section-5.html#5.5">Gradient Badges</a>
+            <li><a href="section-5.html#5.6">Gradient Square Badges</a>
+        </ul>        
+      </li>
+      <li><a href="section-6.html">Progress Bars</a>        
+        <ul class="submenu">
+            <li><a href="section-6.html#6.1">Simple Progress Bars</a>
+            <li><a href="section-6.html#6.2">Vertical Progress Bars</a>
+            <li><a href="section-6.html#6.3">Advances Progress Bars</a>
+            <li><a href="section-6.html#6.31">Sizes</a>
+            <li><a href="section-6.html#6.32">Bordered</a>
+            <li><a href="section-6.html#6.33">Right Aligned</a>
+            <li><a href="section-6.html#6.34">Without Radius Border</a>
+            <li><a href="section-6.html#6.35">Shadowed</a>
+            <li><a href="section-6.html#6.36">Bordered &amp; Stacked</a>
+        </ul>        
+      </li>
+      <li><a href="section-7.html">Breadcrumbs/Pagination</a>        
+        <ul class="submenu">
+            <li><a href="section-7.html#7.1">Breadcrumbs</a>
+            <li><a href="section-7.html#7.2">Pagination</a>
+            <li><a href="section-7.html#7.3">Default</a>
+            <li><a href="section-7.html#7.4">Sizes</a>
+            <li><a href="section-7.html#7.5">Pager</a>
+            <li><a href="section-7.html#7.6">Aligned Pager</a>
+        </ul>        
+      </li>
+      <li><a href="section-8.html">List Groups</a>        
+        <ul class="submenu">
+            <li><a href="section-8.html#8.1">Default List Group</a>
+            <li><a href="section-8.html#8.2">Linked items</a>
+            <li><a href="section-8.html#8.3">List Group with Badges</a>
+            <li><a href="section-8.html#8.4">Custom content</a>
+            <li><a href="section-8.html#8.5">Sample List</a>
+            <li><a href="section-8.html#8.6">List in Table structure</a>
+        </ul>        
+      </li>
+      <li><a href="section-9.html">Widgets</a>        
+        <ul class="submenu">
+            <li><a href="section-9.html#9.1">Default Widget</a>
+            <li><a href="section-9.html#9.2">Widget with Bottom Border</a>
+            <li><a href="section-9.html#9.3">Widget with Top Border</a>
+            <li><a href="section-9.html#9.4">Widget with  Colored Header</a>
+            <li><a href="section-9.html#9.5">Widget with Colored Header and Body</a>
+        </ul>        
+      </li>
+      <li><a href="section-10.html">Input/Input Groups</a>        
+        <ul class="submenu">
+            <li><a href="section-10.html#10.1">Default Inputs</a>
+            <li><a href="section-10.html#10.2">Disabled Inputs</a>
+            <li><a href="section-10.html#10.3">Input Groups</a>
+            <li><a href="section-10.html#10.4">Button Addons</a>
+            <li><a href="section-10.html#10.5">Buttons with dropdowns</a>
+        </ul>        
+      </li>
+      <li><a href="section-11.html">Wells</a>        
+        <ul class="submenu">
+            <li><a href="section-11.html#11.1">Default Well</a>
+            <li><a href="section-11.html#11.2">Large Well</a>
+            <li><a href="section-11.html#11.3">Small Well</a>
+            <li><a href="section-11.html#11.4">Bordered Wells</a>
+            <li><a href="section-11.html#11.5">Colored Well</a>
+            <li><a href="section-11.html#11.6">Well With Header</a>
+            <li><a href="section-11.html#11.7">Well With Header and Footer</a>
+        </ul>        
+      </li>
+      <li><a href="section-12.html">Tabs</a>        
+        <ul class="submenu">
+            <li><a href="section-12.html#12.1">Default Tab</a>
+            <li><a href="section-12.html#12.2">Tab Bottom</a>
+            <li><a href="section-12.html#12.3">Tab Left</a>
+            <li><a href="section-12.html#12.4">Tab Right</a>
+            <li><a href="section-12.html#12.5">Tab Justified</a>
+        </ul>        
+      </li>
+      <li><a href="section-13.html">Accordion</a>        
+        <ul class="submenu">
+        </ul>        
+      </li>
+      <li><a href="section-14.html">Alerts</a>        
+        <ul class="submenu">
+            <li><a href="section-14.html#14.1">Default Alerts</a>
+            <li><a href="section-14.html#14.2">Rounded &amp; Shadowed Alerts</a>
+        </ul>        
+      </li>
+      <li><a href="section-15.html">Tooltips</a>        
+        <ul class="submenu">
+            <li><a href="section-15.html#15.1">Default tooltips</a>
+            <li><a href="section-15.html#15.2">Colored tooltips</a>
+        </ul>        
+      </li>
+      <li><a href="section-16.html">Dropdowns</a>        
+        <ul class="submenu">
+            <li><a href="section-16.html#16.1">Default DropDown</a>
+            <li><a href="section-16.html#16.2">Colored DropDown</a>
+            <li><a href="section-16.html#16.3">Colored DropDown Buttons</a>
+        </ul>        
+      </li>
+      <li><a href="section-17.html">Modals</a>        
+        <ul class="submenu">
+            <li><a href="section-17.html#17.1">Static example</a>
+            <li><a href="section-17.html#17.2">Buttons to open Modal</a>
+            <li><a href="section-17.html#17.2">Large Modal Code</a>
+            <li><a href="section-17.html#17.2">Small Modal Code</a>
+        </ul>        
+      </li>
+      <li><a href="section-18.html">Databox</a>        
+        <ul class="submenu">
+        </ul>        
+      </li>
+      <li><a href="section-19.html">Pie-Chart</a>        
+        <ul class="submenu">
+            <li><a href="section-19.html#19.1">Default Piechart</a>
+            <li><a href="section-19.html#19.2">Borderd Piechart</a>
+            <li><a href="section-19.html#19.3">Javascript</a>
+            <li><a href="section-19.html#19.4">Options</a>
+        </ul>        
+      </li>
+      <li><a href="section-20.html">Maxlength</a>        
+        <ul class="submenu">
+            <li><a href="section-20.html#20.1">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-21.html">Password Strength</a>        
+        <ul class="submenu">
+            <li><a href="section-21.html#21.1">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-22.html">Popovers</a>        
+        <ul class="submenu">
+            <li><a href="section-22.html#22.1">Dark Popover top</a>
+            <li><a href="section-22.html#22.2">Popover right</a>
+            <li><a href="section-22.html#22.3">Popover bottom</a>
+            <li><a href="section-22.html#22.4">Popover left</a>
+            <li><a href="section-22.html#22.5">Popover Top</a>
+            <li><a href="section-22.html#22.6">Inverted Popover</a>
+            <li><a href="section-22.html#22.7">Popover On Buttons</a>
+            <li><a href="section-22.html#22.8">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-23.html">Datepicker</a>        
+        <ul class="submenu">
+            <li><a href="section-23.html#23.1">HTML Markup</a>
+            <li><a href="section-23.html#23.2">Javascript</a>
+            <li><a href="section-23.html#23.3">Options</a>
+            <li><a href="section-23.html#23.4">Methods</a>
+        </ul>        
+      </li>
+      <li><a href="section-24.html">Timepicker</a>        
+        <ul class="submenu">
+            <li><a href="section-24.html#24.1">HTML Markup</a>
+            <li><a href="section-24.html#24.2">Javascript</a>
+            <li><a href="section-24.html#24.3">Options</a>
+            <li><a href="section-24.html#24.4">Methods</a>
+            <li><a href="section-24.html#24.5">Events</a>
+        </ul>        
+      </li>
+      <li><a href="section-25.html">Scroll Message</a>        
+        <ul class="submenu">
+            <li><a href="section-25.html#25.1">HTML Markup</a>
+            <li><a href="section-25.html#25.1">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-26.html">Templates</a>        
+        <ul class="submenu">
+            <li><a href="section-26.html#26.1">With Horizontalbar Menu</a>
+            <li><a href="section-26.html#26.2">With Sidebar Menu</a>
+        </ul>        
+      </li>
+      <li><a href="section-27.html">Simple/Responsive Tables</a>        
+        <ul class="submenu">
+            <li><a href="section-27.html#27.1">Simple Table With Hover</a>
+            <li><a href="section-27.html#27.2">Condensed Table</a>
+            <li><a href="section-27.html#27.3">Bordered Table</a>
+            <li><a href="section-27.html#27.4">Stripped Table</a>
+            <li><a href="section-27.html#27.5">Contextual Rows</a>
+            <li><a href="section-27.html#27.6">Contextual Columns</a>
+            <li><a href="section-27.html#27.7">Responsive Table</a>
+            <li><a href="section-27.html#27.8">Scrollable Table</a>
+            <li><a href="section-27.html#27.9">Responsive Flip Scroll Tables</a>
+        </ul>        
+      </li>
+      <li><a href="section-28.html">Form Elements</a>        
+        <ul class="submenu">
+            <li><a href="section-28.html#28.1">Basic Form</a>
+            <li><a href="section-28.html#28.2">Horizontal Form</a>
+            <li><a href="section-28.html#28.3">Inline Form</a>
+            <li><a href="section-28.html#28.4">Inline Form with Label</a>
+            <li><a href="section-28.html#28.5">Form Elements</a>
+        </ul>        
+      </li>
+      <li><a href="section-29.html">Buttons</a>        
+        <ul class="submenu">
+            <li><a href="section-29.html#29.1">Basic Buttons</a>
+            <li><a href="section-29.html#29.2">Gradient Buttons</a>
+            <li><a href="section-29.html#29.3">Rounded Corner Buttons</a>
+            <li><a href="section-29.html#29.4">Circle Buttons</a>
+            <li><a href="section-29.html#29.5">Button Size</a>
+            <li><a href="section-29.html#29.6">Buttons With Icon</a>
+            <li><a href="section-29.html#29.7">Labeled Buttons</a>
+            <li><a href="section-29.html#29.8">Icon Buttons</a>
+            <li><a href="section-29.html#29.9">DropDown Buttons</a>
+            <li><a href="section-29.html#29.10">Justified Buttons</a>
+            <li><a href="section-29.html#29.11">Block Buttons</a>
+            <li><a href="section-29.html#29.12">Button Groups</a>
+            <li><a href="section-29.html#29.13">Disabled Buttons</a>
+        </ul>        
+      </li>
+      <li><a href="section-30.html">Confirm Box</a>        
+        <ul class="submenu">
+            <li><a href="section-30.html#30.1">Default ConfirmBox</a>
+            <li><a href="section-30.html#30.2">Custom Buttons</a>
+            <li><a href="section-30.html#30.3">Javascript</a>
+            <li><a href="section-30.html#30.4">Options</a>
+        </ul>        
+      </li>
+      <li><a href="section-31.html">Wizard</a>        
+        <ul class="submenu">
+            <li><a href="section-31.html#31.1">HTML Markup</a>
+            <li><a href="section-31.html#31.2">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-32.html">Notification Alert</a>        
+        <ul class="submenu">
+            <li><a href="section-32.html#32.1">Javascript</a>
+            <li><a href="section-32.html#32.2">Options</a>
+        </ul>        
+      </li>
+      <li><a href="section-33.html">Throbber</a>        
+        <ul class="submenu">
+            <li><a href="section-33.html#33.1">Load Throbber</a>
+            <li><a href="section-33.html#33.2">Auto Hide Throbber</a>
+            <li><a href="section-33.html#33.3">Multi Callback Throbber</a>
+            <li><a href="section-33.html#33.4">Throbber with Header</a>
+            <li><a href="section-33.html#33.5">Custom Image Throbber</a>
+            <li><a href="section-33.html#33.6">Javascript</a>
+            <li><a href="section-33.html#33.7">Options</a>
+        </ul>        
+      </li>
+    </ul></nav>
+  </aside>
+</div>
+<div role="main" id="kss-main">
+  <article id="kss-content">
+
+    
+      <h2 class="kss-main-title">Typogarphy</h2>
+      
+		
+
+
+      <section class="kss-depth-2">
+      <a name="2.1"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">2.1</span> - -->Headings</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="bs-example bs-example-type">
+<table class="table">
+<tbody>
+<tr>
+<td><h1>h1. Bootstrap heading</h1></td>
+<td class="type-info">Semibold 36px</td>
+</tr>
+<tr>
+<td><h2>h2. Bootstrap heading</h2></td>
+<td class="type-info">Semibold 30px</td>
+</tr>
+<tr>
+<td><h3>h3. Bootstrap heading</h3></td>
+<td class="type-info">Semibold 24px</td>
+</tr>
+<tr>
+<td><h4>h4. Bootstrap heading</h4></td>
+<td class="type-info">Semibold 18px</td>
+</tr>
+<tr>
+<td><h5>h5. Bootstrap heading</h5></td>
+<td class="type-info">Semibold 14px</td>
+</tr>
+<tr>
+<td><h6>h6. Bootstrap heading</h6></td>
+<td class="type-info">Semibold 12px</td>
+</tr>
+</tbody>
+</table>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">
+&lt;table class=&quot;table&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h1&gt;h1. Bootstrap heading&lt;/h1&gt;&lt;/td&gt;
+&lt;td class=&quot;type-info&quot;&gt;Semibold 36px&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h2&gt;h2. Bootstrap heading&lt;/h2&gt;&lt;/td&gt;
+&lt;td class=&quot;type-info&quot;&gt;Semibold 30px&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h3&gt;h3. Bootstrap heading&lt;/h3&gt;&lt;/td&gt;
+&lt;td class=&quot;type-info&quot;&gt;Semibold 24px&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h4&gt;h4. Bootstrap heading&lt;/h4&gt;&lt;/td&gt;
+&lt;td class=&quot;type-info&quot;&gt;Semibold 18px&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h5&gt;h5. Bootstrap heading&lt;/h5&gt;&lt;/td&gt;
+&lt;td class=&quot;type-info&quot;&gt;Semibold 14px&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h6&gt;h6. Bootstrap heading&lt;/h6&gt;&lt;/td&gt;
+&lt;td class=&quot;type-info&quot;&gt;Semibold 12px&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="2.2"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">2.2</span> - -->Small Headings</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="bs-example bs-example-type">
+<table class="table">
+<tbody>
+<tr>
+<td><h1>h1. Bootstrap heading <small>Secondary text</small></h1></td>
+</tr>
+<tr>
+<td><h2>h2. Bootstrap heading <small>Secondary text</small></h2></td>
+</tr>
+<tr>
+<td><h3>h3. Bootstrap heading <small>Secondary text</small></h3></td>
+</tr>
+<tr>
+<td><h4>h4. Bootstrap heading <small>Secondary text</small></h4></td>
+</tr>
+<tr>
+<td><h5>h5. Bootstrap heading <small>Secondary text</small></h5></td>
+</tr>
+<tr>
+<td><h6>h6. Bootstrap heading <small>Secondary text</small></h6></td>
+</tr>
+</tbody>
+</table>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">
+&lt;table class=&quot;table&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h1&gt;h1. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h1&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h2&gt;h2. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h2&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h3&gt;h3. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h3&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h4&gt;h4. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h4&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h5&gt;h5. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h5&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;h6&gt;h6. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h6&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="2.3"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">2.3</span> - -->Lead Body copy</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="bs-example">
+<p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">
+&lt;p class=&quot;lead&quot;&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.&lt;/p&gt;
+</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="2.4"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">2.4</span> - -->Inline text elements</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="bs-example">
+<p><b>Marked text :</b></p>
+<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+<p><b>Deleted text :</b></p>
+<p><del>This line of text is meant to be treated as deleted text.</del></p>
+<p><b>Strikethrough text :</b></p>
+<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+<p><b>Inserted text :</b></p>
+<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+<p><b>Underlined text :</b></p>
+<p><u>This line of text will render as underlined</u></p>
+<p><b>Small text :</b></p>
+<p><small>This line of text is meant to be treated as fine print.</small></p>
+<p><b>Bold :</b></p>
+<p><strong>rendered as bold text</strong></p>
+<p><b>Italics :</b></p>
+<p><em>rendered as italicized text</em></p>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">
+&lt;p&gt;&lt;b&gt;Marked text :&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Deleted text :&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Strikethrough text :&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Inserted text :&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ins&gt;This line of text is meant to be treated as an addition to the document.&lt;/ins&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Underlined text :&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Small text :&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Bold :&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;rendered as bold text&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Italics :&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;rendered as italicized text&lt;/em&gt;&lt;/p&gt;
+</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="2.5"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">2.5</span> - -->Alignment classes</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="bs-example">
+<p class="text-left">Left aligned text.</p>
+<p class="text-center">Center aligned text.</p>
+<p class="text-right">Right aligned text.</p>
+<p class="text-justify">Justified text.</p>
+<p class="text-nowrap">No wrap text.</p>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">
+&lt;p class=&quot;text-left&quot;&gt;Left aligned text.&lt;/p&gt;
+&lt;p class=&quot;text-center&quot;&gt;Center aligned text.&lt;/p&gt;
+&lt;p class=&quot;text-right&quot;&gt;Right aligned text.&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Justified text.&lt;/p&gt;
+&lt;p class=&quot;text-nowrap&quot;&gt;No wrap text.&lt;/p&gt;
+</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="2.6"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">2.6</span> - -->Transformation classes</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="bs-example">
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">Capitalized text.</p>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">
+&lt;p class=&quot;text-lowercase&quot;&gt;Lowercased text.&lt;/p&gt;
+&lt;p class=&quot;text-uppercase&quot;&gt;Uppercased text.&lt;/p&gt;
+&lt;p class=&quot;text-capitalize&quot;&gt;Capitalized text.&lt;/p&gt;
+</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="2.7"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">2.7</span> - -->Abbreviations</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="bs-example">
+<p><b>Basic abbreviation :</b></p>
+<abbr title="attribute">attr</abbr>
+<p><b>Initialism :</b></p>
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">
+&lt;p&gt;&lt;b&gt;Basic abbreviation :&lt;/b&gt;&lt;/p&gt;
+&lt;abbr title=&quot;attribute&quot;&gt;attr&lt;/abbr&gt;
+&lt;p&gt;&lt;b&gt;Initialism :&lt;/b&gt;&lt;/p&gt;
+&lt;abbr title=&quot;HyperText Markup Language&quot; class=&quot;initialism&quot;&gt;HTML&lt;/abbr&gt;
+</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="2.8"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">2.8</span> - -->Addresses</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="bs-example">
+<address>
+<strong>Twitter, Inc.</strong><br>
+795 Folsom Ave, Suite 600<br>
+San Francisco, CA 94107<br>
+<abbr title="Phone">P:</abbr> (123) 456-7890
+</address>
+<address>
+<strong>Full Name</strong><br>
+<a href="mailto:#">first.last@example.com</a>
+</address>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">
+&lt;address&gt;
+&lt;strong&gt;Twitter, Inc.&lt;/strong&gt;&lt;br&gt;
+795 Folsom Ave, Suite 600&lt;br&gt;
+San Francisco, CA 94107&lt;br&gt;
+&lt;abbr title=&quot;Phone&quot;&gt;P:&lt;/abbr&gt; (123) 456-7890
+&lt;/address&gt;
+&lt;address&gt;
+&lt;strong&gt;Full Name&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&quot;mailto:#&quot;&gt;first.last@example.com&lt;/a&gt;
+&lt;/address&gt;
+</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="2.9"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">2.9</span> - -->Blockquotes</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="bs-example">
+<p><b>Default blockquote :</b></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+<p><b>Blockquote options :</b></p>
+<p><small><em>1. Naming a source</em></small></p>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+<p><small><em>2. Alternate displays</em></small></p>
+<blockquote class="blockquote-reverse">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">
+&lt;p&gt;&lt;b&gt;Default blockquote :&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;b&gt;Blockquote options :&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;&lt;em&gt;1. Naming a source&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+&lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;small&gt;&lt;em&gt;2. Alternate displays&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;blockquote class=&quot;blockquote-reverse&quot;&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+&lt;footer&gt;Someone famous in &lt;cite title=&quot;Source Title&quot;&gt;Source Title&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="2.10"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">2.10</span> - -->Lists</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="bs-example">
+<p><b>Unordered :</b></p>
+<ul>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li> Nulla volutpat aliquam velit
+<ul><li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+<li>Vestibulum laoreet porttitor sem</li>
+<li>Ac tristique libero volutpat at</li>
+</ul></li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ul>
+<p><b>Ordered :</b></p>
+<ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li> Nulla volutpat aliquam velit
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">
+&lt;p&gt;&lt;b&gt;Unordered :&lt;/b&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+&lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+&lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+&lt;li&gt; Nulla volutpat aliquam velit
+&lt;ul&gt;&lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+&lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+&lt;li&gt;Vestibulum laoreet porttitor sem&lt;/li&gt;
+&lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+&lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+&lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Ordered :&lt;/b&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+&lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+&lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+&lt;li&gt; Nulla volutpat aliquam velit
+&lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+&lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+&lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+        </div>
+
+      </section>
+  </article>
+</div>
+
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/cnsiJS.js"></script>
+<script src="assets/js/cnsiutils.js"></script>
+<script src="assets/js/cnsi-plugins.js"></script>
+<script src="assets/js/listSearch.js"></script>
+<script src="assets/js/cnsicoreui.js"></script>
+<script src="assets/js/cnsi-custom.js"></script>
+
+<script>
+  $(document).ready(function(){
+    var sidebarAdjust = function() {
+      // Match footer/body height
+      var height = Math.max($('#kss-nav').height(), $('#kss-main').height());
+
+      if ($(window).width() <= 768) {
+        $('#kss-main, #kss-nav').height('auto');
+      } else {
+        $('#kss-main, #kss-nav').height(height);
+      }
+    };
+
+    $(window).resize(sidebarAdjust);
+    $(window).scroll(sidebarAdjust);
+    sidebarAdjust();
+
+    // Ensure code blocks are highlighted properly...
+    $('pre>code').addClass('prettyprint');
+    prettyPrint();
+  });
+</script>
+
+
+</div></body>
+</html>

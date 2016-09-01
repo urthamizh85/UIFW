@@ -1,0 +1,205 @@
+
+@media (max-width: $screen-xss-max) { 
+  .navbar-toggle {margin-right:calc(0px + 8px);}
+  .navbar-brand{margin-left:32px;}
+  .navbar .sidebar-collapse{ right:inherit;}
+  .navbar-nav {
+    margin:0px -15px; 
+   > li{
+     &:first-child{
+       display:none;
+     }
+     &:last-child{float:right;}
+    float:left;
+    top:0px;
+    position:relative;
+    a{
+      padding:15px;
+    }
+  }
+  }
+  .navbar-nav .open .dropdown-menu{
+    background-color: #6da1c9;
+    border-top:3px solid #f16b62;
+    box-shadow: none;
+    float: none;
+    position:absolute;
+    top:50px;
+    width: auto;
+  }
+  
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+ .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+    background: #689bc2;
+  }
+  .dropdown-menu.theme.arrow.right:after, .theme.arrow.right.fake-dropdown:after{right:inherit;}
+  
+  .sidebar{
+      top:50px;
+     &.nav > li > a.active::before, &.sidebar .nav > li > a.active::after{z-index:10;} 
+     &.nav > li .submenu > li > a.active::before, &.sidebar .nav > li .submenu > li > a.active::after{z-index:10;} 
+   }  
+  .navbar-collapse{
+    max-height:none;
+    > ul{
+      max-height:50px;
+    }
+  }
+  .navbar-collapse.in{
+    overflow-y:visible;
+   }
+   .rightnav{
+     z-index:9999;
+     }
+   .session-timeout{
+     z-index:-1;
+     }
+      
+}
+
+
+@media (min-width: $screen-xss-max) and (max-width: $screen-xs-max) {
+  .navbar-toggle {margin-right:calc(20px + 5px);}
+  .navbar-brand{margin-left:32px;}
+  .navbar .sidebar-collapse{ right:inherit;}
+  .navbar-nav > li{
+    float:left;
+    top:0px;
+    position:relative;
+    a{
+      padding:15px;
+    }
+  }
+  .navbar-nav{ 
+    margin:0px -15px; 
+    float:right;
+    }
+  .navbar-nav .open .dropdown-menu{
+    background-color: #6da1c9;
+    border-top:3px solid #f16b62;
+    box-shadow: none;
+    float: none;
+    position:absolute;
+    top:50px;
+    width: auto;
+  }
+
+  
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+}
+ .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+    background: #689bc2;
+}
+.dropdown-menu.theme.arrow.right:after, .theme.arrow.right.fake-dropdown:after{right:inherit;}
+
+  .navbar-collapse{
+    max-height:none;
+    > ul{
+      max-height:50px;
+    }
+  }
+  .navbar-collapse.in{
+    overflow-y:visible;
+  }
+   
+
+}
+
+
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .page-content {
+    margin-left:46px;
+  }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  
+}
+
+@media (min-width: $screen-lg-min) {
+  
+}
+
+@media (min-width: $screen-md-min) {
+  .container-fluid {
+    > .navbar-collapse {
+     
+    }    
+  }
+}
+
+
+
+/*
+@media (max-width: $screen-xs-max) {
+  .navbar-toggle {
+    margin-right:calc(50px + 5px);
+  }
+  .navbar-nav > li{
+    float:left;
+    top:0px;
+    position:relative;
+    a{
+      padding:15px;
+    }
+  }
+  .navbar-nav{ 
+    margin:0px -15px; 
+    float:right;
+    }
+  .navbar-nav .open .dropdown-menu{
+    background-color: #6da1c9;
+    border-top:3px solid #f16b62;
+    box-shadow: none;
+    float: none;
+    position:absolute;
+    top:50px;
+    width: auto;
+  }
+
+  
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+}
+ .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+    background: #689bc2;
+}
+.dropdown-menu.theme.arrow.right:after, .theme.arrow.right.fake-dropdown:after{right:inherit;}
+
+  .navbar-collapse{
+    max-height:none;
+    > ul{
+      max-height:50px;
+    }
+  }
+  .navbar-collapse.in{
+    overflow-y:visible;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .page-content {
+    margin-left:46px;
+  }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  
+}
+
+@media (min-width: $screen-lg-min) {
+  
+}
+
+@media (min-width: $screen-md-min) {
+  .container-fluid {
+    > .navbar-collapse {
+      //margin-right:calc(50px - 5px);
+    }    
+  }
+}
+*/

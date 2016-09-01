@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>UI Framework</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <link href="assets/css/glyphicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/custom-theme-default.css" />
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body><div id="kss-wrapper">
+
+<div id="kss-nav">
+  <header id="kss-header">
+    <hgroup><h1>CNSI UI Framework</h1></hgroup>
+    <div class="search-doc-box">
+	  <input type="text" placeholder="Search docs" name="search_doc" id="search_doc" data-ui="alphabetListSearch" data-search-target=".left-nav > ul" />
+	</div>
+  </header>
+  <aside>
+    <nav class="left-nav"><ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="section-1.html">Grid System</a>        
+        <ul class="submenu">
+            <li><a href="section-1.html#1.1">Stacked-to-horizontal</a>
+            <li><a href="section-1.html#1.2">Fluid container</a>
+            <li><a href="section-1.html#1.3">Mobile and desktop</a>
+            <li><a href="section-1.html#1.4">Mobile, tablet, desktops</a>
+            <li><a href="section-1.html#1.5">Column wrapping</a>
+            <li><a href="section-1.html#1.6">Responsive column resets</a>
+            <li><a href="section-1.html#1.7">Offsetting columns</a>
+            <li><a href="section-1.html#1.8">Nesting columns</a>
+            <li><a href="section-1.html#1.9">Column ordering</a>
+            <li><a href="section-1.html#1.10">Grid options</a>
+        </ul>        
+      </li>
+      <li><a href="section-2.html">Typogarphy</a>        
+        <ul class="submenu">
+            <li><a href="section-2.html#2.1">Headings</a>
+            <li><a href="section-2.html#2.2">Small Headings</a>
+            <li><a href="section-2.html#2.3">Lead Body copy</a>
+            <li><a href="section-2.html#2.4">Inline text elements</a>
+            <li><a href="section-2.html#2.5">Alignment classes</a>
+            <li><a href="section-2.html#2.6">Transformation classes</a>
+            <li><a href="section-2.html#2.7">Abbreviations</a>
+            <li><a href="section-2.html#2.8">Addresses</a>
+            <li><a href="section-2.html#2.9">Blockquotes</a>
+            <li><a href="section-2.html#2.10">Lists</a>
+        </ul>        
+      </li>
+      <li><a href="section-3.html">Top Navigation</a>        
+        <ul class="submenu">
+            <li><a href="section-3.html#3.1">RightNav</a>
+            <li><a href="section-3.html#3.2">Description</a>
+        </ul>        
+      </li>
+      <li><a href="section-4.html">Left Navigation</a>        
+        <ul class="submenu">
+            <li><a href="section-4.html#4.1">Description</a>
+        </ul>        
+      </li>
+      <li><a href="section-5.html">Labels/Badges</a>        
+        <ul class="submenu">
+            <li><a href="section-5.html#5.1">Default Labels</a>
+            <li><a href="section-5.html#5.2">Default Badges</a>
+            <li><a href="section-5.html#5.3">Default Square Badges</a>
+            <li><a href="section-5.html#5.4">Gradient Labels</a>
+            <li><a href="section-5.html#5.5">Gradient Badges</a>
+            <li><a href="section-5.html#5.6">Gradient Square Badges</a>
+        </ul>        
+      </li>
+      <li><a href="section-6.html">Progress Bars</a>        
+        <ul class="submenu">
+            <li><a href="section-6.html#6.1">Simple Progress Bars</a>
+            <li><a href="section-6.html#6.2">Vertical Progress Bars</a>
+            <li><a href="section-6.html#6.3">Advances Progress Bars</a>
+            <li><a href="section-6.html#6.31">Sizes</a>
+            <li><a href="section-6.html#6.32">Bordered</a>
+            <li><a href="section-6.html#6.33">Right Aligned</a>
+            <li><a href="section-6.html#6.34">Without Radius Border</a>
+            <li><a href="section-6.html#6.35">Shadowed</a>
+            <li><a href="section-6.html#6.36">Bordered &amp; Stacked</a>
+        </ul>        
+      </li>
+      <li><a href="section-7.html">Breadcrumbs/Pagination</a>        
+        <ul class="submenu">
+            <li><a href="section-7.html#7.1">Breadcrumbs</a>
+            <li><a href="section-7.html#7.2">Pagination</a>
+            <li><a href="section-7.html#7.3">Default</a>
+            <li><a href="section-7.html#7.4">Sizes</a>
+            <li><a href="section-7.html#7.5">Pager</a>
+            <li><a href="section-7.html#7.6">Aligned Pager</a>
+        </ul>        
+      </li>
+      <li><a href="section-8.html">List Groups</a>        
+        <ul class="submenu">
+            <li><a href="section-8.html#8.1">Default List Group</a>
+            <li><a href="section-8.html#8.2">Linked items</a>
+            <li><a href="section-8.html#8.3">List Group with Badges</a>
+            <li><a href="section-8.html#8.4">Custom content</a>
+            <li><a href="section-8.html#8.5">Sample List</a>
+            <li><a href="section-8.html#8.6">List in Table structure</a>
+        </ul>        
+      </li>
+      <li><a href="section-9.html">Widgets</a>        
+        <ul class="submenu">
+            <li><a href="section-9.html#9.1">Default Widget</a>
+            <li><a href="section-9.html#9.2">Widget with Bottom Border</a>
+            <li><a href="section-9.html#9.3">Widget with Top Border</a>
+            <li><a href="section-9.html#9.4">Widget with  Colored Header</a>
+            <li><a href="section-9.html#9.5">Widget with Colored Header and Body</a>
+        </ul>        
+      </li>
+      <li><a href="section-10.html">Input/Input Groups</a>        
+        <ul class="submenu">
+            <li><a href="section-10.html#10.1">Default Inputs</a>
+            <li><a href="section-10.html#10.2">Disabled Inputs</a>
+            <li><a href="section-10.html#10.3">Input Groups</a>
+            <li><a href="section-10.html#10.4">Button Addons</a>
+            <li><a href="section-10.html#10.5">Buttons with dropdowns</a>
+        </ul>        
+      </li>
+      <li><a href="section-11.html">Wells</a>        
+        <ul class="submenu">
+            <li><a href="section-11.html#11.1">Default Well</a>
+            <li><a href="section-11.html#11.2">Large Well</a>
+            <li><a href="section-11.html#11.3">Small Well</a>
+            <li><a href="section-11.html#11.4">Bordered Wells</a>
+            <li><a href="section-11.html#11.5">Colored Well</a>
+            <li><a href="section-11.html#11.6">Well With Header</a>
+            <li><a href="section-11.html#11.7">Well With Header and Footer</a>
+        </ul>        
+      </li>
+      <li><a href="section-12.html">Tabs</a>        
+        <ul class="submenu">
+            <li><a href="section-12.html#12.1">Default Tab</a>
+            <li><a href="section-12.html#12.2">Tab Bottom</a>
+            <li><a href="section-12.html#12.3">Tab Left</a>
+            <li><a href="section-12.html#12.4">Tab Right</a>
+            <li><a href="section-12.html#12.5">Tab Justified</a>
+        </ul>        
+      </li>
+      <li><a href="section-13.html">Accordion</a>        
+        <ul class="submenu">
+        </ul>        
+      </li>
+      <li><a href="section-14.html">Alerts</a>        
+        <ul class="submenu">
+            <li><a href="section-14.html#14.1">Default Alerts</a>
+            <li><a href="section-14.html#14.2">Rounded &amp; Shadowed Alerts</a>
+        </ul>        
+      </li>
+      <li><a href="section-15.html">Tooltips</a>        
+        <ul class="submenu">
+            <li><a href="section-15.html#15.1">Default tooltips</a>
+            <li><a href="section-15.html#15.2">Colored tooltips</a>
+        </ul>        
+      </li>
+      <li><a href="section-16.html">Dropdowns</a>        
+        <ul class="submenu">
+            <li><a href="section-16.html#16.1">Default DropDown</a>
+            <li><a href="section-16.html#16.2">Colored DropDown</a>
+            <li><a href="section-16.html#16.3">Colored DropDown Buttons</a>
+        </ul>        
+      </li>
+      <li><a href="section-17.html">Modals</a>        
+        <ul class="submenu">
+            <li><a href="section-17.html#17.1">Static example</a>
+            <li><a href="section-17.html#17.2">Buttons to open Modal</a>
+            <li><a href="section-17.html#17.2">Large Modal Code</a>
+            <li><a href="section-17.html#17.2">Small Modal Code</a>
+        </ul>        
+      </li>
+      <li><a href="section-18.html">Databox</a>        
+        <ul class="submenu">
+        </ul>        
+      </li>
+      <li><a href="section-19.html">Pie-Chart</a>        
+        <ul class="submenu">
+            <li><a href="section-19.html#19.1">Default Piechart</a>
+            <li><a href="section-19.html#19.2">Borderd Piechart</a>
+            <li><a href="section-19.html#19.3">Javascript</a>
+            <li><a href="section-19.html#19.4">Options</a>
+        </ul>        
+      </li>
+      <li><a href="section-20.html">Maxlength</a>        
+        <ul class="submenu">
+            <li><a href="section-20.html#20.1">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-21.html">Password Strength</a>        
+        <ul class="submenu">
+            <li><a href="section-21.html#21.1">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-22.html">Popovers</a>        
+        <ul class="submenu">
+            <li><a href="section-22.html#22.1">Dark Popover top</a>
+            <li><a href="section-22.html#22.2">Popover right</a>
+            <li><a href="section-22.html#22.3">Popover bottom</a>
+            <li><a href="section-22.html#22.4">Popover left</a>
+            <li><a href="section-22.html#22.5">Popover Top</a>
+            <li><a href="section-22.html#22.6">Inverted Popover</a>
+            <li><a href="section-22.html#22.7">Popover On Buttons</a>
+            <li><a href="section-22.html#22.8">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-23.html">Datepicker</a>        
+        <ul class="submenu">
+            <li><a href="section-23.html#23.1">HTML Markup</a>
+            <li><a href="section-23.html#23.2">Javascript</a>
+            <li><a href="section-23.html#23.3">Options</a>
+            <li><a href="section-23.html#23.4">Methods</a>
+        </ul>        
+      </li>
+      <li><a href="section-24.html">Timepicker</a>        
+        <ul class="submenu">
+            <li><a href="section-24.html#24.1">HTML Markup</a>
+            <li><a href="section-24.html#24.2">Javascript</a>
+            <li><a href="section-24.html#24.3">Options</a>
+            <li><a href="section-24.html#24.4">Methods</a>
+            <li><a href="section-24.html#24.5">Events</a>
+        </ul>        
+      </li>
+      <li><a href="section-25.html">Scroll Message</a>        
+        <ul class="submenu">
+            <li><a href="section-25.html#25.1">HTML Markup</a>
+            <li><a href="section-25.html#25.1">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-26.html">Templates</a>        
+        <ul class="submenu">
+            <li><a href="section-26.html#26.1">With Horizontalbar Menu</a>
+            <li><a href="section-26.html#26.2">With Sidebar Menu</a>
+        </ul>        
+      </li>
+      <li><a href="section-27.html">Simple/Responsive Tables</a>        
+        <ul class="submenu">
+            <li><a href="section-27.html#27.1">Simple Table With Hover</a>
+            <li><a href="section-27.html#27.2">Condensed Table</a>
+            <li><a href="section-27.html#27.3">Bordered Table</a>
+            <li><a href="section-27.html#27.4">Stripped Table</a>
+            <li><a href="section-27.html#27.5">Contextual Rows</a>
+            <li><a href="section-27.html#27.6">Contextual Columns</a>
+            <li><a href="section-27.html#27.7">Responsive Table</a>
+            <li><a href="section-27.html#27.8">Scrollable Table</a>
+            <li><a href="section-27.html#27.9">Responsive Flip Scroll Tables</a>
+        </ul>        
+      </li>
+      <li><a href="section-28.html">Form Elements</a>        
+        <ul class="submenu">
+            <li><a href="section-28.html#28.1">Basic Form</a>
+            <li><a href="section-28.html#28.2">Horizontal Form</a>
+            <li><a href="section-28.html#28.3">Inline Form</a>
+            <li><a href="section-28.html#28.4">Inline Form with Label</a>
+            <li><a href="section-28.html#28.5">Form Elements</a>
+        </ul>        
+      </li>
+      <li><a href="section-29.html">Buttons</a>        
+        <ul class="submenu">
+            <li><a href="section-29.html#29.1">Basic Buttons</a>
+            <li><a href="section-29.html#29.2">Gradient Buttons</a>
+            <li><a href="section-29.html#29.3">Rounded Corner Buttons</a>
+            <li><a href="section-29.html#29.4">Circle Buttons</a>
+            <li><a href="section-29.html#29.5">Button Size</a>
+            <li><a href="section-29.html#29.6">Buttons With Icon</a>
+            <li><a href="section-29.html#29.7">Labeled Buttons</a>
+            <li><a href="section-29.html#29.8">Icon Buttons</a>
+            <li><a href="section-29.html#29.9">DropDown Buttons</a>
+            <li><a href="section-29.html#29.10">Justified Buttons</a>
+            <li><a href="section-29.html#29.11">Block Buttons</a>
+            <li><a href="section-29.html#29.12">Button Groups</a>
+            <li><a href="section-29.html#29.13">Disabled Buttons</a>
+        </ul>        
+      </li>
+      <li><a href="section-30.html">Confirm Box</a>        
+        <ul class="submenu">
+            <li><a href="section-30.html#30.1">Default ConfirmBox</a>
+            <li><a href="section-30.html#30.2">Custom Buttons</a>
+            <li><a href="section-30.html#30.3">Javascript</a>
+            <li><a href="section-30.html#30.4">Options</a>
+        </ul>        
+      </li>
+      <li><a href="section-31.html">Wizard</a>        
+        <ul class="submenu">
+            <li><a href="section-31.html#31.1">HTML Markup</a>
+            <li><a href="section-31.html#31.2">Javascript</a>
+        </ul>        
+      </li>
+      <li><a href="section-32.html">Notification Alert</a>        
+        <ul class="submenu">
+            <li><a href="section-32.html#32.1">Javascript</a>
+            <li><a href="section-32.html#32.2">Options</a>
+        </ul>        
+      </li>
+      <li><a href="section-33.html">Throbber</a>        
+        <ul class="submenu">
+            <li><a href="section-33.html#33.1">Load Throbber</a>
+            <li><a href="section-33.html#33.2">Auto Hide Throbber</a>
+            <li><a href="section-33.html#33.3">Multi Callback Throbber</a>
+            <li><a href="section-33.html#33.4">Throbber with Header</a>
+            <li><a href="section-33.html#33.5">Custom Image Throbber</a>
+            <li><a href="section-33.html#33.6">Javascript</a>
+            <li><a href="section-33.html#33.7">Options</a>
+        </ul>        
+      </li>
+    </ul></nav>
+  </aside>
+</div>
+<div role="main" id="kss-main">
+  <article id="kss-content">
+
+    
+      <h2 class="kss-main-title">Top Navigation</h2>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div role="navigation" class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header pull-relative">
+<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a href="#" class="navbar-brand" title="UI Framework">UI Framework <small>1.0</small></a>
+<div id="sidebar-collapse" class="sidebar-collapse" data-trigger="leftmenu-collapse">
+<i class="collapse-icon fa fa fa-dedent" title="Show/Hide Left Navigation"></i>
+</div>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<div class="btn-group font-btn-group">
+<button title="Increse text size" data-font-size="plus" class="btn btn-font" type="button">
+<span class="bigfont"><sup class="fa fa-plus"></sup>A</span>
+</button>
+<button title="Minimize text size" data-font-size="minus" class="btn btn-font" type="button">
+<span class="smallfont"><sup class="fa fa-minus"></sup>A</span>
+</button>
+</div>
+</li>
+<li>
+<a data-toggle="dropdown" class="big-icon dropdown-toggle" href="#" title="Language"><i class="fa fa-globe"></i></a>
+<ul class="dropdown-menu theme arrow right">
+<li>
+<a href="#" title="English">English</a>
+</li>
+<li>
+<a href="#" title="Espanol">Espanol</a>
+</li>
+</ul>
+</li>
+<li>
+<a class="search-area big-icon" data-toggle="dropdown" class="big-icon dropdown-toggle" href="#" title="Site Search"><i class="fa fa-search"></i></a>
+<ul class="dropdown-menu theme arrow right" id="search_dropdown" data-propagate='stop'>
+<li>
+<form name="search_form" id="search_form" class="search-form">
+<div class="input-group">
+<input type="text" name="search_site" id="search_site" class="form-control" />
+<span class="input-group-btn" title="Search">
+<button class="btn search-btn" type="button">
+<i class="fa fa-search" title="Search"></i>
+</button> </span>
+</div>
+</form>
+</li>
+</ul>
+</li>
+<li>
+<button class="right-nav-btn big-icon" type="button" data-trigger="rightnav" data-toggle-class="fa-arrow-circle-right" title="Open right navbar">
+<i class="fa fa-arrow-circle-left"></i>
+</button>
+</li>
+<li>
+<a data-toggle="dropdown" class="login-area dropdown-toggle" title="Jagadeesh UX">
+<div class="avatar">
+<i class="fa fa-user"></i>
+</div>
+<section class="profile-text">
+<h2><span class="profile">UI Framework <i class="fa fa-angle-down"></i></span></h2>
+</section> </a>
+<ul class="dropdown-menu theme arrow right">
+<li>
+<a href="#" title="View Profile">View Profile</a>
+</li>
+<li>
+<a href="#" title="Edit Profile">Edit Profile</a>
+</li>
+<li>
+<a href="#" title="Settings">Settings</a>
+</li>
+</ul>
+</li>
+<li>
+<button class="logout-btn big-icon" type="button" title="Logout">
+<i class="fa fa-power-off"></i>
+</button>
+</li>
+</ul>
+</div>
+</div>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">&lt;div role=&quot;navigation&quot; class=&quot;navbar navbar-inverse&quot;&gt;
+&lt;div class=&quot;container-fluid&quot;&gt;
+&lt;div class=&quot;navbar-header pull-relative&quot;&gt;
+&lt;button data-target=&quot;.navbar-collapse&quot; data-toggle=&quot;collapse&quot; class=&quot;navbar-toggle collapsed&quot; type=&quot;button&quot;&gt;
+&lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;a href=&quot;#&quot; class=&quot;navbar-brand&quot; title=&quot;UI Framework&quot;&gt;UI Framework &lt;small&gt;1.0&lt;/small&gt;&lt;/a&gt;
+&lt;div id=&quot;sidebar-collapse&quot; class=&quot;sidebar-collapse&quot; data-trigger=&quot;leftmenu-collapse&quot;&gt;
+&lt;i class=&quot;collapse-icon fa fa fa-dedent&quot; title=&quot;Show/Hide Left Navigation&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+&lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+&lt;li&gt;
+&lt;div class=&quot;btn-group font-btn-group&quot;&gt;
+&lt;button title=&quot;Increse text size&quot; data-font-size=&quot;plus&quot; class=&quot;btn btn-font&quot; type=&quot;button&quot;&gt;
+&lt;span class=&quot;bigfont&quot;&gt;&lt;sup class=&quot;fa fa-plus&quot;&gt;&lt;/sup&gt;A&lt;/span&gt;
+&lt;/button&gt;
+&lt;button title=&quot;Minimize text size&quot; data-font-size=&quot;minus&quot; class=&quot;btn btn-font&quot; type=&quot;button&quot;&gt;
+&lt;span class=&quot;smallfont&quot;&gt;&lt;sup class=&quot;fa fa-minus&quot;&gt;&lt;/sup&gt;A&lt;/span&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a data-toggle=&quot;dropdown&quot; class=&quot;big-icon dropdown-toggle&quot; href=&quot;#&quot; title=&quot;Language&quot;&gt;&lt;i class=&quot;fa fa-globe&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;ul class=&quot;dropdown-menu theme arrow right&quot;&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot; title=&quot;English&quot;&gt;English&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot; title=&quot;Espanol&quot;&gt;Espanol&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a class=&quot;search-area big-icon&quot; data-toggle=&quot;dropdown&quot; class=&quot;big-icon dropdown-toggle&quot; href=&quot;#&quot; title=&quot;Site Search&quot;&gt;&lt;i class=&quot;fa fa-search&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;ul class=&quot;dropdown-menu theme arrow right&quot; id=&quot;search_dropdown&quot; data-propagate=&#x27;stop&#x27;&gt;
+&lt;li&gt;
+&lt;form name=&quot;search_form&quot; id=&quot;search_form&quot; class=&quot;search-form&quot;&gt;
+&lt;div class=&quot;input-group&quot;&gt;
+&lt;input type=&quot;text&quot; name=&quot;search_site&quot; id=&quot;search_site&quot; class=&quot;form-control&quot; /&gt;
+&lt;span class=&quot;input-group-btn&quot; title=&quot;Search&quot;&gt;
+&lt;button class=&quot;btn search-btn&quot; type=&quot;button&quot;&gt;
+&lt;i class=&quot;fa fa-search&quot; title=&quot;Search&quot;&gt;&lt;/i&gt;
+&lt;/button&gt; &lt;/span&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;button class=&quot;right-nav-btn big-icon&quot; type=&quot;button&quot; data-trigger=&quot;rightnav&quot; data-toggle-class=&quot;fa-arrow-circle-right&quot; title=&quot;Open right navbar&quot;&gt;
+&lt;i class=&quot;fa fa-arrow-circle-left&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a data-toggle=&quot;dropdown&quot; class=&quot;login-area dropdown-toggle&quot; title=&quot;Jagadeesh UX&quot;&gt;
+&lt;div class=&quot;avatar&quot;&gt;
+&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+&lt;section class=&quot;profile-text&quot;&gt;
+&lt;h2&gt;&lt;span class=&quot;profile&quot;&gt;UI Framework &lt;i class=&quot;fa fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/h2&gt;
+&lt;/section&gt; &lt;/a&gt;
+&lt;ul class=&quot;dropdown-menu theme arrow right&quot;&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot; title=&quot;View Profile&quot;&gt;View Profile&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot; title=&quot;Edit Profile&quot;&gt;Edit Profile&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot; title=&quot;Settings&quot;&gt;Settings&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;button class=&quot;logout-btn big-icon&quot; type=&quot;button&quot; title=&quot;Logout&quot;&gt;
+&lt;i class=&quot;fa fa-power-off&quot;&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+      <section class="kss-depth-2">
+      <a name="3.1"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">3.1</span> - -->RightNav</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><div class="rightnav">
+<ul class="nav nav-sidebar">
+<li>
+<a href="#"><span class="menu-label" title="Messages"><i class="fa fa-envelope menu-icon"></i> Messages</span></a>
+</li>
+<li>
+<a href="#"><span class="menu-label" title="Chat"><i class="fa fa-comments-o menu-icon"></i> Chat</span></a>
+</li>
+<li>
+<a href="#"><span class="menu-label" title="Help"><i class="fa fa-question-circle menu-icon"></i> Help</span></a>
+</li>
+</ul>
+</div></td>
+          </tr>
+        </table>
+
+        <div class="kss-markup">
+          <pre class="prettyprint lang-html">&lt;div class=&quot;rightnav&quot;&gt;
+&lt;ul class=&quot;nav nav-sidebar&quot;&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;menu-label&quot; title=&quot;Messages&quot;&gt;&lt;i class=&quot;fa fa-envelope menu-icon&quot;&gt;&lt;/i&gt; Messages&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;menu-label&quot; title=&quot;Chat&quot;&gt;&lt;i class=&quot;fa fa-comments-o menu-icon&quot;&gt;&lt;/i&gt; Chat&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;menu-label&quot; title=&quot;Help&quot;&gt;&lt;i class=&quot;fa fa-question-circle menu-icon&quot;&gt;&lt;/i&gt; Help&lt;/span&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</pre>
+        </div>
+
+      </section>
+      <section class="kss-depth-2">
+      <a name="3.2"></a>
+      <h3 class="kss-sub-title"><!--<span class="kss-ref">3.2</span> - -->Description</h3>
+      
+		
+
+        <table class="kss-mod-list">
+          <tr class="kss-mod-desc-group">
+            <td class="kss-mod-desc"><p><!--Default styling--></p></td>
+          </tr>
+          <tr class="kss-mod-example">
+            <td><p><b><i class="collapse-icon fa fa fa-dedent" title="Show/Hide Left Navigation"></i> : </b>Show/Hide Left Navigation </p>
+<p><b><button title="Increse text size" data-font-size="plus" class="btn btn-font" type="button">
+<span class="bigfont"><sup class="fa fa-plus"></sup>A</span>
+</button> : </b>Increase text size </p>
+<p><b><button title="Minimize text size" data-font-size="minus" class="btn btn-font" type="button">
+<span class="smallfont"><sup class="fa fa-minus"></sup>A</span>
+</button> : </b>Minimize text size </p>
+<p><b><a data-toggle="dropdown" class="big-icon dropdown-toggle" href="#" title="Language"><i class="fa fa-globe"></i></a> : </b>Displays list of languages</p>
+<p><b><a class="search-area big-icon" data-toggle="dropdown" class="big-icon dropdown-toggle" href="#" title="Site Search"><i class="fa fa-search"></i></a> : </b>To search data </p>
+<p><b><button class="right-nav-btn big-icon" type="button" data-trigger="rightnav" data-toggle-class="fa-arrow-circle-right" title="Open right navbar">
+<i class="fa fa-arrow-circle-left"></i>
+</button> : </b>The particular event with list containing messages,chat and help gets fired </p>
+<p><b><span class="profile">UI Framework <i class="fa fa-angle-down"></i></span> : </b>Drop-down for viewing, editing profile and settings </p>
+<p><b><button class="logout-btn big-icon" type="button" title="Logout">
+<i class="fa fa-power-off"></i>
+</button> : </b>For user logout </p></td>
+          </tr>
+        </table>
+
+        
+      </section>
+  </article>
+</div>
+
+
+<!-- SCRIPTS -->
+<script src="public/kss.js"></script>
+<script src="public/prettify.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/cnsiJS.js"></script>
+<script src="assets/js/cnsiutils.js"></script>
+<script src="assets/js/cnsi-plugins.js"></script>
+<script src="assets/js/listSearch.js"></script>
+<script src="assets/js/cnsicoreui.js"></script>
+<script src="assets/js/cnsi-custom.js"></script>
+
+<script>
+  $(document).ready(function(){
+    var sidebarAdjust = function() {
+      // Match footer/body height
+      var height = Math.max($('#kss-nav').height(), $('#kss-main').height());
+
+      if ($(window).width() <= 768) {
+        $('#kss-main, #kss-nav').height('auto');
+      } else {
+        $('#kss-main, #kss-nav').height(height);
+      }
+    };
+
+    $(window).resize(sidebarAdjust);
+    $(window).scroll(sidebarAdjust);
+    sidebarAdjust();
+
+    // Ensure code blocks are highlighted properly...
+    $('pre>code').addClass('prettyprint');
+    prettyPrint();
+  });
+</script>
+
+
+</div></body>
+</html>

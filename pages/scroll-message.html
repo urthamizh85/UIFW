@@ -1,0 +1,66 @@
+<div class="title-bar">
+	<div class="title-text">
+		<h3>Scroll Message</h3>
+	</div>
+</div>
+<div class="load-content">
+	<div class="row">
+		<div class="col-md-12">
+			<h4>Example : </h4>
+			<div class="alert alert-info padded">
+				<div class="scroll-message" id="scrollMessage">
+					<div class="scroll-message-content">
+						<span class="scroll-message-item" data-sm-id="1" tabindex="0">It appears that you have saved your Health Risk Assessment (HRA) information. We recommend you to refer to your HRA information prior to goal setting...</span>
+						<span class="scroll-message-item" data-sm-id="2" tabindex="0">Our records indicate that you belong to HMP-MC plan...</span>
+						<span class="scroll-message-item" data-sm-id="3" tabindex="0">It appears that your Health Risk Assessment (HRA) is completed. We recommend you to refer to your HRA information prior to goal setting...</span>
+					</div>
+					<div class="scroll-message-nav">
+						<label class="scroll-message-page-info"><span id="current_msg">1</span>/<span id="total_msg">3</span></label>
+						<a id="msg_left_btn" title="Previous" href="#" class="label label-info padded-hz-8x disabled"><i class="fa fa-chevron-left"></i></a>
+						<a id="msg_right_btn" title="Next" href="#" class="label label-info padded-hz-8x"><i class="fa fa-chevron-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<h4>Html : </h4>
+			<code class="code-block">
+				&lt;div class="alert alert-info padded"&gt;
+				<br>
+				&lt;div class="scroll-message" id="scrollMessage"&gt;
+				<br>
+				&lt;div class="scroll-message-content"&gt;
+				<br>
+				&lt;span class="scroll-message-item" data-sm-id="1"&gt;Message 1&lt;/span&gt;
+				<br>
+				&lt;span class="scroll-message-item" data-sm-id="2"&gt;Message 2&lt;/span&gt;
+				<br>
+				&lt;span class="scroll-message-item" data-sm-id="3"&gt;Message 3&lt;/span&gt;
+				<br>
+				&lt;/div&gt;
+				<br>
+				&lt;div class="scroll-message-nav"&gt;
+				<br>
+				&lt;label class="scroll-message-page-info"&gt;&lt;span id="current_msg"&gt;1&lt;/span&gt;/&lt;span id="total_msg"&gt;3&lt;/span&gt;&lt;/label&gt;
+				<br>
+				&lt;a id="msg_left_btn" href="#" class="label label-info padded-hz-8x disabled"&gt;&lt;i class="fa fa-chevron-left"&gt;&lt;/i&gt;&lt;/a&gt;
+				<br>
+				&lt;a id="msg_right_btn" href="#" class="label label-info padded-hz-8x"&gt;&lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;&lt;/a&gt;
+				<br>
+				&lt;/div&gt;
+				<br>
+				&lt;/div&gt;
+				<br>
+				&lt;/div&gt;
+			</code>
+			<h4>Javascript : </h4>
+			<code class="code-block">&lt;script src="assets/js/scrollmessage.js"&gt;&lt;/script&gt;</code>
+			<br/>
+			<code class="code-block">
+				$("#scrollMessage").scrollmessage({
+					delay : 5000
+				});
+			</code>
+			<br/>
+			<br/>
+		</div>
+	</div>
+</div>
